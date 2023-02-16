@@ -3,7 +3,7 @@
 In this example the microcontroller should display the temperature and humidity in the console.
 This information is collected from a DHT11 or DHT22 sensor.
 
-<img alt="component" src="https://github.com/StevenSlaa/Micropython-examples/blob/7bb0472f84f346c6a3762f9aee1ea712502284be/DHT%20Sensor/res/component.png" width="300px">
+<img alt="component" src="https://github.com/StevenSlaa/Micropython-examples/blob/7bb0472f84f346c6a3762f9aee1ea712502284be/DHT%20Sensor/res/component.png" height="300px">
 
 ## Connections
 
