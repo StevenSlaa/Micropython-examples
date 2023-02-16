@@ -7,11 +7,7 @@ This information is collected from a DHT11 or DHT22 sensor.
 
 ## Connections
 
-| DHT | ESP32  |
-|-----|--------|
-| VCC | 3.3V   |
-| GND | GND    |
-| DAT | GPIO15 |
+<img alt="output" src="" height="300px">
 
 
 ## Output

@@ -9,12 +9,7 @@ Before running the code, you have to copy all the files from the `lib` folder to
 
 ## Connections
 
-| LCD | ESP32  |
-|-----|--------|
-| VCC | VIN    |
-| GND | GND    |
-| SDA | GPIO21 |
-| SCL | GPIO22 |
+<img alt="output" src="" height="300px">
 
 
 ## Output
