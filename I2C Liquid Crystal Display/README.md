@@ -10,7 +10,7 @@ Before running the code, you have to copy all the files from the `lib` folder to
 
 ## Connections
 
-<img alt="output" src="https://github.com/StevenSlaa/Micropython-examples/blob/3548e739fd7f46f988f4fe8fe86e8b875a6e1791/I2C%20Liquid%20Crystal%20Display/res/circuit.png" height="300px">
+<img alt="connections" src="https://github.com/StevenSlaa/Micropython-examples/blob/3548e739fd7f46f988f4fe8fe86e8b875a6e1791/I2C%20Liquid%20Crystal%20Display/res/circuit.png" height="300px">
 
 
 ## Output
