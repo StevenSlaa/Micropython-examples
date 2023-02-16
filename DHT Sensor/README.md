@@ -1,4 +1,4 @@
-<img alt="component" src="/res/component.png" width="200px">
+<img alt="component" src="https://github.com/StevenSlaa/Micropython-examples/blob/7bb0472f84f346c6a3762f9aee1ea712502284be/DHT%20Sensor/res/component.png" width="200px">
 
 # DHT Sensor Example
 
