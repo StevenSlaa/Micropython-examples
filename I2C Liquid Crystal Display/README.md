@@ -18,11 +18,7 @@ Before running the code, you have to copy all the files from the `lib` folder to
 
 
 ## Output
-```
-Temperature: 14.0 C
-Temperature: 57.2 F
-Humidity: 91.0 %
-```
+<img alt="output" src="" height="300px">
 
 ## Tested
 This example has been tested on the following microcontroller running Micropython:
