@@ -1,3 +1,5 @@
+<img alt="component" src="/res/component.png" width="200px">
+
 # DHT Sensor Example
 
 In this example the microcontroller should display the temperature and humidity in the console.
