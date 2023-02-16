@@ -7,8 +7,8 @@ i2c=machine.SoftI2C(sda=sdaPIN, scl=sclPIN, freq=10000)
 
 devices = i2c.scan()
 if len(devices) == 0:
- print("No i2c device !")
+ print("No I2C devices have been found!")
 else:
- print('i2c devices found:',len(devices))
+ print('I2C devices found:',len(devices))
 for device in devices:
  print("At address: ",hex(device))
