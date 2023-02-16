@@ -3,7 +3,7 @@ This is a simple button example script. It will turn an LED on when the button i
 
 ## Connections
 
-<img alt="connections" src="" height="300px">
+<img alt="connections" src="https://github.com/StevenSlaa/Micropython-examples/blob/ff4d2d5b8c2057cb4a459ede48c6f21413e595e1/Button/res/circuit.png" height="300px">
 
 ## Output
 
