@@ -5,7 +5,7 @@ This example can of course also be used to control servo's, motor drivers, buzze
 
 ## Connections
 
-<img alt="output" src="" height="300px">
+<img alt="connections" src="https://github.com/StevenSlaa/Micropython-examples/blob/f38e5477158664c2d6bfed5009aa8b868ddc54a6/PWM/res/circuit.png" height="300px">
 
 ## Output
 
