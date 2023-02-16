@@ -11,7 +11,7 @@ Before running the code, you have to copy all the files from the `lib` folder to
 
 ## Connections
 
-<img alt="connections" src="" height="300px">
+<img alt="connections" src="https://github.com/StevenSlaa/Micropython-examples/blob/79149a3ea3dbd0870895c86d246d96333fec9457/Ultrasonic%20Distance%20Sensor%20(HC-SR04)/res/circuit.png" height="300px">
 
 ## Output
 ```
