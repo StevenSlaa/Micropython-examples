@@ -7,7 +7,7 @@ This information is collected from a DHT11 or DHT22 sensor.
 
 ## Connections
 
-<img alt="output" src="https://github.com/StevenSlaa/Micropython-examples/blob/5c8e8bb6d6d74850cfbfbe9cf72e1260d307763b/DHT%20Sensor/res/circuit.png" height="300px">
+<img alt="connections" src="https://github.com/StevenSlaa/Micropython-examples/blob/5c8e8bb6d6d74850cfbfbe9cf72e1260d307763b/DHT%20Sensor/res/circuit.png" height="300px">
 
 
 ## Output
