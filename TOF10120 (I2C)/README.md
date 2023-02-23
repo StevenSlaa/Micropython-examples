@@ -2,7 +2,7 @@
 
 In this example the microcontroller should display the distance that the sensor has measured. This value has a maximum of 2000.
 
-<img alt="component" src="" height="300px">
+<img alt="component" src="https://github.com/StevenSlaa/Micropython-examples/blob/1e85c9f77b90762b6f6f6e72f979dcc7d939ccdc/TOF10120%20(I2C)/res/component.jpeg" height="300px">
 
 ## Connections
 
