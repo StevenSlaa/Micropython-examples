@@ -1,5 +1,8 @@
 # I2C BMP280 Example
 
+In this example the microcontroller reads the temperature and pressure from the connected BMP280 sensor and prints it on the terminal.
+
+<img alt="component" src="https://github.com/StevenSlaa/Micropython-examples/blob/1e6ba049f0c62bf137cfceba978d2491be60b1a1/I2C%20BMP280/res/component.png" height="300px">
 
 ## Prerequisites
 Before running the code, you have to copy all the files from the `lib` folder to your microcontroller.
