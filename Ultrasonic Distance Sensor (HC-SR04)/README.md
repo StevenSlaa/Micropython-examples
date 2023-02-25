@@ -4,6 +4,8 @@ The HC-SR04 ultrasonic sensor uses sonar to determine the distance to an object.
 This sensor reads from 2cm to 400cm with an accuracy of 0.3cm.
 In this example, the microcontroller reads the distance from the sensor and displays it on the console in centimeters.
 
+<img alt="component" height="300px" src="https://github.com/StevenSlaa/Micropython-examples/blob/bb22c367104a73ed90a5908baa9084721554b0ca/Ultrasonic%20Distance%20Sensor%20(HC-SR04)/res/component.jpg"/>
+
 ## Prerequisites
 Before running the code, you have to copy all the files from the `lib` folder to your microcontroller.
 > In Thonny, this can be done by opening a python script and then going to File -> Save As -> Microcontroller
