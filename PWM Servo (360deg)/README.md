@@ -3,9 +3,11 @@
 In this example the microcontroller sends a PWM signal to control a 360 degree servo's.
 Further documentation about the dutycycle and frequency can be found inside the code.
 
-<img alt="component" src="" height="300px">
+<p float="left">
+  <img alt="component" src="https://github.com/StevenSlaa/Micropython-examples/blob/576c05ed4d3e085704cb8bb5ad39932709d68de1/PWM%20Servo%20(360deg)/res/component-DM-S0306D.jpg" height="300px">
+  <img alt="component" src="https://github.com/StevenSlaa/Micropython-examples/blob/576c05ed4d3e085704cb8bb5ad39932709d68de1/PWM%20Servo%20(360deg)/res/component-TS90M.jpeg" height="300px">
+</p>
 
-<img alt="component" src="" height="300px">
 ## Connections
 
 <img alt="connections" src="" height="300px">
