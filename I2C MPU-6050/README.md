@@ -2,7 +2,7 @@
 
 In this example the microcontrollers reads values from the MPU-6050 accelerometer and gyroscope. It also reads the onboard temperature sensor of the module.
 
-<img alt="connections" src="https://github.com/StevenSlaa/Micropython-examples/blob/adffd6056a8a4bac9a3405aee203a59e8154fbd3/I2C%20MPU-6050/res/component.jpg" height="300px">
+<img alt="connections" src="https://github.com/StevenSlaa/Micropython-examples/blob/f5ef3bed8fac0e379a0fa9e9e35f7617a5f39d7c/I2C%20MPU-6050/res/component.png" height="300px">
 
 ## Connections
 
