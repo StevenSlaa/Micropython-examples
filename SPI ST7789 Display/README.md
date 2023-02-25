@@ -2,7 +2,7 @@
 
 In this example the microcontroller should display some text on a ST7789 240x240 Display over SPI.
 
-<img alt="component" src="" height="300px">
+<img alt="component" src="https://github.com/StevenSlaa/Micropython-examples/blob/e619b71d2870bec73c1b3075beaf89499b27dead/SPI%20ST7789%20Display/res/component.jpg" height="300px">
 
 ## Prerequisites
 Before running the code, you have to copy all the files from the `lib` folder to your microcontroller.
