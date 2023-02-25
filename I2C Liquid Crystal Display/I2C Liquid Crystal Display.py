@@ -1,3 +1,4 @@
+# Written by Steven Slaa
 # Reference: https://microcontrollerslab.com/i2c-lcd-esp32-esp8266-micropython-tutorial/
 
 import machine

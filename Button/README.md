@@ -11,4 +11,5 @@ When the button is pressed the onboard led (at least for the ESP32) will turn on
 
 ## Tested
 This example has been tested on the following microcontroller running Micropython:
-- ESP32 Devkit
+- ESP32 Devkit v1
+- ESP32S3 (FeatherS3)

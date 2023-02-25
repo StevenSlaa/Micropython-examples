@@ -21,4 +21,5 @@ Distance:  7 mm
 
 ## Tested
 This example has been tested on the following microcontroller running Micropython:
+- ESP32 Devkit v1
 - ESP32S3 (FeatherS3)

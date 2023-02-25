@@ -1,4 +1,4 @@
-# I2C Liquid Crystal Display
+# I2C Liquid Crystal Display Example
 
 In this example the microcontroller should display some text on a Liquid Crystal Display (16x2) over I2C. Keep in mind that the LCD needs an I2C Backpack for this example to work.
 
@@ -17,4 +17,5 @@ Before running the code, you have to copy all the files from the `lib` folder to
 
 ## Tested
 This example has been tested on the following microcontroller running Micropython:
-- ESP32 Devkit
+- ESP32 Devkit v1
+- ESP32S3 (FeatherS3)

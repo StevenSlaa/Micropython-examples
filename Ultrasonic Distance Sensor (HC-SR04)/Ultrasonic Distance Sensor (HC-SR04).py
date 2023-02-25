@@ -1,3 +1,5 @@
+# Written by Steven Slaa
+
 from hcsr04 import HCSR04
 from time import sleep
 

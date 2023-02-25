@@ -1,3 +1,5 @@
+# Written by Steven Slaa
+
 import machine
 
 sdaPIN=machine.Pin(21)  #for ESP32

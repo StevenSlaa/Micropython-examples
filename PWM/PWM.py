@@ -1,3 +1,5 @@
+# Written by Steven Slaa
+
 from machine import Pin, PWM
 from time import sleep
 

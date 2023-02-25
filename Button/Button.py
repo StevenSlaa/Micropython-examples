@@ -1,5 +1,6 @@
+# Written by Steven Slaa
+
 from machine import Pin
-import time
 
 button = Pin(12, Pin.IN, Pin.PULL_UP)
 led = Pin(2, Pin.OUT)

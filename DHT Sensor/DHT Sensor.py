@@ -1,3 +1,5 @@
+# Written by Steven Slaa
+
 from machine import Pin
 from time import sleep
 import dht 
