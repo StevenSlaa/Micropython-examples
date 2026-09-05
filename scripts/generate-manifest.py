@@ -30,7 +30,7 @@ for folder in sorted(p for p in EXAMPLES.iterdir() if p.is_dir()):
     ids.add(metadata["id"])
     entry_path=folder / metadata["entry"]
     if not entry_path.is_file() or entry_path.suffix != ".py": fail(folder, "entry must point to a Python file")
-    files=[entry(entry_path)]
+    files=[entry(p) for p in sorted(folder.glob("*.py"))]
     lib=folder / "lib"
     if lib.exists(): files += [entry(p) for p in sorted(lib.rglob("*")) if p.is_file()]
     assets=folder / "res"
