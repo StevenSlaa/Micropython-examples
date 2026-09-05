@@ -4,7 +4,8 @@
   "description": "In this example the microcontroller reads the temperature and pressure from the connected BMP280 sensor and prints it on the terminal.",
   "boardTags": [
     "esp32",
-    "esp32s3"
+    "esp32s3",
+    "pico"
   ],
   "entry": "I2C BMP280.py"
 }

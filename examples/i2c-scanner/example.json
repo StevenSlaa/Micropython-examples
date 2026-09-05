@@ -4,7 +4,8 @@
   "description": "In this example the microcontrollers scans for devices connected over I2C and displays them to the user on the console.",
   "boardTags": [
     "esp32",
-    "esp32s3"
+    "esp32s3",
+    "pico"
   ],
   "entry": "I2C Scanner.py"
 }

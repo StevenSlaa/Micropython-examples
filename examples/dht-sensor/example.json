@@ -4,7 +4,8 @@
   "description": "In this example the microcontroller should display the temperature and humidity in the console. This information is collected from a DHT11 or DHT22 sensor.",
   "boardTags": [
     "esp32",
-    "esp32s3"
+    "esp32s3",
+    "pico"
   ],
   "entry": "DHT Sensor.py"
 }

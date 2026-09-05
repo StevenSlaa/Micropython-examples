@@ -43,7 +43,8 @@
       "description": "In this example the microcontroller should display the temperature and humidity in the console. This information is collected from a DHT11 or DHT22 sensor.",
       "boardTags": [
         "esp32",
-        "esp32s3"
+        "esp32s3",
+        "pico"
       ],
       "files": [
         {
@@ -80,7 +81,8 @@
       "description": "In this example the microcontroller reads the temperature and pressure from the connected BMP280 sensor and prints it on the terminal.",
       "boardTags": [
         "esp32",
-        "esp32s3"
+        "esp32s3",
+        "pico"
       ],
       "files": [
         {
@@ -117,7 +119,8 @@
       "description": "In this example the microcontroller should display some text on a Liquid Crystal Display (16x2) over I2C. Keep in mind that the LCD needs an I2C Backpack for this example to work.",
       "boardTags": [
         "esp32",
-        "esp32s3"
+        "esp32s3",
+        "pico"
       ],
       "files": [
         {
@@ -172,7 +175,8 @@
       "description": "In this example the microcontrollers reads values from the MPU-6050 accelerometer and gyroscope. It also reads the onboard temperature sensor of the module.",
       "boardTags": [
         "esp32",
-        "esp32s3"
+        "esp32s3",
+        "pico"
       ],
       "files": [
         {
@@ -209,7 +213,8 @@
       "description": "In this example the microcontrollers scans for devices connected over I2C and displays them to the user on the console.",
       "boardTags": [
         "esp32",
-        "esp32s3"
+        "esp32s3",
+        "pico"
       ],
       "files": [
         {
@@ -233,7 +238,8 @@
       "description": "In this example the microcontroller should display the distance that the sensor has measured. This value has a maximum of 2000.",
       "boardTags": [
         "esp32",
-        "esp32s3"
+        "esp32s3",
+        "pico"
       ],
       "files": [
         {
@@ -295,7 +301,8 @@
       "description": "In this example the microcontroller sends a PWM signal to control a 360 degree servo's. Further documentation about the dutycycle and frequency can be found inside the code.",
       "boardTags": [
         "esp32",
-        "esp32s3"
+        "esp32s3",
+        "pico"
       ],
       "files": [
         {
@@ -387,7 +394,8 @@
       "description": "The HC-SR04 ultrasonic sensor uses sonar to determine the distance to an object.  This sensor reads from 2cm to 400cm with an accuracy of 0.3cm. In this example, the microcontroller reads the distance from the sensor and displays it on the ",
       "boardTags": [
         "esp32",
-        "esp32s3"
+        "esp32s3",
+        "pico"
       ],
       "files": [
         {

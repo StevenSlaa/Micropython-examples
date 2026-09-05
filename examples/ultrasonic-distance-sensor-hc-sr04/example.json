@@ -4,7 +4,8 @@
   "description": "The HC-SR04 ultrasonic sensor uses sonar to determine the distance to an object.  This sensor reads from 2cm to 400cm with an accuracy of 0.3cm. In this example, the microcontroller reads the distance from the sensor and displays it on the ",
   "boardTags": [
     "esp32",
-    "esp32s3"
+    "esp32s3",
+    "pico"
   ],
   "entry": "Ultrasonic Distance Sensor (HC-SR04).py"
 }

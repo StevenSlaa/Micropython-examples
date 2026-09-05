@@ -4,7 +4,8 @@
   "description": "In this example the microcontroller should display the distance that the sensor has measured. This value has a maximum of 2000.",
   "boardTags": [
     "esp32",
-    "esp32s3"
+    "esp32s3",
+    "pico"
   ],
   "entry": "TOF10120 (I2C).py"
 }

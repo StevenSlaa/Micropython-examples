@@ -4,7 +4,8 @@
   "description": "In this example the microcontrollers reads values from the MPU-6050 accelerometer and gyroscope. It also reads the onboard temperature sensor of the module.",
   "boardTags": [
     "esp32",
-    "esp32s3"
+    "esp32s3",
+    "pico"
   ],
   "entry": "I2C MPU6050.py"
 }

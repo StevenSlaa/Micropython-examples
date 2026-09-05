@@ -4,7 +4,8 @@
   "description": "In this example the microcontroller sends a PWM signal to control a 360 degree servo's. Further documentation about the dutycycle and frequency can be found inside the code.",
   "boardTags": [
     "esp32",
-    "esp32s3"
+    "esp32s3",
+    "pico"
   ],
   "entry": "PWM Servo (360deg).py"
 }
