@@ -3,7 +3,7 @@
   "catalog": {
     "id": "micropython-examples",
     "name": "MicroPython Examples",
-    "version": "a6df2535fd35"
+    "version": "1.0.0"
   },
   "examples": [
     {
@@ -11,278 +11,418 @@
       "title": "Button",
       "description": "When the button is pressed the onboard led (at least for the ESP32) will turn on. It will turn of when the button is released.",
       "boardTags": [
-        "esp32"
+        "esp32",
+        "esp32s3"
       ],
       "files": [
         {
-          "path": "Button.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/Button/Button.py",
+          "path": "button/Button.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/button/Button.py",
           "sha256": "52704ad5b87a52fa64d815cfca514a86546a5ec14ceefd05eaef4c8d9d3fc076",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/Button/README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/button/README.md",
         "sha256": "340de373bf9c79130083707710e11469f002dbe73cbf57744bc68c8e41018735",
         "mime": "text/markdown"
-      }
+      },
+      "assets": [
+        {
+          "path": "res/circuit.png",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/button/res/circuit.png",
+          "sha256": "106b74e5bb96108f6ee04825f47e692574579578e1ea9bffea381f829460248e",
+          "mime": "image/png"
+        }
+      ]
     },
     {
       "id": "dht-sensor",
       "title": "DHT Sensor Example",
       "description": "In this example the microcontroller should display the temperature and humidity in the console. This information is collected from a DHT11 or DHT22 sensor.",
       "boardTags": [
-        "esp32"
+        "esp32",
+        "esp32s3"
       ],
       "files": [
         {
-          "path": "DHT Sensor.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/DHT%20Sensor/DHT%20Sensor.py",
+          "path": "dht-sensor/DHT Sensor.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/dht-sensor/DHT%20Sensor.py",
           "sha256": "b0eb50672df528039a30ba683450a229be63f0ae9b1138d8668f5ffd0bce1f3f",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/DHT%20Sensor/README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/dht-sensor/README.md",
         "sha256": "187323b3a2279c3eb2097fd479b7c36b3a9df84bb1aa86db7789b4597f8b8c19",
         "mime": "text/markdown"
-      }
+      },
+      "assets": [
+        {
+          "path": "res/circuit.png",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/dht-sensor/res/circuit.png",
+          "sha256": "96dc7c8f3282b064627d01cdf4f772ee3ceba02083235afbe126779d4d3bd4ef",
+          "mime": "image/png"
+        },
+        {
+          "path": "res/component.png",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/dht-sensor/res/component.png",
+          "sha256": "576691005ce9216c0b6b24756c7f715a7c49572a899c54b18fef4057a896de6f",
+          "mime": "image/png"
+        }
+      ]
     },
     {
       "id": "i2c-bmp280",
       "title": "I2C BMP280 Example",
       "description": "In this example the microcontroller reads the temperature and pressure from the connected BMP280 sensor and prints it on the terminal.",
       "boardTags": [
-        "esp32"
+        "esp32",
+        "esp32s3"
       ],
       "files": [
         {
-          "path": "I2C BMP280.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/I2C%20BMP280/I2C%20BMP280.py",
+          "path": "i2c-bmp280/I2C BMP280.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-bmp280/I2C%20BMP280.py",
           "sha256": "3550b8dfb7936c1a0ce7928250f3d0059cfb1ea501f4d6d2881f9fba3bb6e650",
           "mime": "text/x-python"
         },
         {
           "path": "lib/bmp280.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/I2C%20BMP280/lib/bmp280.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-bmp280/lib/bmp280.py",
           "sha256": "905e089799732552d15ca60154b3b95c585159282855a36ec950f4d5f16ceda8",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/I2C%20BMP280/README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-bmp280/README.md",
         "sha256": "5b9e42cfe3957ecffb895a4d0f45dd8de3999692b9d70baff6dd92d5f569d737",
         "mime": "text/markdown"
-      }
+      },
+      "assets": [
+        {
+          "path": "res/component.png",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-bmp280/res/component.png",
+          "sha256": "ba0853573e4e609f1b98617cff61f118538d539cb03019542e6bb02582737057",
+          "mime": "image/png"
+        }
+      ]
     },
     {
       "id": "i2c-liquid-crystal-display",
       "title": "I2C Liquid Crystal Display Example",
       "description": "In this example the microcontroller should display some text on a Liquid Crystal Display (16x2) over I2C. Keep in mind that the LCD needs an I2C Backpack for this example to work.",
       "boardTags": [
-        "esp32"
+        "esp32",
+        "esp32s3"
       ],
       "files": [
         {
-          "path": "I2C Liquid Crystal Display.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/I2C%20Liquid%20Crystal%20Display/I2C%20Liquid%20Crystal%20Display.py",
+          "path": "i2c-liquid-crystal-display/I2C Liquid Crystal Display.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-liquid-crystal-display/I2C%20Liquid%20Crystal%20Display.py",
           "sha256": "054704938ca081778c2c9d63998fb90ed441f9070fdbc05e524e9cb984e2c211",
           "mime": "text/x-python"
         },
         {
           "path": "lib/i2c_lcd.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/I2C%20Liquid%20Crystal%20Display/lib/i2c_lcd.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-liquid-crystal-display/lib/i2c_lcd.py",
           "sha256": "876944f1125d7613a672a982721e228567eac2a9b25fc3ede720f77980891949",
           "mime": "text/x-python"
         },
         {
           "path": "lib/lcd_api.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/I2C%20Liquid%20Crystal%20Display/lib/lcd_api.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-liquid-crystal-display/lib/lcd_api.py",
           "sha256": "8c742a1b6b0188a24855415a5057bf2ec9383c233599bc7f41a49c358c5e0510",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/I2C%20Liquid%20Crystal%20Display/README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-liquid-crystal-display/README.md",
         "sha256": "091037286b6f8fdda5e2252c14ab0ffd311035ba58efd0ad3b7e3ec27a185257",
         "mime": "text/markdown"
-      }
+      },
+      "assets": [
+        {
+          "path": "res/circuit.png",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-liquid-crystal-display/res/circuit.png",
+          "sha256": "e09ffde9cd40eeaa51c074bd8bb332d30e1b016ff4bcb9ebb275741b2ac57821",
+          "mime": "image/png"
+        },
+        {
+          "path": "res/component.png",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-liquid-crystal-display/res/component.png",
+          "sha256": "1cdaea4094b1ae22280bee3e236cb563faf4e0890f06a35af3df503655f2bf89",
+          "mime": "image/png"
+        },
+        {
+          "path": "res/output.jpg",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-liquid-crystal-display/res/output.jpg",
+          "sha256": "190a51d50510ceacfded661fc90c7b712a44bf4d17a48242dc68691b88cc3c94",
+          "mime": "image/jpeg"
+        }
+      ]
     },
     {
       "id": "i2c-mpu-6050",
       "title": "I2C MPU-6050",
       "description": "In this example the microcontrollers reads values from the MPU-6050 accelerometer and gyroscope. It also reads the onboard temperature sensor of the module.",
       "boardTags": [
-        "esp32"
+        "esp32",
+        "esp32s3"
       ],
       "files": [
         {
-          "path": "I2C MPU6050.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/I2C%20MPU-6050/I2C%20MPU6050.py",
+          "path": "i2c-mpu-6050/I2C MPU6050.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-mpu-6050/I2C%20MPU6050.py",
           "sha256": "1ca5ae70c1e20afeb6faad238cd58ad74793da8f1292ac1b1c1250456dd065fe",
           "mime": "text/x-python"
         },
         {
           "path": "lib/mpu6050.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/I2C%20MPU-6050/lib/mpu6050.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-mpu-6050/lib/mpu6050.py",
           "sha256": "91a576007f9564426a25b7d761886669800e433045ff90b67f9f1d8baf4ac51e",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/I2C%20MPU-6050/README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-mpu-6050/README.md",
         "sha256": "943e3c7c29c3ede6e0de19da5e1f05cdfa2a66bef3be83da4d252009ac2ea5a8",
         "mime": "text/markdown"
-      }
+      },
+      "assets": [
+        {
+          "path": "res/component.png",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-mpu-6050/res/component.png",
+          "sha256": "e7bdaf83768372d3cff4fc7b78e3805438f2356c95d63f7aec7ccd316ed1b5a2",
+          "mime": "image/png"
+        }
+      ]
     },
     {
       "id": "i2c-scanner",
       "title": "DHT Sensor Example",
       "description": "In this example the microcontrollers scans for devices connected over I2C and displays them to the user on the console.",
       "boardTags": [
-        "esp32"
+        "esp32",
+        "esp32s3"
       ],
       "files": [
         {
-          "path": "I2C Scanner.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/I2C%20Scanner/I2C%20Scanner.py",
+          "path": "i2c-scanner/I2C Scanner.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-scanner/I2C%20Scanner.py",
           "sha256": "0e2c4faaf835df7978086fe6b3a0a338798becc81adc39824a52127f37a55f22",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/I2C%20Scanner/README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-scanner/README.md",
         "sha256": "97237962c638878cd0b90357c40e7337d5c889a370c17f931f8d864a4de93dcd",
         "mime": "text/markdown"
-      }
+      },
+      "assets": []
     },
     {
       "id": "i2c-tof-tof10120",
       "title": "TOF10120 Sensor Example",
       "description": "In this example the microcontroller should display the distance that the sensor has measured. This value has a maximum of 2000.",
       "boardTags": [
-        "esp32"
+        "esp32",
+        "esp32s3"
       ],
       "files": [
         {
-          "path": "TOF10120 (I2C).py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/I2C%20TOF%20(TOF10120)/TOF10120%20(I2C).py",
+          "path": "i2c-tof-tof10120/TOF10120 (I2C).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-tof-tof10120/TOF10120%20(I2C).py",
           "sha256": "427d953d311e2476cf0657f7c42d35a63561f9d77e9970dba4dc52389951034b",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/I2C%20TOF%20(TOF10120)/README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-tof-tof10120/README.md",
         "sha256": "66f5a73c9827a7d08ea89cb079a25a57e7b397b98517e90148faaef6c45621b7",
         "mime": "text/markdown"
-      }
+      },
+      "assets": [
+        {
+          "path": "res/component.png",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-tof-tof10120/res/component.png",
+          "sha256": "564e1c885dd3f3c978575e7464b91be4427d28efbf404a8ee6835fd5863fdeb5",
+          "mime": "image/png"
+        }
+      ]
     },
     {
       "id": "pwm",
       "title": "PWM",
       "description": "This example will show you how to create a fading LED animation with a PWM Signal.  This example can of course also be used to control servo's, motor drivers, buzzers, analog output, etc.",
       "boardTags": [
-        "esp32"
+        "esp32",
+        "esp32s3"
       ],
       "files": [
         {
-          "path": "PWM.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/PWM/PWM.py",
+          "path": "pwm/PWM.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm/PWM.py",
           "sha256": "e6bf25e83d07b240c4164e0a0e3194c839b6100f55082bdbd7a514c62ed744ff",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/PWM/README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm/README.md",
         "sha256": "4128bf30118120d6f523f49d85efca635ed9b9eddf35d3a41371330eceaf04c9",
         "mime": "text/markdown"
-      }
+      },
+      "assets": [
+        {
+          "path": "res/circuit.png",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm/res/circuit.png",
+          "sha256": "cdb727f48de7e72b544777335d873824f49ef22f24354461d9693f9e7c166cd1",
+          "mime": "image/png"
+        }
+      ]
     },
     {
       "id": "pwm-servo-360deg",
       "title": "PWM Servo (DM-S0306D) Example",
       "description": "In this example the microcontroller sends a PWM signal to control a 360 degree servo's. Further documentation about the dutycycle and frequency can be found inside the code.",
       "boardTags": [
-        "esp32"
+        "esp32",
+        "esp32s3"
       ],
       "files": [
         {
-          "path": "PWM Servo (360deg).py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/PWM%20Servo%20(360deg)/PWM%20Servo%20(360deg).py",
+          "path": "pwm-servo-360deg/PWM Servo (360deg).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm-servo-360deg/PWM%20Servo%20(360deg).py",
           "sha256": "cbf29a99297ea75a3608b2b5a63548d3711dc43e914f3d7da1c4da1064ded156",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/PWM%20Servo%20(360deg)/README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm-servo-360deg/README.md",
         "sha256": "e931349167673b8824fc0e132cb1b0fc9f671c03babf8e8d6da77df6f563d423",
         "mime": "text/markdown"
-      }
+      },
+      "assets": [
+        {
+          "path": "res/component-DM-S0306D.png",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm-servo-360deg/res/component-DM-S0306D.png",
+          "sha256": "73ca9f1408aeec7db6951f641fb9172b86feff5f7314a7376c8a700dd05a1778",
+          "mime": "image/png"
+        },
+        {
+          "path": "res/component-TS90M.png",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm-servo-360deg/res/component-TS90M.png",
+          "sha256": "c83abd34d9eec861ac7a41afc72c05bece9787402afd46fce0b5c0801a85123f",
+          "mime": "image/png"
+        },
+        {
+          "path": "res/datasheet.pdf",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm-servo-360deg/res/datasheet.pdf",
+          "sha256": "91b0ac1054d97bf31fbe6f2a0f5b8fb2f9e239addecd8b433c5a87ef498cd02c",
+          "mime": "application/pdf"
+        }
+      ]
     },
     {
       "id": "spi-st7789-display",
       "title": "SPI ST7789 Display Example",
       "description": "In this example the microcontroller should display some text on a ST7789 240x240 Display over SPI.",
       "boardTags": [
-        "esp32"
+        "esp32",
+        "esp32s3"
       ],
       "files": [
         {
-          "path": "SPI ST7789 Display.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/SPI%20ST7789%20Display/SPI%20ST7789%20Display.py",
+          "path": "spi-st7789-display/SPI ST7789 Display.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-st7789-display/SPI%20ST7789%20Display.py",
           "sha256": "151c4bb48a6a5df0b41d97eab0c62e478184a364793cad480ff6f782fca16017",
           "mime": "text/x-python"
         },
         {
+          "path": "fonts/vga2_16x32.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-st7789-display/lib/fonts/vga2_16x32.py",
+          "sha256": "a14ab76be1e24415205ed7aae199f5d18885c760d81443f151ebb9c254cc9346",
+          "mime": "text/x-python"
+        },
+        {
           "path": "lib/st7789py.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/SPI%20ST7789%20Display/lib/st7789py.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-st7789-display/lib/st7789py.py",
           "sha256": "734049ee35be79aa2d5b49c8f84f687bdb8ebc89c64ffce106f9456d71c2d886",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/SPI%20ST7789%20Display/README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-st7789-display/README.md",
         "sha256": "7e7cf6800609bae3f0112d8edf54b1adf37cdb1022f9df4e0f03f2fbe4737657",
         "mime": "text/markdown"
-      }
+      },
+      "assets": [
+        {
+          "path": "res/component.png",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-st7789-display/res/component.png",
+          "sha256": "b7c1b19f63fb6a48870dd5e34a1002313d1ad2a64c0d8ebe16064fe575474149",
+          "mime": "image/png"
+        },
+        {
+          "path": "res/output.jpg",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-st7789-display/res/output.jpg",
+          "sha256": "f6e079f5cf5b052e6289866ddbbc71ae348c22bdb727908921bce87f446351e9",
+          "mime": "image/jpeg"
+        }
+      ]
     },
     {
       "id": "ultrasonic-distance-sensor-hc-sr04",
       "title": "Ultrasonic Distance Sensor (HC-SR04)",
       "description": "The HC-SR04 ultrasonic sensor uses sonar to determine the distance to an object.  This sensor reads from 2cm to 400cm with an accuracy of 0.3cm. In this example, the microcontroller reads the distance from the sensor and displays it on the ",
       "boardTags": [
-        "esp32"
+        "esp32",
+        "esp32s3"
       ],
       "files": [
         {
-          "path": "Ultrasonic Distance Sensor (HC-SR04).py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/Ultrasonic%20Distance%20Sensor%20(HC-SR04)/Ultrasonic%20Distance%20Sensor%20(HC-SR04).py",
+          "path": "ultrasonic-distance-sensor-hc-sr04/Ultrasonic Distance Sensor (HC-SR04).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ultrasonic-distance-sensor-hc-sr04/Ultrasonic%20Distance%20Sensor%20(HC-SR04).py",
           "sha256": "1448e449244314dcd933438d543879c0f8471112fe6499d6f631f2d2216b799a",
           "mime": "text/x-python"
         },
         {
           "path": "lib/hcsr04.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/Ultrasonic%20Distance%20Sensor%20(HC-SR04)/lib/hcsr04.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ultrasonic-distance-sensor-hc-sr04/lib/hcsr04.py",
           "sha256": "4214d4fbee9aaacd591e7df963c6f011dd76ddd6e5b9339543972cf77f47c117",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/a6df2535fd3507c8ed8141c8feaeadddc8bc3ff0/Ultrasonic%20Distance%20Sensor%20(HC-SR04)/README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ultrasonic-distance-sensor-hc-sr04/README.md",
         "sha256": "200611d59bd57eb965049f97f459799fe761dd9b80a070b5301ce5747c3dee66",
         "mime": "text/markdown"
-      }
+      },
+      "assets": [
+        {
+          "path": "res/circuit.png",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ultrasonic-distance-sensor-hc-sr04/res/circuit.png",
+          "sha256": "8bec7164ca58974157ad08ad3ef20f74e55b9b3f4e0e36e99f762ec5398878a3",
+          "mime": "image/png"
+        },
+        {
+          "path": "res/component.png",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ultrasonic-distance-sensor-hc-sr04/res/component.png",
+          "sha256": "281eb72ee3285021e8c70fc70c63580a29c5ca8941b37576393ad055b0236a06",
+          "mime": "image/png"
+        }
+      ]
     }
   ],
   "drivers": []

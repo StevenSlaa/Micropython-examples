@@ -1,0 +1,10 @@
+{
+  "id": "button",
+  "title": "Button",
+  "description": "When the button is pressed the onboard led (at least for the ESP32) will turn on. It will turn of when the button is released.",
+  "boardTags": [
+    "esp32",
+    "esp32s3"
+  ],
+  "entry": "Button.py"
+}

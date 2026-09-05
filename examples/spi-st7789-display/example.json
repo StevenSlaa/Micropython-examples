@@ -1,0 +1,10 @@
+{
+  "id": "spi-st7789-display",
+  "title": "SPI ST7789 Display Example",
+  "description": "In this example the microcontroller should display some text on a ST7789 240x240 Display over SPI.",
+  "boardTags": [
+    "esp32",
+    "esp32s3"
+  ],
+  "entry": "SPI ST7789 Display.py"
+}

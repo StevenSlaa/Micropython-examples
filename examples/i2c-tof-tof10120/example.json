@@ -1,0 +1,10 @@
+{
+  "id": "i2c-tof-tof10120",
+  "title": "TOF10120 Sensor Example",
+  "description": "In this example the microcontroller should display the distance that the sensor has measured. This value has a maximum of 2000.",
+  "boardTags": [
+    "esp32",
+    "esp32s3"
+  ],
+  "entry": "TOF10120 (I2C).py"
+}

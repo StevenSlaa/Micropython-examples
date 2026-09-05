@@ -1,0 +1,10 @@
+{
+  "id": "i2c-bmp280",
+  "title": "I2C BMP280 Example",
+  "description": "In this example the microcontroller reads the temperature and pressure from the connected BMP280 sensor and prints it on the terminal.",
+  "boardTags": [
+    "esp32",
+    "esp32s3"
+  ],
+  "entry": "I2C BMP280.py"
+}

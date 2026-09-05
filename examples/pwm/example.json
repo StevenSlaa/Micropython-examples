@@ -1,0 +1,10 @@
+{
+  "id": "pwm",
+  "title": "PWM",
+  "description": "This example will show you how to create a fading LED animation with a PWM Signal.  This example can of course also be used to control servo's, motor drivers, buzzers, analog output, etc.",
+  "boardTags": [
+    "esp32",
+    "esp32s3"
+  ],
+  "entry": "PWM.py"
+}

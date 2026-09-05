@@ -1,0 +1,10 @@
+{
+  "id": "i2c-liquid-crystal-display",
+  "title": "I2C Liquid Crystal Display Example",
+  "description": "In this example the microcontroller should display some text on a Liquid Crystal Display (16x2) over I2C. Keep in mind that the LCD needs an I2C Backpack for this example to work.",
+  "boardTags": [
+    "esp32",
+    "esp32s3"
+  ],
+  "entry": "I2C Liquid Crystal Display.py"
+}

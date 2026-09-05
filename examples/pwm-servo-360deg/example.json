@@ -1,0 +1,10 @@
+{
+  "id": "pwm-servo-360deg",
+  "title": "PWM Servo (DM-S0306D) Example",
+  "description": "In this example the microcontroller sends a PWM signal to control a 360 degree servo's. Further documentation about the dutycycle and frequency can be found inside the code.",
+  "boardTags": [
+    "esp32",
+    "esp32s3"
+  ],
+  "entry": "PWM Servo (360deg).py"
+}
