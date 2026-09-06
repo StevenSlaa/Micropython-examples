@@ -1,0 +1,7 @@
+{
+  "id": "p9813",
+  "name": "P9813 RGB LED driver",
+  "version": "1.0.0",
+  "description": "Drives chains of P9813 constant current RGB LEDs, as used by chainable RGB LED modules and clocked RGB strips, over a clock and a data pin.",
+  "boardTags": ["esp32", "esp32s3", "pico"]
+}

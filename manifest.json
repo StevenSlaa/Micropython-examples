@@ -366,6 +366,62 @@
       "assets": []
     },
     {
+      "id": "ir-remote-nec",
+      "title": "IR Remote (NEC) Example",
+      "description": "In this example the microcontroller decodes button presses from an infrared remote control with a 38kHz receiver module, prints which button was pressed and toggles the onboard LED.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "requires": [
+        "ir-receiver"
+      ],
+      "files": [
+        {
+          "path": "IR Remote (NEC).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ir-remote-nec/IR%20Remote%20(NEC).py",
+          "sha256": "ebf14104579c2fcfcaa2acbb9e3f2dc04537b6ca531f11804bc067e349351161",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ir-remote-nec/README.md",
+        "sha256": "f926141453a05e30f1e5568762c81604418bccbbb78a35b07d8a53ab16739f29",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "p9813-rgb-led",
+      "title": "P9813 RGB LED Example",
+      "description": "In this example the microcontroller shows the plain colours on a chain of P9813 RGB LEDs and then cycles a rainbow along it.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "requires": [
+        "p9813"
+      ],
+      "files": [
+        {
+          "path": "P9813 RGB LED.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/p9813-rgb-led/P9813%20RGB%20LED.py",
+          "sha256": "860a24f7cafd7371e90ebb8366b8f58871d285c28032f44b9d2e348c22c5b755",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/p9813-rgb-led/README.md",
+        "sha256": "657ce4011138e0cc710a99e27a8e23c94ad4b77f73bff056b803be5dc13d5c1e",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "pwm",
       "title": "PWM",
       "description": "This example will show you how to create a fading LED animation with a PWM Signal.  This example can of course also be used to control servo's, motor drivers, buzzers, analog output, etc.",
@@ -774,6 +830,31 @@
       }
     },
     {
+      "id": "ir-receiver",
+      "name": "IR receiver (NEC remotes)",
+      "version": "1.0.0",
+      "description": "Decodes NEC infrared remote controls with a three pin 38kHz receiver module such as the CHQ1838, VS1838B or TSOP1838.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "files": [
+        {
+          "path": "ir_receiver.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ir-receiver/ir_receiver.py",
+          "sha256": "583636da91f8465caa1ccd1f4b6cbcd0039801bbda3368c451cc560fc04915a3",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ir-receiver/README.md",
+        "sha256": "82d73f55002864eeb23c876ad626f8327d02fbed147c0da4a6f63fbb19750e56",
+        "mime": "text/markdown"
+      }
+    },
+    {
       "id": "max7219",
       "name": "MAX7219 LED matrix",
       "version": "1.0.0",
@@ -849,6 +930,31 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/mpu6050/README.md",
         "sha256": "c0838f079b1e8fbc7420d6283a4cf78c324905c35607cb491f49da53b8848cfc",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "p9813",
+      "name": "P9813 RGB LED driver",
+      "version": "1.0.0",
+      "description": "Drives chains of P9813 constant current RGB LEDs, as used by chainable RGB LED modules and clocked RGB strips, over a clock and a data pin.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "files": [
+        {
+          "path": "p9813.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/p9813/p9813.py",
+          "sha256": "edc7bb8b86d5c84a93575763f9eb7f7328f47a6dbed710a88e80eac80aa51427",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/p9813/README.md",
+        "sha256": "7d876c114fae727b0adf61930b391552072fdb77bd59127094dd10046a9efb4a",
         "mime": "text/markdown"
       }
     },
