@@ -1990,6 +1990,34 @@
       }
     },
     {
+      "id": "sh1106",
+      "name": "SH1106 OLED",
+      "version": "1.0.0",
+      "description": "Driver for SH1106 OLED panels, the SSD1306 lookalike found on 1.3 inch modules and the 0.42 inch display of the ESP32-C3 SuperMini, with the column offset worked out from the panel width.",
+      "author": "Robert Hammelrath",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "license": "MIT",
+      "source": "https://github.com/robert-hh/SH1106",
+      "files": [
+        {
+          "path": "sh1106.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/sh1106/sh1106.py",
+          "sha256": "f038fa11d0cfe4fbeb8eebc8fb639ed972b8c29cfbd1e006720fe471c3ceafc1",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/sh1106/README.md",
+        "sha256": "2c4524633c739a50a4ed1e458f1a55289db70e10d40120069d33df1c8349e673",
+        "mime": "text/markdown"
+      }
+    },
+    {
       "id": "sr74hc595",
       "name": "74HC595 shift register",
       "version": "1.0.0",
@@ -2039,7 +2067,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ssd1306/README.md",
-        "sha256": "a47952ed211806b9a6290584f63ae3fcdaba39da9842ccdbe504e822d7a99798",
+        "sha256": "66c9bed3e683196d81af1213b4df46c4df67576ef5bd333953fb5f7554df4343",
         "mime": "text/markdown"
       }
     },

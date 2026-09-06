@@ -37,6 +37,15 @@ from ssd1306 import SSD1306_SPI
 display = SSD1306_SPI(128, 64, SPI(1), dc=Pin(16), res=Pin(17), cs=Pin(5))
 ```
 
+## If the top rows are right and the rest is noise
+
+Your panel is an SH1106, not an SSD1306. They look identical and are sold interchangeably, but
+the SH1106 does not support the horizontal addressing this driver uses: the whole frame lands in
+page 0 and the rest of the screen keeps whatever it powered up with.
+
+Use the [SH1106 driver](../sh1106) instead. That is also the one for the 0.42 inch display on an
+ESP32-C3 SuperMini.
+
 ## Notes
 
 - Set the size to match the panel: `SSD1306_I2C(128, 32, i2c)` for the short modules. A wrong

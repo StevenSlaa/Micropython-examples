@@ -1,0 +1,10 @@
+{
+  "id": "sh1106",
+  "name": "SH1106 OLED",
+  "version": "1.0.0",
+  "description": "Driver for SH1106 OLED panels, the SSD1306 lookalike found on 1.3 inch modules and the 0.42 inch display of the ESP32-C3 SuperMini, with the column offset worked out from the panel width.",
+  "author": "Robert Hammelrath",
+  "boardTags": ["esp32", "esp32s3", "pico"],
+  "license": "MIT",
+  "source": "https://github.com/robert-hh/SH1106"
+}
