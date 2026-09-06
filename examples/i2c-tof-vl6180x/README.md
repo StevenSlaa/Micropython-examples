@@ -37,6 +37,11 @@ The sensor returns a number even when nothing is in front of it, so the example 
 `range_status` before believing the distance. With an empty view that status is 7, *no
 convergence*, and the millimetres are meaningless.
 
+If every line is an error, the sensor is working but seeing nothing come back. Check the clear
+protective sticker is off the two windows, and hold a sheet of white paper about 5cm away —
+this part reaches roughly 10cm, so a wall across the room reads as an error rather than as a
+large number. The [driver README](../../drivers/vl6180x) has the rest of the list.
+
 Readings are a few millimetres out from one sensor to the next. Put something at a distance you
 have measured, and set `offset` at the top of the script to the difference.
 

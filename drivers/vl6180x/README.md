@@ -41,14 +41,45 @@ else:
 With nothing in front of the sensor the status is 7 (*no convergence*) and the distance is
 meaningless, so a program that ignores the status reads empty air as a number.
 
+## Nothing but errors
+
+Every reading coming back as *early convergence estimate failed* (status 6) or *signal to noise
+too low* (status 11) means the sensor is working and talking, but no usable light is coming
+back. In order of how often it turns out to be the cause:
+
+1. **The protective film is still on the sensor.** These modules ship with a small clear sticker
+   over the two windows. It passes visible light, so it looks like nothing is there.
+2. **The target is too far.** This part reaches about 10cm, up to 20cm against white matt card.
+   A wall across the room reads as an error, not as a large number. Test with a sheet of paper
+   at 5cm before anything else.
+3. **The target is dark, shiny, or at an angle.** Matt black absorbs the pulse and glass or
+   polished metal reflects it away from the sensor. Try white paper held square on.
+4. **Something is over the windows.** Cover glass, a printed bezel, or hot glue across the
+   emitter scatters the pulse straight back into the detector and ruins short readings.
+5. **Give it longer to gather light**, which helps a dark or distant target:
+
+   ```python
+   sensor.convergence_time = 63   # milliseconds, 49 by default, 63 is the maximum
+   ```
+
+To confirm the sensor is configured rather than just wired, read back a register the start-up
+sequence sets:
+
+```python
+print(hex(sensor._read(0x003F)))   # 0x46 once the tuning has been written
+print(hex(sensor._read(0x010A)))   # 0x30
+```
+
 ## Notes
 
 - The I2C address is `0x29` and cannot be strapped. Two of them on one bus means changing one
   in software at start-up while the other is held in reset by its CE pin.
 - The sensor uses 16 bit register addresses, unlike most I2C parts. The driver passes
   `addrsize=16` for you, but that is why a generic register tool shows nothing useful.
-- ST's start-up tuning is written on the first power-up only, which is what the sensor's own
-  fresh-out-of-reset flag is for. Skipping it gives a sensor that reads, but badly.
+- ST's start-up tuning is written every time the driver is constructed. The sensor's own
+  fresh-out-of-reset flag is not used to skip it: the flag clears on the first run and stays
+  clear for as long as the sensor keeps its power, which resetting the board over USB does not
+  interrupt, so keying off it leaves an untuned sensor that answers but cannot see.
 - Range accuracy is a few millimetres and varies part to part. `VL6180X(i2c, offset=-3)` trims
   the reading in software; `sensor.part_to_part_offset` writes the sensor's own offset register
   instead, which survives into other drivers but not a power cycle.

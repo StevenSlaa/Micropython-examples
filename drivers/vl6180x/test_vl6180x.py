@@ -47,10 +47,11 @@ sensor = VL6180X(bus)
 assert bus.writes[: len(_STARTUP)] == list(_STARTUP), "the whole start-up sequence is written"
 assert (0x016, 0x00) in bus.writes, "the fresh out of reset flag is cleared afterwards"
 
-# A warm sensor must not be re-tuned, or it would undo whatever the caller configured.
+# The tuning is written even to a sensor that has already been through it, because the flag
+# stays clear while the sensor keeps its power and the board reboots without it.
 warm = _I2C(fresh=0x00)
 VL6180X(warm)
-assert warm.writes == [], "a warm sensor is left alone"
+assert warm.writes[: len(_STARTUP)] == list(_STARTUP), "a warm sensor is tuned again"
 
 # The wrong chip at that address is caught rather than read as nonsense.
 try:
@@ -80,6 +81,14 @@ try:
     raise AssertionError("an unknown gain must be refused")
 except ValueError:
     pass
+
+# Convergence time is the knob for a weak return, and the register only holds 1 to 63.
+sensor.convergence_time = 63
+assert bus.registers[0x01C] == 63 and sensor.convergence_time == 63
+sensor.convergence_time = 200
+assert bus.registers[0x01C] == 63, "an out of range value is clamped, not truncated"
+sensor.convergence_time = 0
+assert bus.registers[0x01C] == 1
 
 # The part to part offset register is signed.
 sensor.part_to_part_offset = -4

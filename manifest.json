@@ -304,7 +304,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-tof-vl6180x/README.md",
-        "sha256": "1078e1630d0b826f521f4cd0649041a74e0456eaeba787780c33d68ded23df2d",
+        "sha256": "226bc9af304f5b1f3be61bf52b337a72b13c1a363a975c911278d4f7a2cf3c52",
         "mime": "text/markdown"
       },
       "assets": []
@@ -784,14 +784,14 @@
         {
           "path": "vl6180x.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/vl6180x/vl6180x.py",
-          "sha256": "90890812ad57a2cd7bc97c6331826f4e91f6318fdd76b07ec2fe1e94020b663d",
+          "sha256": "0ee2c6386dffdbf2a5984344df434dcf821c1655df0f3ecf395aa375f6989b22",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/vl6180x/README.md",
-        "sha256": "ad05d377cdb973b3b2863c6dd5050469d596aa333ab804994849ec4aed56bb35",
+        "sha256": "be5afaf6916bad5aa11070f3e1ae3a9b876db237c4b12aa7045fae05ad290eac",
         "mime": "text/markdown"
       }
     }

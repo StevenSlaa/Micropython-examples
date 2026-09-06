@@ -34,6 +34,7 @@ _INTERRUPT_CONFIG = const(0x014)
 _INTERRUPT_CLEAR = const(0x015)
 _FRESH_OUT_OF_RESET = const(0x016)
 _SYSRANGE_START = const(0x018)
+_MAX_CONVERGENCE_TIME = const(0x01C)
 _RANGE_OFFSET = const(0x024)
 _SYSALS_START = const(0x038)
 _ALS_GAIN = const(0x03F)
@@ -97,12 +98,13 @@ class VL6180X:
         self.timeout = timeout
         if self._read(_MODEL_ID) != 0xB4:
             raise OSError("No VL6180X at 0x%02x" % address)
-        # The flag is set once at power-up; re-running the tuning on a warm sensor is harmless
-        # but pointless, and it would undo any register the caller changed themselves.
-        if self._read(_FRESH_OUT_OF_RESET) == 0x01:
-            for register, value in _STARTUP:
-                self._write(register, value)
-            self._write(_FRESH_OUT_OF_RESET, 0x00)
+        # Written every time, not only when the sensor's fresh-out-of-reset flag is set. The
+        # flag clears on the first run and stays clear while the sensor keeps its power, which a
+        # board being reset over USB does not touch: keying off it leaves an untuned sensor that
+        # answers every register but cannot see anything.
+        for register, value in _STARTUP:
+            self._write(register, value)
+        self._write(_FRESH_OUT_OF_RESET, 0x00)
 
     def _read(self, register, length=1):
         data = self.i2c.readfrom_mem(self.address, register, length, addrsize=16)
@@ -147,6 +149,20 @@ class VL6180X:
         counts = self._read(_ALS_VALUE, 2)
         self._write(_INTERRUPT_CLEAR, 0x07)
         return counts * 0.32 / _GAIN_VALUES[gain]
+
+    @property
+    def convergence_time(self):
+        """Milliseconds the sensor may spend gathering light for one range reading, 1 to 63.
+
+        Raise it when readings come back as "early convergence estimate failed" or "signal to
+        noise too low" against a target that is dark, angled, or near the far end of the range;
+        the cost is a slower measurement.
+        """
+        return self._read(_MAX_CONVERGENCE_TIME)
+
+    @convergence_time.setter
+    def convergence_time(self, milliseconds):
+        self._write(_MAX_CONVERGENCE_TIME, max(1, min(63, milliseconds)))
 
     @property
     def part_to_part_offset(self):
