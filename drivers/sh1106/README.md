@@ -60,11 +60,31 @@ I2C at address `0x3C`:
 | SDA | GPIO 5 |
 
 ```python
+from sh1106 import SH1106_I2C, PANEL_72X40
+
 i2c = SoftI2C(scl=Pin(6), sda=Pin(5))
-display = SH1106_I2C(72, 40, i2c)
+display = SH1106_I2C(72, 40, i2c, setup=PANEL_72X40)
 ```
 
-Nothing else needs setting: the offset below is worked out for you.
+`PANEL_72X40` matters as much as the size does. These panels power up with the defaults for a
+128x64 screen, and the one that hurts is the multiplex ratio: left at 63, a 40 row panel has its
+rows mapped to pages the driver never writes, and those show whatever they powered up with.
+**That is what leftover noise below a correct-looking strip means.**
+
+The sequence is deliberately conservative — every command in it means the same thing on an
+SH1106 and an SSD1306, so it cannot make a misidentified panel worse. It sets the multiplex
+ratio, the display offset and start line, the segment and scan direction, and the COM pin
+layout.
+
+If the picture is then correct but **dim**, the panel wants its charge pump or internal
+reference set, and those two commands differ between the controllers:
+
+```python
+display.write_cmd(0xAD); display.write_cmd(0x8B)   # SH1106: DC-DC on
+display.write_cmd(0x8D); display.write_cmd(0x14)   # SSD1306: charge pump on
+```
+
+Send one, not both, and keep whichever brightens it.
 
 ## The column offset
 

@@ -93,10 +93,30 @@ _LOW_COLUMN_ADDRESS  = const(0x00)
 _HIGH_COLUMN_ADDRESS = const(0x10)
 _SET_PAGE_ADDRESS    = const(0xB0)
 
+# Panels that do not come up usable on their own defaults, which are for a 128x64 screen.
+#
+# A 40 row panel left at the default multiplex ratio of 63 has its rows mapped to pages the
+# driver never writes, and the unwritten ones show whatever they powered up with. Setting the
+# ratio is what stops that.
+#
+# Deliberately conservative: every command here means the same thing on an SH1106 and an
+# SSD1306. The DC-DC and internal reference settings are not, so they are left out; a panel
+# that comes up correct but dim wants one of those adding for its own controller.
+PANEL_72X40 = (
+    0xA8, 0x27,   # multiplex ratio: 40 rows
+    0xD3, 0x00,   # display offset: none
+    0x40,         # display start line: 0
+    0xA1,         # segment remap, so column 0 is on the left
+    0xC8,         # scan from the last row back, which is how these panels are wired
+    0xDA, 0x12,   # com pin configuration: alternating, as a 40 row panel needs
+    0xA6,         # normal, not inverted
+    0xA4,         # show the memory rather than all pixels on
+)
+
 
 class SH1106(framebuf.FrameBuffer):
 
-    def __init__(self, width, height, external_vcc, rotate=0, x_offset=None):
+    def __init__(self, width, height, external_vcc, rotate=0, x_offset=None, setup=None):
         self.width = width
         self.height = height
         self.external_vcc = external_vcc
@@ -104,6 +124,8 @@ class SH1106(framebuf.FrameBuffer):
         # window centred inside it. That is 2 for the usual 128 wide screen, and 30 for the
         # 72 wide 0.42 inch one. Pass x_offset only if your panel is not centred.
         self.x_offset = (132 - width) // 2 if x_offset is None else x_offset
+        # Commands sent once, before the first frame: see PANEL_72X40 above.
+        self.setup = setup
         self.flip_en = rotate == 180 or rotate == 270
         self.rotate90 = rotate == 90 or rotate == 270
         self.pages = self.height // 8
@@ -138,8 +160,12 @@ class SH1106(framebuf.FrameBuffer):
 
     def init_display(self):
         self.reset()
+        for command in self.setup or ():
+            self.write_cmd(command)
         self.fill(0)
-        self.show()
+        # Everything, not only what changed: at this point nothing is known about what the
+        # panel is showing.
+        self.show(full_update=True)
         self.poweron()
         # rotate90 requires a call to flip() for setting up.
         self.flip(self.flip_en)
@@ -268,7 +294,7 @@ class SH1106(framebuf.FrameBuffer):
 
 class SH1106_I2C(SH1106):
     def __init__(self, width, height, i2c, res=None, addr=0x3c,
-                 rotate=0, external_vcc=False, delay=0, x_offset=None):
+                 rotate=0, external_vcc=False, delay=0, x_offset=None, setup=None):
         self.i2c = i2c
         self.addr = addr
         self.res = res
@@ -276,7 +302,7 @@ class SH1106_I2C(SH1106):
         self.delay = delay
         if res is not None:
             res.init(res.OUT, value=1)
-        super().__init__(width, height, external_vcc, rotate, x_offset)
+        super().__init__(width, height, external_vcc, rotate, x_offset, setup)
 
     def write_cmd(self, cmd):
         self.temp[0] = 0x80  # Co=1, D/C#=0
@@ -292,7 +318,7 @@ class SH1106_I2C(SH1106):
 
 class SH1106_SPI(SH1106):
     def __init__(self, width, height, spi, dc, res=None, cs=None,
-                 rotate=0, external_vcc=False, delay=0, x_offset=None):
+                 rotate=0, external_vcc=False, delay=0, x_offset=None, setup=None):
         dc.init(dc.OUT, value=0)
         if res is not None:
             res.init(res.OUT, value=0)
@@ -303,7 +329,7 @@ class SH1106_SPI(SH1106):
         self.res = res
         self.cs = cs
         self.delay = delay
-        super().__init__(width, height, external_vcc, rotate, x_offset)
+        super().__init__(width, height, external_vcc, rotate, x_offset, setup)
 
     def write_cmd(self, cmd):
         if self.cs is not None:

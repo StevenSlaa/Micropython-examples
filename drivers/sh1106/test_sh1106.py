@@ -26,7 +26,7 @@ sys.modules["framebuf"] = types.SimpleNamespace(
     FrameBuffer=_FrameBuffer, MONO_VLSB=0, MONO_HMSB=1
 )
 sys.modules["utime"] = types.SimpleNamespace(sleep_ms=lambda ms: None)
-from sh1106 import SH1106_I2C  # noqa: E402
+from sh1106 import PANEL_72X40, SH1106_I2C  # noqa: E402
 
 
 class _I2C:
@@ -46,6 +46,7 @@ class _I2C:
 def display(width, height, **kwargs):
     bus = _I2C()
     panel = SH1106_I2C(width, height, bus, **kwargs)
+    panel.startup = list(bus.commands)  # what was sent before the first frame
     bus.commands.clear()
     bus.data.clear()
     return panel, bus
@@ -85,5 +86,19 @@ assert panel.x_offset == 28
 panel.fill(0)
 panel.show(full_update=True)
 assert (0x00, 0x0C) in column_commands(bus.commands) and (0x10, 0x01) in column_commands(bus.commands)
+
+# A setup sequence is sent once, before the first frame is drawn.
+panel, bus = display(72, 40, setup=PANEL_72X40)
+sent = panel.startup
+for index in range(len(PANEL_72X40)):
+    assert sent[index] == PANEL_72X40[index], (index, sent[:len(PANEL_72X40)])
+assert 0xA8 in PANEL_72X40 and PANEL_72X40[PANEL_72X40.index(0xA8) + 1] == 0x27, (
+    "the multiplex ratio is the point of it: 40 rows, not the default 64"
+)
+
+# Without one, nothing is configured at all, which is what upstream does and what suits a
+# panel whose defaults are already right.
+panel, bus = display(128, 64)
+assert not any(command in (0xA8, 0xD3) for command in panel.startup), panel.startup
 
 print("sh1106: ok")
