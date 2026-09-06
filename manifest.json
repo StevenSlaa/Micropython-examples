@@ -394,6 +394,34 @@
       "assets": []
     },
     {
+      "id": "ir-remote-send",
+      "title": "IR Remote Send (NEC) Example",
+      "description": "In this example the microcontroller sends NEC remote control codes from an infrared LED, using the ESP32's RMT peripheral where it exists and a PWM carrier everywhere else.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "requires": [
+        "ir-transmitter"
+      ],
+      "files": [
+        {
+          "path": "IR Remote Send (NEC).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ir-remote-send/IR%20Remote%20Send%20(NEC).py",
+          "sha256": "0f044510c6a2bbb8aa41a79c9f7ba21d18efee243731e884fe28b31edfd3f129",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ir-remote-send/README.md",
+        "sha256": "0bd35c1c36122b51d700fab9523a22d318e3bd75564d312eafb0f3f67a9f5db2",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "p9813-rgb-led",
       "title": "P9813 RGB LED Example",
       "description": "In this example the microcontroller shows the plain colours on a chain of P9813 RGB LEDs and then cycles a rainbow along it.",
@@ -850,7 +878,32 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ir-receiver/README.md",
-        "sha256": "82d73f55002864eeb23c876ad626f8327d02fbed147c0da4a6f63fbb19750e56",
+        "sha256": "30ee6ded2e314745f4ac6d4c919a057ec94aa74bc8536685a5890a7b0b5238b6",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "ir-transmitter",
+      "name": "IR transmitter (NEC remotes)",
+      "version": "1.0.0",
+      "description": "Sends NEC infrared remote codes from an IR LED, using the ESP32's RMT peripheral where it exists and a PWM carrier everywhere else.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "files": [
+        {
+          "path": "ir_transmitter.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ir-transmitter/ir_transmitter.py",
+          "sha256": "c76656bdb42a5be2cb32f5162e8d8262a99fd944312b86ff3e19a95e6f3cec63",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ir-transmitter/README.md",
+        "sha256": "37d332f32fdcd8c8275c010bb5efe39a91b1d1e9ccaf29b082855cc6ee5fa66c",
         "mime": "text/markdown"
       }
     },

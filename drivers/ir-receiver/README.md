@@ -11,6 +11,8 @@ them into a button.
 Only the NEC protocol is decoded, which is what nearly every cheap remote sends. A Sony or an
 RC5 remote will not be understood.
 
+To send codes rather than receive them, see the [IR transmitter](../ir-transmitter) driver.
+
 ## Install
 
 Install it from the Pulsar IoT library panel, or copy `ir_receiver.py` to `/lib` on the board.

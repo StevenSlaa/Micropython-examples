@@ -1,0 +1,7 @@
+{
+  "id": "ir-transmitter",
+  "name": "IR transmitter (NEC remotes)",
+  "version": "1.0.0",
+  "description": "Sends NEC infrared remote codes from an IR LED, using the ESP32's RMT peripheral where it exists and a PWM carrier everywhere else.",
+  "boardTags": ["esp32", "esp32s3", "pico"]
+}

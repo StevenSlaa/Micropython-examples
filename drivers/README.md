@@ -12,6 +12,7 @@ name is the id examples put in their `requires` list.
 | [hcsr04](hcsr04) | `hcsr04.py` | [ultrasonic-distance-sensor-hc-sr04](../examples/ultrasonic-distance-sensor-hc-sr04) |
 | [i2c-lcd](i2c-lcd) | `i2c_lcd.py`, `lcd_api.py` | [i2c-liquid-crystal-display](../examples/i2c-liquid-crystal-display) |
 | [ir-receiver](ir-receiver) | `ir_receiver.py` | [ir-remote-nec](../examples/ir-remote-nec) |
+| [ir-transmitter](ir-transmitter) | `ir_transmitter.py` | [ir-remote-send](../examples/ir-remote-send) |
 | [max7219](max7219) | `max7219.py` | [spi-led-matrix-max7219](../examples/spi-led-matrix-max7219) |
 | [mfrc522](mfrc522) | `mfrc522.py` | [spi-rfid-rc522](../examples/spi-rfid-rc522) |
 | [mpu6050](mpu6050) | `mpu6050.py` | [i2c-mpu-6050](../examples/i2c-mpu-6050) |

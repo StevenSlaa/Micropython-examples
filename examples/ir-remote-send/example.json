@@ -1,0 +1,14 @@
+{
+  "id": "ir-remote-send",
+  "title": "IR Remote Send (NEC) Example",
+  "description": "In this example the microcontroller sends NEC remote control codes from an infrared LED, using the ESP32's RMT peripheral where it exists and a PWM carrier everywhere else.",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "entry": "IR Remote Send (NEC).py",
+  "requires": [
+    "ir-transmitter"
+  ]
+}
