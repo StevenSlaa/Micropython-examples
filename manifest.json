@@ -331,6 +331,34 @@
       ]
     },
     {
+      "id": "spi-rfid-rc522",
+      "title": "SPI RFID RC522 Example",
+      "description": "In this example the microcontroller reads the id of any MIFARE card or tag held against an RFID-RC522 reader, and prints the contents of one block from it.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "requires": [
+        "mfrc522"
+      ],
+      "files": [
+        {
+          "path": "SPI RFID RC522.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-rfid-rc522/SPI%20RFID%20RC522.py",
+          "sha256": "9d582cefc3ff3380df9f957ef7a84fd2160879cb513c953ad5d3759f476a7b29",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-rfid-rc522/README.md",
+        "sha256": "a8d57e88ed0cd5053a9e279220fe8b57469a6bf180c0e3c13ec9b01e616554b1",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "spi-st7789-display",
       "title": "SPI ST7789 Display Example",
       "description": "In this example the microcontroller should display some text on a ST7789 240x240 Display over SPI.",
@@ -495,6 +523,33 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/i2c-lcd/README.md",
         "sha256": "8af9447016a0566a8ccfe132c52ef7e8aecbcaad88914f053b3b63bbf17a6363",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "mfrc522",
+      "name": "MFRC522 RFID (RC522)",
+      "version": "1.0.0",
+      "description": "Reads and writes MIFARE Classic cards and tags with an RFID-RC522 reader over SPI.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "license": "MIT",
+      "source": "https://github.com/wendlers/micropython-mfrc522",
+      "files": [
+        {
+          "path": "mfrc522.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/mfrc522/mfrc522.py",
+          "sha256": "c726181bb2bbf2175bc44ebe333bce0031c69517a24c3dd39db001d3a5d76ad0",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/mfrc522/README.md",
+        "sha256": "3d0a9d9cccc884ddc1c6f437f08705d8d95ab847428633c6f56df64faeba70aa",
         "mime": "text/markdown"
       }
     },

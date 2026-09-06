@@ -1,0 +1,9 @@
+{
+  "id": "mfrc522",
+  "name": "MFRC522 RFID (RC522)",
+  "version": "1.0.0",
+  "description": "Reads and writes MIFARE Classic cards and tags with an RFID-RC522 reader over SPI.",
+  "boardTags": ["esp32", "esp32s3", "pico"],
+  "license": "MIT",
+  "source": "https://github.com/wendlers/micropython-mfrc522"
+}
