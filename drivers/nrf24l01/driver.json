@@ -1,0 +1,9 @@
+{
+  "id": "nrf24l01",
+  "name": "nRF24L01+ radio",
+  "version": "0.2.0",
+  "description": "Two way 2.4GHz radio link between boards with nRF24L01+ modules, with addressing, automatic acknowledgement and retries.",
+  "boardTags": ["esp32", "esp32s3", "pico"],
+  "license": "MIT",
+  "source": "https://github.com/micropython/micropython-lib/tree/master/micropython/drivers/radio/nrf24l01"
+}

@@ -19,6 +19,7 @@ GROUPS = (
     ("Motion", "Making something move, with motors and servos."),
     ("Input", "Taking something in from a person: knobs, keypads and card readers."),
     ("Remote control", "Talking over infrared, in both directions."),
+    ("Radio", "Sending data between boards over 2.4GHz radio."),
     ("Storage and time", "Remembering things after the power goes, and knowing what time it is."),
     ("Tools", "Finding out what is really on the bus."),
 )

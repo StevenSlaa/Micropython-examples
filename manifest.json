@@ -31,6 +31,10 @@
       "description": "Talking over infrared, in both directions."
     },
     {
+      "name": "Radio",
+      "description": "Sending data between boards over 2.4GHz radio."
+    },
+    {
       "name": "Storage and time",
       "description": "Remembering things after the power goes, and knowing what time it is."
     },
@@ -922,6 +926,64 @@
       "assets": []
     },
     {
+      "id": "nrf24-send",
+      "title": "nRF24 Radio: Sending",
+      "description": "In this example the microcontroller sends a counter over a 2.4GHz radio link once a second, and reports whether each packet was acknowledged by the other board.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "group": "Radio",
+      "requires": [
+        "nrf24l01"
+      ],
+      "files": [
+        {
+          "path": "NRF24 Send.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/nrf24-send/NRF24%20Send.py",
+          "sha256": "dd0e6701553525944872a1e417dbb20d9b2bfba803945d80674352a76ada0602",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/nrf24-send/README.md",
+        "sha256": "4515f522b1ee380af8e0c61b0668e0d7342c781c1ff1a5116ab59190b1baa2f9",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "nrf24-receive",
+      "title": "nRF24 Radio: Receiving",
+      "description": "In this example the microcontroller listens for packets over a 2.4GHz radio link, prints the counter in each one and reports any that went missing.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "group": "Radio",
+      "requires": [
+        "nrf24l01"
+      ],
+      "files": [
+        {
+          "path": "NRF24 Receive.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/nrf24-receive/NRF24%20Receive.py",
+          "sha256": "9fe093e36488b176d1d85b9a6c76f0f082a1af7ec9eaba9f1a1ea9c5c7bddcf6",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/nrf24-receive/README.md",
+        "sha256": "d5e771888954130ba3ee096f5d98ddf57218d2eac7ec80dcd35e23ed50bdab0f",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "i2c-eeprom",
       "title": "I2C EEPROM Example",
       "description": "In this example the microcontroller stores a boot counter and a message in an I2C EEPROM, so they survive the power being cut, and reads them back.",
@@ -1370,6 +1432,33 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/mpu6050/README.md",
         "sha256": "c0838f079b1e8fbc7420d6283a4cf78c324905c35607cb491f49da53b8848cfc",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "nrf24l01",
+      "name": "nRF24L01+ radio",
+      "version": "0.2.0",
+      "description": "Two way 2.4GHz radio link between boards with nRF24L01+ modules, with addressing, automatic acknowledgement and retries.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "license": "MIT",
+      "source": "https://github.com/micropython/micropython-lib/tree/master/micropython/drivers/radio/nrf24l01",
+      "files": [
+        {
+          "path": "nrf24l01.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/nrf24l01/nrf24l01.py",
+          "sha256": "16897e81f9160006f2a0b104b11c6b8353cefac15aefe91607fb34da3ea2d2c8",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/nrf24l01/README.md",
+        "sha256": "f409e8c996b8fb8ff4bdc6e9f9fe3d54a1b6e0c0564c2ff7a84589f6e5a454fd",
         "mime": "text/markdown"
       }
     },

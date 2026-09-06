@@ -20,6 +20,7 @@ name is the id examples put in their `requires` list.
 | [mfrc522](mfrc522) | `mfrc522.py` | [spi-rfid-rc522](../examples/spi-rfid-rc522) |
 | [motor](motor) | `motor.py` | [dc-motor-l293d](../examples/dc-motor-l293d) |
 | [mpu6050](mpu6050) | `mpu6050.py` | [i2c-mpu-6050](../examples/i2c-mpu-6050) |
+| [nrf24l01](nrf24l01) | `nrf24l01.py` | [nrf24-send](../examples/nrf24-send), [nrf24-receive](../examples/nrf24-receive) |
 | [p9813](p9813) | `p9813.py` | [p9813-rgb-led](../examples/p9813-rgb-led) |
 | [pixels](pixels) | `pixels.py` | — |
 | [rotary](rotary) | `rotary.py` | [rotary-encoder](../examples/rotary-encoder) |
