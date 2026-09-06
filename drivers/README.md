@@ -24,6 +24,7 @@ name is the id examples put in their `requires` list.
 | [p9813](p9813) | `p9813.py` | [p9813-rgb-led](../examples/p9813-rgb-led) |
 | [pixels](pixels) | `pixels.py` | — |
 | [rotary](rotary) | `rotary.py` | [rotary-encoder](../examples/rotary-encoder) |
+| [rs485](rs485) | `rs485.py` | [rs485-link](../examples/rs485-link) |
 | [servo](servo) | `servo.py` | [servo](../examples/servo) |
 | [sr74hc595](sr74hc595) | `sr74hc595.py` | [seven-segment-74hc595](../examples/seven-segment-74hc595) |
 | [ssd1306](ssd1306) | `ssd1306.py` | — |

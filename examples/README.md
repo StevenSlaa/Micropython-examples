@@ -79,14 +79,15 @@ Talking over infrared, in both directions.
 | [IR Remote (NEC) Example](ir-remote-nec) | In this example the microcontroller decodes button presses from an infrared remote control with a 38kHz receiver module, prints which button was pressed and toggles the onboard LED. | [ir-receiver](../drivers/ir-receiver) |
 | [IR Remote Send (NEC) Example](ir-remote-send) | In this example the microcontroller sends NEC remote control codes from an infrared LED, using the ESP32's RMT peripheral where it exists and a PWM carrier everywhere else. | [ir-transmitter](../drivers/ir-transmitter) |
 
-### Radio
+### Between boards
 
-Sending data between boards over 2.4GHz radio.
+Getting two boards to talk to each other, by radio or down a wire.
 
 | Example | What it does | Needs |
 | --- | --- | --- |
 | [nRF24 Radio: Sending](nrf24-send) | In this example the microcontroller sends a counter over a 2.4GHz radio link once a second, and reports whether each packet was acknowledged by the other board. | [nrf24l01](../drivers/nrf24l01) |
 | [nRF24 Radio: Receiving](nrf24-receive) | In this example the microcontroller listens for packets over a 2.4GHz radio link, prints the counter in each one and reports any that went missing. | [nrf24l01](../drivers/nrf24l01) |
+| [RS-485 Link (MAX485)](rs485-link) | In this example two boards talk to each other over RS-485: one asks a question every second and the other answers, over a pair of wires that works across a building. | [rs485](../drivers/rs485) |
 
 ### Storage and time
 

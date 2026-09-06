@@ -31,8 +31,8 @@
       "description": "Talking over infrared, in both directions."
     },
     {
-      "name": "Radio",
-      "description": "Sending data between boards over 2.4GHz radio."
+      "name": "Between boards",
+      "description": "Getting two boards to talk to each other, by radio or down a wire."
     },
     {
       "name": "Storage and time",
@@ -934,7 +934,7 @@
         "esp32s3",
         "pico"
       ],
-      "group": "Radio",
+      "group": "Between boards",
       "requires": [
         "nrf24l01"
       ],
@@ -963,7 +963,7 @@
         "esp32s3",
         "pico"
       ],
-      "group": "Radio",
+      "group": "Between boards",
       "requires": [
         "nrf24l01"
       ],
@@ -979,6 +979,35 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/nrf24-receive/README.md",
         "sha256": "d5e771888954130ba3ee096f5d98ddf57218d2eac7ec80dcd35e23ed50bdab0f",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "rs485-link",
+      "title": "RS-485 Link (MAX485)",
+      "description": "In this example two boards talk to each other over RS-485: one asks a question every second and the other answers, over a pair of wires that works across a building.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "group": "Between boards",
+      "requires": [
+        "rs485"
+      ],
+      "files": [
+        {
+          "path": "RS485 Link.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/rs485-link/RS485%20Link.py",
+          "sha256": "86dfe7c538aeb9ea90a19d751f361bf518afa3262431bc4a1f0d7aaa263e14c4",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/rs485-link/README.md",
+        "sha256": "88c8e1464fe6ddb6e7c97e0fd1163f177e6da8064660f3b9d2b28e3b22cf66cc",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1534,6 +1563,31 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/rotary/README.md",
         "sha256": "6f7fd8134be0f1fb2a8fd8ad8e95d8014d837d4b8673540251d8b55fbb1b94aa",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "rs485",
+      "name": "RS-485 (MAX485)",
+      "version": "1.0.0",
+      "description": "Half duplex RS-485 through a MAX485 or similar transceiver, holding the direction line until the last bit has actually left the wire.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "files": [
+        {
+          "path": "rs485.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/rs485/rs485.py",
+          "sha256": "ffeec1397dc0f33368084b9173c064f660fb0acb2e4eabbb005e9f5287c370c7",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/rs485/README.md",
+        "sha256": "5ff047a28acacf82aa781edf181864f7f149211e750d2f7930731427e592c1ce",
         "mime": "text/markdown"
       }
     },

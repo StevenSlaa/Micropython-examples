@@ -1,0 +1,7 @@
+{
+  "id": "rs485",
+  "name": "RS-485 (MAX485)",
+  "version": "1.0.0",
+  "description": "Half duplex RS-485 through a MAX485 or similar transceiver, holding the direction line until the last bit has actually left the wire.",
+  "boardTags": ["esp32", "esp32s3", "pico"]
+}

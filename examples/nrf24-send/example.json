@@ -7,7 +7,7 @@
     "esp32s3",
     "pico"
   ],
-  "group": "Radio",
+  "group": "Between boards",
   "order": 1,
   "entry": "NRF24 Send.py",
   "requires": [
