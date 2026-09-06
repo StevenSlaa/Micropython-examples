@@ -7,5 +7,6 @@
     "esp32s3",
     "pico"
   ],
-  "entry": "PWM Servo (360deg).py"
+  "entry": "PWM Servo (360deg).py",
+  "requires": []
 }

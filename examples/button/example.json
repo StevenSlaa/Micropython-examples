@@ -6,5 +6,6 @@
     "esp32",
     "esp32s3"
   ],
-  "entry": "Button.py"
+  "entry": "Button.py",
+  "requires": []
 }

@@ -4,9 +4,10 @@ In this example the microcontroller should display some text on a ST7789 240x240
 
 <img alt="component" src="https://github.com/StevenSlaa/Micropython-examples/blob/61c9e1a65775c3a5252246789f40750de5cb2e1c/SPI%20ST7789%20Display/res/component.png" height="300px">
 
-## Prerequisites
-Before running the code, you have to copy all the files from the `lib` folder to your microcontroller.
-> In Thonny, this can be done by opening a python script and then going to File -> Save As -> Microcontroller
+## Requires
+This example needs the [ST7789 display](../../drivers/st7789py) driver installed on the board.
+> Install it from the library panel in the Pulsar IoT IDE, or copy the driver's `.py`
+> files into `/lib` on the microcontroller yourself.
 
 ## Connections
 

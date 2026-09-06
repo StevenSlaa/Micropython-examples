@@ -4,6 +4,11 @@ In this example the microcontrollers reads values from the MPU-6050 acceleromete
 
 <img alt="connections" src="https://github.com/StevenSlaa/Micropython-examples/blob/f5ef3bed8fac0e379a0fa9e9e35f7617a5f39d7c/I2C%20MPU-6050/res/component.png" height="300px">
 
+## Requires
+This example needs the [MPU-6050](../../drivers/mpu6050) driver installed on the board.
+> Install it from the library panel in the Pulsar IoT IDE, or copy the driver's `.py`
+> files into `/lib` on the microcontroller yourself.
+
 ## Connections
 
 <img alt="connections" src="" height="300px">

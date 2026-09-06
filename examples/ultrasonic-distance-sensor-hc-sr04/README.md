@@ -6,9 +6,10 @@ In this example, the microcontroller reads the distance from the sensor and disp
 
 <img alt="component" height="300px" src="https://github.com/StevenSlaa/Micropython-examples/blob/c18098d828263c775e02b8f9aa97694fdf396903/Ultrasonic%20Distance%20Sensor%20(HC-SR04)/res/component.png"/>
 
-## Prerequisites
-Before running the code, you have to copy all the files from the `lib` folder to your microcontroller.
-> In Thonny, this can be done by opening a python script and then going to File -> Save As -> Microcontroller
+## Requires
+This example needs the [HC-SR04](../../drivers/hcsr04) driver installed on the board.
+> Install it from the library panel in the Pulsar IoT IDE, or copy the driver's `.py`
+> files into `/lib` on the microcontroller yourself.
 
 
 ## Connections

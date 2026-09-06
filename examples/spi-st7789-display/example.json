@@ -6,5 +6,8 @@
     "esp32",
     "esp32s3"
   ],
-  "entry": "SPI ST7789 Display.py"
+  "entry": "SPI ST7789 Display.py",
+  "requires": [
+    "st7789py"
+  ]
 }

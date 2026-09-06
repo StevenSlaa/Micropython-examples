@@ -1,0 +1,9 @@
+{
+  "id": "ssd1306",
+  "name": "SSD1306 OLED",
+  "version": "0.1.0",
+  "description": "Monochrome SSD1306 OLED driver for I2C and SPI, with framebuf drawing primitives.",
+  "boardTags": ["esp32", "esp32s3", "pico"],
+  "license": "MIT",
+  "source": "https://github.com/micropython/micropython-lib/tree/master/micropython/drivers/display/ssd1306"
+}

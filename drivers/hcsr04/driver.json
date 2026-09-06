@@ -1,0 +1,9 @@
+{
+  "id": "hcsr04",
+  "name": "HC-SR04",
+  "version": "0.2.1",
+  "description": "Ultrasonic distance driver for the HC-SR04, reading 2cm to 400cm.",
+  "boardTags": ["esp32", "esp32s3", "pico"],
+  "license": "Apache-2.0",
+  "source": "https://github.com/rsc1975/micropython-hcsr04"
+}

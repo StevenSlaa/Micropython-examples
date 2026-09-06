@@ -14,9 +14,10 @@
         "esp32",
         "esp32s3"
       ],
+      "requires": [],
       "files": [
         {
-          "path": "button/Button.py",
+          "path": "Button.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/button/Button.py",
           "sha256": "52704ad5b87a52fa64d815cfca514a86546a5ec14ceefd05eaef4c8d9d3fc076",
           "mime": "text/x-python"
@@ -46,9 +47,10 @@
         "esp32s3",
         "pico"
       ],
+      "requires": [],
       "files": [
         {
-          "path": "dht-sensor/DHT Sensor.py",
+          "path": "DHT Sensor.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/dht-sensor/DHT%20Sensor.py",
           "sha256": "b0eb50672df528039a30ba683450a229be63f0ae9b1138d8668f5ffd0bce1f3f",
           "mime": "text/x-python"
@@ -84,24 +86,21 @@
         "esp32s3",
         "pico"
       ],
+      "requires": [
+        "bmp280"
+      ],
       "files": [
         {
-          "path": "i2c-bmp280/I2C BMP280.py",
+          "path": "I2C BMP280.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-bmp280/I2C%20BMP280.py",
           "sha256": "3550b8dfb7936c1a0ce7928250f3d0059cfb1ea501f4d6d2881f9fba3bb6e650",
-          "mime": "text/x-python"
-        },
-        {
-          "path": "lib/bmp280.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-bmp280/lib/bmp280.py",
-          "sha256": "905e089799732552d15ca60154b3b95c585159282855a36ec950f4d5f16ceda8",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-bmp280/README.md",
-        "sha256": "5b9e42cfe3957ecffb895a4d0f45dd8de3999692b9d70baff6dd92d5f569d737",
+        "sha256": "0a68deff57c404fded527ce16f7a7ca891212baa5f3e933e4024e8f7591b4502",
         "mime": "text/markdown"
       },
       "assets": [
@@ -122,30 +121,21 @@
         "esp32s3",
         "pico"
       ],
+      "requires": [
+        "i2c-lcd"
+      ],
       "files": [
         {
-          "path": "i2c-liquid-crystal-display/I2C Liquid Crystal Display.py",
+          "path": "I2C Liquid Crystal Display.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-liquid-crystal-display/I2C%20Liquid%20Crystal%20Display.py",
           "sha256": "054704938ca081778c2c9d63998fb90ed441f9070fdbc05e524e9cb984e2c211",
-          "mime": "text/x-python"
-        },
-        {
-          "path": "lib/i2c_lcd.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-liquid-crystal-display/lib/i2c_lcd.py",
-          "sha256": "876944f1125d7613a672a982721e228567eac2a9b25fc3ede720f77980891949",
-          "mime": "text/x-python"
-        },
-        {
-          "path": "lib/lcd_api.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-liquid-crystal-display/lib/lcd_api.py",
-          "sha256": "8c742a1b6b0188a24855415a5057bf2ec9383c233599bc7f41a49c358c5e0510",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-liquid-crystal-display/README.md",
-        "sha256": "091037286b6f8fdda5e2252c14ab0ffd311035ba58efd0ad3b7e3ec27a185257",
+        "sha256": "948b816ba960bcbde183519d91d76474d6dfbd8cf4bca35b90be39164a80633a",
         "mime": "text/markdown"
       },
       "assets": [
@@ -178,24 +168,21 @@
         "esp32s3",
         "pico"
       ],
+      "requires": [
+        "mpu6050"
+      ],
       "files": [
         {
-          "path": "i2c-mpu-6050/I2C MPU6050.py",
+          "path": "I2C MPU6050.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-mpu-6050/I2C%20MPU6050.py",
           "sha256": "1ca5ae70c1e20afeb6faad238cd58ad74793da8f1292ac1b1c1250456dd065fe",
-          "mime": "text/x-python"
-        },
-        {
-          "path": "lib/mpu6050.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-mpu-6050/lib/mpu6050.py",
-          "sha256": "91a576007f9564426a25b7d761886669800e433045ff90b67f9f1d8baf4ac51e",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-mpu-6050/README.md",
-        "sha256": "943e3c7c29c3ede6e0de19da5e1f05cdfa2a66bef3be83da4d252009ac2ea5a8",
+        "sha256": "ece80f989520f82199e4fdd28aa020577b3f0dbe92f87137fac14761f8839680",
         "mime": "text/markdown"
       },
       "assets": [
@@ -209,16 +196,17 @@
     },
     {
       "id": "i2c-scanner",
-      "title": "DHT Sensor Example",
+      "title": "I2C Scanner Example",
       "description": "In this example the microcontrollers scans for devices connected over I2C and displays them to the user on the console.",
       "boardTags": [
         "esp32",
         "esp32s3",
         "pico"
       ],
+      "requires": [],
       "files": [
         {
-          "path": "i2c-scanner/I2C Scanner.py",
+          "path": "I2C Scanner.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-scanner/I2C%20Scanner.py",
           "sha256": "0e2c4faaf835df7978086fe6b3a0a338798becc81adc39824a52127f37a55f22",
           "mime": "text/x-python"
@@ -227,7 +215,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-scanner/README.md",
-        "sha256": "97237962c638878cd0b90357c40e7337d5c889a370c17f931f8d864a4de93dcd",
+        "sha256": "41e8b68af49ca3c5cabc1533fa25761d3dadd0ef821031a9393289a50ed1f18f",
         "mime": "text/markdown"
       },
       "assets": []
@@ -241,9 +229,10 @@
         "esp32s3",
         "pico"
       ],
+      "requires": [],
       "files": [
         {
-          "path": "i2c-tof-tof10120/TOF10120 (I2C).py",
+          "path": "TOF10120 (I2C).py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-tof-tof10120/TOF10120%20(I2C).py",
           "sha256": "427d953d311e2476cf0657f7c42d35a63561f9d77e9970dba4dc52389951034b",
           "mime": "text/x-python"
@@ -272,9 +261,10 @@
         "esp32",
         "esp32s3"
       ],
+      "requires": [],
       "files": [
         {
-          "path": "pwm/PWM.py",
+          "path": "PWM.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm/PWM.py",
           "sha256": "e6bf25e83d07b240c4164e0a0e3194c839b6100f55082bdbd7a514c62ed744ff",
           "mime": "text/x-python"
@@ -304,9 +294,10 @@
         "esp32s3",
         "pico"
       ],
+      "requires": [],
       "files": [
         {
-          "path": "pwm-servo-360deg/PWM Servo (360deg).py",
+          "path": "PWM Servo (360deg).py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm-servo-360deg/PWM%20Servo%20(360deg).py",
           "sha256": "cbf29a99297ea75a3608b2b5a63548d3711dc43e914f3d7da1c4da1064ded156",
           "mime": "text/x-python"
@@ -347,30 +338,21 @@
         "esp32",
         "esp32s3"
       ],
+      "requires": [
+        "st7789py"
+      ],
       "files": [
         {
-          "path": "spi-st7789-display/SPI ST7789 Display.py",
+          "path": "SPI ST7789 Display.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-st7789-display/SPI%20ST7789%20Display.py",
           "sha256": "151c4bb48a6a5df0b41d97eab0c62e478184a364793cad480ff6f782fca16017",
-          "mime": "text/x-python"
-        },
-        {
-          "path": "fonts/vga2_16x32.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-st7789-display/lib/fonts/vga2_16x32.py",
-          "sha256": "a14ab76be1e24415205ed7aae199f5d18885c760d81443f151ebb9c254cc9346",
-          "mime": "text/x-python"
-        },
-        {
-          "path": "lib/st7789py.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-st7789-display/lib/st7789py.py",
-          "sha256": "734049ee35be79aa2d5b49c8f84f687bdb8ebc89c64ffce106f9456d71c2d886",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-st7789-display/README.md",
-        "sha256": "7e7cf6800609bae3f0112d8edf54b1adf37cdb1022f9df4e0f03f2fbe4737657",
+        "sha256": "21879584ecfa35b4c8a93f1e5ba8258ba33de366a1dcd87cc894405f12dc16a6",
         "mime": "text/markdown"
       },
       "assets": [
@@ -397,24 +379,21 @@
         "esp32s3",
         "pico"
       ],
+      "requires": [
+        "hcsr04"
+      ],
       "files": [
         {
-          "path": "ultrasonic-distance-sensor-hc-sr04/Ultrasonic Distance Sensor (HC-SR04).py",
+          "path": "Ultrasonic Distance Sensor (HC-SR04).py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ultrasonic-distance-sensor-hc-sr04/Ultrasonic%20Distance%20Sensor%20(HC-SR04).py",
           "sha256": "1448e449244314dcd933438d543879c0f8471112fe6499d6f631f2d2216b799a",
-          "mime": "text/x-python"
-        },
-        {
-          "path": "lib/hcsr04.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ultrasonic-distance-sensor-hc-sr04/lib/hcsr04.py",
-          "sha256": "4214d4fbee9aaacd591e7df963c6f011dd76ddd6e5b9339543972cf77f47c117",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ultrasonic-distance-sensor-hc-sr04/README.md",
-        "sha256": "200611d59bd57eb965049f97f459799fe761dd9b80a070b5301ce5747c3dee66",
+        "sha256": "9243abe949fc143368a32e3ef59afe1f819caefab48794285d462a010dca36a7",
         "mime": "text/markdown"
       },
       "assets": [
@@ -435,54 +414,95 @@
   ],
   "drivers": [
     {
-      "id": "i2c-bmp280-driver",
-      "name": "I2C BMP280 Example driver",
+      "id": "bmp280",
+      "name": "BMP280",
       "version": "1.0.0",
-      "description": "Supporting driver files for I2C BMP280 Example.",
+      "description": "Temperature and pressure driver for the Bosch BMP280 over I2C or SPI.",
       "boardTags": [
         "esp32",
         "esp32s3",
         "pico"
       ],
+      "source": "https://github.com/dafvid/micropython-bmp280",
       "files": [
         {
           "path": "bmp280.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-bmp280/lib/bmp280.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/bmp280/bmp280.py",
           "sha256": "905e089799732552d15ca60154b3b95c585159282855a36ec950f4d5f16ceda8",
           "mime": "text/x-python"
         }
-      ]
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/bmp280/README.md",
+        "sha256": "82401f8e25c8352a4b09ed616217f176be5c7e06191480f8eda09ed401370fe6",
+        "mime": "text/markdown"
+      }
     },
     {
-      "id": "i2c-liquid-crystal-display-driver",
-      "name": "I2C Liquid Crystal Display Example driver",
-      "version": "1.0.0",
-      "description": "Supporting driver files for I2C Liquid Crystal Display Example.",
+      "id": "hcsr04",
+      "name": "HC-SR04",
+      "version": "0.2.1",
+      "description": "Ultrasonic distance driver for the HC-SR04, reading 2cm to 400cm.",
       "boardTags": [
         "esp32",
         "esp32s3",
         "pico"
       ],
+      "license": "Apache-2.0",
+      "source": "https://github.com/rsc1975/micropython-hcsr04",
+      "files": [
+        {
+          "path": "hcsr04.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/hcsr04/hcsr04.py",
+          "sha256": "4214d4fbee9aaacd591e7df963c6f011dd76ddd6e5b9339543972cf77f47c117",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/hcsr04/README.md",
+        "sha256": "4d21a5e54b688f28fb49458d8598a1a299a40a0d712d6d51b519706e03fdda53",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "i2c-lcd",
+      "name": "I2C character LCD",
+      "version": "1.0.0",
+      "description": "HD44780 character LCD driver for displays behind a PCF8574 I2C backpack.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "source": "https://github.com/dhylands/python_lcd",
       "files": [
         {
           "path": "i2c_lcd.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-liquid-crystal-display/lib/i2c_lcd.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/i2c-lcd/i2c_lcd.py",
           "sha256": "876944f1125d7613a672a982721e228567eac2a9b25fc3ede720f77980891949",
           "mime": "text/x-python"
         },
         {
           "path": "lcd_api.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-liquid-crystal-display/lib/lcd_api.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/i2c-lcd/lcd_api.py",
           "sha256": "8c742a1b6b0188a24855415a5057bf2ec9383c233599bc7f41a49c358c5e0510",
           "mime": "text/x-python"
         }
-      ]
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/i2c-lcd/README.md",
+        "sha256": "8af9447016a0566a8ccfe132c52ef7e8aecbcaad88914f053b3b63bbf17a6363",
+        "mime": "text/markdown"
+      }
     },
     {
-      "id": "i2c-mpu-6050-driver",
-      "name": "I2C MPU-6050 driver",
+      "id": "mpu6050",
+      "name": "MPU-6050",
       "version": "1.0.0",
-      "description": "Supporting driver files for I2C MPU-6050.",
+      "description": "Accelerometer, gyroscope and temperature driver for the MPU-6050 over I2C.",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -491,54 +511,77 @@
       "files": [
         {
           "path": "mpu6050.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-mpu-6050/lib/mpu6050.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/mpu6050/mpu6050.py",
           "sha256": "91a576007f9564426a25b7d761886669800e433045ff90b67f9f1d8baf4ac51e",
           "mime": "text/x-python"
         }
-      ]
-    },
-    {
-      "id": "spi-st7789-display-driver",
-      "name": "SPI ST7789 Display Example driver",
-      "version": "1.0.0",
-      "description": "Supporting driver files for SPI ST7789 Display Example.",
-      "boardTags": [
-        "esp32",
-        "esp32s3"
       ],
-      "files": [
-        {
-          "path": "fonts/vga2_16x32.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-st7789-display/lib/fonts/vga2_16x32.py",
-          "sha256": "a14ab76be1e24415205ed7aae199f5d18885c760d81443f151ebb9c254cc9346",
-          "mime": "text/x-python"
-        },
-        {
-          "path": "st7789py.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-st7789-display/lib/st7789py.py",
-          "sha256": "734049ee35be79aa2d5b49c8f84f687bdb8ebc89c64ffce106f9456d71c2d886",
-          "mime": "text/x-python"
-        }
-      ]
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/mpu6050/README.md",
+        "sha256": "c0838f079b1e8fbc7420d6283a4cf78c324905c35607cb491f49da53b8848cfc",
+        "mime": "text/markdown"
+      }
     },
     {
-      "id": "ultrasonic-distance-sensor-hc-sr04-driver",
-      "name": "Ultrasonic Distance Sensor (HC-SR04) driver",
-      "version": "1.0.0",
-      "description": "Supporting driver files for Ultrasonic Distance Sensor (HC-SR04).",
+      "id": "ssd1306",
+      "name": "SSD1306 OLED",
+      "version": "0.1.0",
+      "description": "Monochrome SSD1306 OLED driver for I2C and SPI, with framebuf drawing primitives.",
       "boardTags": [
         "esp32",
         "esp32s3",
         "pico"
       ],
+      "license": "MIT",
+      "source": "https://github.com/micropython/micropython-lib/tree/master/micropython/drivers/display/ssd1306",
       "files": [
         {
-          "path": "hcsr04.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ultrasonic-distance-sensor-hc-sr04/lib/hcsr04.py",
-          "sha256": "4214d4fbee9aaacd591e7df963c6f011dd76ddd6e5b9339543972cf77f47c117",
+          "path": "ssd1306.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ssd1306/ssd1306.py",
+          "sha256": "f48daf6e518e3c0b13b6fe3dcb1413622a22a8a963758d31a5beaea0623a42e1",
           "mime": "text/x-python"
         }
-      ]
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ssd1306/README.md",
+        "sha256": "0dd39a9638ff99a9c00c774c3b33ab5c71f220581a26f76071ea921e64f1dc4d",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "st7789py",
+      "name": "ST7789 display",
+      "version": "1.0.0",
+      "description": "Pure MicroPython driver for ST7789 SPI colour displays, with an 8x16 VGA font.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "license": "MIT",
+      "source": "https://github.com/russhughes/st7789py_mpy",
+      "files": [
+        {
+          "path": "st7789py.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/st7789py/st7789py.py",
+          "sha256": "734049ee35be79aa2d5b49c8f84f687bdb8ebc89c64ffce106f9456d71c2d886",
+          "mime": "text/x-python"
+        },
+        {
+          "path": "vga2_16x32.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/st7789py/vga2_16x32.py",
+          "sha256": "a14ab76be1e24415205ed7aae199f5d18885c760d81443f151ebb9c254cc9346",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/st7789py/README.md",
+        "sha256": "9e230b0269b43c783b8c419758d509b117c6a1d9b970307949011cd2eda05f34",
+        "mime": "text/markdown"
+      }
     }
   ]
 }

@@ -1,0 +1,8 @@
+{
+  "id": "bmp280",
+  "name": "BMP280",
+  "version": "1.0.0",
+  "description": "Temperature and pressure driver for the Bosch BMP280 over I2C or SPI.",
+  "boardTags": ["esp32", "esp32s3", "pico"],
+  "source": "https://github.com/dafvid/micropython-bmp280"
+}

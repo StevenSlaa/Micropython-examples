@@ -7,5 +7,6 @@
     "esp32s3",
     "pico"
   ],
-  "entry": "TOF10120 (I2C).py"
+  "entry": "TOF10120 (I2C).py",
+  "requires": []
 }

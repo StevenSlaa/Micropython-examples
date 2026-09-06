@@ -4,9 +4,10 @@ In this example the microcontroller should display some text on a Liquid Crystal
 
 <img alt="component" src="https://github.com/StevenSlaa/Micropython-examples/blob/7983ad38af327f70dbb2f8daf5f691a32e17937b/I2C%20Liquid%20Crystal%20Display/res/component.png" height="300px">
 
-## Prerequisites
-Before running the code, you have to copy all the files from the `lib` folder to your microcontroller.
-> In Thonny, this can be done by opening a python script and then going to File -> Save As -> Microcontroller
+## Requires
+This example needs the [I2C character LCD](../../drivers/i2c-lcd) driver installed on the board.
+> Install it from the library panel in the Pulsar IoT IDE, or copy the driver's `.py`
+> files into `/lib` on the microcontroller yourself.
 
 ## Connections
 

@@ -1,4 +1,4 @@
-# DHT Sensor Example
+# I2C Scanner Example
 
 In this example the microcontrollers scans for devices connected over I2C and displays them to the user on the console.
 

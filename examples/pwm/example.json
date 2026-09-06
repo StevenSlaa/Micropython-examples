@@ -6,5 +6,6 @@
     "esp32",
     "esp32s3"
   ],
-  "entry": "PWM.py"
+  "entry": "PWM.py",
+  "requires": []
 }
