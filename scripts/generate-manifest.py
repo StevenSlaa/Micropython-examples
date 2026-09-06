@@ -9,18 +9,21 @@ DRIVERS = ROOT / "drivers"
 VERSION = os.environ.get("CATALOG_VERSION", "1.0.0")
 BASE = "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main"
 
-# Examples are listed in this order, in the manifest and so in the IDE's library panel. A group
-# that is not on this list still works: it simply goes at the end, in alphabetical order.
+# Examples are listed in this order, in the manifest and so in the IDE's library panel, where
+# each group is a heading with this line under it. A group that is not on this list still works:
+# it simply goes at the end, in alphabetical order, without a description.
 GROUPS = (
-    "Basics",
-    "Sensors",
-    "Displays and LEDs",
-    "Motion",
-    "Input",
-    "Remote control",
-    "Storage and time",
-    "Tools",
+    ("Basics", "Five short examples, in order. Start here if you have not used a microcontroller before."),
+    ("Sensors", "Reading the world: temperature, distance, movement, light and magnetic fields."),
+    ("Displays and LEDs", "Showing something, from a character display to a matrix or a strip of colour."),
+    ("Motion", "Making something move, with motors and servos."),
+    ("Input", "Taking something in from a person: keypads and card readers."),
+    ("Remote control", "Talking over infrared, in both directions."),
+    ("Storage and time", "Remembering things after the power goes, and knowing what time it is."),
+    ("Tools", "Finding out what is really on the bus."),
 )
+GROUP_ORDER = [name for name, _ in GROUPS]
+GROUP_DESCRIPTIONS = dict(GROUPS)
 
 def entry(path: Path, relative_to: Path):
     data = path.read_bytes()
@@ -77,7 +80,7 @@ for folder in sorted(p for p in EXAMPLES.iterdir() if p.is_dir()):
                      "assets": [entry(p, folder) for p in sorted(assets.rglob("*")) if p.is_file()] if assets.exists() else []})
 
 examples.sort(key=lambda example: (
-    GROUPS.index(example["group"]) if example["group"] in GROUPS else len(GROUPS),
+    GROUP_ORDER.index(example["group"]) if example["group"] in GROUP_ORDER else len(GROUP_ORDER),
     example["group"],
     example["order"],
     example["id"],
@@ -85,7 +88,7 @@ examples.sort(key=lambda example: (
 # The order was only ever about sorting; the manifest is already sorted, so it does not travel.
 for example in examples:
     del example["order"]
-unlisted = sorted({e["group"] for e in examples if e["group"] not in GROUPS})
+unlisted = sorted({e["group"] for e in examples if e["group"] not in GROUP_ORDER})
 if unlisted:
     print(f"Note: groups not in GROUPS, listed last: {', '.join(unlisted)}")
 
@@ -101,7 +104,10 @@ index = EXAMPLES / "README.md"
 head, _, rest = index.read_text().partition("<!-- generated:start -->")
 _, _, tail = rest.partition("<!-- generated:end -->")
 sections = "\n\n".join(
-    f"### {group}\n\n| Example | What it does | Needs |\n| --- | --- | --- |\n" + "\n".join(lines)
+    f"### {group}\n\n"
+    + (f"{GROUP_DESCRIPTIONS[group]}\n\n" if group in GROUP_DESCRIPTIONS else "")
+    + "| Example | What it does | Needs |\n| --- | --- | --- |\n"
+    + "\n".join(lines)
     for group, lines in rows
 )
 index.write_text(f"{head}<!-- generated:start -->\n{sections}\n<!-- generated:end -->{tail}")
@@ -117,8 +123,16 @@ head, _, rest = index.read_text().partition("<!-- generated:start -->")
 _, _, tail = rest.partition("<!-- generated:end -->")
 index.write_text(f"{head}<!-- generated:start -->\n" + "\n".join(rows) + f"\n<!-- generated:end -->{tail}")
 
+# Only the groups that have something in them, in the order the examples are already in.
+group_names = []
+for example in examples:
+    if example["group"] not in group_names:
+        group_names.append(example["group"])
+groups = [{"name": name, **({"description": GROUP_DESCRIPTIONS[name]} if name in GROUP_DESCRIPTIONS else {})}
+          for name in group_names]
+
 manifest = {"schema": "pulsar.micropython.library/v1",
             "catalog": {"id": "micropython-examples", "name": "MicroPython Examples", "version": VERSION},
-            "examples": examples, "drivers": drivers}
+            "groups": groups, "examples": examples, "drivers": drivers}
 (ROOT / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
 print(f"Generated {len(examples)} examples and {len(drivers)} drivers")

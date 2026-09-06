@@ -12,6 +12,8 @@ open it. Examples with no driver need nothing at all.
 <!-- generated:start -->
 ### Basics
 
+Five short examples, in order. Start here if you have not used a microcontroller before.
+
 | Example | What it does | Needs |
 | --- | --- | --- |
 | [1. Blink an LED — digital write](blink) | The first program on any microcontroller. | — |
@@ -21,6 +23,8 @@ open it. Examples with no driver need nothing at all.
 | [5. Dimmer — putting them together](dimmer) | Reads a potentiometer and dims an LED to match, showing how to map any input range onto any output range. | — |
 
 ### Sensors
+
+Reading the world: temperature, distance, movement, light and magnetic fields.
 
 | Example | What it does | Needs |
 | --- | --- | --- |
@@ -35,6 +39,8 @@ open it. Examples with no driver need nothing at all.
 
 ### Displays and LEDs
 
+Showing something, from a character display to a matrix or a strip of colour.
+
 | Example | What it does | Needs |
 | --- | --- | --- |
 | [I2C Liquid Crystal Display Example](i2c-liquid-crystal-display) | In this example the microcontroller should display some text on a Liquid Crystal Display (16x2) over I2C. | [i2c-lcd](../drivers/i2c-lcd) |
@@ -46,12 +52,17 @@ open it. Examples with no driver need nothing at all.
 
 ### Motion
 
+Making something move, with motors and servos.
+
 | Example | What it does | Needs |
 | --- | --- | --- |
 | [DC Motor (L293D / L298N) Example](dc-motor-l293d) | In this example the microcontroller drives a DC motor through an H bridge, ramping the speed up, coasting, running backwards and braking. | [motor](../drivers/motor) |
-| [PWM Servo (DM-S0306D) Example](pwm-servo-360deg) | In this example the microcontroller sends a PWM signal to control a 360 degree servo's. | — |
+| [Servo](servo) | In this example the microcontroller drives a hobby servo: a positional one to an angle and back, or a 360 degree one at a speed in both directions. | [servo](../drivers/servo) |
+| [Stepper Motor](stepper) | In this example the microcontroller turns a stepper motor a quarter turn at a time, back to where it started, and then releases it. | [stepper](../drivers/stepper) |
 
 ### Input
+
+Taking something in from a person: keypads and card readers.
 
 | Example | What it does | Needs |
 | --- | --- | --- |
@@ -60,6 +71,8 @@ open it. Examples with no driver need nothing at all.
 
 ### Remote control
 
+Talking over infrared, in both directions.
+
 | Example | What it does | Needs |
 | --- | --- | --- |
 | [IR Remote (NEC) Example](ir-remote-nec) | In this example the microcontroller decodes button presses from an infrared remote control with a 38kHz receiver module, prints which button was pressed and toggles the onboard LED. | [ir-receiver](../drivers/ir-receiver) |
@@ -67,12 +80,16 @@ open it. Examples with no driver need nothing at all.
 
 ### Storage and time
 
+Remembering things after the power goes, and knowing what time it is.
+
 | Example | What it does | Needs |
 | --- | --- | --- |
 | [I2C EEPROM Example](i2c-eeprom) | In this example the microcontroller stores a boot counter and a message in an I2C EEPROM, so they survive the power being cut, and reads them back. | [eeprom](../drivers/eeprom) |
 | [I2C RTC (DS3231) Example](i2c-rtc-ds3231) | In this example the microcontroller reads the date, time and temperature from a DS3231 real time clock module, and copies the time into the board's own clock so it survives a reset. | [ds3231](../drivers/ds3231) |
 
 ### Tools
+
+Finding out what is really on the bus.
 
 | Example | What it does | Needs |
 | --- | --- | --- |

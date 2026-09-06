@@ -105,7 +105,7 @@ interval small enough.
   same. Correcting for that is called gamma, and it is why the
   [pixels driver](../../drivers/pixels) has a gamma setting for LED strips.
 - **Drive something else.** A servo, using the mapping above and the pins from the
-  [servo example](../pwm-servo-360deg). Same two lines, different second number.
+  [servo example](../servo). Same two lines, different second number.
 - **Add a second knob** on another pin and a second LED, and watch them work independently.
 
 ## Plotter

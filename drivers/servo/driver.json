@@ -1,0 +1,7 @@
+{
+  "id": "servo",
+  "name": "Hobby servo",
+  "version": "1.0.0",
+  "description": "Drives the three wire hobby servos by pulse length: an angle for a positional servo, a speed for a continuous rotation one.",
+  "boardTags": ["esp32", "esp32s3", "pico"]
+}

@@ -32,7 +32,7 @@ hundred is the floor for a light. The 5000Hz here is comfortably past it.
 
 **A servo is the exception.** It does not care about the share at all: it measures how long each
 individual pulse lasts, and expects them 50 times a second. That is why the
-[servo example](../pwm-servo-360deg) sets a frequency that would be useless for an LED.
+[servo example](../servo) sets a frequency that would be useless for an LED.
 
 ## If it does not work
 

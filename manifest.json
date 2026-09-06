@@ -5,6 +5,40 @@
     "name": "MicroPython Examples",
     "version": "1.0.0"
   },
+  "groups": [
+    {
+      "name": "Basics",
+      "description": "Five short examples, in order. Start here if you have not used a microcontroller before."
+    },
+    {
+      "name": "Sensors",
+      "description": "Reading the world: temperature, distance, movement, light and magnetic fields."
+    },
+    {
+      "name": "Displays and LEDs",
+      "description": "Showing something, from a character display to a matrix or a strip of colour."
+    },
+    {
+      "name": "Motion",
+      "description": "Making something move, with motors and servos."
+    },
+    {
+      "name": "Input",
+      "description": "Taking something in from a person: keypads and card readers."
+    },
+    {
+      "name": "Remote control",
+      "description": "Talking over infrared, in both directions."
+    },
+    {
+      "name": "Storage and time",
+      "description": "Remembering things after the power goes, and knowing what time it is."
+    },
+    {
+      "name": "Tools",
+      "description": "Finding out what is really on the bus."
+    }
+  ],
   "examples": [
     {
       "id": "blink",
@@ -115,7 +149,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm/README.md",
-        "sha256": "c46c41cd5aa49c669ebe07ec0c5dbf7dd326e043d17c6860792e416aed0ce881",
+        "sha256": "753b300a6009d76fb09e953eb2c671c30270cb2df9812d7343b5798b232f0734",
         "mime": "text/markdown"
       },
       "assets": [
@@ -149,7 +183,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/dimmer/README.md",
-        "sha256": "299676f0d7efe4da3504b3e3619649e0fa24759a778242b87c0c338763c47a95",
+        "sha256": "41c617e4c65e671a9696702cb01a4ab33f13f6f40ad91ea3ed9db69c2d8bf40e",
         "mime": "text/markdown"
       },
       "assets": []
@@ -666,50 +700,81 @@
       "assets": []
     },
     {
-      "id": "pwm-servo-360deg",
-      "title": "PWM Servo (DM-S0306D) Example",
-      "description": "In this example the microcontroller sends a PWM signal to control a 360 degree servo's. Further documentation about the dutycycle and frequency can be found inside the code.",
+      "id": "servo",
+      "title": "Servo",
+      "description": "In this example the microcontroller drives a hobby servo: a positional one to an angle and back, or a 360 degree one at a speed in both directions.",
       "boardTags": [
         "esp32",
         "esp32s3",
         "pico"
       ],
       "group": "Motion",
-      "requires": [],
+      "requires": [
+        "servo"
+      ],
       "files": [
         {
-          "path": "PWM Servo (360deg).py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm-servo-360deg/PWM%20Servo%20(360deg).py",
-          "sha256": "cbf29a99297ea75a3608b2b5a63548d3711dc43e914f3d7da1c4da1064ded156",
+          "path": "Servo.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/servo/Servo.py",
+          "sha256": "f9dbe32b5f260bf4b95e43c2dbd55d325765518fd3b4a3ac5ee65767d0728317",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm-servo-360deg/README.md",
-        "sha256": "e931349167673b8824fc0e132cb1b0fc9f671c03babf8e8d6da77df6f563d423",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/servo/README.md",
+        "sha256": "45d240e078d8a231ad497a215de2512209d1e3e77c4e6ac919f94d1942d33632",
         "mime": "text/markdown"
       },
       "assets": [
         {
           "path": "res/component-DM-S0306D.png",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm-servo-360deg/res/component-DM-S0306D.png",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/servo/res/component-DM-S0306D.png",
           "sha256": "73ca9f1408aeec7db6951f641fb9172b86feff5f7314a7376c8a700dd05a1778",
           "mime": "image/png"
         },
         {
           "path": "res/component-TS90M.png",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm-servo-360deg/res/component-TS90M.png",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/servo/res/component-TS90M.png",
           "sha256": "c83abd34d9eec861ac7a41afc72c05bece9787402afd46fce0b5c0801a85123f",
           "mime": "image/png"
         },
         {
           "path": "res/datasheet.pdf",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm-servo-360deg/res/datasheet.pdf",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/servo/res/datasheet.pdf",
           "sha256": "91b0ac1054d97bf31fbe6f2a0f5b8fb2f9e239addecd8b433c5a87ef498cd02c",
           "mime": "application/pdf"
         }
       ]
+    },
+    {
+      "id": "stepper",
+      "title": "Stepper Motor",
+      "description": "In this example the microcontroller turns a stepper motor a quarter turn at a time, back to where it started, and then releases it. Works with a 28BYJ-48 on a ULN2003 board or a motor on a step and direction driver.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "group": "Motion",
+      "requires": [
+        "stepper"
+      ],
+      "files": [
+        {
+          "path": "Stepper.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/stepper/Stepper.py",
+          "sha256": "b196b846d6f9be70ef85c7d433cdca29c7e84fe37c491c19973dd64256eb30c4",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/stepper/README.md",
+        "sha256": "352450e3019d65f07b24cda7dc16af4bc37537da079d603e6989527f4c72491a",
+        "mime": "text/markdown"
+      },
+      "assets": []
     },
     {
       "id": "keypad-4x4",
@@ -1330,6 +1395,31 @@
       }
     },
     {
+      "id": "servo",
+      "name": "Hobby servo",
+      "version": "1.0.0",
+      "description": "Drives the three wire hobby servos by pulse length: an angle for a positional servo, a speed for a continuous rotation one.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "files": [
+        {
+          "path": "servo.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/servo/servo.py",
+          "sha256": "60e542fa2606074294904806db9bc23426d7f93d803fec4b1d9c21089af73450",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/servo/README.md",
+        "sha256": "a67c95bb370fd09dbb6911a08047784489ac213d902b2c501a32ff499697155c",
+        "mime": "text/markdown"
+      }
+    },
+    {
       "id": "sr74hc595",
       "name": "74HC595 shift register",
       "version": "1.0.0",
@@ -1411,6 +1501,31 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/st7789py/README.md",
         "sha256": "9e230b0269b43c783b8c419758d509b117c6a1d9b970307949011cd2eda05f34",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "stepper",
+      "name": "Stepper motor (ULN2003, A4988)",
+      "version": "1.0.0",
+      "description": "Turns stepper motors a known number of steps: four coil pins through a ULN2003 or an H bridge, or two pins to a step and direction driver such as an A4988.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "files": [
+        {
+          "path": "stepper.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/stepper/stepper.py",
+          "sha256": "69d1457345b5ab87daa71497a49c60fe9d850f20ecd73734dc1e3528fd692e27",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/stepper/README.md",
+        "sha256": "6d0ffd3a1284cfc8aaca35fcb463300d85879fe80249348a8cc89f7173ef56d3",
         "mime": "text/markdown"
       }
     },

@@ -1,0 +1,7 @@
+{
+  "id": "stepper",
+  "name": "Stepper motor (ULN2003, A4988)",
+  "version": "1.0.0",
+  "description": "Turns stepper motors a known number of steps: four coil pins through a ULN2003 or an H bridge, or two pins to a step and direction driver such as an A4988.",
+  "boardTags": ["esp32", "esp32s3", "pico"]
+}
