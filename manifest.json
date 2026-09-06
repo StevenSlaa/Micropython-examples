@@ -113,6 +113,34 @@
       ]
     },
     {
+      "id": "i2c-compass-gy271",
+      "title": "I2C Compass (GY-271) Example",
+      "description": "In this example the microcontroller reads the magnetic field from a GY-271 or HW-246 compass module and prints the three axes and a heading in degrees.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "requires": [
+        "gy271"
+      ],
+      "files": [
+        {
+          "path": "I2C Compass (GY-271).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-compass-gy271/I2C%20Compass%20(GY-271).py",
+          "sha256": "07178c5409f8ccff09b5b0fdff8cce0813a99e79c3927b68fb3c573bf7dd7816",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-compass-gy271/README.md",
+        "sha256": "03d8a77250caaa99c2fd8e694e9396fbdce029ee79c8fa115fb414b332690a14",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "i2c-liquid-crystal-display",
       "title": "I2C Liquid Crystal Display Example",
       "description": "In this example the microcontroller should display some text on a Liquid Crystal Display (16x2) over I2C. Keep in mind that the LCD needs an I2C Backpack for this example to work.",
@@ -464,6 +492,31 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/bmp280/README.md",
         "sha256": "82401f8e25c8352a4b09ed616217f176be5c7e06191480f8eda09ed401370fe6",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "gy271",
+      "name": "GY-271 compass (QMC5883L / HMC5883L)",
+      "version": "1.0.0",
+      "description": "Three axis magnetometer driver for the GY-271 and HW-246 compass modules, detecting whether the board carries a QMC5883L or an HMC5883L.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "files": [
+        {
+          "path": "gy271.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/gy271/gy271.py",
+          "sha256": "1b25e4c301b317403d89af9a4a74040ebea6387e8b76d4f6403d7fbaab20994b",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/gy271/README.md",
+        "sha256": "8fed2d3861137fd3744240d5ecf25b3808ed7aa0b938edacdc210049165509d2",
         "mime": "text/markdown"
       }
     },
