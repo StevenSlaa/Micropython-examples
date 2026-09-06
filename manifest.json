@@ -424,6 +424,34 @@
       "assets": []
     },
     {
+      "id": "keypad-4x4",
+      "title": "Matrix Keypad (4x4) Example",
+      "description": "In this example the microcontroller reads a membrane matrix keypad, collects the digits typed into a code, and checks it when the hash key is pressed.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "requires": [
+        "keypad"
+      ],
+      "files": [
+        {
+          "path": "Keypad (4x4).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/keypad-4x4/Keypad%20(4x4).py",
+          "sha256": "0ee5282ef99a513f6eac892ad63eb5edc4d0510c78b5cc230c28847a3e58c019",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/keypad-4x4/README.md",
+        "sha256": "06eaf8138de1e983ac5841abbf926621c2a0a5cbfddef2ec7dd1348e8e3ceeb4",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "p9813-rgb-led",
       "title": "P9813 RGB LED Example",
       "description": "In this example the microcontroller shows the plain colours on a chain of P9813 RGB LEDs and then cycles a rainbow along it.",
@@ -931,6 +959,31 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ir-transmitter/README.md",
         "sha256": "37d332f32fdcd8c8275c010bb5efe39a91b1d1e9ccaf29b082855cc6ee5fa66c",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "keypad",
+      "name": "Matrix keypad",
+      "version": "1.0.0",
+      "description": "Reads the membrane matrix keypads, 4x4 and 4x3, with debouncing and one report per key press.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "files": [
+        {
+          "path": "keypad.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/keypad/keypad.py",
+          "sha256": "f0281b2c410bb85ff5f00029ba923b756e258d2d9c6b12974439e86a438104b0",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/keypad/README.md",
+        "sha256": "58853fd881ef15d68a91822d0364a5efe908968b9837004d182b8cca92c2a14c",
         "mime": "text/markdown"
       }
     },
