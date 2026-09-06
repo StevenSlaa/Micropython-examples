@@ -662,6 +662,31 @@
         "sha256": "9e230b0269b43c783b8c419758d509b117c6a1d9b970307949011cd2eda05f34",
         "mime": "text/markdown"
       }
+    },
+    {
+      "id": "tc74",
+      "name": "TC74 temperature",
+      "version": "1.0.0",
+      "description": "Reads whole degrees Celsius from a Microchip TC74 digital temperature sensor over I2C.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "files": [
+        {
+          "path": "tc74.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/tc74/tc74.py",
+          "sha256": "6ab37859f240ee4caa3393cfb17462ae409f548ba6541a4bd157514e6b14eacc",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/tc74/README.md",
+        "sha256": "1a4395e2c34fc52a26f721212c3d43382e4fb3150bfdea0d39664bf568a76bf3",
+        "mime": "text/markdown"
+      }
     }
   ]
 }
