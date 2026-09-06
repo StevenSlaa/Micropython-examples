@@ -1,0 +1,9 @@
+{
+  "id": "max7219",
+  "name": "MAX7219 LED matrix",
+  "version": "1.0.0",
+  "description": "Driver for chained MAX7219 8x8 LED matrix modules over SPI, with framebuf drawing and text.",
+  "boardTags": ["esp32", "esp32s3", "pico"],
+  "license": "MIT",
+  "source": "https://github.com/mcauser/micropython-max7219"
+}

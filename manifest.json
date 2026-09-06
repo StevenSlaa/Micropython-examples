@@ -415,6 +415,34 @@
       ]
     },
     {
+      "id": "spi-led-matrix-max7219",
+      "title": "SPI LED Matrix (MAX7219) Example",
+      "description": "In this example the microcontroller shows text on a chain of MAX7219 8x8 LED matrix modules and scrolls a message across them.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "requires": [
+        "max7219"
+      ],
+      "files": [
+        {
+          "path": "SPI LED Matrix (MAX7219).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-led-matrix-max7219/SPI%20LED%20Matrix%20(MAX7219).py",
+          "sha256": "fa6097e69c2c190106ac6a3f1d87eb975c52218822c7f1c0df4833efac0ecc86",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-led-matrix-max7219/README.md",
+        "sha256": "9c023f0428d278273711bf62afff0eb755d284b86de91f0f594c76030e9f2f76",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "spi-rfid-rc522",
       "title": "SPI RFID RC522 Example",
       "description": "In this example the microcontroller reads the id of any MIFARE card or tag held against an RFID-RC522 reader, and prints the contents of one block from it.",
@@ -636,6 +664,33 @@
       }
     },
     {
+      "id": "max7219",
+      "name": "MAX7219 LED matrix",
+      "version": "1.0.0",
+      "description": "Driver for chained MAX7219 8x8 LED matrix modules over SPI, with framebuf drawing and text.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "license": "MIT",
+      "source": "https://github.com/mcauser/micropython-max7219",
+      "files": [
+        {
+          "path": "max7219.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/max7219/max7219.py",
+          "sha256": "f46c6506a54329eecfc6045e7c28e18cf28d5d38647284c2ebb5eae56abd698e",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/max7219/README.md",
+        "sha256": "152695d606e0a5fb4763bad4cf65b87eaf86e226ccfc2783668872444f6457e1",
+        "mime": "text/markdown"
+      }
+    },
+    {
       "id": "mfrc522",
       "name": "MFRC522 RFID (RC522)",
       "version": "1.0.0",
@@ -838,14 +893,14 @@
         {
           "path": "vl6180x.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/vl6180x/vl6180x.py",
-          "sha256": "0ee2c6386dffdbf2a5984344df434dcf821c1655df0f3ecf395aa375f6989b22",
+          "sha256": "c5a42980fafb62c60fa0779de6b80f73cafa624d2e645804a1af1f2e9cd81383",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/vl6180x/README.md",
-        "sha256": "be5afaf6916bad5aa11070f3e1ae3a9b876db237c4b12aa7045fae05ad290eac",
+        "sha256": "2e7a73a7a5813b2988935c96d42d83e7dfa86c5c5485cc6214e4c666eed71f97",
         "mime": "text/markdown"
       }
     }

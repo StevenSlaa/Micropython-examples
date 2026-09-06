@@ -1,0 +1,14 @@
+{
+  "id": "spi-led-matrix-max7219",
+  "title": "SPI LED Matrix (MAX7219) Example",
+  "description": "In this example the microcontroller shows text on a chain of MAX7219 8x8 LED matrix modules and scrolls a message across them.",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "entry": "SPI LED Matrix (MAX7219).py",
+  "requires": [
+    "max7219"
+  ]
+}
