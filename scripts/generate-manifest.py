@@ -31,7 +31,8 @@ drivers = []
 for folder in sorted(p for p in DRIVERS.iterdir() if p.is_dir()) if DRIVERS.exists() else []:
     metadata = read_metadata(folder, "driver.json", ("id", "name", "version", "description", "boardTags"))
     if metadata["id"] != folder.name: fail(folder, f"id must match the directory name")
-    files = [entry(p, folder) for p in sorted(folder.rglob("*.py"))]
+    # test_*.py stays in the repository; only the modules themselves go to the board.
+    files = [entry(p, folder) for p in sorted(folder.rglob("*.py")) if not p.name.startswith("test_")]
     if not files: fail(folder, "must contain at least one Python file")
     drivers.append({**metadata, "files": files,
                     "readme": {**entry(folder / "README.md", folder), "mime": "text/markdown"}})

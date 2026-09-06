@@ -10,6 +10,7 @@ name is the id examples put in their `requires` list.
 | [hcsr04](hcsr04) | `hcsr04.py` | [ultrasonic-distance-sensor-hc-sr04](../examples/ultrasonic-distance-sensor-hc-sr04) |
 | [i2c-lcd](i2c-lcd) | `i2c_lcd.py`, `lcd_api.py` | [i2c-liquid-crystal-display](../examples/i2c-liquid-crystal-display) |
 | [mpu6050](mpu6050) | `mpu6050.py` | [i2c-mpu-6050](../examples/i2c-mpu-6050) |
+| [pixels](pixels) | `pixels.py` | — |
 | [ssd1306](ssd1306) | `ssd1306.py` | — |
 | [st7789py](st7789py) | `st7789py.py`, `vga2_16x32.py` | [spi-st7789-display](../examples/spi-st7789-display) |
 <!-- generated:end -->

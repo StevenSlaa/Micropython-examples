@@ -524,6 +524,31 @@
       }
     },
     {
+      "id": "pixels",
+      "name": "Addressable LEDs (WS2812B / SK6812)",
+      "version": "1.0.0",
+      "description": "Brightness, gamma and HSV colour layer for WS2812B, WS2811 and SK6812 RGBW strips, on top of the built-in neopixel module.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "files": [
+        {
+          "path": "pixels.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/pixels/pixels.py",
+          "sha256": "026d69a9db1e9ae5c552aecc58419450b202be37b9cc8e884abc6abb1de0641d",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/pixels/README.md",
+        "sha256": "849d4e72588deb31f228a4b6b1352c072ac03fcea42995984cdde26fd32b20cf",
+        "mime": "text/markdown"
+      }
+    },
+    {
       "id": "ssd1306",
       "name": "SSD1306 OLED",
       "version": "0.1.0",
