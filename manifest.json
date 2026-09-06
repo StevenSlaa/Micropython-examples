@@ -251,6 +251,34 @@
       "assets": []
     },
     {
+      "id": "i2c-rtc-ds3231",
+      "title": "I2C RTC (DS3231) Example",
+      "description": "In this example the microcontroller reads the date, time and temperature from a DS3231 real time clock module, and copies the time into the board's own clock so it survives a reset.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "requires": [
+        "ds3231"
+      ],
+      "files": [
+        {
+          "path": "I2C RTC (DS3231).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-rtc-ds3231/I2C%20RTC%20(DS3231).py",
+          "sha256": "0a736a0062a28c0241b1f1a2f8fb7cd2823684592fa3e685f0b1396342debcbe",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-rtc-ds3231/README.md",
+        "sha256": "7b485d462484ad5214a2291b264fad3cb77149e0095c10151a4eb8cbc070e51a",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "i2c-scanner",
       "title": "I2C Scanner Example",
       "description": "In this example the microcontrollers scans for devices connected over I2C and displays them to the user on the console.",
@@ -632,6 +660,32 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/bmp280/README.md",
         "sha256": "82401f8e25c8352a4b09ed616217f176be5c7e06191480f8eda09ed401370fe6",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "ds3231",
+      "name": "DS3231 real time clock",
+      "version": "1.0.0",
+      "description": "Reads and sets the DS3231 real time clock over I2C, including its temperature, and copies the time into the board's own clock.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/ds3231.pdf",
+      "files": [
+        {
+          "path": "ds3231.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ds3231/ds3231.py",
+          "sha256": "2ab00866225ed25fcaabe5d3ebae836b11fad9f42ae71bc68016d061cba025c9",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ds3231/README.md",
+        "sha256": "ebc5ef06f00cded1fca9b29f9686c37d02919bfb3e1607c7f4bb1040d3aac2e6",
         "mime": "text/markdown"
       }
     },
