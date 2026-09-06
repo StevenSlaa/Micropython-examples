@@ -89,6 +89,18 @@ Getting two boards to talk to each other, by radio or down a wire.
 | [nRF24 Radio: Receiving](nrf24-receive) | In this example the microcontroller listens for packets over a 2.4GHz radio link, prints the counter in each one and reports any that went missing. | [nrf24l01](../drivers/nrf24l01) |
 | [RS-485 Link (MAX485)](rs485-link) | In this example two boards talk to each other over RS-485: one asks a question every second and the other answers, over a pair of wires that works across a building. | [rs485](../drivers/rs485) |
 
+### Networking
+
+Wifi, access points, name lookups and MQTT. Needs a board with a radio: an ESP32 or a Pico W.
+
+| Example | What it does | Needs |
+| --- | --- | --- |
+| [1. Joining a Wifi Network](wifi-connect) | Connects to a wifi network using the network module directly, showing the status codes as it goes and printing the address, gateway and DNS server it was given. | — |
+| [2. Scanning for Networks](wifi-scan) | Lists the wifi networks in range with their channel, signal strength and whether they are open, strongest first. | — |
+| [3. Running an Access Point](wifi-access-point) | Turns the board into a wifi network of its own and serves a small web page to any phone or laptop that joins it, which is how a device with no screen gets set up. | [wifi](../drivers/wifi) |
+| [4. DNS and Fetching a Page](wifi-dns) | Looks up several hostnames to see which DNS server the router handed out and how long each lookup takes, then fetches a page over a plain socket. | [wifi](../drivers/wifi) |
+| [5. MQTT](mqtt) | Publishes readings to an MQTT broker and listens for commands coming back, which is how most small devices send their data somewhere useful. | [wifi](../drivers/wifi), [umqtt](../drivers/umqtt) |
+
 ### Storage and time
 
 Remembering things after the power goes, and knowing what time it is.

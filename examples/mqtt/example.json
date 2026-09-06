@@ -1,0 +1,17 @@
+{
+  "id": "mqtt",
+  "title": "5. MQTT",
+  "description": "Publishes readings to an MQTT broker and listens for commands coming back, which is how most small devices send their data somewhere useful.",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Networking",
+  "order": 5,
+  "entry": "MQTT.py",
+  "requires": [
+    "wifi",
+    "umqtt"
+  ]
+}

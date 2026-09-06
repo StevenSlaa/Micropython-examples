@@ -1,0 +1,14 @@
+{
+  "id": "wifi-connect",
+  "title": "1. Joining a Wifi Network",
+  "description": "Connects to a wifi network using the network module directly, showing the status codes as it goes and printing the address, gateway and DNS server it was given.",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Networking",
+  "order": 1,
+  "entry": "Wifi Connect.py",
+  "requires": []
+}

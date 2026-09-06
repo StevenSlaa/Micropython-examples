@@ -1,0 +1,16 @@
+{
+  "id": "wifi-access-point",
+  "title": "3. Running an Access Point",
+  "description": "Turns the board into a wifi network of its own and serves a small web page to any phone or laptop that joins it, which is how a device with no screen gets set up.",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Networking",
+  "order": 3,
+  "entry": "Wifi Access Point.py",
+  "requires": [
+    "wifi"
+  ]
+}

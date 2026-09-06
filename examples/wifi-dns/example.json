@@ -1,0 +1,16 @@
+{
+  "id": "wifi-dns",
+  "title": "4. DNS and Fetching a Page",
+  "description": "Looks up several hostnames to see which DNS server the router handed out and how long each lookup takes, then fetches a page over a plain socket.",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Networking",
+  "order": 4,
+  "entry": "Wifi DNS.py",
+  "requires": [
+    "wifi"
+  ]
+}

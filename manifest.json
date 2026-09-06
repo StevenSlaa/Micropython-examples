@@ -35,6 +35,10 @@
       "description": "Getting two boards to talk to each other, by radio or down a wire."
     },
     {
+      "name": "Networking",
+      "description": "Wifi, access points, name lookups and MQTT. Needs a board with a radio: an ESP32 or a Pico W."
+    },
+    {
       "name": "Storage and time",
       "description": "Remembering things after the power goes, and knowing what time it is."
     },
@@ -1013,6 +1017,148 @@
       "assets": []
     },
     {
+      "id": "wifi-connect",
+      "title": "1. Joining a Wifi Network",
+      "description": "Connects to a wifi network using the network module directly, showing the status codes as it goes and printing the address, gateway and DNS server it was given.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "group": "Networking",
+      "requires": [],
+      "files": [
+        {
+          "path": "Wifi Connect.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/wifi-connect/Wifi%20Connect.py",
+          "sha256": "ce7d555d116b205816068b34f54e4df815b364cd209c77c0a68504b1c2bbb183",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/wifi-connect/README.md",
+        "sha256": "064a03fb8165c9595df722ea876fae22344ba2d056c0c152e378deed821ad9f3",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "wifi-scan",
+      "title": "2. Scanning for Networks",
+      "description": "Lists the wifi networks in range with their channel, signal strength and whether they are open, strongest first.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "group": "Networking",
+      "requires": [],
+      "files": [
+        {
+          "path": "Wifi Scan.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/wifi-scan/Wifi%20Scan.py",
+          "sha256": "549258419deed442b031276afc9c7a92b6b091141c1d7c6345c0448264a10c84",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/wifi-scan/README.md",
+        "sha256": "bb5326ffcff05d3a8a0e4b08d30203ac6d3411b70d079111fecdb4ac4a6be9ba",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "wifi-access-point",
+      "title": "3. Running an Access Point",
+      "description": "Turns the board into a wifi network of its own and serves a small web page to any phone or laptop that joins it, which is how a device with no screen gets set up.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "group": "Networking",
+      "requires": [
+        "wifi"
+      ],
+      "files": [
+        {
+          "path": "Wifi Access Point.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/wifi-access-point/Wifi%20Access%20Point.py",
+          "sha256": "55250a9ff6ec140387379fbc9f296d8a3c4fa1564241d612d8b35972bdb7c2a9",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/wifi-access-point/README.md",
+        "sha256": "cd4b0f4ab9bdd8e618972e73ab72fd6b6ba746ec80b5edce055392dd02b7da5e",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "wifi-dns",
+      "title": "4. DNS and Fetching a Page",
+      "description": "Looks up several hostnames to see which DNS server the router handed out and how long each lookup takes, then fetches a page over a plain socket.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "group": "Networking",
+      "requires": [
+        "wifi"
+      ],
+      "files": [
+        {
+          "path": "Wifi DNS.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/wifi-dns/Wifi%20DNS.py",
+          "sha256": "5205fa00904210df261d91a77c6adfd0b1493c768372dbfeb6005723243402d5",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/wifi-dns/README.md",
+        "sha256": "9026d6f00095f34926937224210e128f22cc5bb83a1f2428b2daed4a7a16fa3f",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "mqtt",
+      "title": "5. MQTT",
+      "description": "Publishes readings to an MQTT broker and listens for commands coming back, which is how most small devices send their data somewhere useful.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "group": "Networking",
+      "requires": [
+        "wifi",
+        "umqtt"
+      ],
+      "files": [
+        {
+          "path": "MQTT.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/mqtt/MQTT.py",
+          "sha256": "bf40b8cb3a4ccb3dba07457db91c8f7c870dd8f5cdfc8188c1aeb1aa5c5a0354",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/mqtt/README.md",
+        "sha256": "9605068eb5a4fda0542d12fd674793836c79c384c1f8b8fce80660678b180fc8",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "i2c-eeprom",
       "title": "I2C EEPROM Example",
       "description": "In this example the microcontroller stores a boot counter and a message in an I2C EEPROM, so they survive the power being cut, and reads them back.",
@@ -1779,6 +1925,33 @@
       }
     },
     {
+      "id": "umqtt",
+      "name": "MQTT client (umqtt.simple)",
+      "version": "1.3.4",
+      "description": "The umqtt.simple MQTT client, for boards whose firmware does not already include it, such as the Raspberry Pi Pico W.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "license": "MIT",
+      "source": "https://github.com/micropython/micropython-lib/tree/master/micropython/umqtt.simple",
+      "files": [
+        {
+          "path": "umqtt/simple.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/umqtt/umqtt/simple.py",
+          "sha256": "01c25251994e4d7d7baaccc2e6e11a31d7162b038ee2060667df853558451d95",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/umqtt/README.md",
+        "sha256": "e125c69b0d50dbc17287d5fbceb1023eb87273502ba8b1b504d60596c27ff6f6",
+        "mime": "text/markdown"
+      }
+    },
+    {
       "id": "vcnl4040",
       "name": "VCNL4040 proximity and light",
       "version": "1.0.0",
@@ -1827,6 +2000,31 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/vl6180x/README.md",
         "sha256": "2e7a73a7a5813b2988935c96d42d83e7dfa86c5c5485cc6214e4c666eed71f97",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "wifi",
+      "name": "Wifi and access points",
+      "version": "1.0.0",
+      "description": "Joining a wifi network or running an access point, the same way on an ESP32 and a Raspberry Pi Pico W, with the status codes and setup order each port really needs.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "files": [
+        {
+          "path": "wifi.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/wifi/wifi.py",
+          "sha256": "15ed97fa27c66313373b4799e124b3a44ffe682a12fbf7ec95b825eaf1133c05",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/wifi/README.md",
+        "sha256": "2584050d21fadca4767e3ecb21d9812debee5eae7e96326608914d23b5ee8927",
         "mime": "text/markdown"
       }
     }

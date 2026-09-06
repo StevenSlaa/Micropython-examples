@@ -32,8 +32,10 @@ name is the id examples put in their `requires` list.
 | [stepper](stepper) | `stepper.py` | [stepper](../examples/stepper) |
 | [tc74](tc74) | `tc74.py` | — |
 | [tm1637](tm1637) | `tm1637.py` | [tm1637-7-segment-display](../examples/tm1637-7-segment-display) |
+| [umqtt](umqtt) | `umqtt/simple.py` | [mqtt](../examples/mqtt) |
 | [vcnl4040](vcnl4040) | `vcnl4040.py` | [i2c-proximity-vcnl4040](../examples/i2c-proximity-vcnl4040) |
 | [vl6180x](vl6180x) | `vl6180x.py` | [i2c-tof-vl6180x](../examples/i2c-tof-vl6180x) |
+| [wifi](wifi) | `wifi.py` | [wifi-access-point](../examples/wifi-access-point), [wifi-dns](../examples/wifi-dns), [mqtt](../examples/mqtt) |
 <!-- generated:end -->
 
 Adding one is a directory with `driver.json`, `README.md`, and the modules — see

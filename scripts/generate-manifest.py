@@ -20,6 +20,7 @@ GROUPS = (
     ("Input", "Taking something in from a person: knobs, keypads and card readers."),
     ("Remote control", "Talking over infrared, in both directions."),
     ("Between boards", "Getting two boards to talk to each other, by radio or down a wire."),
+    ("Networking", "Wifi, access points, name lookups and MQTT. Needs a board with a radio: an ESP32 or a Pico W."),
     ("Storage and time", "Remembering things after the power goes, and knowing what time it is."),
     ("Tools", "Finding out what is really on the bus."),
 )
