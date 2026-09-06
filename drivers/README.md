@@ -14,6 +14,7 @@ name is the id examples put in their `requires` list.
 | [mfrc522](mfrc522) | `mfrc522.py` | [spi-rfid-rc522](../examples/spi-rfid-rc522) |
 | [mpu6050](mpu6050) | `mpu6050.py` | [i2c-mpu-6050](../examples/i2c-mpu-6050) |
 | [pixels](pixels) | `pixels.py` | — |
+| [sr74hc595](sr74hc595) | `sr74hc595.py` | [seven-segment-74hc595](../examples/seven-segment-74hc595) |
 | [ssd1306](ssd1306) | `ssd1306.py` | — |
 | [st7789py](st7789py) | `st7789py.py`, `vga2_16x32.py` | [spi-st7789-display](../examples/spi-st7789-display) |
 | [tc74](tc74) | `tc74.py` | — |

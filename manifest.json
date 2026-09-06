@@ -415,6 +415,34 @@
       ]
     },
     {
+      "id": "seven-segment-74hc595",
+      "title": "Seven Segment Display (74HC595) Example",
+      "description": "In this example the microcontroller drives a single 7-segment display through a 74HC595 shift register, counting 0 to 9 and then through the hex letters, using three pins instead of eight.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "requires": [
+        "sr74hc595"
+      ],
+      "files": [
+        {
+          "path": "Seven Segment (74HC595).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/seven-segment-74hc595/Seven%20Segment%20(74HC595).py",
+          "sha256": "30ba8089fec4140c2e8335fd9939ce0932545031f36a615d7c1065ee8824f86a",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/seven-segment-74hc595/README.md",
+        "sha256": "6fd2febc79a6f9d7bf3664f24566eaeba51f2045da7ae7f3c9c2f1eafa60a880",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "spi-led-matrix-max7219",
       "title": "SPI LED Matrix (MAX7219) Example",
       "description": "In this example the microcontroller shows text on a chain of MAX7219 8x8 LED matrix modules and scrolls a message across them.",
@@ -792,6 +820,31 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/pixels/README.md",
         "sha256": "b0972823d55248bd57c46edd507d9d509539e059e039bde70d71f9819537d6ae",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "sr74hc595",
+      "name": "74HC595 shift register",
+      "version": "1.0.0",
+      "description": "Drives one or more chained 74HC595 shift registers from three pins, turning them into eight outputs each.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "files": [
+        {
+          "path": "sr74hc595.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/sr74hc595/sr74hc595.py",
+          "sha256": "9b22596227a8a84cdc1f85f6528f08642011eb07bbe0727ead3e1f1f76e06b9f",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/sr74hc595/README.md",
+        "sha256": "0015216c639857f1487217cdb1bfe66c9b6b5a9c9a895481ba48e2a645e58b77",
         "mime": "text/markdown"
       }
     },
