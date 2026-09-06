@@ -62,11 +62,12 @@ Making something move, with motors and servos.
 
 ### Input
 
-Taking something in from a person: keypads and card readers.
+Taking something in from a person: knobs, keypads and card readers.
 
 | Example | What it does | Needs |
 | --- | --- | --- |
 | [Matrix Keypad (4x4) Example](keypad-4x4) | In this example the microcontroller reads a membrane matrix keypad, collects the digits typed into a code, and checks it when the hash key is pressed. | [keypad](../drivers/keypad) |
+| [Rotary Encoder](rotary-encoder) | In this example the microcontroller reads a rotary encoder, counting up and down within a range as the knob is turned, and resetting when it is pressed. | [rotary](../drivers/rotary) |
 | [SPI RFID RC522 Example](spi-rfid-rc522) | In this example the microcontroller reads the id of any MIFARE card or tag held against an RFID-RC522 reader, and prints the contents of one block from it. | [mfrc522](../drivers/mfrc522) |
 
 ### Remote control

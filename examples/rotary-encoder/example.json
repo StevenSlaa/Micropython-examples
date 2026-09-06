@@ -1,0 +1,15 @@
+{
+  "id": "rotary-encoder",
+  "title": "Rotary Encoder",
+  "description": "In this example the microcontroller reads a rotary encoder, counting up and down within a range as the knob is turned, and resetting when it is pressed.",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Input",
+  "entry": "Rotary Encoder.py",
+  "requires": [
+    "rotary"
+  ]
+}

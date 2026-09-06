@@ -24,7 +24,7 @@
     },
     {
       "name": "Input",
-      "description": "Taking something in from a person: keypads and card readers."
+      "description": "Taking something in from a person: knobs, keypads and card readers."
     },
     {
       "name": "Remote control",
@@ -806,6 +806,35 @@
       "assets": []
     },
     {
+      "id": "rotary-encoder",
+      "title": "Rotary Encoder",
+      "description": "In this example the microcontroller reads a rotary encoder, counting up and down within a range as the knob is turned, and resetting when it is pressed.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "group": "Input",
+      "requires": [
+        "rotary"
+      ],
+      "files": [
+        {
+          "path": "Rotary Encoder.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/rotary-encoder/Rotary%20Encoder.py",
+          "sha256": "8895b2fb9821ca0379e18d30da43c2784e77348798a9ab6cc7475cbefefcbfb9",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/rotary-encoder/README.md",
+        "sha256": "67b5d1c54a6f90ac87893ce84d2af9fe894852fd61c986089b2953c26d045843",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "spi-rfid-rc522",
       "title": "SPI RFID RC522 Example",
       "description": "In this example the microcontroller reads the id of any MIFARE card or tag held against an RFID-RC522 reader, and prints the contents of one block from it.",
@@ -1391,6 +1420,31 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/pixels/README.md",
         "sha256": "b0972823d55248bd57c46edd507d9d509539e059e039bde70d71f9819537d6ae",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "rotary",
+      "name": "Rotary encoder (KY-040)",
+      "version": "1.0.0",
+      "description": "Reads a rotary encoder with CLK, DT and SW pins from interrupts, counting detents with an optional range, wrapping and a debounced push switch.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "files": [
+        {
+          "path": "rotary.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/rotary/rotary.py",
+          "sha256": "070b187b52069de777cdefa3bd2bba216937a8924471c8cf5e26a38d7c8f1c76",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/rotary/README.md",
+        "sha256": "6f7fd8134be0f1fb2a8fd8ad8e95d8014d837d4b8673540251d8b55fbb1b94aa",
         "mime": "text/markdown"
       }
     },

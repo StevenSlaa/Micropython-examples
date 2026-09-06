@@ -22,6 +22,7 @@ name is the id examples put in their `requires` list.
 | [mpu6050](mpu6050) | `mpu6050.py` | [i2c-mpu-6050](../examples/i2c-mpu-6050) |
 | [p9813](p9813) | `p9813.py` | [p9813-rgb-led](../examples/p9813-rgb-led) |
 | [pixels](pixels) | `pixels.py` | — |
+| [rotary](rotary) | `rotary.py` | [rotary-encoder](../examples/rotary-encoder) |
 | [servo](servo) | `servo.py` | [servo](../examples/servo) |
 | [sr74hc595](sr74hc595) | `sr74hc595.py` | [seven-segment-74hc595](../examples/seven-segment-74hc595) |
 | [ssd1306](ssd1306) | `ssd1306.py` | — |

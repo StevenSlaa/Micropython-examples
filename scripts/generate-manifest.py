@@ -17,7 +17,7 @@ GROUPS = (
     ("Sensors", "Reading the world: temperature, distance, movement, light and magnetic fields."),
     ("Displays and LEDs", "Showing something, from a character display to a matrix or a strip of colour."),
     ("Motion", "Making something move, with motors and servos."),
-    ("Input", "Taking something in from a person: keypads and card readers."),
+    ("Input", "Taking something in from a person: knobs, keypads and card readers."),
     ("Remote control", "Talking over infrared, in both directions."),
     ("Storage and time", "Remembering things after the power goes, and knowing what time it is."),
     ("Tools", "Finding out what is really on the bus."),
