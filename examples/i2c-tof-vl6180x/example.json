@@ -7,6 +7,7 @@
     "esp32s3",
     "pico"
   ],
+  "group": "Sensors",
   "entry": "VL6180X (I2C).py",
   "requires": [
     "vl6180x"

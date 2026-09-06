@@ -7,6 +7,7 @@
     "esp32s3",
     "pico"
   ],
+  "group": "Storage and time",
   "entry": "I2C RTC (DS3231).py",
   "requires": [
     "ds3231"

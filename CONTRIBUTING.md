@@ -6,9 +6,19 @@ Run `python3 scripts/generate-manifest.py` before opening a pull request and com
 
 ## Examples
 
-- Use a lowercase hyphenated directory name.
+- Use a lowercase hyphenated directory name, usually the part it uses.
+- A set meant to be read in sequence, like the basics, sets `order` in `example.json` to say
+  which comes first. Leave it out otherwise: examples without one are listed alphabetically
+  within their group.
 - Add `example.json`, `README.md`, and at least one `.py` file.
 - Set `entry` to the script users should open first.
+- Put it in a `group`, which decides where it appears in the IDE's library panel and in the
+  index in [examples/README.md](examples/README.md). The groups are listed in
+  `scripts/generate-manifest.py`, in the order they are shown:
+  **Basics**, **Sensors**, **Displays and LEDs**, **Motion**, **Input**, **Remote control**,
+  **Storage and time**, **Tools**. A group of your own works too, and lands at the end; add it
+  to that list if it deserves a place of its own. Leaving `group` out puts the example in
+  "Other", which is visible in the index rather than silently hidden.
 - List every driver the script imports in `requires`. An example with a `lib/` directory is
   rejected; move the module to `drivers/` instead.
 - Put images and datasheets in `res/`, and keep README links relative to the example directory.

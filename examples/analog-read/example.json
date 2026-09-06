@@ -1,0 +1,14 @@
+{
+  "id": "analog-read",
+  "title": "3. Analog Read \u2014 measuring a knob",
+  "description": "Measures a voltage with the analog to digital converter and prints it as a raw number, as volts and as a percentage. Turn a potentiometer and watch it change.",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Basics",
+  "order": 3,
+  "entry": "Analog Read.py",
+  "requires": []
+}

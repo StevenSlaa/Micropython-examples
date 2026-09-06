@@ -1,0 +1,14 @@
+{
+  "id": "dimmer",
+  "title": "5. Dimmer \u2014 putting them together",
+  "description": "Reads a potentiometer and dims an LED to match, showing how to map any input range onto any output range.",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Basics",
+  "order": 5,
+  "entry": "Dimmer.py",
+  "requires": []
+}

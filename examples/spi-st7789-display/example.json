@@ -6,6 +6,7 @@
     "esp32",
     "esp32s3"
   ],
+  "group": "Displays and LEDs",
   "entry": "SPI ST7789 Display.py",
   "requires": [
     "st7789py"

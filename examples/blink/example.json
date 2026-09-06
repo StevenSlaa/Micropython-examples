@@ -1,0 +1,14 @@
+{
+  "id": "blink",
+  "title": "1. Blink an LED \u2014 digital write",
+  "description": "The first program on any microcontroller. Turns a pin on and off to blink an LED, which is all a digital write is.",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Basics",
+  "order": 1,
+  "entry": "Blink.py",
+  "requires": []
+}

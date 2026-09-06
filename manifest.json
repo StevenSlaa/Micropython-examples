@@ -7,26 +7,54 @@
   },
   "examples": [
     {
+      "id": "blink",
+      "title": "1. Blink an LED \u2014 digital write",
+      "description": "The first program on any microcontroller. Turns a pin on and off to blink an LED, which is all a digital write is.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "group": "Basics",
+      "requires": [],
+      "files": [
+        {
+          "path": "Blink.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/blink/Blink.py",
+          "sha256": "906f527e40e01df16ca3979d4a67ce6c4852f095bd7ef2fb9834a6bebe98c1b9",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/blink/README.md",
+        "sha256": "435a35fdeb41d016f95aa4609e78dfc63157d7a0c570cd72048ea3c25275ef6b",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "button",
-      "title": "Button",
-      "description": "When the button is pressed the onboard led (at least for the ESP32) will turn on. It will turn of when the button is released.",
+      "title": "2. Button \u2014 digital read",
+      "description": "When the button is pressed the onboard led (at least for the ESP32) will turn on. It will turn of when the button is released. Shows what a digital read is, and why a pull-up resistor is needed to read a switch.",
       "boardTags": [
         "esp32",
         "esp32s3"
       ],
+      "group": "Basics",
       "requires": [],
       "files": [
         {
           "path": "Button.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/button/Button.py",
-          "sha256": "af15c58a24a5708be947ccb3f4286e0e253ef58bf50e39a23add4f7e94d5e350",
+          "sha256": "646a0a751732ad9200f76f72d05a4ec3cee35ded0b5128c1c0e32ea1aa5fd7c2",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/button/README.md",
-        "sha256": "a1ee2df23a3f01cd5fa1a2c40d91ddd15e12e865c3e72fe1d5845e64437733e9",
+        "sha256": "0addd2739a7b5a4da9e0e86cd34cbf4d6e14452b1af6ce261d5c48ae5e3f24e9",
         "mime": "text/markdown"
       },
       "assets": [
@@ -39,29 +67,89 @@
       ]
     },
     {
-      "id": "dc-motor-l293d",
-      "title": "DC Motor (L293D / L298N) Example",
-      "description": "In this example the microcontroller drives a DC motor through an H bridge, ramping the speed up, coasting, running backwards and braking.",
+      "id": "analog-read",
+      "title": "3. Analog Read \u2014 measuring a knob",
+      "description": "Measures a voltage with the analog to digital converter and prints it as a raw number, as volts and as a percentage. Turn a potentiometer and watch it change.",
       "boardTags": [
         "esp32",
         "esp32s3",
         "pico"
       ],
-      "requires": [
-        "motor"
-      ],
+      "group": "Basics",
+      "requires": [],
       "files": [
         {
-          "path": "DC Motor (L293D).py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/dc-motor-l293d/DC%20Motor%20(L293D).py",
-          "sha256": "8aea6a595fa0d9b9488d581d7db523f5c8d019662747562fadb143b2f2925347",
+          "path": "Analog Read.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/analog-read/Analog%20Read.py",
+          "sha256": "f815fe92b338111b460ce880e72383e4af80483494c2201d83bae7ca62a91a00",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/dc-motor-l293d/README.md",
-        "sha256": "9590a129d354a222857a233338ecab9c3924b1736803e566afb6d01801426475",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/analog-read/README.md",
+        "sha256": "8ed0b405f97776253f838799270f4a35910b80a16aa3955c1c5772d01494f884",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "pwm",
+      "title": "4. PWM \u2014 analog write",
+      "description": "This example will show you how to create a fading LED animation with a PWM Signal.  This example can of course also be used to control servo's, motor drivers, buzzers, analog output, etc. Shows what an analog write is: switching a pin fast enough that a fraction of the time on behaves like a voltage in between.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "group": "Basics",
+      "requires": [],
+      "files": [
+        {
+          "path": "PWM.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm/PWM.py",
+          "sha256": "7768d043c092f977094f43e1399beb3cf7d586b0da0c77aa12638609e019465e",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm/README.md",
+        "sha256": "c46c41cd5aa49c669ebe07ec0c5dbf7dd326e043d17c6860792e416aed0ce881",
+        "mime": "text/markdown"
+      },
+      "assets": [
+        {
+          "path": "res/circuit.png",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm/res/circuit.png",
+          "sha256": "cdb727f48de7e72b544777335d873824f49ef22f24354461d9693f9e7c166cd1",
+          "mime": "image/png"
+        }
+      ]
+    },
+    {
+      "id": "dimmer",
+      "title": "5. Dimmer \u2014 putting them together",
+      "description": "Reads a potentiometer and dims an LED to match, showing how to map any input range onto any output range.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "group": "Basics",
+      "requires": [],
+      "files": [
+        {
+          "path": "Dimmer.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/dimmer/Dimmer.py",
+          "sha256": "85e834fd596ab53a97780c0cf5c3f10e675abd329bf4c0b95f3bdeb0fc6690f6",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/dimmer/README.md",
+        "sha256": "299676f0d7efe4da3504b3e3619649e0fa24759a778242b87c0c338763c47a95",
         "mime": "text/markdown"
       },
       "assets": []
@@ -75,6 +163,7 @@
         "esp32s3",
         "pico"
       ],
+      "group": "Sensors",
       "requires": [
         "dht"
       ],
@@ -116,6 +205,7 @@
         "esp32s3",
         "pico"
       ],
+      "group": "Sensors",
       "requires": [
         "bmp280"
       ],
@@ -151,6 +241,7 @@
         "esp32s3",
         "pico"
       ],
+      "group": "Sensors",
       "requires": [
         "gy271"
       ],
@@ -171,6 +262,176 @@
       "assets": []
     },
     {
+      "id": "i2c-mpu-6050",
+      "title": "I2C MPU-6050",
+      "description": "In this example the microcontrollers reads values from the MPU-6050 accelerometer and gyroscope. It also reads the onboard temperature sensor of the module.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "group": "Sensors",
+      "requires": [
+        "mpu6050"
+      ],
+      "files": [
+        {
+          "path": "I2C MPU6050.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-mpu-6050/I2C%20MPU6050.py",
+          "sha256": "3afb56d0b305fdaff879aee074b488d9602adc02b56f10c95a76a2fca70aa303",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-mpu-6050/README.md",
+        "sha256": "63c1aec04f308d01debdbab6960d023d84cfe80a4658654512d1a038bc004c61",
+        "mime": "text/markdown"
+      },
+      "assets": [
+        {
+          "path": "res/component.png",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-mpu-6050/res/component.png",
+          "sha256": "e7bdaf83768372d3cff4fc7b78e3805438f2356c95d63f7aec7ccd316ed1b5a2",
+          "mime": "image/png"
+        }
+      ]
+    },
+    {
+      "id": "i2c-proximity-vcnl4040",
+      "title": "VCNL4040 Sensor Example",
+      "description": "In this example the microcontroller reads proximity and ambient light from a VCNL4040 sensor, printing the light level in lux and reporting when something comes near.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "group": "Sensors",
+      "requires": [
+        "vcnl4040"
+      ],
+      "files": [
+        {
+          "path": "VCNL4040 (I2C).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-proximity-vcnl4040/VCNL4040%20(I2C).py",
+          "sha256": "1fa7e08488bc297641d5735d800ad25237e23b8a523f4b1fce455ac55f14f423",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-proximity-vcnl4040/README.md",
+        "sha256": "5c17097d67cebb196e620a7f36165acf3a60ecabb5df26ea6ddc8272b355c147",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "i2c-tof-tof10120",
+      "title": "TOF10120 Sensor Example",
+      "description": "In this example the microcontroller should display the distance that the sensor has measured. This value has a maximum of 2000.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "group": "Sensors",
+      "requires": [],
+      "files": [
+        {
+          "path": "TOF10120 (I2C).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-tof-tof10120/TOF10120%20(I2C).py",
+          "sha256": "a3800d977b63e4ced22e3bf6a099150a47441ae25e2acd3503774f8292e227ba",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-tof-tof10120/README.md",
+        "sha256": "247ba4f49a01ecbc11aee9e98b73d8a2fe759cf6e4e4e6eb0a978d1e3f58440a",
+        "mime": "text/markdown"
+      },
+      "assets": [
+        {
+          "path": "res/component.png",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-tof-tof10120/res/component.png",
+          "sha256": "564e1c885dd3f3c978575e7464b91be4427d28efbf404a8ee6835fd5863fdeb5",
+          "mime": "image/png"
+        }
+      ]
+    },
+    {
+      "id": "i2c-tof-vl6180x",
+      "title": "VL6180X Sensor Example",
+      "description": "In this example the microcontroller measures the distance to a nearby object with a VL6180X time of flight sensor, checks whether the reading is valid, and also prints the ambient light level.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "group": "Sensors",
+      "requires": [
+        "vl6180x"
+      ],
+      "files": [
+        {
+          "path": "VL6180X (I2C).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-tof-vl6180x/VL6180X%20(I2C).py",
+          "sha256": "360a21b4460285fd8d6a4a04c8c4595921a56be0105545089e1ff96cb664770e",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-tof-vl6180x/README.md",
+        "sha256": "aad50b4a94f6dc02cf1824cce94b7b69e9c6585e4ebddab769070c668226a32a",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "ultrasonic-distance-sensor-hc-sr04",
+      "title": "Ultrasonic Distance Sensor (HC-SR04)",
+      "description": "The HC-SR04 ultrasonic sensor uses sonar to determine the distance to an object.  This sensor reads from 2cm to 400cm with an accuracy of 0.3cm. In this example, the microcontroller reads the distance from the sensor and displays it on the ",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "group": "Sensors",
+      "requires": [
+        "hcsr04"
+      ],
+      "files": [
+        {
+          "path": "Ultrasonic Distance Sensor (HC-SR04).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ultrasonic-distance-sensor-hc-sr04/Ultrasonic%20Distance%20Sensor%20(HC-SR04).py",
+          "sha256": "1448e449244314dcd933438d543879c0f8471112fe6499d6f631f2d2216b799a",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ultrasonic-distance-sensor-hc-sr04/README.md",
+        "sha256": "b5dbb2eede8ac59887dca27609455e1ee59e8c1635acb5db1430e37806b74cb8",
+        "mime": "text/markdown"
+      },
+      "assets": [
+        {
+          "path": "res/circuit.png",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ultrasonic-distance-sensor-hc-sr04/res/circuit.png",
+          "sha256": "8bec7164ca58974157ad08ad3ef20f74e55b9b3f4e0e36e99f762ec5398878a3",
+          "mime": "image/png"
+        },
+        {
+          "path": "res/component.png",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ultrasonic-distance-sensor-hc-sr04/res/component.png",
+          "sha256": "281eb72ee3285021e8c70fc70c63580a29c5ca8941b37576393ad055b0236a06",
+          "mime": "image/png"
+        }
+      ]
+    },
+    {
       "id": "i2c-liquid-crystal-display",
       "title": "I2C Liquid Crystal Display Example",
       "description": "In this example the microcontroller should display some text on a Liquid Crystal Display (16x2) over I2C. Keep in mind that the LCD needs an I2C Backpack for this example to work.",
@@ -179,6 +440,7 @@
         "esp32s3",
         "pico"
       ],
+      "group": "Displays and LEDs",
       "requires": [
         "i2c-lcd"
       ],
@@ -218,268 +480,6 @@
       ]
     },
     {
-      "id": "i2c-mpu-6050",
-      "title": "I2C MPU-6050",
-      "description": "In this example the microcontrollers reads values from the MPU-6050 accelerometer and gyroscope. It also reads the onboard temperature sensor of the module.",
-      "boardTags": [
-        "esp32",
-        "esp32s3",
-        "pico"
-      ],
-      "requires": [
-        "mpu6050"
-      ],
-      "files": [
-        {
-          "path": "I2C MPU6050.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-mpu-6050/I2C%20MPU6050.py",
-          "sha256": "3afb56d0b305fdaff879aee074b488d9602adc02b56f10c95a76a2fca70aa303",
-          "mime": "text/x-python"
-        }
-      ],
-      "readme": {
-        "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-mpu-6050/README.md",
-        "sha256": "63c1aec04f308d01debdbab6960d023d84cfe80a4658654512d1a038bc004c61",
-        "mime": "text/markdown"
-      },
-      "assets": [
-        {
-          "path": "res/component.png",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-mpu-6050/res/component.png",
-          "sha256": "e7bdaf83768372d3cff4fc7b78e3805438f2356c95d63f7aec7ccd316ed1b5a2",
-          "mime": "image/png"
-        }
-      ]
-    },
-    {
-      "id": "i2c-proximity-vcnl4040",
-      "title": "VCNL4040 Sensor Example",
-      "description": "In this example the microcontroller reads proximity and ambient light from a VCNL4040 sensor, printing the light level in lux and reporting when something comes near.",
-      "boardTags": [
-        "esp32",
-        "esp32s3",
-        "pico"
-      ],
-      "requires": [
-        "vcnl4040"
-      ],
-      "files": [
-        {
-          "path": "VCNL4040 (I2C).py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-proximity-vcnl4040/VCNL4040%20(I2C).py",
-          "sha256": "1fa7e08488bc297641d5735d800ad25237e23b8a523f4b1fce455ac55f14f423",
-          "mime": "text/x-python"
-        }
-      ],
-      "readme": {
-        "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-proximity-vcnl4040/README.md",
-        "sha256": "5c17097d67cebb196e620a7f36165acf3a60ecabb5df26ea6ddc8272b355c147",
-        "mime": "text/markdown"
-      },
-      "assets": []
-    },
-    {
-      "id": "i2c-rtc-ds3231",
-      "title": "I2C RTC (DS3231) Example",
-      "description": "In this example the microcontroller reads the date, time and temperature from a DS3231 real time clock module, and copies the time into the board's own clock so it survives a reset.",
-      "boardTags": [
-        "esp32",
-        "esp32s3",
-        "pico"
-      ],
-      "requires": [
-        "ds3231"
-      ],
-      "files": [
-        {
-          "path": "I2C RTC (DS3231).py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-rtc-ds3231/I2C%20RTC%20(DS3231).py",
-          "sha256": "0a736a0062a28c0241b1f1a2f8fb7cd2823684592fa3e685f0b1396342debcbe",
-          "mime": "text/x-python"
-        }
-      ],
-      "readme": {
-        "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-rtc-ds3231/README.md",
-        "sha256": "7b485d462484ad5214a2291b264fad3cb77149e0095c10151a4eb8cbc070e51a",
-        "mime": "text/markdown"
-      },
-      "assets": []
-    },
-    {
-      "id": "i2c-scanner",
-      "title": "I2C Scanner Example",
-      "description": "In this example the microcontrollers scans for devices connected over I2C and displays them to the user on the console.",
-      "boardTags": [
-        "esp32",
-        "esp32s3",
-        "pico"
-      ],
-      "requires": [],
-      "files": [
-        {
-          "path": "I2C Scanner.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-scanner/I2C%20Scanner.py",
-          "sha256": "0e2c4faaf835df7978086fe6b3a0a338798becc81adc39824a52127f37a55f22",
-          "mime": "text/x-python"
-        }
-      ],
-      "readme": {
-        "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-scanner/README.md",
-        "sha256": "41e8b68af49ca3c5cabc1533fa25761d3dadd0ef821031a9393289a50ed1f18f",
-        "mime": "text/markdown"
-      },
-      "assets": []
-    },
-    {
-      "id": "i2c-tof-tof10120",
-      "title": "TOF10120 Sensor Example",
-      "description": "In this example the microcontroller should display the distance that the sensor has measured. This value has a maximum of 2000.",
-      "boardTags": [
-        "esp32",
-        "esp32s3",
-        "pico"
-      ],
-      "requires": [],
-      "files": [
-        {
-          "path": "TOF10120 (I2C).py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-tof-tof10120/TOF10120%20(I2C).py",
-          "sha256": "a3800d977b63e4ced22e3bf6a099150a47441ae25e2acd3503774f8292e227ba",
-          "mime": "text/x-python"
-        }
-      ],
-      "readme": {
-        "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-tof-tof10120/README.md",
-        "sha256": "247ba4f49a01ecbc11aee9e98b73d8a2fe759cf6e4e4e6eb0a978d1e3f58440a",
-        "mime": "text/markdown"
-      },
-      "assets": [
-        {
-          "path": "res/component.png",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-tof-tof10120/res/component.png",
-          "sha256": "564e1c885dd3f3c978575e7464b91be4427d28efbf404a8ee6835fd5863fdeb5",
-          "mime": "image/png"
-        }
-      ]
-    },
-    {
-      "id": "i2c-tof-vl6180x",
-      "title": "VL6180X Sensor Example",
-      "description": "In this example the microcontroller measures the distance to a nearby object with a VL6180X time of flight sensor, checks whether the reading is valid, and also prints the ambient light level.",
-      "boardTags": [
-        "esp32",
-        "esp32s3",
-        "pico"
-      ],
-      "requires": [
-        "vl6180x"
-      ],
-      "files": [
-        {
-          "path": "VL6180X (I2C).py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-tof-vl6180x/VL6180X%20(I2C).py",
-          "sha256": "360a21b4460285fd8d6a4a04c8c4595921a56be0105545089e1ff96cb664770e",
-          "mime": "text/x-python"
-        }
-      ],
-      "readme": {
-        "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-tof-vl6180x/README.md",
-        "sha256": "aad50b4a94f6dc02cf1824cce94b7b69e9c6585e4ebddab769070c668226a32a",
-        "mime": "text/markdown"
-      },
-      "assets": []
-    },
-    {
-      "id": "ir-remote-nec",
-      "title": "IR Remote (NEC) Example",
-      "description": "In this example the microcontroller decodes button presses from an infrared remote control with a 38kHz receiver module, prints which button was pressed and toggles the onboard LED.",
-      "boardTags": [
-        "esp32",
-        "esp32s3",
-        "pico"
-      ],
-      "requires": [
-        "ir-receiver"
-      ],
-      "files": [
-        {
-          "path": "IR Remote (NEC).py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ir-remote-nec/IR%20Remote%20(NEC).py",
-          "sha256": "ebf14104579c2fcfcaa2acbb9e3f2dc04537b6ca531f11804bc067e349351161",
-          "mime": "text/x-python"
-        }
-      ],
-      "readme": {
-        "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ir-remote-nec/README.md",
-        "sha256": "f926141453a05e30f1e5568762c81604418bccbbb78a35b07d8a53ab16739f29",
-        "mime": "text/markdown"
-      },
-      "assets": []
-    },
-    {
-      "id": "ir-remote-send",
-      "title": "IR Remote Send (NEC) Example",
-      "description": "In this example the microcontroller sends NEC remote control codes from an infrared LED, using the ESP32's RMT peripheral where it exists and a PWM carrier everywhere else.",
-      "boardTags": [
-        "esp32",
-        "esp32s3",
-        "pico"
-      ],
-      "requires": [
-        "ir-transmitter"
-      ],
-      "files": [
-        {
-          "path": "IR Remote Send (NEC).py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ir-remote-send/IR%20Remote%20Send%20(NEC).py",
-          "sha256": "0f044510c6a2bbb8aa41a79c9f7ba21d18efee243731e884fe28b31edfd3f129",
-          "mime": "text/x-python"
-        }
-      ],
-      "readme": {
-        "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ir-remote-send/README.md",
-        "sha256": "0bd35c1c36122b51d700fab9523a22d318e3bd75564d312eafb0f3f67a9f5db2",
-        "mime": "text/markdown"
-      },
-      "assets": []
-    },
-    {
-      "id": "keypad-4x4",
-      "title": "Matrix Keypad (4x4) Example",
-      "description": "In this example the microcontroller reads a membrane matrix keypad, collects the digits typed into a code, and checks it when the hash key is pressed.",
-      "boardTags": [
-        "esp32",
-        "esp32s3",
-        "pico"
-      ],
-      "requires": [
-        "keypad"
-      ],
-      "files": [
-        {
-          "path": "Keypad (4x4).py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/keypad-4x4/Keypad%20(4x4).py",
-          "sha256": "0ee5282ef99a513f6eac892ad63eb5edc4d0510c78b5cc230c28847a3e58c019",
-          "mime": "text/x-python"
-        }
-      ],
-      "readme": {
-        "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/keypad-4x4/README.md",
-        "sha256": "06eaf8138de1e983ac5841abbf926621c2a0a5cbfddef2ec7dd1348e8e3ceeb4",
-        "mime": "text/markdown"
-      },
-      "assets": []
-    },
-    {
       "id": "p9813-rgb-led",
       "title": "P9813 RGB LED Example",
       "description": "In this example the microcontroller shows the plain colours on a chain of P9813 RGB LEDs and then cycles a rainbow along it.",
@@ -488,6 +488,7 @@
         "esp32s3",
         "pico"
       ],
+      "group": "Displays and LEDs",
       "requires": [
         "p9813"
       ],
@@ -508,83 +509,6 @@
       "assets": []
     },
     {
-      "id": "pwm",
-      "title": "PWM",
-      "description": "This example will show you how to create a fading LED animation with a PWM Signal.  This example can of course also be used to control servo's, motor drivers, buzzers, analog output, etc.",
-      "boardTags": [
-        "esp32",
-        "esp32s3"
-      ],
-      "requires": [],
-      "files": [
-        {
-          "path": "PWM.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm/PWM.py",
-          "sha256": "eeed5b56c7f55616e9d9438071be357e0d46674673a90fa74fdee85fd0096a76",
-          "mime": "text/x-python"
-        }
-      ],
-      "readme": {
-        "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm/README.md",
-        "sha256": "57d5c1ee49205ceec15efa2c0b8942920195f9e6452a5fbb7af5ca3321695cdb",
-        "mime": "text/markdown"
-      },
-      "assets": [
-        {
-          "path": "res/circuit.png",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm/res/circuit.png",
-          "sha256": "cdb727f48de7e72b544777335d873824f49ef22f24354461d9693f9e7c166cd1",
-          "mime": "image/png"
-        }
-      ]
-    },
-    {
-      "id": "pwm-servo-360deg",
-      "title": "PWM Servo (DM-S0306D) Example",
-      "description": "In this example the microcontroller sends a PWM signal to control a 360 degree servo's. Further documentation about the dutycycle and frequency can be found inside the code.",
-      "boardTags": [
-        "esp32",
-        "esp32s3",
-        "pico"
-      ],
-      "requires": [],
-      "files": [
-        {
-          "path": "PWM Servo (360deg).py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm-servo-360deg/PWM%20Servo%20(360deg).py",
-          "sha256": "cbf29a99297ea75a3608b2b5a63548d3711dc43e914f3d7da1c4da1064ded156",
-          "mime": "text/x-python"
-        }
-      ],
-      "readme": {
-        "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm-servo-360deg/README.md",
-        "sha256": "e931349167673b8824fc0e132cb1b0fc9f671c03babf8e8d6da77df6f563d423",
-        "mime": "text/markdown"
-      },
-      "assets": [
-        {
-          "path": "res/component-DM-S0306D.png",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm-servo-360deg/res/component-DM-S0306D.png",
-          "sha256": "73ca9f1408aeec7db6951f641fb9172b86feff5f7314a7376c8a700dd05a1778",
-          "mime": "image/png"
-        },
-        {
-          "path": "res/component-TS90M.png",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm-servo-360deg/res/component-TS90M.png",
-          "sha256": "c83abd34d9eec861ac7a41afc72c05bece9787402afd46fce0b5c0801a85123f",
-          "mime": "image/png"
-        },
-        {
-          "path": "res/datasheet.pdf",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm-servo-360deg/res/datasheet.pdf",
-          "sha256": "91b0ac1054d97bf31fbe6f2a0f5b8fb2f9e239addecd8b433c5a87ef498cd02c",
-          "mime": "application/pdf"
-        }
-      ]
-    },
-    {
       "id": "seven-segment-74hc595",
       "title": "Seven Segment Display (74HC595) Example",
       "description": "In this example the microcontroller drives a single 7-segment display through a 74HC595 shift register, counting 0 to 9 and then through the hex letters, using three pins instead of eight.",
@@ -593,6 +517,7 @@
         "esp32s3",
         "pico"
       ],
+      "group": "Displays and LEDs",
       "requires": [
         "sr74hc595"
       ],
@@ -621,6 +546,7 @@
         "esp32s3",
         "pico"
       ],
+      "group": "Displays and LEDs",
       "requires": [
         "max7219"
       ],
@@ -641,34 +567,6 @@
       "assets": []
     },
     {
-      "id": "spi-rfid-rc522",
-      "title": "SPI RFID RC522 Example",
-      "description": "In this example the microcontroller reads the id of any MIFARE card or tag held against an RFID-RC522 reader, and prints the contents of one block from it.",
-      "boardTags": [
-        "esp32",
-        "esp32s3",
-        "pico"
-      ],
-      "requires": [
-        "mfrc522"
-      ],
-      "files": [
-        {
-          "path": "SPI RFID RC522.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-rfid-rc522/SPI%20RFID%20RC522.py",
-          "sha256": "9d582cefc3ff3380df9f957ef7a84fd2160879cb513c953ad5d3759f476a7b29",
-          "mime": "text/x-python"
-        }
-      ],
-      "readme": {
-        "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-rfid-rc522/README.md",
-        "sha256": "a8d57e88ed0cd5053a9e279220fe8b57469a6bf180c0e3c13ec9b01e616554b1",
-        "mime": "text/markdown"
-      },
-      "assets": []
-    },
-    {
       "id": "spi-st7789-display",
       "title": "SPI ST7789 Display Example",
       "description": "In this example the microcontroller should display some text on a ST7789 240x240 Display over SPI.",
@@ -676,6 +574,7 @@
         "esp32",
         "esp32s3"
       ],
+      "group": "Displays and LEDs",
       "requires": [
         "st7789py"
       ],
@@ -717,6 +616,7 @@
         "esp32s3",
         "pico"
       ],
+      "group": "Displays and LEDs",
       "requires": [
         "tm1637"
       ],
@@ -737,45 +637,280 @@
       "assets": []
     },
     {
-      "id": "ultrasonic-distance-sensor-hc-sr04",
-      "title": "Ultrasonic Distance Sensor (HC-SR04)",
-      "description": "The HC-SR04 ultrasonic sensor uses sonar to determine the distance to an object.  This sensor reads from 2cm to 400cm with an accuracy of 0.3cm. In this example, the microcontroller reads the distance from the sensor and displays it on the ",
+      "id": "dc-motor-l293d",
+      "title": "DC Motor (L293D / L298N) Example",
+      "description": "In this example the microcontroller drives a DC motor through an H bridge, ramping the speed up, coasting, running backwards and braking.",
       "boardTags": [
         "esp32",
         "esp32s3",
         "pico"
       ],
+      "group": "Motion",
       "requires": [
-        "hcsr04"
+        "motor"
       ],
       "files": [
         {
-          "path": "Ultrasonic Distance Sensor (HC-SR04).py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ultrasonic-distance-sensor-hc-sr04/Ultrasonic%20Distance%20Sensor%20(HC-SR04).py",
-          "sha256": "1448e449244314dcd933438d543879c0f8471112fe6499d6f631f2d2216b799a",
+          "path": "DC Motor (L293D).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/dc-motor-l293d/DC%20Motor%20(L293D).py",
+          "sha256": "8aea6a595fa0d9b9488d581d7db523f5c8d019662747562fadb143b2f2925347",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ultrasonic-distance-sensor-hc-sr04/README.md",
-        "sha256": "b5dbb2eede8ac59887dca27609455e1ee59e8c1635acb5db1430e37806b74cb8",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/dc-motor-l293d/README.md",
+        "sha256": "9590a129d354a222857a233338ecab9c3924b1736803e566afb6d01801426475",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "pwm-servo-360deg",
+      "title": "PWM Servo (DM-S0306D) Example",
+      "description": "In this example the microcontroller sends a PWM signal to control a 360 degree servo's. Further documentation about the dutycycle and frequency can be found inside the code.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "group": "Motion",
+      "requires": [],
+      "files": [
+        {
+          "path": "PWM Servo (360deg).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm-servo-360deg/PWM%20Servo%20(360deg).py",
+          "sha256": "cbf29a99297ea75a3608b2b5a63548d3711dc43e914f3d7da1c4da1064ded156",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm-servo-360deg/README.md",
+        "sha256": "e931349167673b8824fc0e132cb1b0fc9f671c03babf8e8d6da77df6f563d423",
         "mime": "text/markdown"
       },
       "assets": [
         {
-          "path": "res/circuit.png",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ultrasonic-distance-sensor-hc-sr04/res/circuit.png",
-          "sha256": "8bec7164ca58974157ad08ad3ef20f74e55b9b3f4e0e36e99f762ec5398878a3",
+          "path": "res/component-DM-S0306D.png",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm-servo-360deg/res/component-DM-S0306D.png",
+          "sha256": "73ca9f1408aeec7db6951f641fb9172b86feff5f7314a7376c8a700dd05a1778",
           "mime": "image/png"
         },
         {
-          "path": "res/component.png",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ultrasonic-distance-sensor-hc-sr04/res/component.png",
-          "sha256": "281eb72ee3285021e8c70fc70c63580a29c5ca8941b37576393ad055b0236a06",
+          "path": "res/component-TS90M.png",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm-servo-360deg/res/component-TS90M.png",
+          "sha256": "c83abd34d9eec861ac7a41afc72c05bece9787402afd46fce0b5c0801a85123f",
           "mime": "image/png"
+        },
+        {
+          "path": "res/datasheet.pdf",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm-servo-360deg/res/datasheet.pdf",
+          "sha256": "91b0ac1054d97bf31fbe6f2a0f5b8fb2f9e239addecd8b433c5a87ef498cd02c",
+          "mime": "application/pdf"
         }
       ]
+    },
+    {
+      "id": "keypad-4x4",
+      "title": "Matrix Keypad (4x4) Example",
+      "description": "In this example the microcontroller reads a membrane matrix keypad, collects the digits typed into a code, and checks it when the hash key is pressed.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "group": "Input",
+      "requires": [
+        "keypad"
+      ],
+      "files": [
+        {
+          "path": "Keypad (4x4).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/keypad-4x4/Keypad%20(4x4).py",
+          "sha256": "0ee5282ef99a513f6eac892ad63eb5edc4d0510c78b5cc230c28847a3e58c019",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/keypad-4x4/README.md",
+        "sha256": "06eaf8138de1e983ac5841abbf926621c2a0a5cbfddef2ec7dd1348e8e3ceeb4",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "spi-rfid-rc522",
+      "title": "SPI RFID RC522 Example",
+      "description": "In this example the microcontroller reads the id of any MIFARE card or tag held against an RFID-RC522 reader, and prints the contents of one block from it.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "group": "Input",
+      "requires": [
+        "mfrc522"
+      ],
+      "files": [
+        {
+          "path": "SPI RFID RC522.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-rfid-rc522/SPI%20RFID%20RC522.py",
+          "sha256": "9d582cefc3ff3380df9f957ef7a84fd2160879cb513c953ad5d3759f476a7b29",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-rfid-rc522/README.md",
+        "sha256": "a8d57e88ed0cd5053a9e279220fe8b57469a6bf180c0e3c13ec9b01e616554b1",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "ir-remote-nec",
+      "title": "IR Remote (NEC) Example",
+      "description": "In this example the microcontroller decodes button presses from an infrared remote control with a 38kHz receiver module, prints which button was pressed and toggles the onboard LED.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "group": "Remote control",
+      "requires": [
+        "ir-receiver"
+      ],
+      "files": [
+        {
+          "path": "IR Remote (NEC).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ir-remote-nec/IR%20Remote%20(NEC).py",
+          "sha256": "ebf14104579c2fcfcaa2acbb9e3f2dc04537b6ca531f11804bc067e349351161",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ir-remote-nec/README.md",
+        "sha256": "f926141453a05e30f1e5568762c81604418bccbbb78a35b07d8a53ab16739f29",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "ir-remote-send",
+      "title": "IR Remote Send (NEC) Example",
+      "description": "In this example the microcontroller sends NEC remote control codes from an infrared LED, using the ESP32's RMT peripheral where it exists and a PWM carrier everywhere else.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "group": "Remote control",
+      "requires": [
+        "ir-transmitter"
+      ],
+      "files": [
+        {
+          "path": "IR Remote Send (NEC).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ir-remote-send/IR%20Remote%20Send%20(NEC).py",
+          "sha256": "0f044510c6a2bbb8aa41a79c9f7ba21d18efee243731e884fe28b31edfd3f129",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ir-remote-send/README.md",
+        "sha256": "0bd35c1c36122b51d700fab9523a22d318e3bd75564d312eafb0f3f67a9f5db2",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "i2c-eeprom",
+      "title": "I2C EEPROM Example",
+      "description": "In this example the microcontroller stores a boot counter and a message in an I2C EEPROM, so they survive the power being cut, and reads them back.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "group": "Storage and time",
+      "requires": [
+        "eeprom"
+      ],
+      "files": [
+        {
+          "path": "I2C EEPROM.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-eeprom/I2C%20EEPROM.py",
+          "sha256": "a3c180be7d39666bf1bdad4ae4849ab34fe54c24d9c621ce411c15d0b503cd06",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-eeprom/README.md",
+        "sha256": "dbed86db273da8f9b7aace22f5249319a88eb576dc778bad46ecc733d00cb5c1",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "i2c-rtc-ds3231",
+      "title": "I2C RTC (DS3231) Example",
+      "description": "In this example the microcontroller reads the date, time and temperature from a DS3231 real time clock module, and copies the time into the board's own clock so it survives a reset.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "group": "Storage and time",
+      "requires": [
+        "ds3231"
+      ],
+      "files": [
+        {
+          "path": "I2C RTC (DS3231).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-rtc-ds3231/I2C%20RTC%20(DS3231).py",
+          "sha256": "0a736a0062a28c0241b1f1a2f8fb7cd2823684592fa3e685f0b1396342debcbe",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-rtc-ds3231/README.md",
+        "sha256": "7b485d462484ad5214a2291b264fad3cb77149e0095c10151a4eb8cbc070e51a",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "i2c-scanner",
+      "title": "I2C Scanner Example",
+      "description": "In this example the microcontrollers scans for devices connected over I2C and displays them to the user on the console.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "group": "Tools",
+      "requires": [],
+      "files": [
+        {
+          "path": "I2C Scanner.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-scanner/I2C%20Scanner.py",
+          "sha256": "0e2c4faaf835df7978086fe6b3a0a338798becc81adc39824a52127f37a55f22",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-scanner/README.md",
+        "sha256": "41e8b68af49ca3c5cabc1533fa25761d3dadd0ef821031a9393289a50ed1f18f",
+        "mime": "text/markdown"
+      },
+      "assets": []
     }
   ],
   "drivers": [
@@ -853,6 +988,31 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ds3231/README.md",
         "sha256": "ebc5ef06f00cded1fca9b29f9686c37d02919bfb3e1607c7f4bb1040d3aac2e6",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "eeprom",
+      "name": "I2C EEPROM (24LC, AT24C, CAT24C)",
+      "version": "1.0.0",
+      "description": "Reads and writes the 24-series I2C EEPROMs, handling page boundaries and write cycles so stored data survives a power cut intact.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "files": [
+        {
+          "path": "eeprom.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/eeprom/eeprom.py",
+          "sha256": "70584190af983005af07b357e05763c6c0ae22c8bffa4e0e1a96a2f5bb023c0c",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/eeprom/README.md",
+        "sha256": "f16502a31655b869061c9961993dcdd79c97a537fe624f5b17bc4580e1d9a1f5",
         "mime": "text/markdown"
       }
     },

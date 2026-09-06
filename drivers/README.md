@@ -9,6 +9,7 @@ name is the id examples put in their `requires` list.
 | [bmp280](bmp280) | `bmp280.py` | [i2c-bmp280](../examples/i2c-bmp280) |
 | [dht](dht) | `dht_sensor.py` | [dht-sensor](../examples/dht-sensor) |
 | [ds3231](ds3231) | `ds3231.py` | [i2c-rtc-ds3231](../examples/i2c-rtc-ds3231) |
+| [eeprom](eeprom) | `eeprom.py` | [i2c-eeprom](../examples/i2c-eeprom) |
 | [gy271](gy271) | `gy271.py` | [i2c-compass-gy271](../examples/i2c-compass-gy271) |
 | [hcsr04](hcsr04) | `hcsr04.py` | [ultrasonic-distance-sensor-hc-sr04](../examples/ultrasonic-distance-sensor-hc-sr04) |
 | [i2c-lcd](i2c-lcd) | `i2c_lcd.py`, `lcd_api.py` | [i2c-liquid-crystal-display](../examples/i2c-liquid-crystal-display) |

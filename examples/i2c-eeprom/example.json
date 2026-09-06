@@ -1,0 +1,15 @@
+{
+  "id": "i2c-eeprom",
+  "title": "I2C EEPROM Example",
+  "description": "In this example the microcontroller stores a boot counter and a message in an I2C EEPROM, so they survive the power being cut, and reads them back.",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Storage and time",
+  "entry": "I2C EEPROM.py",
+  "requires": [
+    "eeprom"
+  ]
+}

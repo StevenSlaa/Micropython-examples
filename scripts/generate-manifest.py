@@ -9,6 +9,19 @@ DRIVERS = ROOT / "drivers"
 VERSION = os.environ.get("CATALOG_VERSION", "1.0.0")
 BASE = "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main"
 
+# Examples are listed in this order, in the manifest and so in the IDE's library panel. A group
+# that is not on this list still works: it simply goes at the end, in alphabetical order.
+GROUPS = (
+    "Basics",
+    "Sensors",
+    "Displays and LEDs",
+    "Motion",
+    "Input",
+    "Remote control",
+    "Storage and time",
+    "Tools",
+)
+
 def entry(path: Path, relative_to: Path):
     data = path.read_bytes()
     relative = path.relative_to(ROOT).as_posix().replace(" ", "%20")
@@ -47,6 +60,11 @@ for folder in sorted(p for p in EXAMPLES.iterdir() if p.is_dir()):
     if (folder / "lib").exists(): fail(folder, "drivers belong in drivers/, declare them in requires")
     entry_path = folder / metadata["entry"]
     if not entry_path.is_file() or entry_path.suffix != ".py": fail(folder, "entry must point to a Python file")
+    group = metadata.get("group", "Other")
+    # Within a group, examples are listed by this and then by id. Only a set meant to be read
+    # in sequence needs it; everything else leaves it out and lands in alphabetical order.
+    order = metadata.get("order", 0)
+    if not isinstance(order, int): fail(folder, "order must be a whole number")
     requires = metadata.get("requires", [])
     if not isinstance(requires, list): fail(folder, "requires must be a list of driver ids")
     for driver_id in requires:
@@ -54,9 +72,39 @@ for folder in sorted(p for p in EXAMPLES.iterdir() if p.is_dir()):
     files = [entry(entry_path, folder)] + [entry(p, folder) for p in sorted(folder.glob("*.py")) if p != entry_path]
     assets = folder / "res"
     examples.append({"id": metadata["id"], "title": metadata["title"], "description": metadata["description"],
-                     "boardTags": metadata["boardTags"], "requires": requires, "files": files,
+                     "boardTags": metadata["boardTags"], "group": group, "order": order, "requires": requires, "files": files,
                      "readme": {**entry(folder / "README.md", folder), "mime": "text/markdown"},
                      "assets": [entry(p, folder) for p in sorted(assets.rglob("*")) if p.is_file()] if assets.exists() else []})
+
+examples.sort(key=lambda example: (
+    GROUPS.index(example["group"]) if example["group"] in GROUPS else len(GROUPS),
+    example["group"],
+    example["order"],
+    example["id"],
+))
+# The order was only ever about sorting; the manifest is already sorted, so it does not travel.
+for example in examples:
+    del example["order"]
+unlisted = sorted({e["group"] for e in examples if e["group"] not in GROUPS})
+if unlisted:
+    print(f"Note: groups not in GROUPS, listed last: {', '.join(unlisted)}")
+
+# The example index in examples/README.md is generated, so it cannot drift from the metadata.
+rows = []
+for example in examples:
+    if not rows or rows[-1][0] != example["group"]:
+        rows.append((example["group"], []))
+    needs = ", ".join(f"[{d}](../drivers/{d})" for d in example["requires"]) or "\u2014"
+    summary = example["description"].split(". ")[0].rstrip(".")
+    rows[-1][1].append(f"| [{example['title']}]({example['id']}) | {summary}. | {needs} |")
+index = EXAMPLES / "README.md"
+head, _, rest = index.read_text().partition("<!-- generated:start -->")
+_, _, tail = rest.partition("<!-- generated:end -->")
+sections = "\n\n".join(
+    f"### {group}\n\n| Example | What it does | Needs |\n| --- | --- | --- |\n" + "\n".join(lines)
+    for group, lines in rows
+)
+index.write_text(f"{head}<!-- generated:start -->\n{sections}\n<!-- generated:end -->{tail}")
 
 # The driver table in drivers/README.md is generated so it cannot drift from driver.json.
 rows = ["| Driver | Modules | Used by |", "| --- | --- | --- |"]
