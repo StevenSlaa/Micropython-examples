@@ -2,6 +2,7 @@
   "id": "button",
   "title": "2. Button \u2014 digital read",
   "description": "When the button is pressed the onboard led (at least for the ESP32) will turn on. It will turn of when the button is released. Shows what a digital read is, and why a pull-up resistor is needed to read a switch.",
+  "author": "Steven Slaa",
   "boardTags": [
     "esp32",
     "esp32s3"

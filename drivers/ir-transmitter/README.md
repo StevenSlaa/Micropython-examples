@@ -1,3 +1,8 @@
+---
+driver: ir-transmitter
+author: Steven Slaa
+---
+
 # IR transmitter (NEC remotes)
 
 Sends NEC remote codes from an infrared LED — the other half of the

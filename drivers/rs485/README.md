@@ -1,3 +1,8 @@
+---
+driver: rs485
+author: Steven Slaa
+---
+
 # RS-485 (MAX485)
 
 Serial that survives a long wire. RS-485 sends each bit as the *difference* between two wires

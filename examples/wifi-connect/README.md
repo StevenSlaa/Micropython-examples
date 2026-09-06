@@ -1,3 +1,8 @@
+---
+example: wifi-connect
+author: Steven Slaa
+---
+
 # 1. Joining a Wifi Network
 
 Connects to a wifi network and prints what the router gave you: an address, a gateway and a DNS

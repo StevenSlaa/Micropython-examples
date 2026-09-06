@@ -2,6 +2,7 @@
   "id": "wifi-scan",
   "title": "2. Scanning for Networks",
   "description": "Lists the wifi networks in range with their channel, signal strength and whether they are open, strongest first.",
+  "author": "Steven Slaa",
   "boardTags": [
     "esp32",
     "esp32s3",

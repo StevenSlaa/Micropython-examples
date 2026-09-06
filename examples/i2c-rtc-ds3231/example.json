@@ -2,6 +2,7 @@
   "id": "i2c-rtc-ds3231",
   "title": "I2C RTC (DS3231) Example",
   "description": "In this example the microcontroller reads the date, time and temperature from a DS3231 real time clock module, and copies the time into the board's own clock so it survives a reset.",
+  "author": "Steven Slaa",
   "boardTags": [
     "esp32",
     "esp32s3",

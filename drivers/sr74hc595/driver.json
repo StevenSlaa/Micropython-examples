@@ -3,5 +3,10 @@
   "name": "74HC595 shift register",
   "version": "1.0.0",
   "description": "Drives one or more chained 74HC595 shift registers from three pins, turning them into eight outputs each.",
-  "boardTags": ["esp32", "esp32s3", "pico"]
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ]
 }

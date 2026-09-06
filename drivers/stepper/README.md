@@ -1,3 +1,8 @@
+---
+driver: stepper
+author: Steven Slaa
+---
+
 # Stepper motor (ULN2003, A4988)
 
 A stepper does not spin while power is applied. It moves a fixed fraction of a turn per step and

@@ -1,3 +1,8 @@
+---
+example: ir-remote-nec
+author: Steven Slaa
+---
+
 # IR Remote (NEC) Example
 
 In this example the microcontroller decodes button presses from an infrared remote control using

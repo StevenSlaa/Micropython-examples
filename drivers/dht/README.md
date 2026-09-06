@@ -1,3 +1,8 @@
+---
+driver: dht
+author: Steven Slaa
+---
+
 # DHT11 and DHT22 readings
 
 Temperature and humidity from the blue DHT11 and the white DHT22, the two sensors in every

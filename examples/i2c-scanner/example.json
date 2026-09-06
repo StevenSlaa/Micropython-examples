@@ -2,6 +2,7 @@
   "id": "i2c-scanner",
   "title": "I2C Scanner Example",
   "description": "In this example the microcontrollers scans for devices connected over I2C and displays them to the user on the console.",
+  "author": "Steven Slaa",
   "boardTags": [
     "esp32",
     "esp32s3",

@@ -1,3 +1,8 @@
+---
+example: nrf24-receive
+author: Steven Slaa
+---
+
 # nRF24 Radio: Receiving
 
 In this example the microcontroller listens for packets on a 2.4GHz radio link, prints the

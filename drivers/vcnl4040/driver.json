@@ -3,6 +3,11 @@
   "name": "VCNL4040 proximity and light",
   "version": "1.0.0",
   "description": "Proximity and ambient light driver for the Vishay VCNL4040, reading lux and a near field proximity count over I2C.",
-  "boardTags": ["esp32", "esp32s3", "pico"],
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
   "source": "https://www.vishay.com/docs/84274/vcnl4040.pdf"
 }

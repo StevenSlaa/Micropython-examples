@@ -2,6 +2,7 @@
   "id": "pwm",
   "title": "4. PWM \u2014 analog write",
   "description": "This example will show you how to create a fading LED animation with a PWM Signal.  This example can of course also be used to control servo's, motor drivers, buzzers, analog output, etc. Shows what an analog write is: switching a pin fast enough that a fraction of the time on behaves like a voltage in between.",
+  "author": "Steven Slaa",
   "boardTags": [
     "esp32",
     "esp32s3",

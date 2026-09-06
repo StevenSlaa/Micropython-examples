@@ -1,3 +1,8 @@
+---
+example: wifi-access-point
+author: Steven Slaa
+---
+
 # 3. Running an Access Point
 
 The board stops looking for networks and becomes one. Join it with a phone, open a page, and the

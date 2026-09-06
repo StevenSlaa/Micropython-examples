@@ -1,3 +1,8 @@
+---
+example: wifi-scan
+author: Steven Slaa
+---
+
 # 2. Scanning for Networks
 
 Lists the wifi networks around you, strongest first, with the channel each is on and whether it

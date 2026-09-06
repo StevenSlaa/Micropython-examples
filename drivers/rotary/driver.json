@@ -3,5 +3,10 @@
   "name": "Rotary encoder (KY-040)",
   "version": "1.0.0",
   "description": "Reads a rotary encoder with CLK, DT and SW pins from interrupts, counting detents with an optional range, wrapping and a debounced push switch.",
-  "boardTags": ["esp32", "esp32s3", "pico"]
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ]
 }

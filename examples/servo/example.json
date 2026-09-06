@@ -2,6 +2,7 @@
   "id": "servo",
   "title": "Servo",
   "description": "In this example the microcontroller drives a hobby servo: a positional one to an angle and back, or a 360 degree one at a speed in both directions.",
+  "author": "Steven Slaa",
   "boardTags": [
     "esp32",
     "esp32s3",

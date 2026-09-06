@@ -2,6 +2,7 @@
   "id": "wifi-connect",
   "title": "1. Joining a Wifi Network",
   "description": "Connects to a wifi network using the network module directly, showing the status codes as it goes and printing the address, gateway and DNS server it was given.",
+  "author": "Steven Slaa",
   "boardTags": [
     "esp32",
     "esp32s3",

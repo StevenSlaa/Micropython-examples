@@ -1,3 +1,8 @@
+---
+driver: max7219
+author: Mike Causer
+---
+
 # MAX7219 LED matrix
 
 Driver for chained MAX7219 8x8 LED matrix modules over SPI. A common 4-in-1 board is four

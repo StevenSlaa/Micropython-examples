@@ -1,3 +1,8 @@
+---
+driver: keypad
+author: Steven Slaa
+---
+
 # Matrix keypad
 
 Reads the flat membrane keypads: the 4x4 with eight pins and the 4x3 with seven.

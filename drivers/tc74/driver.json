@@ -3,5 +3,10 @@
   "name": "TC74 temperature",
   "version": "1.0.0",
   "description": "Reads whole degrees Celsius from a Microchip TC74 digital temperature sensor over I2C.",
-  "boardTags": ["esp32", "esp32s3", "pico"]
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ]
 }

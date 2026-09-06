@@ -1,3 +1,8 @@
+---
+example: i2c-compass-gy271
+author: Steven Slaa
+---
+
 # I2C Compass (GY-271) Example
 
 In this example the microcontroller reads the magnetic field from a GY-271 or HW-246 compass

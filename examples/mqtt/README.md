@@ -1,3 +1,8 @@
+---
+example: mqtt
+author: Steven Slaa
+---
+
 # 5. MQTT
 
 Publishes a reading every few seconds to an MQTT broker, and listens for commands coming back.

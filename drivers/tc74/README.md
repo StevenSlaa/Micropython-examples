@@ -1,3 +1,8 @@
+---
+driver: tc74
+author: Steven Slaa
+---
+
 # TC74 temperature
 
 Reads temperature from a Microchip TC74 over I2C. The sensor is a small, cheap thermometer in a

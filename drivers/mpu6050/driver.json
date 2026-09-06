@@ -3,5 +3,9 @@
   "name": "MPU-6050",
   "version": "1.0.0",
   "description": "Accelerometer, gyroscope and temperature driver for the MPU-6050 over I2C.",
-  "boardTags": ["esp32", "esp32s3", "pico"]
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ]
 }

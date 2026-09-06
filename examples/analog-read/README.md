@@ -1,3 +1,8 @@
+---
+example: analog-read
+author: Steven Slaa
+---
+
 # Analog Read (potentiometer)
 
 A digital pin answers one question: *is there a voltage on this wire?* Yes or no, on or off.

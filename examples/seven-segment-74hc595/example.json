@@ -2,6 +2,7 @@
   "id": "seven-segment-74hc595",
   "title": "Seven Segment Display (74HC595) Example",
   "description": "In this example the microcontroller drives a single 7-segment display through a 74HC595 shift register, counting 0 to 9 and then through the hex letters, using three pins instead of eight.",
+  "author": "Steven Slaa",
   "boardTags": [
     "esp32",
     "esp32s3",

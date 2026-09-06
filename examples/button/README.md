@@ -1,3 +1,8 @@
+---
+example: button
+author: Steven Slaa
+---
+
 # Button (digital read)
 This is a simple button example script. It will turn an LED on when the button is pressed.
 

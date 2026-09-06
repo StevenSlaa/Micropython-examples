@@ -3,5 +3,10 @@
   "name": "Addressable LEDs (WS2812B / SK6812)",
   "version": "1.0.0",
   "description": "Brightness, gamma and HSV colour layer for WS2812B, WS2811 and SK6812 RGBW strips, on top of the built-in neopixel module.",
-  "boardTags": ["esp32", "esp32s3", "pico"]
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ]
 }

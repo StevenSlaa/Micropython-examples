@@ -1,3 +1,8 @@
+---
+example: ir-remote-send
+author: Steven Slaa
+---
+
 # IR Remote Send (NEC) Example
 
 In this example the microcontroller sends remote control codes from an infrared LED, the same

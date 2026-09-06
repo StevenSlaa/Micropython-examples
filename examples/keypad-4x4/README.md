@@ -1,3 +1,8 @@
+---
+example: keypad-4x4
+author: Steven Slaa
+---
+
 # Matrix Keypad (4x4) Example
 
 In this example the microcontroller reads a membrane matrix keypad and collects the digits typed

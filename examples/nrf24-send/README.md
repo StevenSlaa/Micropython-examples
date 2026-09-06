@@ -1,3 +1,8 @@
+---
+example: nrf24-send
+author: Steven Slaa
+---
+
 # nRF24 Radio: Sending
 
 In this example the microcontroller sends a counter over a 2.4GHz radio link once a second, and

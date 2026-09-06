@@ -1,3 +1,8 @@
+---
+example: wifi-dns
+author: Steven Slaa
+---
+
 # 4. DNS and Fetching a Page
 
 Turns names into addresses, and then asks one of them for a page.

@@ -3,6 +3,11 @@
   "name": "I2C character LCD",
   "version": "1.0.0",
   "description": "HD44780 character LCD driver for displays behind a PCF8574 I2C backpack.",
-  "boardTags": ["esp32", "esp32s3", "pico"],
+  "author": "Dave Hylands",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
   "source": "https://github.com/dhylands/python_lcd"
 }

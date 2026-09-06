@@ -3,5 +3,10 @@
   "name": "Wifi and access points",
   "version": "1.0.0",
   "description": "Joining a wifi network or running an access point, the same way on an ESP32 and a Raspberry Pi Pico W, with the status codes and setup order each port really needs.",
-  "boardTags": ["esp32", "esp32s3", "pico"]
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ]
 }

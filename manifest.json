@@ -57,6 +57,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Basics",
       "requires": [],
       "files": [
@@ -70,7 +71,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/blink/README.md",
-        "sha256": "435a35fdeb41d016f95aa4609e78dfc63157d7a0c570cd72048ea3c25275ef6b",
+        "sha256": "0f34ceca97dd40174fdbb65279a7de75e13206fe3890ac7cd9140eb4393ba15e",
         "mime": "text/markdown"
       },
       "assets": []
@@ -83,6 +84,7 @@
         "esp32",
         "esp32s3"
       ],
+      "author": "Steven Slaa",
       "group": "Basics",
       "requires": [],
       "files": [
@@ -96,7 +98,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/button/README.md",
-        "sha256": "0addd2739a7b5a4da9e0e86cd34cbf4d6e14452b1af6ce261d5c48ae5e3f24e9",
+        "sha256": "c8af3a4fc299ab72d7d90de1c75ef9860d7464f9f3491f1ebb58636f353ec1cf",
         "mime": "text/markdown"
       },
       "assets": [
@@ -117,6 +119,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Basics",
       "requires": [],
       "files": [
@@ -130,7 +133,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/analog-read/README.md",
-        "sha256": "8ed0b405f97776253f838799270f4a35910b80a16aa3955c1c5772d01494f884",
+        "sha256": "fe16194e5f2dc928aa54bc69ed918cfb2bef54eef6f9c0034ec2cd5e0261a2fd",
         "mime": "text/markdown"
       },
       "assets": []
@@ -144,6 +147,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Basics",
       "requires": [],
       "files": [
@@ -157,7 +161,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm/README.md",
-        "sha256": "753b300a6009d76fb09e953eb2c671c30270cb2df9812d7343b5798b232f0734",
+        "sha256": "b289d87c4e91e6158a52465a89a4924731a70f68e078ec4fb8d675aedf6b51b9",
         "mime": "text/markdown"
       },
       "assets": [
@@ -178,6 +182,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Basics",
       "requires": [],
       "files": [
@@ -191,7 +196,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/dimmer/README.md",
-        "sha256": "41c617e4c65e671a9696702cb01a4ab33f13f6f40ad91ea3ed9db69c2d8bf40e",
+        "sha256": "60d1b2e8c72a0e6ff3eb7b8e6dc6dadf7eda3ad750ad54b584372777d9ae5bb5",
         "mime": "text/markdown"
       },
       "assets": []
@@ -205,6 +210,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Sensors",
       "requires": [
         "dht"
@@ -220,7 +226,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/dht-sensor/README.md",
-        "sha256": "ac1b849c942192496fea071726020229eb8e63d393af8d2bfebf90ad479ee18b",
+        "sha256": "22637951fa59f3b0f2d8cb5584c6d2f8f29813c36de11e34a5e4b02d4165e3da",
         "mime": "text/markdown"
       },
       "assets": [
@@ -247,6 +253,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Sensors",
       "requires": [
         "bmp280"
@@ -262,7 +269,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-bmp280/README.md",
-        "sha256": "543cd674a039a94f03bcc84c59983605c1bae5f256d7d8b4685e240ccbb4afc0",
+        "sha256": "01c216ae403c00b562fe560436d4300f885f355631c3931417bf560e11bc6a86",
         "mime": "text/markdown"
       },
       "assets": [
@@ -283,6 +290,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Sensors",
       "requires": [
         "gy271"
@@ -298,7 +306,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-compass-gy271/README.md",
-        "sha256": "c15fe49abfa634fc52928f652dc8d79f79730bf70957ef247b00b3fc65d9ca01",
+        "sha256": "b01a9db28cf0d7a210acce874c6f5f1a605f2bfa11840fc8b71236121a264c1e",
         "mime": "text/markdown"
       },
       "assets": []
@@ -312,6 +320,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Sensors",
       "requires": [
         "mpu6050"
@@ -327,7 +336,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-mpu-6050/README.md",
-        "sha256": "63c1aec04f308d01debdbab6960d023d84cfe80a4658654512d1a038bc004c61",
+        "sha256": "7ee0f43af7d0efdd86ca2a37361519cd33741a9aa0eee550e6adb24ae39ac8ab",
         "mime": "text/markdown"
       },
       "assets": [
@@ -348,6 +357,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Sensors",
       "requires": [
         "vcnl4040"
@@ -363,7 +373,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-proximity-vcnl4040/README.md",
-        "sha256": "5c17097d67cebb196e620a7f36165acf3a60ecabb5df26ea6ddc8272b355c147",
+        "sha256": "3cee259052af2223430bc25eb97eb5145e49697da5132c9229e2ae42d9ba5331",
         "mime": "text/markdown"
       },
       "assets": []
@@ -377,6 +387,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Sensors",
       "requires": [],
       "files": [
@@ -390,7 +401,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-tof-tof10120/README.md",
-        "sha256": "247ba4f49a01ecbc11aee9e98b73d8a2fe759cf6e4e4e6eb0a978d1e3f58440a",
+        "sha256": "48390d59593ebb795ba77420dca52ed83d34b4a99e58c8591be0470b8ecf96f6",
         "mime": "text/markdown"
       },
       "assets": [
@@ -411,6 +422,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Sensors",
       "requires": [
         "vl6180x"
@@ -426,7 +438,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-tof-vl6180x/README.md",
-        "sha256": "aad50b4a94f6dc02cf1824cce94b7b69e9c6585e4ebddab769070c668226a32a",
+        "sha256": "fce6f65bcd9b2daa86c2b883d6243b0ec151c341be24aa3a5ab67e1b69ec6a99",
         "mime": "text/markdown"
       },
       "assets": []
@@ -440,6 +452,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Sensors",
       "requires": [
         "hcsr04"
@@ -455,7 +468,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ultrasonic-distance-sensor-hc-sr04/README.md",
-        "sha256": "b5dbb2eede8ac59887dca27609455e1ee59e8c1635acb5db1430e37806b74cb8",
+        "sha256": "6be6964490bf1faa228f5a5b530c110162effac3a1eab23d7df974fbe1ffadd4",
         "mime": "text/markdown"
       },
       "assets": [
@@ -482,6 +495,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Displays and LEDs",
       "requires": [
         "i2c-lcd"
@@ -497,7 +511,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-liquid-crystal-display/README.md",
-        "sha256": "948b816ba960bcbde183519d91d76474d6dfbd8cf4bca35b90be39164a80633a",
+        "sha256": "d6023258044326f08a6bedd8b64f51eb379abd500ea98db93d987f0b3c68f7a7",
         "mime": "text/markdown"
       },
       "assets": [
@@ -530,6 +544,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Displays and LEDs",
       "requires": [
         "p9813"
@@ -545,7 +560,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/p9813-rgb-led/README.md",
-        "sha256": "657ce4011138e0cc710a99e27a8e23c94ad4b77f73bff056b803be5dc13d5c1e",
+        "sha256": "48e0eb97770da2c5141d50b80e4d3a98cf6f7b0844be794582cc2e34c6b3aaad",
         "mime": "text/markdown"
       },
       "assets": []
@@ -559,6 +574,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Displays and LEDs",
       "requires": [
         "sr74hc595"
@@ -574,7 +590,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/seven-segment-74hc595/README.md",
-        "sha256": "6fd2febc79a6f9d7bf3664f24566eaeba51f2045da7ae7f3c9c2f1eafa60a880",
+        "sha256": "141abedd3735b7df298f0cdd6fcda6d5e984bc054d788f71b96296521087e68a",
         "mime": "text/markdown"
       },
       "assets": []
@@ -588,6 +604,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Displays and LEDs",
       "requires": [
         "max7219"
@@ -603,7 +620,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-led-matrix-max7219/README.md",
-        "sha256": "9c023f0428d278273711bf62afff0eb755d284b86de91f0f594c76030e9f2f76",
+        "sha256": "0002805dbf742b01831da72e964b7606dd51dd1dea0d9cf67a696fe69536b6f0",
         "mime": "text/markdown"
       },
       "assets": []
@@ -616,6 +633,7 @@
         "esp32",
         "esp32s3"
       ],
+      "author": "Steven Slaa",
       "group": "Displays and LEDs",
       "requires": [
         "st7789py"
@@ -631,7 +649,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-st7789-display/README.md",
-        "sha256": "21879584ecfa35b4c8a93f1e5ba8258ba33de366a1dcd87cc894405f12dc16a6",
+        "sha256": "2f68d678af6368a142381c0b3fe0e05f4921860e2fb4dbc9aea4f24769e5a209",
         "mime": "text/markdown"
       },
       "assets": [
@@ -658,6 +676,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Displays and LEDs",
       "requires": [
         "tm1637"
@@ -673,7 +692,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/tm1637-7-segment-display/README.md",
-        "sha256": "557e228e3a9c862155250d92be7f3f5c4caf3b132fda9a4fa452f617c7c0056c",
+        "sha256": "5ae86f08550a8bbc15e989a5dba4e4726079cbade6375d84db9ae8c6135d5648",
         "mime": "text/markdown"
       },
       "assets": []
@@ -687,6 +706,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Motion",
       "requires": [
         "motor"
@@ -702,7 +722,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/dc-motor-l293d/README.md",
-        "sha256": "9590a129d354a222857a233338ecab9c3924b1736803e566afb6d01801426475",
+        "sha256": "a66ab694e153fa75dd42eca98b8adbc32e8a8a1213754fc7c7f95c9d6133f9b4",
         "mime": "text/markdown"
       },
       "assets": []
@@ -716,6 +736,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Motion",
       "requires": [
         "servo"
@@ -731,7 +752,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/servo/README.md",
-        "sha256": "45d240e078d8a231ad497a215de2512209d1e3e77c4e6ac919f94d1942d33632",
+        "sha256": "f3fdf81f289e7de75911725b6d5edcceaf8445f17835a5d6c5aa90b99820dc5c",
         "mime": "text/markdown"
       },
       "assets": [
@@ -764,6 +785,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Motion",
       "requires": [
         "stepper"
@@ -779,7 +801,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/stepper/README.md",
-        "sha256": "352450e3019d65f07b24cda7dc16af4bc37537da079d603e6989527f4c72491a",
+        "sha256": "da5d39cfbfe59c8f2d917b2f05c537a2e1a6caee5cfc90b15f5bee7208ded487",
         "mime": "text/markdown"
       },
       "assets": []
@@ -793,6 +815,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Input",
       "requires": [
         "keypad"
@@ -808,7 +831,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/keypad-4x4/README.md",
-        "sha256": "06eaf8138de1e983ac5841abbf926621c2a0a5cbfddef2ec7dd1348e8e3ceeb4",
+        "sha256": "d43741778519f64ce7dfc262636359688b61239e51204dd9597a9f9163d997c5",
         "mime": "text/markdown"
       },
       "assets": []
@@ -822,6 +845,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Input",
       "requires": [
         "rotary"
@@ -837,7 +861,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/rotary-encoder/README.md",
-        "sha256": "67b5d1c54a6f90ac87893ce84d2af9fe894852fd61c986089b2953c26d045843",
+        "sha256": "64d325ccf1dfea27337ef098b3bb456512b15d188ae32d2c7780afeee791fd77",
         "mime": "text/markdown"
       },
       "assets": []
@@ -851,6 +875,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Input",
       "requires": [
         "mfrc522"
@@ -866,7 +891,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-rfid-rc522/README.md",
-        "sha256": "a8d57e88ed0cd5053a9e279220fe8b57469a6bf180c0e3c13ec9b01e616554b1",
+        "sha256": "a7b78d9206d1279e499df86c613215f147757cb2dd38b6e28a87e6c54c84c3d9",
         "mime": "text/markdown"
       },
       "assets": []
@@ -880,6 +905,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Remote control",
       "requires": [
         "ir-receiver"
@@ -895,7 +921,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ir-remote-nec/README.md",
-        "sha256": "f926141453a05e30f1e5568762c81604418bccbbb78a35b07d8a53ab16739f29",
+        "sha256": "98f1d196c894bb0c9d395c1b6a94e6f40df9456df54bbb980e11d09f1f59d491",
         "mime": "text/markdown"
       },
       "assets": []
@@ -909,6 +935,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Remote control",
       "requires": [
         "ir-transmitter"
@@ -924,7 +951,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ir-remote-send/README.md",
-        "sha256": "0bd35c1c36122b51d700fab9523a22d318e3bd75564d312eafb0f3f67a9f5db2",
+        "sha256": "1b0c6b923eb151a4e12d8fa0fd2017ea5ab46d6365a3365418eb6507cdf95786",
         "mime": "text/markdown"
       },
       "assets": []
@@ -938,6 +965,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Between boards",
       "requires": [
         "nrf24l01"
@@ -953,7 +981,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/nrf24-send/README.md",
-        "sha256": "4515f522b1ee380af8e0c61b0668e0d7342c781c1ff1a5116ab59190b1baa2f9",
+        "sha256": "e4e95f58b3372048867a003d24a19f2651cbe271bf935ef62331dead9bc695f3",
         "mime": "text/markdown"
       },
       "assets": []
@@ -967,6 +995,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Between boards",
       "requires": [
         "nrf24l01"
@@ -982,7 +1011,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/nrf24-receive/README.md",
-        "sha256": "d5e771888954130ba3ee096f5d98ddf57218d2eac7ec80dcd35e23ed50bdab0f",
+        "sha256": "8750541be5a4cf65d6ecfa8f68a822d3d38dc8938b2110e24f98a3ad3078a3bd",
         "mime": "text/markdown"
       },
       "assets": []
@@ -996,6 +1025,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Between boards",
       "requires": [
         "rs485"
@@ -1011,7 +1041,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/rs485-link/README.md",
-        "sha256": "88c8e1464fe6ddb6e7c97e0fd1163f177e6da8064660f3b9d2b28e3b22cf66cc",
+        "sha256": "400bb582b124bab1df4894096a6ff12720e829af38cd8ba3b43eebcdec416cbc",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1025,6 +1055,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Networking",
       "requires": [],
       "files": [
@@ -1038,7 +1069,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/wifi-connect/README.md",
-        "sha256": "064a03fb8165c9595df722ea876fae22344ba2d056c0c152e378deed821ad9f3",
+        "sha256": "a879bd693a7bc4d58c1205aa8d19d8a36a5a84cec4ec30175f57211fc33ac28a",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1052,6 +1083,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Networking",
       "requires": [],
       "files": [
@@ -1065,7 +1097,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/wifi-scan/README.md",
-        "sha256": "bb5326ffcff05d3a8a0e4b08d30203ac6d3411b70d079111fecdb4ac4a6be9ba",
+        "sha256": "0d6c92043ac56c07526f56ddb6b47b1e6071383b570d385807a2e2b74067ac42",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1079,6 +1111,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Networking",
       "requires": [
         "wifi"
@@ -1094,7 +1127,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/wifi-access-point/README.md",
-        "sha256": "cd4b0f4ab9bdd8e618972e73ab72fd6b6ba746ec80b5edce055392dd02b7da5e",
+        "sha256": "9d22ff4d694181c23b373fe03a145a17df99acb7deb2f0bed873c151b9dba11e",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1108,6 +1141,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Networking",
       "requires": [
         "wifi"
@@ -1123,7 +1157,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/wifi-dns/README.md",
-        "sha256": "9026d6f00095f34926937224210e128f22cc5bb83a1f2428b2daed4a7a16fa3f",
+        "sha256": "eb6dba958cc631db27cd91dba63c377dd67a3e9b273adab10de502d4fddfb189",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1137,6 +1171,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Networking",
       "requires": [
         "wifi",
@@ -1153,7 +1188,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/mqtt/README.md",
-        "sha256": "9605068eb5a4fda0542d12fd674793836c79c384c1f8b8fce80660678b180fc8",
+        "sha256": "3686d9b0ad8ee5000904850447656a5cad34d466e97d18666d3c8f7209c83d9a",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1167,6 +1202,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Storage and time",
       "requires": [
         "eeprom"
@@ -1182,7 +1218,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-eeprom/README.md",
-        "sha256": "dbed86db273da8f9b7aace22f5249319a88eb576dc778bad46ecc733d00cb5c1",
+        "sha256": "3722e00a3c70722895efd896f3b40f4715bf101bcdfdc46a1110a7e61dc7e622",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1196,6 +1232,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Storage and time",
       "requires": [
         "ds3231"
@@ -1211,7 +1248,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-rtc-ds3231/README.md",
-        "sha256": "7b485d462484ad5214a2291b264fad3cb77149e0095c10151a4eb8cbc070e51a",
+        "sha256": "843a695237f0d10a873ce7628e47182175798d793589b86edeb6b4a7a1198e57",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1225,6 +1262,7 @@
         "esp32s3",
         "pico"
       ],
+      "author": "Steven Slaa",
       "group": "Tools",
       "requires": [],
       "files": [
@@ -1238,7 +1276,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-scanner/README.md",
-        "sha256": "41e8b68af49ca3c5cabc1533fa25761d3dadd0ef821031a9393289a50ed1f18f",
+        "sha256": "9cf332243d7a2404731460f8f8ba6754cc14507346f7a75264ddceb7766cf0bb",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1250,6 +1288,7 @@
       "name": "BMP280",
       "version": "1.0.0",
       "description": "Temperature and pressure driver for the Bosch BMP280 over I2C or SPI.",
+      "author": "David Stenwall",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1267,7 +1306,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/bmp280/README.md",
-        "sha256": "82401f8e25c8352a4b09ed616217f176be5c7e06191480f8eda09ed401370fe6",
+        "sha256": "545190c5b4adc94507f4d5c40ef0102dafb60161fc3ab032e5b210584c9ec86c",
         "mime": "text/markdown"
       }
     },
@@ -1276,6 +1315,7 @@
       "name": "DHT11 and DHT22 readings",
       "version": "1.0.0",
       "description": "Temperature and humidity from DHT11 and DHT22 sensors, adding retries, the minimum interval between readings, Fahrenheit and dew point on top of the firmware's dht module.",
+      "author": "Steven Slaa",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1292,7 +1332,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/dht/README.md",
-        "sha256": "4e92e711085819bdab0493b1f6e6e26a1873dba015e1058989d1bb40224638fe",
+        "sha256": "a716a82b0a103aca2fe347051f7eda2ddb8747acd9f89ce922399fe503c139fc",
         "mime": "text/markdown"
       }
     },
@@ -1301,6 +1341,7 @@
       "name": "DS3231 real time clock",
       "version": "1.0.0",
       "description": "Reads and sets the DS3231 real time clock over I2C, including its temperature, and copies the time into the board's own clock.",
+      "author": "Steven Slaa",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1318,7 +1359,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ds3231/README.md",
-        "sha256": "ebc5ef06f00cded1fca9b29f9686c37d02919bfb3e1607c7f4bb1040d3aac2e6",
+        "sha256": "4d561ba86970c680bbc11479f2e58f9dc487f4af2c97e83f1b8689122b0fed96",
         "mime": "text/markdown"
       }
     },
@@ -1327,6 +1368,7 @@
       "name": "I2C EEPROM (24LC, AT24C, CAT24C)",
       "version": "1.0.0",
       "description": "Reads and writes the 24-series I2C EEPROMs, handling page boundaries and write cycles so stored data survives a power cut intact.",
+      "author": "Steven Slaa",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1343,7 +1385,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/eeprom/README.md",
-        "sha256": "f16502a31655b869061c9961993dcdd79c97a537fe624f5b17bc4580e1d9a1f5",
+        "sha256": "e5548029700ba00bb47b1c5e3fbda712e85b9c57c12d64c40a67c54b6c4e10cf",
         "mime": "text/markdown"
       }
     },
@@ -1352,6 +1394,7 @@
       "name": "GY-271 compass (QMC5883L / HMC5883L)",
       "version": "1.0.0",
       "description": "Three axis magnetometer driver for the GY-271 and HW-246 compass modules, detecting whether the board carries a QMC5883L or an HMC5883L.",
+      "author": "Steven Slaa",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1368,7 +1411,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/gy271/README.md",
-        "sha256": "62a1f8191d218f1c034d7f6e8db1a500873daf99eb30773a539403d830bab2db",
+        "sha256": "ff997e09a52c3134a884f77bf7e856c6f42171d2a7d204347f258f440abe0ce9",
         "mime": "text/markdown"
       }
     },
@@ -1377,6 +1420,7 @@
       "name": "HC-SR04",
       "version": "0.2.1",
       "description": "Ultrasonic distance driver for the HC-SR04, reading 2cm to 400cm.",
+      "author": "Roberto S\u00e1nchez",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1395,7 +1439,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/hcsr04/README.md",
-        "sha256": "4d21a5e54b688f28fb49458d8598a1a299a40a0d712d6d51b519706e03fdda53",
+        "sha256": "21f902e7e382328cc16eb9fe62550f2b6bf9a563f0239b4ce1ca1e39e65e49e7",
         "mime": "text/markdown"
       }
     },
@@ -1404,6 +1448,7 @@
       "name": "I2C character LCD",
       "version": "1.0.0",
       "description": "HD44780 character LCD driver for displays behind a PCF8574 I2C backpack.",
+      "author": "Dave Hylands",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1427,7 +1472,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/i2c-lcd/README.md",
-        "sha256": "8af9447016a0566a8ccfe132c52ef7e8aecbcaad88914f053b3b63bbf17a6363",
+        "sha256": "0ab9d7ecdf948169ab8f267f8d0cb0d74a341a04b41267927200e54e8a001607",
         "mime": "text/markdown"
       }
     },
@@ -1436,6 +1481,7 @@
       "name": "IR receiver (NEC remotes)",
       "version": "1.0.0",
       "description": "Decodes NEC infrared remote controls with a three pin 38kHz receiver module such as the CHQ1838, VS1838B or TSOP1838.",
+      "author": "Steven Slaa",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1452,7 +1498,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ir-receiver/README.md",
-        "sha256": "30ee6ded2e314745f4ac6d4c919a057ec94aa74bc8536685a5890a7b0b5238b6",
+        "sha256": "f664e4fc55af8ade29e985759a716bc218365c03ef1875a2eb1845ac2151e3d0",
         "mime": "text/markdown"
       }
     },
@@ -1461,6 +1507,7 @@
       "name": "IR transmitter (NEC remotes)",
       "version": "1.0.0",
       "description": "Sends NEC infrared remote codes from an IR LED, using the ESP32's RMT peripheral where it exists and a PWM carrier everywhere else.",
+      "author": "Steven Slaa",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1477,7 +1524,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ir-transmitter/README.md",
-        "sha256": "37d332f32fdcd8c8275c010bb5efe39a91b1d1e9ccaf29b082855cc6ee5fa66c",
+        "sha256": "e701c3818f78999bee966ad8998ed537c1219a9e854b6953de4871fdaedb66e3",
         "mime": "text/markdown"
       }
     },
@@ -1486,6 +1533,7 @@
       "name": "Matrix keypad",
       "version": "1.0.0",
       "description": "Reads the membrane matrix keypads, 4x4 and 4x3, with debouncing and one report per key press.",
+      "author": "Steven Slaa",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1502,7 +1550,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/keypad/README.md",
-        "sha256": "58853fd881ef15d68a91822d0364a5efe908968b9837004d182b8cca92c2a14c",
+        "sha256": "915b36c4f9cf8ff94dd815a6630df74788dcb59aeaae67b46436f0a8d447b27b",
         "mime": "text/markdown"
       }
     },
@@ -1511,6 +1559,7 @@
       "name": "MAX7219 LED matrix",
       "version": "1.0.0",
       "description": "Driver for chained MAX7219 8x8 LED matrix modules over SPI, with framebuf drawing and text.",
+      "author": "Mike Causer",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1529,7 +1578,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/max7219/README.md",
-        "sha256": "152695d606e0a5fb4763bad4cf65b87eaf86e226ccfc2783668872444f6457e1",
+        "sha256": "4aeeaed4c22129bd379f7dd7a8374ca4178cd2b805b5b28873cf22e7f616a0a9",
         "mime": "text/markdown"
       }
     },
@@ -1538,6 +1587,7 @@
       "name": "MFRC522 RFID (RC522)",
       "version": "1.0.0",
       "description": "Reads and writes MIFARE Classic cards and tags with an RFID-RC522 reader over SPI.",
+      "author": "Stefan Wendler",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1556,7 +1606,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/mfrc522/README.md",
-        "sha256": "0f2dc78f6383397bff1ffe55b7ffbe4e07d1d30e4968eff090960c0b9ad8ab36",
+        "sha256": "bd4c8d6713d6852240cdc0fbd00a59f61980ef6b509690a982357be24fb68289",
         "mime": "text/markdown"
       }
     },
@@ -1565,6 +1615,7 @@
       "name": "DC motor on an H bridge (L293D, L298N)",
       "version": "1.0.0",
       "description": "Speed and direction for DC motors on an H bridge driver such as the L293D, the L298N module, the DRV8833 or the TB6612.",
+      "author": "Steven Slaa",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1581,7 +1632,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/motor/README.md",
-        "sha256": "81d4baa5fa0ca01692940783ee8eb62cad1f230ec792524e49fa2cf7b756a255",
+        "sha256": "e9ec2e57e127355bbb1ac046ef8896cd285b842d295589d928dc59ecd734cb29",
         "mime": "text/markdown"
       }
     },
@@ -1606,7 +1657,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/mpu6050/README.md",
-        "sha256": "c0838f079b1e8fbc7420d6283a4cf78c324905c35607cb491f49da53b8848cfc",
+        "sha256": "adfda00ba371815b93c298e4ff119679a574f1043415f51f4e4518f871ed7752",
         "mime": "text/markdown"
       }
     },
@@ -1615,6 +1666,7 @@
       "name": "nRF24L01+ radio",
       "version": "0.2.0",
       "description": "Two way 2.4GHz radio link between boards with nRF24L01+ modules, with addressing, automatic acknowledgement and retries.",
+      "author": "micropython-lib contributors",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1633,7 +1685,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/nrf24l01/README.md",
-        "sha256": "f409e8c996b8fb8ff4bdc6e9f9fe3d54a1b6e0c0564c2ff7a84589f6e5a454fd",
+        "sha256": "efc5ef17e7ae51752a5efca8d5568ac537cfbd614df8746c552c9662fe0fc7ec",
         "mime": "text/markdown"
       }
     },
@@ -1642,6 +1694,7 @@
       "name": "P9813 RGB LED driver",
       "version": "1.0.0",
       "description": "Drives chains of P9813 constant current RGB LEDs, as used by chainable RGB LED modules and clocked RGB strips, over a clock and a data pin.",
+      "author": "Steven Slaa",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1658,7 +1711,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/p9813/README.md",
-        "sha256": "7d876c114fae727b0adf61930b391552072fdb77bd59127094dd10046a9efb4a",
+        "sha256": "a56fd92a85398a90ef21917599e60488522b89b7d0b7ed24ac5c95d4a161a5f9",
         "mime": "text/markdown"
       }
     },
@@ -1667,6 +1720,7 @@
       "name": "Addressable LEDs (WS2812B / SK6812)",
       "version": "1.0.0",
       "description": "Brightness, gamma and HSV colour layer for WS2812B, WS2811 and SK6812 RGBW strips, on top of the built-in neopixel module.",
+      "author": "Steven Slaa",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1683,7 +1737,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/pixels/README.md",
-        "sha256": "b0972823d55248bd57c46edd507d9d509539e059e039bde70d71f9819537d6ae",
+        "sha256": "859c65bfe791adfa6220ca1573aa1949a578458f2063834abb74153a2e605f60",
         "mime": "text/markdown"
       }
     },
@@ -1692,6 +1746,7 @@
       "name": "Rotary encoder (KY-040)",
       "version": "1.0.0",
       "description": "Reads a rotary encoder with CLK, DT and SW pins from interrupts, counting detents with an optional range, wrapping and a debounced push switch.",
+      "author": "Steven Slaa",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1708,7 +1763,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/rotary/README.md",
-        "sha256": "6f7fd8134be0f1fb2a8fd8ad8e95d8014d837d4b8673540251d8b55fbb1b94aa",
+        "sha256": "79a8c50d4129adf5c27a55a3945fff51d4b21742709852e25bc6efec515840fe",
         "mime": "text/markdown"
       }
     },
@@ -1717,6 +1772,7 @@
       "name": "RS-485 (MAX485)",
       "version": "1.0.0",
       "description": "Half duplex RS-485 through a MAX485 or similar transceiver, holding the direction line until the last bit has actually left the wire.",
+      "author": "Steven Slaa",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1733,7 +1789,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/rs485/README.md",
-        "sha256": "5ff047a28acacf82aa781edf181864f7f149211e750d2f7930731427e592c1ce",
+        "sha256": "5ea235eeafa6051859dfca753daf28f706fe9686672d6463ffa289092b58f42e",
         "mime": "text/markdown"
       }
     },
@@ -1742,6 +1798,7 @@
       "name": "Hobby servo",
       "version": "1.0.0",
       "description": "Drives the three wire hobby servos by pulse length: an angle for a positional servo, a speed for a continuous rotation one.",
+      "author": "Steven Slaa",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1758,7 +1815,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/servo/README.md",
-        "sha256": "a67c95bb370fd09dbb6911a08047784489ac213d902b2c501a32ff499697155c",
+        "sha256": "4f45e6237584f1101abcdd161eac7f755545f99759c455501eb9f72a79875198",
         "mime": "text/markdown"
       }
     },
@@ -1767,6 +1824,7 @@
       "name": "74HC595 shift register",
       "version": "1.0.0",
       "description": "Drives one or more chained 74HC595 shift registers from three pins, turning them into eight outputs each.",
+      "author": "Steven Slaa",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1783,7 +1841,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/sr74hc595/README.md",
-        "sha256": "0015216c639857f1487217cdb1bfe66c9b6b5a9c9a895481ba48e2a645e58b77",
+        "sha256": "d5df0c459c03dbee84ba0e8b5451e69d74dc34cc97def7e4ca33b403d02e28a6",
         "mime": "text/markdown"
       }
     },
@@ -1792,6 +1850,7 @@
       "name": "SSD1306 OLED",
       "version": "0.1.0",
       "description": "Monochrome SSD1306 OLED driver for I2C and SPI, with framebuf drawing primitives.",
+      "author": "micropython-lib contributors",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1810,7 +1869,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ssd1306/README.md",
-        "sha256": "0dd39a9638ff99a9c00c774c3b33ab5c71f220581a26f76071ea921e64f1dc4d",
+        "sha256": "a47952ed211806b9a6290584f63ae3fcdaba39da9842ccdbe504e822d7a99798",
         "mime": "text/markdown"
       }
     },
@@ -1819,6 +1878,7 @@
       "name": "ST7789 display",
       "version": "1.0.0",
       "description": "Pure MicroPython driver for ST7789 SPI colour displays, with an 8x16 VGA font.",
+      "author": "Russ Hughes",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1843,7 +1903,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/st7789py/README.md",
-        "sha256": "9e230b0269b43c783b8c419758d509b117c6a1d9b970307949011cd2eda05f34",
+        "sha256": "138d14c74ff0c212edd9b6981389fc3f64dfdb06a9cea65cdd1989fcba37c081",
         "mime": "text/markdown"
       }
     },
@@ -1852,6 +1912,7 @@
       "name": "Stepper motor (ULN2003, A4988)",
       "version": "1.0.0",
       "description": "Turns stepper motors a known number of steps: four coil pins through a ULN2003 or an H bridge, or two pins to a step and direction driver such as an A4988.",
+      "author": "Steven Slaa",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1868,7 +1929,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/stepper/README.md",
-        "sha256": "6d0ffd3a1284cfc8aaca35fcb463300d85879fe80249348a8cc89f7173ef56d3",
+        "sha256": "a6e8ea26456651689e922caa35398eb38fb3d75f0cfd84f02d18919c49d5e188",
         "mime": "text/markdown"
       }
     },
@@ -1877,6 +1938,7 @@
       "name": "TC74 temperature",
       "version": "1.0.0",
       "description": "Reads whole degrees Celsius from a Microchip TC74 digital temperature sensor over I2C.",
+      "author": "Steven Slaa",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1893,7 +1955,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/tc74/README.md",
-        "sha256": "869df623d8a1021f547440df84bbb3d783866689b5f04f5a445495f50a6649ef",
+        "sha256": "d218741dbf0b5dac4bf06bb1a06dfc8b0f3294824ddfb90b584851f701584b42",
         "mime": "text/markdown"
       }
     },
@@ -1902,6 +1964,7 @@
       "name": "TM1637 7-segment display",
       "version": "1.3.0",
       "description": "Driver for TM1637 four digit 7-segment LED display modules, over the chip's own two wire protocol.",
+      "author": "Mike Causer",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1920,7 +1983,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/tm1637/README.md",
-        "sha256": "e8247054ab88b34757e4a1989710ce62c356488e44880e2b43d402e57d470b11",
+        "sha256": "a3e48cbbf57da5cb68593cdfaed668d2f4fc7b6eb3aaf8d75958ada74f38f4fe",
         "mime": "text/markdown"
       }
     },
@@ -1929,6 +1992,7 @@
       "name": "MQTT client (umqtt.simple)",
       "version": "1.3.4",
       "description": "The umqtt.simple MQTT client, for boards whose firmware does not already include it, such as the Raspberry Pi Pico W.",
+      "author": "micropython-lib contributors",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1947,7 +2011,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/umqtt/README.md",
-        "sha256": "e125c69b0d50dbc17287d5fbceb1023eb87273502ba8b1b504d60596c27ff6f6",
+        "sha256": "63836846814ef130aa667af501250334483c869fface0259c504ee63f0a49d7c",
         "mime": "text/markdown"
       }
     },
@@ -1956,6 +2020,7 @@
       "name": "VCNL4040 proximity and light",
       "version": "1.0.0",
       "description": "Proximity and ambient light driver for the Vishay VCNL4040, reading lux and a near field proximity count over I2C.",
+      "author": "Steven Slaa",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1973,7 +2038,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/vcnl4040/README.md",
-        "sha256": "f55ada2307596c199bff43cbcb91911687c1051827549191a23cf2715c94b853",
+        "sha256": "f9fc5af9350dc9bb8d18ce6fce809f5640175e1396c0e67496f252935cbd8c4c",
         "mime": "text/markdown"
       }
     },
@@ -1982,6 +2047,7 @@
       "name": "VL6180X range and light",
       "version": "1.0.0",
       "description": "Time of flight distance and ambient light driver for the ST VL6180X, measuring millimetres up to about 20cm.",
+      "author": "Steven Slaa",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -1999,7 +2065,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/vl6180x/README.md",
-        "sha256": "2e7a73a7a5813b2988935c96d42d83e7dfa86c5c5485cc6214e4c666eed71f97",
+        "sha256": "63c1c628f35da67c4373404f14b9dd3ceddcbaa0dc971edab35601a8b974235e",
         "mime": "text/markdown"
       }
     },
@@ -2008,6 +2074,7 @@
       "name": "Wifi and access points",
       "version": "1.0.0",
       "description": "Joining a wifi network or running an access point, the same way on an ESP32 and a Raspberry Pi Pico W, with the status codes and setup order each port really needs.",
+      "author": "Steven Slaa",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -2024,7 +2091,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/wifi/README.md",
-        "sha256": "2584050d21fadca4767e3ecb21d9812debee5eae7e96326608914d23b5ee8927",
+        "sha256": "0e207c234c1a375ebe3d88625dc7e8fbcb5209733208a871bd10887f692ba443",
         "mime": "text/markdown"
       }
     }

@@ -2,6 +2,7 @@
   "id": "dimmer",
   "title": "5. Dimmer \u2014 putting them together",
   "description": "Reads a potentiometer and dims an LED to match, showing how to map any input range onto any output range.",
+  "author": "Steven Slaa",
   "boardTags": [
     "esp32",
     "esp32s3",

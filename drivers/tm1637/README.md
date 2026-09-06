@@ -1,3 +1,8 @@
+---
+driver: tm1637
+author: Mike Causer
+---
+
 # TM1637 7-segment display
 
 Driver for the common four digit 7-segment LED modules built around the TM1637, including the

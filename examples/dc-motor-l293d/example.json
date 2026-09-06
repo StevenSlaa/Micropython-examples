@@ -2,6 +2,7 @@
   "id": "dc-motor-l293d",
   "title": "DC Motor (L293D / L298N) Example",
   "description": "In this example the microcontroller drives a DC motor through an H bridge, ramping the speed up, coasting, running backwards and braking.",
+  "author": "Steven Slaa",
   "boardTags": [
     "esp32",
     "esp32s3",

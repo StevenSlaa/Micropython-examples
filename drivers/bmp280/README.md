@@ -1,3 +1,8 @@
+---
+driver: bmp280
+author: David Stenwall
+---
+
 # BMP280
 
 Temperature and pressure driver for the Bosch BMP280 over I2C or SPI.

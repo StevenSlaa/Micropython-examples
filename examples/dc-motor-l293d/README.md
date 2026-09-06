@@ -1,3 +1,8 @@
+---
+example: dc-motor-l293d
+author: Steven Slaa
+---
+
 # DC Motor (L293D / L298N) Example
 
 In this example the microcontroller drives a DC motor through an H bridge: ramping the speed up

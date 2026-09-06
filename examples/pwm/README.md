@@ -1,3 +1,8 @@
+---
+example: pwm
+author: Steven Slaa
+---
+
 # PWM (analog write)
 
 This example will show you how to create a fading LED animation with a PWM Signal. 

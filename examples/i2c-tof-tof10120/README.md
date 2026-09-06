@@ -1,3 +1,8 @@
+---
+example: i2c-tof-tof10120
+author: Steven Slaa
+---
+
 # TOF10120 Sensor Example
 
 In this example the microcontroller should display the distance that the sensor has measured. This value has a maximum of 2000.

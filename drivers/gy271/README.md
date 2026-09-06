@@ -1,3 +1,8 @@
+---
+driver: gy271
+author: Steven Slaa
+---
+
 # GY-271 compass (QMC5883L / HMC5883L)
 
 Three axis magnetometer driver for the GY-271 and HW-246 modules. Boards sold under both names

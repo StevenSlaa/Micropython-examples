@@ -1,3 +1,8 @@
+---
+example: p9813-rgb-led
+author: Steven Slaa
+---
+
 # P9813 RGB LED Example
 
 In this example the microcontroller shows red, green and blue on a chain of P9813 RGB LED

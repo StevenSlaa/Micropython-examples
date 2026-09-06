@@ -3,5 +3,10 @@
   "name": "I2C EEPROM (24LC, AT24C, CAT24C)",
   "version": "1.0.0",
   "description": "Reads and writes the 24-series I2C EEPROMs, handling page boundaries and write cycles so stored data survives a power cut intact.",
-  "boardTags": ["esp32", "esp32s3", "pico"]
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ]
 }

@@ -1,3 +1,8 @@
+---
+example: rs485-link
+author: Steven Slaa
+---
+
 # RS-485 Link (MAX485)
 
 In this example two boards talk to each other over RS-485: one asks a question every second and

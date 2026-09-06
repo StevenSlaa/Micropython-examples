@@ -1,3 +1,8 @@
+---
+driver: eeprom
+author: Steven Slaa
+---
+
 # I2C EEPROM (24LC, AT24C, CAT24C)
 
 Reads and writes the 24-series I2C EEPROMs: 24LC01 through 24LC512, AT24C32, CAT24C256 and the

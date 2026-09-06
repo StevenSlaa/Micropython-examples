@@ -2,6 +2,7 @@
   "id": "i2c-compass-gy271",
   "title": "I2C Compass (GY-271) Example",
   "description": "In this example the microcontroller reads the magnetic field from a GY-271 or HW-246 compass module and prints the three axes and a heading in degrees.",
+  "author": "Steven Slaa",
   "boardTags": [
     "esp32",
     "esp32s3",

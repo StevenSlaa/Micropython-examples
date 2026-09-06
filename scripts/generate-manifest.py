@@ -34,6 +34,20 @@ def entry(path: Path, relative_to: Path):
             "sha256": hashlib.sha256(data).hexdigest(),
             "mime": mimetypes.guess_type(path.name)[0] or "application/octet-stream"}
 
+def write_front_matter(readme: Path, fields: dict):
+    """Puts the author at the top of a README, as YAML front matter.
+
+    Written from example.json and driver.json rather than by hand, so the two always agree.
+    GitHub renders it as a table; the IDE hides it and shows the author on the card instead.
+    """
+    text = readme.read_text()
+    if text.startswith("---\n"):
+        _, _, text = text[4:].partition("---\n")
+        text = text.lstrip("\n")
+    lines = "\n".join(f"{key}: {value}" for key, value in fields.items() if value)
+    readme.write_text(f"---\n{lines}\n---\n\n{text}")
+
+
 def fail(folder, message):
     raise ValueError(f"{folder.parent.name}/{folder.name}: {message}")
 
@@ -52,6 +66,7 @@ for folder in sorted(p for p in DRIVERS.iterdir() if p.is_dir()) if DRIVERS.exis
     # test_*.py stays in the repository; only the modules themselves go to the board.
     files = [entry(p, folder) for p in sorted(folder.rglob("*.py")) if not p.name.startswith("test_")]
     if not files: fail(folder, "must contain at least one Python file")
+    write_front_matter(folder / "README.md", {"driver": metadata["id"], "author": metadata.get("author")})
     drivers.append({**metadata, "files": files,
                     "readme": {**entry(folder / "README.md", folder), "mime": "text/markdown"}})
 
@@ -75,9 +90,11 @@ for folder in sorted(p for p in EXAMPLES.iterdir() if p.is_dir()):
     for driver_id in requires:
         if driver_id not in driver_ids: fail(folder, f"requires unknown driver {driver_id}")
     files = [entry(entry_path, folder)] + [entry(p, folder) for p in sorted(folder.glob("*.py")) if p != entry_path]
+    write_front_matter(folder / "README.md", {"example": metadata["id"], "author": metadata.get("author")})
     assets = folder / "res"
     examples.append({"id": metadata["id"], "title": metadata["title"], "description": metadata["description"],
-                     "boardTags": metadata["boardTags"], "group": group, "order": order, "requires": requires, "files": files,
+                     "boardTags": metadata["boardTags"], "author": metadata.get("author", ""),
+                     "group": group, "order": order, "requires": requires, "files": files,
                      "readme": {**entry(folder / "README.md", folder), "mime": "text/markdown"},
                      "assets": [entry(p, folder) for p in sorted(assets.rglob("*")) if p.is_file()] if assets.exists() else []})
 

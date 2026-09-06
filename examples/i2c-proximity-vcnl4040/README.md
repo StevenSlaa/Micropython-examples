@@ -1,3 +1,8 @@
+---
+example: i2c-proximity-vcnl4040
+author: Steven Slaa
+---
+
 # VCNL4040 Sensor Example
 
 In this example the microcontroller reads a VCNL4040 and prints how close something is, how

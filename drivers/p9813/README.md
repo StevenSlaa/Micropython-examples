@@ -1,3 +1,8 @@
+---
+driver: p9813
+author: Steven Slaa
+---
+
 # P9813 RGB LED driver
 
 Drives chains of P9813 constant current RGB LEDs — chainable RGB LED modules, and the RGB strips

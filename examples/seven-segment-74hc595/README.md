@@ -1,3 +1,8 @@
+---
+example: seven-segment-74hc595
+author: Steven Slaa
+---
+
 # Seven Segment Display (74HC595) Example
 
 In this example the microcontroller counts on a single 7-segment display and then runs through

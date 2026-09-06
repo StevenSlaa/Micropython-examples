@@ -1,3 +1,8 @@
+---
+driver: vcnl4040
+author: Steven Slaa
+---
+
 # VCNL4040 proximity and light
 
 Proximity and ambient light driver for the Vishay VCNL4040. It pulses an infrared LED and

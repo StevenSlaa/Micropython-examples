@@ -3,5 +3,10 @@
   "name": "IR receiver (NEC remotes)",
   "version": "1.0.0",
   "description": "Decodes NEC infrared remote controls with a three pin 38kHz receiver module such as the CHQ1838, VS1838B or TSOP1838.",
-  "boardTags": ["esp32", "esp32s3", "pico"]
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ]
 }

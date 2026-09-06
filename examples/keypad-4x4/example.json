@@ -2,6 +2,7 @@
   "id": "keypad-4x4",
   "title": "Matrix Keypad (4x4) Example",
   "description": "In this example the microcontroller reads a membrane matrix keypad, collects the digits typed into a code, and checks it when the hash key is pressed.",
+  "author": "Steven Slaa",
   "boardTags": [
     "esp32",
     "esp32s3",

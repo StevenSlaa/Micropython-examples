@@ -1,3 +1,8 @@
+---
+driver: ssd1306
+author: micropython-lib contributors
+---
+
 # SSD1306 OLED
 
 Monochrome SSD1306 OLED driver for the common 128x64 and 128x32 modules, over I2C or SPI.

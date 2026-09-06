@@ -1,3 +1,8 @@
+---
+example: i2c-bmp280
+author: Steven Slaa
+---
+
 # I2C BMP280 Example
 
 In this example the microcontroller reads the temperature and pressure from the connected BMP280 sensor and prints it on the terminal.

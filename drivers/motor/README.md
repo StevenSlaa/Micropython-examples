@@ -1,3 +1,8 @@
+---
+driver: motor
+author: Steven Slaa
+---
+
 # DC motor on an H bridge (L293D, L298N)
 
 Speed and direction for a DC motor on an H bridge.

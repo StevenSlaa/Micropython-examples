@@ -1,3 +1,8 @@
+---
+driver: nrf24l01
+author: micropython-lib contributors
+---
+
 # nRF24L01+ radio
 
 A two way 2.4GHz radio link between boards. Each end sends packets of up to 32 bytes to an

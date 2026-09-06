@@ -3,5 +3,10 @@
   "name": "Matrix keypad",
   "version": "1.0.0",
   "description": "Reads the membrane matrix keypads, 4x4 and 4x3, with debouncing and one report per key press.",
-  "boardTags": ["esp32", "esp32s3", "pico"]
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ]
 }

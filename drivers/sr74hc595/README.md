@@ -1,3 +1,8 @@
+---
+driver: sr74hc595
+author: Steven Slaa
+---
+
 # 74HC595 shift register
 
 Turns three GPIO pins into eight outputs, or sixteen, or more: the 74HC595 takes bits in

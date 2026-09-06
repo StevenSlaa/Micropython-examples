@@ -2,6 +2,7 @@
   "id": "nrf24-receive",
   "title": "nRF24 Radio: Receiving",
   "description": "In this example the microcontroller listens for packets over a 2.4GHz radio link, prints the counter in each one and reports any that went missing.",
+  "author": "Steven Slaa",
   "boardTags": [
     "esp32",
     "esp32s3",

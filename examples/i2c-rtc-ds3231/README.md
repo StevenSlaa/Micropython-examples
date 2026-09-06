@@ -1,3 +1,8 @@
+---
+example: i2c-rtc-ds3231
+author: Steven Slaa
+---
+
 # I2C RTC (DS3231) Example
 
 In this example the microcontroller reads the date, time and temperature from a DS3231 real time

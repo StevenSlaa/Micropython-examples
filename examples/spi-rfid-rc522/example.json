@@ -2,6 +2,7 @@
   "id": "spi-rfid-rc522",
   "title": "SPI RFID RC522 Example",
   "description": "In this example the microcontroller reads the id of any MIFARE card or tag held against an RFID-RC522 reader, and prints the contents of one block from it.",
+  "author": "Steven Slaa",
   "boardTags": [
     "esp32",
     "esp32s3",

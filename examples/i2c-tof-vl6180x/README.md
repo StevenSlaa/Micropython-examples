@@ -1,3 +1,8 @@
+---
+example: i2c-tof-vl6180x
+author: Steven Slaa
+---
+
 # VL6180X Sensor Example
 
 In this example the microcontroller measures the distance to a nearby object with a VL6180X time

@@ -1,3 +1,8 @@
+---
+example: i2c-liquid-crystal-display
+author: Steven Slaa
+---
+
 # I2C Liquid Crystal Display Example
 
 In this example the microcontroller should display some text on a Liquid Crystal Display (16x2) over I2C. Keep in mind that the LCD needs an I2C Backpack for this example to work.

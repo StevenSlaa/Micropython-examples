@@ -1,3 +1,8 @@
+---
+driver: umqtt
+author: micropython-lib contributors
+---
+
 # MQTT client (umqtt.simple)
 
 The standard MicroPython MQTT client, published as a driver so the same code runs on every

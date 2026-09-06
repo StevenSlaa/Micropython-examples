@@ -2,6 +2,7 @@
   "id": "stepper",
   "title": "Stepper Motor",
   "description": "In this example the microcontroller turns a stepper motor a quarter turn at a time, back to where it started, and then releases it. Works with a 28BYJ-48 on a ULN2003 board or a motor on a step and direction driver.",
+  "author": "Steven Slaa",
   "boardTags": [
     "esp32",
     "esp32s3",

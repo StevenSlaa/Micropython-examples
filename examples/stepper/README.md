@@ -1,3 +1,8 @@
+---
+example: stepper
+author: Steven Slaa
+---
+
 # Stepper Motor
 
 In this example the microcontroller turns a stepper a quarter turn at a time all the way round,

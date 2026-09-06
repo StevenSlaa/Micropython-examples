@@ -1,3 +1,8 @@
+---
+driver: rotary
+author: Steven Slaa
+---
+
 # Rotary encoder (KY-040)
 
 Reads the rotary encoders with CLK, DT and SW pins — the KY-040 and the many boards like it,

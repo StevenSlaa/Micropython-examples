@@ -1,3 +1,8 @@
+---
+example: spi-led-matrix-max7219
+author: Steven Slaa
+---
+
 # SPI LED Matrix (MAX7219) Example
 
 In this example the microcontroller writes text to a chain of MAX7219 8x8 LED matrix modules and

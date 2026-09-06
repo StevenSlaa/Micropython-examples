@@ -2,6 +2,7 @@
   "id": "p9813-rgb-led",
   "title": "P9813 RGB LED Example",
   "description": "In this example the microcontroller shows the plain colours on a chain of P9813 RGB LEDs and then cycles a rainbow along it.",
+  "author": "Steven Slaa",
   "boardTags": [
     "esp32",
     "esp32s3",

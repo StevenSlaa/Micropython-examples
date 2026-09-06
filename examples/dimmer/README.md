@@ -1,3 +1,8 @@
+---
+example: dimmer
+author: Steven Slaa
+---
+
 # Analog Read and Write (dimmer)
 
 Turn a knob, and an LED gets brighter. Two examples you have already met, joined in the middle.

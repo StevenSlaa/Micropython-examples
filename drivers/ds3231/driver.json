@@ -3,6 +3,11 @@
   "name": "DS3231 real time clock",
   "version": "1.0.0",
   "description": "Reads and sets the DS3231 real time clock over I2C, including its temperature, and copies the time into the board's own clock.",
-  "boardTags": ["esp32", "esp32s3", "pico"],
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
   "source": "https://www.analog.com/media/en/technical-documentation/data-sheets/ds3231.pdf"
 }

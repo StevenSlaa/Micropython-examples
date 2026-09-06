@@ -2,6 +2,7 @@
   "id": "nrf24-send",
   "title": "nRF24 Radio: Sending",
   "description": "In this example the microcontroller sends a counter over a 2.4GHz radio link once a second, and reports whether each packet was acknowledged by the other board.",
+  "author": "Steven Slaa",
   "boardTags": [
     "esp32",
     "esp32s3",

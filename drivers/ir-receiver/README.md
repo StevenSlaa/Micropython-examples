@@ -1,3 +1,8 @@
+---
+driver: ir-receiver
+author: Steven Slaa
+---
+
 # IR receiver (NEC remotes)
 
 Decodes infrared remote controls with one of the little three pin 38kHz receivers — CHQ1838,

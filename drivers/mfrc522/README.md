@@ -1,3 +1,8 @@
+---
+driver: mfrc522
+author: Stefan Wendler
+---
+
 # MFRC522 RFID (RC522)
 
 Reads and writes MIFARE Classic 1k cards and tags with the blue RFID-RC522 board, over SPI.

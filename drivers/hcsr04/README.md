@@ -1,3 +1,8 @@
+---
+driver: hcsr04
+author: Roberto Sánchez
+---
+
 # HC-SR04
 
 Ultrasonic distance driver for the HC-SR04. The sensor range is 2cm to 400cm; readings outside

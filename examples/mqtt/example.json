@@ -2,6 +2,7 @@
   "id": "mqtt",
   "title": "5. MQTT",
   "description": "Publishes readings to an MQTT broker and listens for commands coming back, which is how most small devices send their data somewhere useful.",
+  "author": "Steven Slaa",
   "boardTags": [
     "esp32",
     "esp32s3",

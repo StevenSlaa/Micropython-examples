@@ -1,3 +1,8 @@
+---
+driver: vl6180x
+author: Steven Slaa
+---
+
 # VL6180X range and light
 
 Time of flight distance and ambient light driver for the ST VL6180X. It times a pulse of

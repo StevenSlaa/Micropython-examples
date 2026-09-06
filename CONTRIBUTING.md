@@ -12,6 +12,9 @@ Run `python3 scripts/generate-manifest.py` before opening a pull request and com
   within their group.
 - Add `example.json`, `README.md`, and at least one `.py` file.
 - Set `entry` to the script users should open first.
+- Put your name in `author`. It is shown on the card in the IDE's library panel, and the
+  generator copies it into the front matter at the top of your README, so do not write that
+  block yourself: it is overwritten.
 - Put it in a `group`, which decides where it appears in the IDE's library panel and in the
   index in [examples/README.md](examples/README.md). The groups are listed in
   `scripts/generate-manifest.py`, in the order they are shown:
@@ -42,6 +45,9 @@ Run `python3 scripts/generate-manifest.py` before opening a pull request and com
   installed flat into `/lib`, so name them the way users import them.
 - Keep drivers free of example code: no pin numbers, no `while True`, no prints on import.
 - Bump `version` in `driver.json` when the module changes; installs compare that version.
+- Put your name in `author` here too. For a driver you vendored rather than wrote, `author` is
+  who packaged it for this catalog, and `license`, `source` and the README credits are what
+  identify the code's real author.
 - Credit upstream code. Set `license` and `source` in `driver.json`, keep the original header
   comment in the file, and repeat the credit at the bottom of the driver README.
 - A driver with real logic of its own (colour maths, unit conversion, a parser) gets a

@@ -1,3 +1,8 @@
+---
+driver: servo
+author: Steven Slaa
+---
+
 # Hobby servo
 
 Drives the three wire hobby servos — SG90, MG996R, DM-S0306D, TS90M and the rest of them.

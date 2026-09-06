@@ -1,3 +1,8 @@
+---
+example: dht-sensor
+author: Steven Slaa
+---
+
 # DHT Sensor Example
 
 In this example the microcontroller should display the temperature and humidity in the console,

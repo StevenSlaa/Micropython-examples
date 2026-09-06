@@ -1,3 +1,8 @@
+---
+example: servo
+author: Steven Slaa
+---
+
 # Servo
 
 In this example the microcontroller drives a hobby servo. Set `continuous` at the top of the

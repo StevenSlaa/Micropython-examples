@@ -1,3 +1,8 @@
+---
+example: i2c-mpu-6050
+author: Steven Slaa
+---
+
 # I2C MPU-6050
 
 In this example the microcontrollers reads values from the MPU-6050 accelerometer and gyroscope. It also reads the onboard temperature sensor of the module.

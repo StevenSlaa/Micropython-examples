@@ -1,3 +1,8 @@
+---
+example: blink
+author: Steven Slaa
+---
+
 # Blink an LED (digital write)
 
 Turn a light on, wait, turn it off, wait, repeat. It is a small thing to build, and it is worth

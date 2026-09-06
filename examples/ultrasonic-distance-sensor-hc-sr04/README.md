@@ -1,3 +1,8 @@
+---
+example: ultrasonic-distance-sensor-hc-sr04
+author: Steven Slaa
+---
+
 # Ultrasonic Distance Sensor (HC-SR04)
 
 The HC-SR04 ultrasonic sensor uses sonar to determine the distance to an object. 

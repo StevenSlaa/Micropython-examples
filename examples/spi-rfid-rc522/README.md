@@ -1,3 +1,8 @@
+---
+example: spi-rfid-rc522
+author: Steven Slaa
+---
+
 # SPI RFID RC522 Example
 
 In this example the microcontroller reads the id of any MIFARE card or tag held against an

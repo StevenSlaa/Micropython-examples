@@ -1,3 +1,8 @@
+---
+driver: i2c-lcd
+author: Dave Hylands
+---
+
 # I2C character LCD
 
 HD44780 character LCD driver for displays behind a PCF8574 I2C backpack (the common 16x2 and

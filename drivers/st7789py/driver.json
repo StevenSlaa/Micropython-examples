@@ -3,7 +3,12 @@
   "name": "ST7789 display",
   "version": "1.0.0",
   "description": "Pure MicroPython driver for ST7789 SPI colour displays, with an 8x16 VGA font.",
-  "boardTags": ["esp32", "esp32s3", "pico"],
+  "author": "Russ Hughes",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
   "license": "MIT",
   "source": "https://github.com/russhughes/st7789py_mpy"
 }

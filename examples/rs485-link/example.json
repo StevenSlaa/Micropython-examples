@@ -2,6 +2,7 @@
   "id": "rs485-link",
   "title": "RS-485 Link (MAX485)",
   "description": "In this example two boards talk to each other over RS-485: one asks a question every second and the other answers, over a pair of wires that works across a building.",
+  "author": "Steven Slaa",
   "boardTags": [
     "esp32",
     "esp32s3",

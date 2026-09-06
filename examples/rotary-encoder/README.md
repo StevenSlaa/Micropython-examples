@@ -1,3 +1,8 @@
+---
+example: rotary-encoder
+author: Steven Slaa
+---
+
 # Rotary Encoder
 
 In this example the microcontroller reads a rotary encoder: turning the knob moves a number up

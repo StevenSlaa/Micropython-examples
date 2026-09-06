@@ -1,3 +1,8 @@
+---
+example: spi-st7789-display
+author: Steven Slaa
+---
+
 # SPI ST7789 Display Example
 
 In this example the microcontroller should display some text on a ST7789 240x240 Display over SPI.

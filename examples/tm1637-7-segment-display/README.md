@@ -1,3 +1,8 @@
+---
+example: tm1637-7-segment-display
+author: Steven Slaa
+---
+
 # TM1637 7-Segment Display Example
 
 In this example the microcontroller writes numbers and a scrolling message to a TM1637 four

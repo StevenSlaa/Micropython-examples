@@ -1,3 +1,8 @@
+---
+driver: ds3231
+author: Steven Slaa
+---
+
 # DS3231 real time clock
 
 Reads and sets the DS3231, the accurate real time clock module with a coin cell on the back. Its

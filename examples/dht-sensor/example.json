@@ -2,6 +2,7 @@
   "id": "dht-sensor",
   "title": "DHT Sensor Example",
   "description": "In this example the microcontroller should display the temperature and humidity in the console. This information is collected from a DHT11 or DHT22 sensor.",
+  "author": "Steven Slaa",
   "boardTags": [
     "esp32",
     "esp32s3",

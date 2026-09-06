@@ -1,3 +1,8 @@
+---
+driver: pixels
+author: Steven Slaa
+---
+
 # Addressable LEDs (WS2812B / SK6812)
 
 MicroPython already ships the wire protocol: `neopixel` is frozen into the ESP32 and RP2

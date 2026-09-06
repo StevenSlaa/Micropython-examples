@@ -2,6 +2,7 @@
   "id": "ir-remote-nec",
   "title": "IR Remote (NEC) Example",
   "description": "In this example the microcontroller decodes button presses from an infrared remote control with a 38kHz receiver module, prints which button was pressed and toggles the onboard LED.",
+  "author": "Steven Slaa",
   "boardTags": [
     "esp32",
     "esp32s3",

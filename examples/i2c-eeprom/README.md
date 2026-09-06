@@ -1,3 +1,8 @@
+---
+example: i2c-eeprom
+author: Steven Slaa
+---
+
 # I2C EEPROM Example
 
 In this example the microcontroller keeps a boot counter in an I2C EEPROM, so that it goes up

@@ -3,6 +3,11 @@
   "name": "VL6180X range and light",
   "version": "1.0.0",
   "description": "Time of flight distance and ambient light driver for the ST VL6180X, measuring millimetres up to about 20cm.",
-  "boardTags": ["esp32", "esp32s3", "pico"],
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
   "source": "https://www.st.com/resource/en/datasheet/vl6180x.pdf"
 }
