@@ -511,6 +511,34 @@
       ]
     },
     {
+      "id": "tm1637-7-segment-display",
+      "title": "TM1637 7-Segment Display Example",
+      "description": "In this example the microcontroller writes numbers and text to a TM1637 four digit 7-segment display, then counts minutes and seconds with a blinking colon.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "requires": [
+        "tm1637"
+      ],
+      "files": [
+        {
+          "path": "TM1637 7-Segment Display.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/tm1637-7-segment-display/TM1637%207-Segment%20Display.py",
+          "sha256": "b1dd6c7f046bf724fa499c427cef0a206234021b2e4c6ac398ff8a611ede1534",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/tm1637-7-segment-display/README.md",
+        "sha256": "557e228e3a9c862155250d92be7f3f5c4caf3b132fda9a4fa452f617c7c0056c",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "ultrasonic-distance-sensor-hc-sr04",
       "title": "Ultrasonic Distance Sensor (HC-SR04)",
       "description": "The HC-SR04 ultrasonic sensor uses sonar to determine the distance to an object.  This sensor reads from 2cm to 400cm with an accuracy of 0.3cm. In this example, the microcontroller reads the distance from the sensor and displays it on the ",
@@ -849,6 +877,33 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/tc74/README.md",
         "sha256": "869df623d8a1021f547440df84bbb3d783866689b5f04f5a445495f50a6649ef",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "tm1637",
+      "name": "TM1637 7-segment display",
+      "version": "1.3.0",
+      "description": "Driver for TM1637 four digit 7-segment LED display modules, over the chip's own two wire protocol.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "license": "MIT",
+      "source": "https://github.com/mcauser/micropython-tm1637",
+      "files": [
+        {
+          "path": "tm1637.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/tm1637/tm1637.py",
+          "sha256": "c02419e86e7ba301ac62947ab0b6e8ad1460c267a49ba4215300538a5f233e8c",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/tm1637/README.md",
+        "sha256": "e8247054ab88b34757e4a1989710ce62c356488e44880e2b43d402e57d470b11",
         "mime": "text/markdown"
       }
     },

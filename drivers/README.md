@@ -17,6 +17,7 @@ name is the id examples put in their `requires` list.
 | [ssd1306](ssd1306) | `ssd1306.py` | — |
 | [st7789py](st7789py) | `st7789py.py`, `vga2_16x32.py` | [spi-st7789-display](../examples/spi-st7789-display) |
 | [tc74](tc74) | `tc74.py` | — |
+| [tm1637](tm1637) | `tm1637.py` | [tm1637-7-segment-display](../examples/tm1637-7-segment-display) |
 | [vcnl4040](vcnl4040) | `vcnl4040.py` | [i2c-proximity-vcnl4040](../examples/i2c-proximity-vcnl4040) |
 | [vl6180x](vl6180x) | `vl6180x.py` | [i2c-tof-vl6180x](../examples/i2c-tof-vl6180x) |
 <!-- generated:end -->
