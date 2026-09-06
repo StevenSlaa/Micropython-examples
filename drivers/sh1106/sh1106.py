@@ -93,25 +93,40 @@ _LOW_COLUMN_ADDRESS  = const(0x00)
 _HIGH_COLUMN_ADDRESS = const(0x10)
 _SET_PAGE_ADDRESS    = const(0xB0)
 
-# Panels that do not come up usable on their own defaults, which are for a 128x64 screen.
-#
-# A 40 row panel left at the default multiplex ratio of 63 has its rows mapped to pages the
-# driver never writes, and the unwritten ones show whatever they powered up with. Setting the
-# ratio is what stops that.
-#
-# Deliberately conservative: every command here means the same thing on an SH1106 and an
-# SSD1306. The DC-DC and internal reference settings are not, so they are left out; a panel
-# that comes up correct but dim wants one of those adding for its own controller.
-PANEL_72X40 = (
-    0xA8, 0x27,   # multiplex ratio: 40 rows
-    0xD3, 0x00,   # display offset: none
-    0x40,         # display start line: 0
-    0xA1,         # segment remap, so column 0 is on the left
-    0xC8,         # scan from the last row back, which is how these panels are wired
-    0xDA, 0x12,   # com pin configuration: alternating, as a 40 row panel needs
-    0xA6,         # normal, not inverted
-    0xA4,         # show the memory rather than all pixels on
-)
+def panel_setup(height, contrast=0xFF, offset=None):
+    """Commands for a panel whose power-up defaults are for a different screen.
+
+    The defaults are those of a 128x64, and a smaller panel needs two things put right.
+
+    **The multiplex ratio.** Left at 64, a 40 row panel drives 24 rows that are not connected.
+    It is dim, because the same brightness is spread over 64 row-times instead of 40, and its
+    rows land on pages this driver never writes, so the rest of the glass shows whatever it
+    powered up with.
+
+    **The display offset.** A short panel is centred in the 64 rows the controller scans, just
+    as a narrow one is centred in its 132 columns: a 40 row panel starts 12 rows in. This
+    driver leaves the scan direction at its default, where the offset counts the other way
+    round, so those 12 rows are asked for as `64 - 12`. That reduces to 0 for a full height
+    panel, which is what upstream assumed of all of them.
+
+    Measured on the 0.42 inch 72x40 panel of an ESP32-C3 SuperMini, where a border drawn around
+    the whole buffer lines up with the glass at exactly this value.
+
+    What is deliberately *not* here is the segment remap and the scan direction. `flip()` runs
+    after this and would undo them; orientation belongs to `rotate=`.
+    """
+    if offset is None:
+        offset = (64 - (64 - height) // 2) % 64
+    return (
+        0xA8, height - 1,   # multiplex ratio: the rows this panel really has
+        0xD3, offset,       # display offset: where those rows sit in the 64 scanned
+        0x40,               # display start line: 0
+        0x81, contrast,
+    )
+
+
+# The 0.42 inch panel on an ESP32-C3 SuperMini, and anything else that is 72x40.
+PANEL_72X40 = panel_setup(40)
 
 
 class SH1106(framebuf.FrameBuffer):

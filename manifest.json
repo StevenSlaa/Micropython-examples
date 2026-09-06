@@ -540,6 +540,34 @@
       ]
     },
     {
+      "id": "oled-042-esp32c3",
+      "title": "0.42 inch OLED (ESP32-C3 SuperMini)",
+      "description": "Drives the 72x40 OLED built into an ESP32-C3 SuperMini, which is an SH1106 rather than the SSD1306 these boards are usually sold as, and needs its multiplex ratio and display offset set to work at all.",
+      "boardTags": [
+        "esp32"
+      ],
+      "author": "Steven Slaa",
+      "group": "Displays and LEDs",
+      "requires": [
+        "sh1106"
+      ],
+      "files": [
+        {
+          "path": "OLED 0.42 inch.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/oled-042-esp32c3/OLED%200.42%20inch.py",
+          "sha256": "94a3c7dadd1714f15ba284d5e90c9050ae6ff86970a566e68f6cf3d0b250c02d",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/oled-042-esp32c3/README.md",
+        "sha256": "40ad8c8e081fdeb25eeb83bc6fe9db37c7e1101fdfe4d19eb46d0860ba28d6b5",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "p9813-rgb-led",
       "title": "P9813 RGB LED Example",
       "description": "In this example the microcontroller shows the plain colours on a chain of P9813 RGB LEDs and then cycles a rainbow along it.",
@@ -2006,14 +2034,14 @@
         {
           "path": "sh1106.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/sh1106/sh1106.py",
-          "sha256": "0bb06a50e1902d0103f7a16707a01742df16e83016be8d05f9fa694f1a4692d3",
+          "sha256": "4167ced35c886fbc214054d720bff80013f977158c5398b66f91d66120e903dc",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/sh1106/README.md",
-        "sha256": "2dccd7c7bdc4804d285658546d6949a996e44ca0408c516ed64983b044d7697d",
+        "sha256": "e35b59837b05f7812014d0dd578c85bce8f8df004ead2e6cbc8883321a07451b",
         "mime": "text/markdown"
       }
     },

@@ -44,6 +44,7 @@ Showing something, from a character display to a matrix or a strip of colour.
 | Example | What it does | Needs |
 | --- | --- | --- |
 | [I2C Liquid Crystal Display Example](i2c-liquid-crystal-display) | In this example the microcontroller should display some text on a Liquid Crystal Display (16x2) over I2C. | [i2c-lcd](../drivers/i2c-lcd) |
+| [0.42 inch OLED (ESP32-C3 SuperMini)](oled-042-esp32c3) | Drives the 72x40 OLED built into an ESP32-C3 SuperMini, which is an SH1106 rather than the SSD1306 these boards are usually sold as, and needs its multiplex ratio and display offset set to work at all. | [sh1106](../drivers/sh1106) |
 | [P9813 RGB LED Example](p9813-rgb-led) | In this example the microcontroller shows the plain colours on a chain of P9813 RGB LEDs and then cycles a rainbow along it. | [p9813](../drivers/p9813) |
 | [Seven Segment Display (74HC595) Example](seven-segment-74hc595) | In this example the microcontroller drives a single 7-segment display through a 74HC595 shift register, counting 0 to 9 and then through the hex letters, using three pins instead of eight. | [sr74hc595](../drivers/sr74hc595) |
 | [SPI LED Matrix (MAX7219) Example](spi-led-matrix-max7219) | In this example the microcontroller shows text on a chain of MAX7219 8x8 LED matrix modules and scrolls a message across them. | [max7219](../drivers/max7219) |

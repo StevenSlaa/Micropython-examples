@@ -1,0 +1,14 @@
+{
+  "id": "oled-042-esp32c3",
+  "title": "0.42 inch OLED (ESP32-C3 SuperMini)",
+  "description": "Drives the 72x40 OLED built into an ESP32-C3 SuperMini, which is an SH1106 rather than the SSD1306 these boards are usually sold as, and needs its multiplex ratio and display offset set to work at all.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32"
+  ],
+  "group": "Displays and LEDs",
+  "entry": "OLED 0.42 inch.py",
+  "requires": [
+    "sh1106"
+  ]
+}

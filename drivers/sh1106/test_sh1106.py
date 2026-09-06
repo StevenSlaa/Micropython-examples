@@ -26,7 +26,7 @@ sys.modules["framebuf"] = types.SimpleNamespace(
     FrameBuffer=_FrameBuffer, MONO_VLSB=0, MONO_HMSB=1
 )
 sys.modules["utime"] = types.SimpleNamespace(sleep_ms=lambda ms: None)
-from sh1106 import PANEL_72X40, SH1106_I2C  # noqa: E402
+from sh1106 import PANEL_72X40, SH1106_I2C, panel_setup  # noqa: E402
 
 
 class _I2C:
@@ -92,9 +92,20 @@ panel, bus = display(72, 40, setup=PANEL_72X40)
 sent = panel.startup
 for index in range(len(PANEL_72X40)):
     assert sent[index] == PANEL_72X40[index], (index, sent[:len(PANEL_72X40)])
-assert 0xA8 in PANEL_72X40 and PANEL_72X40[PANEL_72X40.index(0xA8) + 1] == 0x27, (
-    "the multiplex ratio is the point of it: 40 rows, not the default 64"
-)
+# The multiplex ratio is the point of it: a 40 row panel driving 64 rows is dim and mapped to
+# pages that are never written.
+setup = panel_setup(40)
+assert setup[0] == 0xA8 and setup[1] == 39, "40 rows, not the default 64"
+# Measured on a 72x40 panel: a border round the whole buffer lines up with the glass at 52,
+# which is the 12 rows it sits down the 64, counted the way this driver's scan direction needs.
+assert setup[2] == 0xD3 and setup[3] == 52, setup
+assert panel_setup(64)[3] == 0, "a full height panel needs none, as upstream assumed"
+assert panel_setup(48)[3] == 56, "and a 64x48 shield sits 8 rows in"
+assert panel_setup(40, offset=12)[3] == 12, "a measured value still wins"
+assert panel_setup(40, contrast=0x80)[6] == 0x80, "contrast is settable"
+
+# Orientation is deliberately absent: flip() runs after this and would undo it.
+assert 0xA1 not in setup and 0xC8 not in setup and 0xA0 not in setup and 0xC0 not in setup, setup
 
 # Without one, nothing is configured at all, which is what upstream does and what suits a
 # panel whose defaults are already right.
