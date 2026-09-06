@@ -21,6 +21,7 @@ GROUPS = (
     ("Remote control", "Talking over infrared, in both directions."),
     ("Between boards", "Getting two boards to talk to each other, by radio or down a wire."),
     ("Networking", "Wifi, access points, name lookups and MQTT. Needs a board with a radio: an ESP32 or a Pico W."),
+    ("Bluetooth", "Finding devices, being one, and connecting to one over Bluetooth Low Energy."),
     ("Storage and time", "Remembering things after the power goes, and knowing what time it is."),
     ("Tools", "Finding out what is really on the bus."),
 )

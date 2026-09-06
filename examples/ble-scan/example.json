@@ -1,0 +1,17 @@
+{
+  "id": "ble-scan",
+  "title": "1. Scanning for BLE Devices",
+  "description": "Lists the Bluetooth Low Energy devices advertising nearby, with their signal strength, whether they can be connected to and which services they offer.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Bluetooth",
+  "order": 1,
+  "entry": "BLE Scan.py",
+  "requires": [
+    "aioble"
+  ]
+}

@@ -6,6 +6,7 @@ name is the id examples put in their `requires` list.
 <!-- generated:start -->
 | Driver | Modules | Used by |
 | --- | --- | --- |
+| [aioble](aioble) | `aioble/__init__.py`, `aioble/central.py`, `aioble/client.py`, `aioble/core.py`, `aioble/device.py`, `aioble/l2cap.py`, `aioble/peripheral.py`, `aioble/security.py`, `aioble/server.py` | [ble-scan](../examples/ble-scan), [ble-peripheral](../examples/ble-peripheral), [ble-central](../examples/ble-central) |
 | [bmp280](bmp280) | `bmp280.py` | [i2c-bmp280](../examples/i2c-bmp280) |
 | [dht](dht) | `dht_sensor.py` | [dht-sensor](../examples/dht-sensor) |
 | [ds3231](ds3231) | `ds3231.py` | [i2c-rtc-ds3231](../examples/i2c-rtc-ds3231) |

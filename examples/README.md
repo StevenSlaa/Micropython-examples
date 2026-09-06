@@ -101,6 +101,16 @@ Wifi, access points, name lookups and MQTT. Needs a board with a radio: an ESP32
 | [4. DNS and Fetching a Page](wifi-dns) | Looks up several hostnames to see which DNS server the router handed out and how long each lookup takes, then fetches a page over a plain socket. | [wifi](../drivers/wifi) |
 | [5. MQTT](mqtt) | Publishes readings to an MQTT broker and listens for commands coming back, which is how most small devices send their data somewhere useful. | [wifi](../drivers/wifi), [umqtt](../drivers/umqtt) |
 
+### Bluetooth
+
+Finding devices, being one, and connecting to one over Bluetooth Low Energy.
+
+| Example | What it does | Needs |
+| --- | --- | --- |
+| [1. Scanning for BLE Devices](ble-scan) | Lists the Bluetooth Low Energy devices advertising nearby, with their signal strength, whether they can be connected to and which services they offer. | [aioble](../drivers/aioble) |
+| [2. A BLE Peripheral](ble-peripheral) | Turns the board into a Bluetooth device that advertises a temperature service, which a phone or another board can connect to, read from and subscribe to. | [aioble](../drivers/aioble) |
+| [3. A BLE Central](ble-central) | Finds the peripheral from the previous example, connects to it, reads its temperature and then subscribes so new readings arrive on their own. | [aioble](../drivers/aioble) |
+
 ### Storage and time
 
 Remembering things after the power goes, and knowing what time it is.

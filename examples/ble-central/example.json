@@ -1,0 +1,17 @@
+{
+  "id": "ble-central",
+  "title": "3. A BLE Central",
+  "description": "Finds the peripheral from the previous example, connects to it, reads its temperature and then subscribes so new readings arrive on their own.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Bluetooth",
+  "order": 3,
+  "entry": "BLE Central.py",
+  "requires": [
+    "aioble"
+  ]
+}

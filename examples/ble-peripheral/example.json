@@ -1,0 +1,17 @@
+{
+  "id": "ble-peripheral",
+  "title": "2. A BLE Peripheral",
+  "description": "Turns the board into a Bluetooth device that advertises a temperature service, which a phone or another board can connect to, read from and subscribe to.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Bluetooth",
+  "order": 2,
+  "entry": "BLE Peripheral.py",
+  "requires": [
+    "aioble"
+  ]
+}

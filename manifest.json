@@ -39,6 +39,10 @@
       "description": "Wifi, access points, name lookups and MQTT. Needs a board with a radio: an ESP32 or a Pico W."
     },
     {
+      "name": "Bluetooth",
+      "description": "Finding devices, being one, and connecting to one over Bluetooth Low Energy."
+    },
+    {
       "name": "Storage and time",
       "description": "Remembering things after the power goes, and knowing what time it is."
     },
@@ -1194,6 +1198,96 @@
       "assets": []
     },
     {
+      "id": "ble-scan",
+      "title": "1. Scanning for BLE Devices",
+      "description": "Lists the Bluetooth Low Energy devices advertising nearby, with their signal strength, whether they can be connected to and which services they offer.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "author": "Steven Slaa",
+      "group": "Bluetooth",
+      "requires": [
+        "aioble"
+      ],
+      "files": [
+        {
+          "path": "BLE Scan.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ble-scan/BLE%20Scan.py",
+          "sha256": "7965f7092cb9088f16d03b0e93d49cec72d93231001201ad435232a6e5909864",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ble-scan/README.md",
+        "sha256": "4ddabfbb6481e2d787237c5fa33be38e813f017d05d32f97301237035f71c8d5",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "ble-peripheral",
+      "title": "2. A BLE Peripheral",
+      "description": "Turns the board into a Bluetooth device that advertises a temperature service, which a phone or another board can connect to, read from and subscribe to.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "author": "Steven Slaa",
+      "group": "Bluetooth",
+      "requires": [
+        "aioble"
+      ],
+      "files": [
+        {
+          "path": "BLE Peripheral.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ble-peripheral/BLE%20Peripheral.py",
+          "sha256": "f0ab1f8caf35560bad0688714720886ad823597fbdc0e9c4fb04298e2520f5d4",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ble-peripheral/README.md",
+        "sha256": "84ed58bcd16ee7c843730e9208af26f505f9f0cf6e7025110d6fa49dfa99e24d",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "ble-central",
+      "title": "3. A BLE Central",
+      "description": "Finds the peripheral from the previous example, connects to it, reads its temperature and then subscribes so new readings arrive on their own.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "author": "Steven Slaa",
+      "group": "Bluetooth",
+      "requires": [
+        "aioble"
+      ],
+      "files": [
+        {
+          "path": "BLE Central.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ble-central/BLE%20Central.py",
+          "sha256": "ae896b28ee32ace20f52732c2fab61ce3bd6b50ad14b1748a2fb01ad0615aeda",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ble-central/README.md",
+        "sha256": "d6f54cb50f645a768df99f747e37ef6ae9c255c220c4e11f7964a008abaf1ee6",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "i2c-eeprom",
       "title": "I2C EEPROM Example",
       "description": "In this example the microcontroller stores a boot counter and a message in an I2C EEPROM, so they survive the power being cut, and reads them back.",
@@ -1283,6 +1377,82 @@
     }
   ],
   "drivers": [
+    {
+      "id": "aioble",
+      "name": "Bluetooth LE (aioble)",
+      "version": "0.6.0",
+      "description": "The aioble library: Bluetooth Low Energy with asyncio, for scanning, advertising and connecting. Included in Pico W firmware already, and needed on an ESP32.",
+      "author": "Jim Mussared",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "license": "MIT",
+      "source": "https://github.com/micropython/micropython-lib/tree/master/micropython/bluetooth/aioble",
+      "files": [
+        {
+          "path": "aioble/__init__.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/aioble/aioble/__init__.py",
+          "sha256": "735eb2f71c857b5f13db3b7f7179e49bfe8438bed42b8e6c89ac796121fe193c",
+          "mime": "text/x-python"
+        },
+        {
+          "path": "aioble/central.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/aioble/aioble/central.py",
+          "sha256": "3ffca35829b2ba978b5f72ab785514d2da2d11c7ada2395a021cf76d5dbe8502",
+          "mime": "text/x-python"
+        },
+        {
+          "path": "aioble/client.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/aioble/aioble/client.py",
+          "sha256": "b117e9070d19eed1ffb4728b3c50515b4a7377b9b4d5b116cf9989849b81852c",
+          "mime": "text/x-python"
+        },
+        {
+          "path": "aioble/core.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/aioble/aioble/core.py",
+          "sha256": "966d147542de50b8d4cbe06671a2a6d0633c0e426083b0ad2d6a888a03569414",
+          "mime": "text/x-python"
+        },
+        {
+          "path": "aioble/device.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/aioble/aioble/device.py",
+          "sha256": "056708daee94d94d1fbba22566b9cd3591ed002e1325a2baa8d8c922282108a7",
+          "mime": "text/x-python"
+        },
+        {
+          "path": "aioble/l2cap.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/aioble/aioble/l2cap.py",
+          "sha256": "ca504df10240621f44854321a05e2b0354c36740cf83a8102669bd97c52edd88",
+          "mime": "text/x-python"
+        },
+        {
+          "path": "aioble/peripheral.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/aioble/aioble/peripheral.py",
+          "sha256": "4aea6302bc0cc703a9f0b1fa44db0c0089daac736460ccd64dc33b9725e73b6c",
+          "mime": "text/x-python"
+        },
+        {
+          "path": "aioble/security.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/aioble/aioble/security.py",
+          "sha256": "bf550386331b9c35459ab626acce3e8d84f8799e2911ef420507a73f42d5fe9f",
+          "mime": "text/x-python"
+        },
+        {
+          "path": "aioble/server.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/aioble/aioble/server.py",
+          "sha256": "6253b57dd3d4fcdad4cc0226c3501fbcc63f7780e48b610f83b0de80f1d5bec4",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/aioble/README.md",
+        "sha256": "908992e8aa5018b6e78ba7b059ca8f1b8211332ca1f80ca6339f2a1dcb9b5675",
+        "mime": "text/markdown"
+      }
+    },
     {
       "id": "bmp280",
       "name": "BMP280",

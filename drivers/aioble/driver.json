@@ -1,0 +1,10 @@
+{
+  "id": "aioble",
+  "name": "Bluetooth LE (aioble)",
+  "version": "0.6.0",
+  "description": "The aioble library: Bluetooth Low Energy with asyncio, for scanning, advertising and connecting. Included in Pico W firmware already, and needed on an ESP32.",
+  "author": "Jim Mussared",
+  "boardTags": ["esp32", "esp32s3", "pico"],
+  "license": "MIT",
+  "source": "https://github.com/micropython/micropython-lib/tree/master/micropython/bluetooth/aioble"
+}
