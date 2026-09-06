@@ -1,0 +1,14 @@
+{
+  "id": "i2c-tof-vl6180x",
+  "title": "VL6180X Sensor Example",
+  "description": "In this example the microcontroller measures the distance to a nearby object with a VL6180X time of flight sensor, checks whether the reading is valid, and also prints the ambient light level.",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "entry": "VL6180X (I2C).py",
+  "requires": [
+    "vl6180x"
+  ]
+}

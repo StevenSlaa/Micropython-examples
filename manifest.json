@@ -282,6 +282,34 @@
       ]
     },
     {
+      "id": "i2c-tof-vl6180x",
+      "title": "VL6180X Sensor Example",
+      "description": "In this example the microcontroller measures the distance to a nearby object with a VL6180X time of flight sensor, checks whether the reading is valid, and also prints the ambient light level.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "requires": [
+        "vl6180x"
+      ],
+      "files": [
+        {
+          "path": "VL6180X (I2C).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-tof-vl6180x/VL6180X%20(I2C).py",
+          "sha256": "360a21b4460285fd8d6a4a04c8c4595921a56be0105545089e1ff96cb664770e",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-tof-vl6180x/README.md",
+        "sha256": "1078e1630d0b826f521f4cd0649041a74e0456eaeba787780c33d68ded23df2d",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "pwm",
       "title": "PWM",
       "description": "This example will show you how to create a fading LED animation with a PWM Signal.  This example can of course also be used to control servo's, motor drivers, buzzers, analog output, etc.",
@@ -763,7 +791,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/vl6180x/README.md",
-        "sha256": "8b12411ca5750bcc2c97abec987ebce54a207093277c852d88a36bd1579cd5cb",
+        "sha256": "ad05d377cdb973b3b2863c6dd5050469d596aa333ab804994849ec4aed56bb35",
         "mime": "text/markdown"
       }
     }

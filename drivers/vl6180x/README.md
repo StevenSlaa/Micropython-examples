@@ -64,3 +64,5 @@ meaningless, so a program that ignores the status reads empty air as a number.
 
 `python3 -B drivers/vl6180x/test_vl6180x.py` checks the start-up sequence, the register
 handling, the lux and offset maths, and the timeout, off-board.
+
+Used by: [i2c-tof-vl6180x](../../examples/i2c-tof-vl6180x)
