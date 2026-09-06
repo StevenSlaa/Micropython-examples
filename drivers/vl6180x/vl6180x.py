@@ -38,6 +38,7 @@ _MAX_CONVERGENCE_TIME = const(0x01C)
 _RANGE_OFFSET = const(0x024)
 _SYSALS_START = const(0x038)
 _ALS_GAIN = const(0x03F)
+_READOUT_AVERAGING = const(0x10A)
 _ALS_INTEGRATION_HI = const(0x040)
 _ALS_INTEGRATION_LO = const(0x041)
 _RANGE_STATUS = const(0x04D)
@@ -98,10 +99,23 @@ class VL6180X:
         self.timeout = timeout
         if self._read(_MODEL_ID) != 0xB4:
             raise OSError("No VL6180X at 0x%02x" % address)
-        # Written every time, not only when the sensor's fresh-out-of-reset flag is set. The
-        # flag clears on the first run and stays clear while the sensor keeps its power, which a
-        # board being reset over USB does not touch: keying off it leaves an untuned sensor that
-        # answers every register but cannot see anything.
+        # ST's tuning is only safe to write to a sensor that has just powered up. Writing those
+        # private registers to one that is already running can leave it not answering on the bus
+        # at all, which needs a power cycle to clear.
+        #
+        # The sensor's own flag says it is fresh. Reading back a register the sequence sets
+        # catches the other case, a sensor that is powered but untuned, because the board was
+        # reset over USB after something else had already cleared the flag. Nothing else writes
+        # the readout averaging register, so it is a reliable marker.
+        if self._read(_FRESH_OUT_OF_RESET) == 0x01 or self._read(_READOUT_AVERAGING) != 0x30:
+            self.reconfigure()
+
+    def reconfigure(self):
+        """Writes ST's start-up tuning again.
+
+        The constructor does this for you when the sensor needs it. Call it yourself only on a
+        sensor that has just been powered up: on a running one it can wedge the I2C interface.
+        """
         for register, value in _STARTUP:
             self._write(register, value)
         self._write(_FRESH_OUT_OF_RESET, 0x00)

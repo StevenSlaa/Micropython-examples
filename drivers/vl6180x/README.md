@@ -41,6 +41,19 @@ else:
 With nothing in front of the sensor the status is 7 (*no convergence*) and the distance is
 meaningless, so a program that ignores the status reads empty air as a number.
 
+## OSError: [Errno 19] ENODEV
+
+The sensor is not acknowledging its address on the bus at all, so nothing can be read from it.
+
+**Power cycle it.** Unplug and replug the board; a soft reset leaves the sensor powered and it
+will not recover. An I2C scan finding nothing at `0x29` afterwards means it is wiring or power,
+not software.
+
+The usual way to get a VL6180X into this state is writing ST's private tuning registers to a
+sensor that is already running, which is why the driver only writes them to one that has just
+powered up, or one whose readback shows it never got them. `reconfigure()` writes them
+deliberately, and carries the same warning.
+
 ## Nothing but errors
 
 Every reading coming back as *early convergence estimate failed* (status 6) or *signal to noise
@@ -76,10 +89,11 @@ print(hex(sensor._read(0x010A)))   # 0x30
   in software at start-up while the other is held in reset by its CE pin.
 - The sensor uses 16 bit register addresses, unlike most I2C parts. The driver passes
   `addrsize=16` for you, but that is why a generic register tool shows nothing useful.
-- ST's start-up tuning is written every time the driver is constructed. The sensor's own
-  fresh-out-of-reset flag is not used to skip it: the flag clears on the first run and stays
-  clear for as long as the sensor keeps its power, which resetting the board over USB does not
-  interrupt, so keying off it leaves an untuned sensor that answers but cannot see.
+- ST's start-up tuning is written when the sensor's own fresh-out-of-reset flag is set, and
+  also when a register the sequence sets reads back wrong — which catches a powered but untuned
+  sensor, the case the flag alone misses after the board reboots over USB. It is deliberately
+  not written on every construction: those are private registers, and a running sensor can stop
+  answering on the bus entirely.
 - Range accuracy is a few millimetres and varies part to part. `VL6180X(i2c, offset=-3)` trims
   the reading in software; `sensor.part_to_part_offset` writes the sensor's own offset register
   instead, which survives into other drivers but not a power cycle.

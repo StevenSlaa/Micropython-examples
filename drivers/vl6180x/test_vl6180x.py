@@ -17,8 +17,10 @@ from vl6180x import GAIN_1, GAIN_10, VL6180X, _STARTUP  # noqa: E402
 class _I2C:
     """A VL6180X that reports a sample is ready as soon as a measurement is started."""
 
-    def __init__(self, model=0xB4, fresh=0x01, responsive=True):
+    def __init__(self, model=0xB4, fresh=0x01, tuned=False, responsive=True):
         self.registers = {0x000: model, 0x016: fresh, 0x04F: 0x00}
+        if tuned:
+            self.registers[0x10A] = 0x30  # the marker the constructor reads back
         self.writes = []
         self.responsive = responsive
 
@@ -47,11 +49,22 @@ sensor = VL6180X(bus)
 assert bus.writes[: len(_STARTUP)] == list(_STARTUP), "the whole start-up sequence is written"
 assert (0x016, 0x00) in bus.writes, "the fresh out of reset flag is cleared afterwards"
 
-# The tuning is written even to a sensor that has already been through it, because the flag
-# stays clear while the sensor keeps its power and the board reboots without it.
-warm = _I2C(fresh=0x00)
-VL6180X(warm)
-assert warm.writes[: len(_STARTUP)] == list(_STARTUP), "a warm sensor is tuned again"
+# A sensor that is already tuned is left alone: writing ST's private registers to a running
+# sensor can wedge it off the I2C bus entirely.
+tuned = _I2C(fresh=0x00, tuned=True)
+VL6180X(tuned)
+assert tuned.writes == [], "an already tuned sensor is not written to"
+
+# One that is powered but untuned is caught by the readback, even with the flag clear, which is
+# what a board reset over USB after something else cleared the flag looks like.
+untuned = _I2C(fresh=0x00)
+VL6180X(untuned)
+assert untuned.writes[: len(_STARTUP)] == list(_STARTUP), "an untuned sensor is tuned"
+
+# And it can always be redone deliberately, on a sensor that has just been powered up.
+tuned.writes.clear()
+VL6180X(tuned).reconfigure()
+assert tuned.writes[: len(_STARTUP)] == list(_STARTUP), "reconfigure() rewrites the sequence"
 
 # The wrong chip at that address is caught rather than read as nonsense.
 try:
