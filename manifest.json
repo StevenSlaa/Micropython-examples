@@ -39,6 +39,34 @@
       ]
     },
     {
+      "id": "dc-motor-l293d",
+      "title": "DC Motor (L293D / L298N) Example",
+      "description": "In this example the microcontroller drives a DC motor through an H bridge, ramping the speed up, coasting, running backwards and braking.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "requires": [
+        "motor"
+      ],
+      "files": [
+        {
+          "path": "DC Motor (L293D).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/dc-motor-l293d/DC%20Motor%20(L293D).py",
+          "sha256": "8aea6a595fa0d9b9488d581d7db523f5c8d019662747562fadb143b2f2925347",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/dc-motor-l293d/README.md",
+        "sha256": "9590a129d354a222857a233338ecab9c3924b1736803e566afb6d01801426475",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "dht-sensor",
       "title": "DHT Sensor Example",
       "description": "In this example the microcontroller should display the temperature and humidity in the console. This information is collected from a DHT11 or DHT22 sensor.",
@@ -1038,6 +1066,31 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/mfrc522/README.md",
         "sha256": "0f2dc78f6383397bff1ffe55b7ffbe4e07d1d30e4968eff090960c0b9ad8ab36",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "motor",
+      "name": "DC motor on an H bridge (L293D, L298N)",
+      "version": "1.0.0",
+      "description": "Speed and direction for DC motors on an H bridge driver such as the L293D, the L298N module, the DRV8833 or the TB6612.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "files": [
+        {
+          "path": "motor.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/motor/motor.py",
+          "sha256": "2db339fc2acf7a8e46705ed94d14c06af29d63b7032197668cf70631235d000c",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/motor/README.md",
+        "sha256": "81d4baa5fa0ca01692940783ee8eb62cad1f230ec792524e49fa2cf7b756a255",
         "mime": "text/markdown"
       }
     },

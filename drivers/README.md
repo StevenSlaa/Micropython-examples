@@ -17,6 +17,7 @@ name is the id examples put in their `requires` list.
 | [keypad](keypad) | `keypad.py` | [keypad-4x4](../examples/keypad-4x4) |
 | [max7219](max7219) | `max7219.py` | [spi-led-matrix-max7219](../examples/spi-led-matrix-max7219) |
 | [mfrc522](mfrc522) | `mfrc522.py` | [spi-rfid-rc522](../examples/spi-rfid-rc522) |
+| [motor](motor) | `motor.py` | [dc-motor-l293d](../examples/dc-motor-l293d) |
 | [mpu6050](mpu6050) | `mpu6050.py` | [i2c-mpu-6050](../examples/i2c-mpu-6050) |
 | [p9813](p9813) | `p9813.py` | [p9813-rgb-led](../examples/p9813-rgb-led) |
 | [pixels](pixels) | `pixels.py` | — |

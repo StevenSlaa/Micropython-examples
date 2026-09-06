@@ -1,0 +1,14 @@
+{
+  "id": "dc-motor-l293d",
+  "title": "DC Motor (L293D / L298N) Example",
+  "description": "In this example the microcontroller drives a DC motor through an H bridge, ramping the speed up, coasting, running backwards and braking.",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "entry": "DC Motor (L293D).py",
+  "requires": [
+    "motor"
+  ]
+}

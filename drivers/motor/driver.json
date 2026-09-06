@@ -1,0 +1,7 @@
+{
+  "id": "motor",
+  "name": "DC motor on an H bridge (L293D, L298N)",
+  "version": "1.0.0",
+  "description": "Speed and direction for DC motors on an H bridge driver such as the L293D, the L298N module, the DRV8833 or the TB6612.",
+  "boardTags": ["esp32", "esp32s3", "pico"]
+}
