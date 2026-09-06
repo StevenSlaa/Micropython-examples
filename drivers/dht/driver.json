@@ -1,0 +1,7 @@
+{
+  "id": "dht",
+  "name": "DHT11 and DHT22 readings",
+  "version": "1.0.0",
+  "description": "Temperature and humidity from DHT11 and DHT22 sensors, adding retries, the minimum interval between readings, Fahrenheit and dew point on top of the firmware's dht module.",
+  "boardTags": ["esp32", "esp32s3", "pico"]
+}

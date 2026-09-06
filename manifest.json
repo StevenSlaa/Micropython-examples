@@ -47,19 +47,21 @@
         "esp32s3",
         "pico"
       ],
-      "requires": [],
+      "requires": [
+        "dht"
+      ],
       "files": [
         {
           "path": "DHT Sensor.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/dht-sensor/DHT%20Sensor.py",
-          "sha256": "3f27fceb154b17a0dcc8ba1567a247ca12cbfd2777d30c663d950e333c7b2b10",
+          "sha256": "cb23a65f60b712adb562367f0a83825a89c555aa46365a7f11e81d84fa97c75e",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/dht-sensor/README.md",
-        "sha256": "d063292a9a14b0661e445420c262986a5c5bff0b35f806fd75236d71c9996e95",
+        "sha256": "ac1b849c942192496fea071726020229eb8e63d393af8d2bfebf90ad479ee18b",
         "mime": "text/markdown"
       },
       "assets": [
@@ -744,6 +746,31 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/bmp280/README.md",
         "sha256": "82401f8e25c8352a4b09ed616217f176be5c7e06191480f8eda09ed401370fe6",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "dht",
+      "name": "DHT11 and DHT22 readings",
+      "version": "1.0.0",
+      "description": "Temperature and humidity from DHT11 and DHT22 sensors, adding retries, the minimum interval between readings, Fahrenheit and dew point on top of the firmware's dht module.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "files": [
+        {
+          "path": "dht_sensor.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/dht/dht_sensor.py",
+          "sha256": "2c6f8f73590a7e7fab42830c15a8887720c52deb95541ba6260711f93174e6dd",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/dht/README.md",
+        "sha256": "4e92e711085819bdab0493b1f6e6e26a1873dba015e1058989d1bb40224638fe",
         "mime": "text/markdown"
       }
     },

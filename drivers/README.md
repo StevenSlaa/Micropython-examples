@@ -7,6 +7,7 @@ name is the id examples put in their `requires` list.
 | Driver | Modules | Used by |
 | --- | --- | --- |
 | [bmp280](bmp280) | `bmp280.py` | [i2c-bmp280](../examples/i2c-bmp280) |
+| [dht](dht) | `dht_sensor.py` | [dht-sensor](../examples/dht-sensor) |
 | [ds3231](ds3231) | `ds3231.py` | [i2c-rtc-ds3231](../examples/i2c-rtc-ds3231) |
 | [gy271](gy271) | `gy271.py` | [i2c-compass-gy271](../examples/i2c-compass-gy271) |
 | [hcsr04](hcsr04) | `hcsr04.py` | [ultrasonic-distance-sensor-hc-sr04](../examples/ultrasonic-distance-sensor-hc-sr04) |

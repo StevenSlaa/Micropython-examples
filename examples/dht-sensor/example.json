@@ -8,5 +8,7 @@
     "pico"
   ],
   "entry": "DHT Sensor.py",
-  "requires": []
+  "requires": [
+    "dht"
+  ]
 }
