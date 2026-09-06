@@ -175,15 +175,19 @@ class SH1106(framebuf.FrameBuffer):
 
     def init_display(self):
         self.reset()
+        self.poweron()
+        # rotate90 requires a call to flip() for setting up. No update yet: there is nothing
+        # worth sending until the panel has been configured below.
+        self.flip(self.flip_en, update=False)
+        # Last, and deliberately so. flip() has just set the scan direction, and the display
+        # offset is counted against it, so a setup applied before that is applied to the wrong
+        # one and appears to do nothing at all.
         for command in self.setup or ():
             self.write_cmd(command)
         self.fill(0)
         # Everything, not only what changed: at this point nothing is known about what the
         # panel is showing.
         self.show(full_update=True)
-        self.poweron()
-        # rotate90 requires a call to flip() for setting up.
-        self.flip(self.flip_en)
 
     def poweroff(self):
         self.write_cmd(_SET_DISP | 0x00)

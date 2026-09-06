@@ -87,11 +87,28 @@ panel.fill(0)
 panel.show(full_update=True)
 assert (0x00, 0x0C) in column_commands(bus.commands) and (0x10, 0x01) in column_commands(bus.commands)
 
-# A setup sequence is sent once, before the first frame is drawn.
+# A setup sequence is sent once, and it has to be the last thing said before the first frame.
+# flip() sets the scan direction the display offset is counted against, so a setup applied
+# before it is applied to the wrong one and quietly does nothing.
 panel, bus = display(72, 40, setup=PANEL_72X40)
 sent = panel.startup
-for index in range(len(PANEL_72X40)):
-    assert sent[index] == PANEL_72X40[index], (index, sent[:len(PANEL_72X40)])
+
+
+def position_of(sequence, inside):
+    """Where a run of commands starts, or -1 if it was never sent as a run."""
+    for start in range(len(inside) - len(sequence) + 1):
+        if inside[start : start + len(sequence)] == list(sequence):
+            return start
+    return -1
+
+
+at = position_of(PANEL_72X40, sent)
+assert at >= 0, sent
+assert 0xC0 in sent and sent.index(0xC0) < at, (
+    "the scan direction is set before the panel setup, because the display offset is counted "
+    "against it"
+)
+assert 0xAF in sent and sent.index(0xAF) < at, "and so is powering the panel on"
 # The multiplex ratio is the point of it: a 40 row panel driving 64 rows is dim and mapped to
 # pages that are never written.
 setup = panel_setup(40)
