@@ -41,3 +41,7 @@ print(sensor.temperature)
   finished. Reading before then gives you the previous value, not an error.
 - `standby = True` freezes the temperature register as well as saving the power, so read first
   and sleep after.
+
+## Tests
+
+`python3 -B drivers/tc74/test_tc74.py` checks the register handling off-board.

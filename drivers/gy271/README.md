@@ -70,7 +70,7 @@ put a motor next to it, and it needs doing again.
 
 ## Tests
 
-`python3 drivers/gy271/test_gy271.py` checks the two register maps and the heading and
+`python3 -B drivers/gy271/test_gy271.py` checks the two register maps and the heading and
 calibration maths off-board.
 
 Used by: [i2c-compass-gy271](../../examples/i2c-compass-gy271)

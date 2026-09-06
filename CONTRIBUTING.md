@@ -25,8 +25,8 @@ Run `python3 scripts/generate-manifest.py` before opening a pull request and com
   comment in the file, and repeat the credit at the bottom of the driver README.
 - A driver with real logic of its own (colour maths, unit conversion, a parser) gets a
   `test_<name>.py` next to it that runs on plain CPython, stubbing whatever firmware module it
-  needs. `test_*.py` files stay in the repository and are never installed to a board. Vendored
-  upstream drivers need no test.
+  needs. Run it with `python3 -B` so it leaves no `__pycache__` behind. `test_*.py` files stay in
+  the repository and are never installed to a board. Vendored upstream drivers need no test.
 - Leave the tuning knobs in place — timeouts, addresses, offsets, calibration constants — as
   constructor arguments with sensible defaults. Real hardware drifts from the datasheet.
 

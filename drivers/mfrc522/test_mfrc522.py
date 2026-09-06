@@ -1,4 +1,4 @@
-# Run with: python3 drivers/mfrc522/test_mfrc522.py
+# Run with: python3 -B drivers/mfrc522/test_mfrc522.py
 # Stubs machine so the patched constructor and the added helpers can be checked off-board.
 import sys, types
 

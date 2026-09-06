@@ -1,4 +1,4 @@
-# Run with: python3 drivers/pixels/test_pixels.py
+# Run with: python3 -B drivers/pixels/test_pixels.py
 # Stubs the firmware's neopixel module so the colour maths can be checked off-board.
 import sys, types
 

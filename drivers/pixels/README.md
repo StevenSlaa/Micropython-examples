@@ -63,5 +63,5 @@ strip[1] = (0, 0, 0, 255)    # or address the white channel yourself
 
 ## Tests
 
-`python3 drivers/pixels/test_pixels.py` checks the colour maths off-board. It stubs `neopixel`,
+`python3 -B drivers/pixels/test_pixels.py` checks the colour maths off-board. It stubs `neopixel`,
 so it needs no hardware and is not installed to the board.

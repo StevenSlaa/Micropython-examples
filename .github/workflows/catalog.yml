@@ -13,6 +13,7 @@ jobs:
           python-version: '3.x'
       - run: |
           shopt -s nullglob
-          for test in drivers/*/test_*.py; do python3 "$test"; done
+          # -B: no __pycache__, which would otherwise show up in the diff check below.
+          for test in drivers/*/test_*.py; do python3 -B "$test"; done
       - run: python3 scripts/generate-manifest.py
       - run: git diff --exit-code

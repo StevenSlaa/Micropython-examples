@@ -69,7 +69,7 @@ if serial and reader.select_tag(serial) == reader.OK:
 
 ## Tests
 
-`python3 drivers/mfrc522/test_mfrc522.py` checks the constructor and the id helper off-board.
+`python3 -B drivers/mfrc522/test_mfrc522.py` checks the constructor and the id helper off-board.
 
 Used by: [spi-rfid-rc522](../../examples/spi-rfid-rc522)
 

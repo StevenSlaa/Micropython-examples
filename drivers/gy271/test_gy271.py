@@ -1,4 +1,4 @@
-# Run with: python3 drivers/gy271/test_gy271.py
+# Run with: python3 -B drivers/gy271/test_gy271.py
 # A fake bus holding both chips, so the register maps and the maths can be checked off-board.
 import sys, types
 from struct import pack

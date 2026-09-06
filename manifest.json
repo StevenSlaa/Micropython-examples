@@ -516,7 +516,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/gy271/README.md",
-        "sha256": "8fed2d3861137fd3744240d5ecf25b3808ed7aa0b938edacdc210049165509d2",
+        "sha256": "62a1f8191d218f1c034d7f6e8db1a500873daf99eb30773a539403d830bab2db",
         "mime": "text/markdown"
       }
     },
@@ -602,7 +602,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/mfrc522/README.md",
-        "sha256": "3d0a9d9cccc884ddc1c6f437f08705d8d95ab847428633c6f56df64faeba70aa",
+        "sha256": "0f2dc78f6383397bff1ffe55b7ffbe4e07d1d30e4968eff090960c0b9ad8ab36",
         "mime": "text/markdown"
       }
     },
@@ -652,7 +652,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/pixels/README.md",
-        "sha256": "849d4e72588deb31f228a4b6b1352c072ac03fcea42995984cdde26fd32b20cf",
+        "sha256": "b0972823d55248bd57c46edd507d9d509539e059e039bde70d71f9819537d6ae",
         "mime": "text/markdown"
       }
     },
@@ -737,7 +737,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/tc74/README.md",
-        "sha256": "1a4395e2c34fc52a26f721212c3d43382e4fb3150bfdea0d39664bf568a76bf3",
+        "sha256": "869df623d8a1021f547440df84bbb3d783866689b5f04f5a445495f50a6649ef",
         "mime": "text/markdown"
       }
     }

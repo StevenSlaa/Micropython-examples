@@ -1,4 +1,4 @@
-# Run with: python3 drivers/tc74/test_tc74.py
+# Run with: python3 -B drivers/tc74/test_tc74.py
 # A fake I2C bus, so the register handling can be checked without a sensor.
 import sys, types
 
