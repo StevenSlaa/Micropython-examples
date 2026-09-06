@@ -740,6 +740,32 @@
         "sha256": "869df623d8a1021f547440df84bbb3d783866689b5f04f5a445495f50a6649ef",
         "mime": "text/markdown"
       }
+    },
+    {
+      "id": "vl6180x",
+      "name": "VL6180X range and light",
+      "version": "1.0.0",
+      "description": "Time of flight distance and ambient light driver for the ST VL6180X, measuring millimetres up to about 20cm.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "source": "https://www.st.com/resource/en/datasheet/vl6180x.pdf",
+      "files": [
+        {
+          "path": "vl6180x.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/vl6180x/vl6180x.py",
+          "sha256": "90890812ad57a2cd7bc97c6331826f4e91f6318fdd76b07ec2fe1e94020b663d",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/vl6180x/README.md",
+        "sha256": "8b12411ca5750bcc2c97abec987ebce54a207093277c852d88a36bd1579cd5cb",
+        "mime": "text/markdown"
+      }
     }
   ]
 }

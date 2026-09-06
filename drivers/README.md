@@ -16,6 +16,7 @@ name is the id examples put in their `requires` list.
 | [ssd1306](ssd1306) | `ssd1306.py` | — |
 | [st7789py](st7789py) | `st7789py.py`, `vga2_16x32.py` | [spi-st7789-display](../examples/spi-st7789-display) |
 | [tc74](tc74) | `tc74.py` | — |
+| [vl6180x](vl6180x) | `vl6180x.py` | — |
 <!-- generated:end -->
 
 Adding one is a directory with `driver.json`, `README.md`, and the modules — see
