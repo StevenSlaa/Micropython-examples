@@ -32,6 +32,11 @@ Distance: 7.938144 cm
 Distance: 8.505155 cm
 ```
 
+## Plotter
+
+Open the **Plotter** tab beside the REPL to graph the distance. The occasional wild spike is
+the sensor missing an echo, which is worth seeing before you rely on a single reading.
+
 ## Tested
 This example has been tested on the following microcontroller running Micropython:
 - ESP32 Devkit v1

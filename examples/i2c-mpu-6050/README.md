@@ -16,12 +16,21 @@ This example needs the [MPU-6050](../../drivers/mpu6050) driver installed on the
 ## Output
 
 ```
-{'GyZ': 169, 'GyY': 138, 'GyX': -467, 'Tmp': 20.53, 'AcZ': 13012, 'AcY': -400, 'AcX': -2588}
-{'GyZ': 167, 'GyY': 149, 'GyX': -488, 'Tmp': 20.53, 'AcZ': 12996, 'AcY': -432, 'AcX': -2536}
-{'GyZ': 179, 'GyY': 139, 'GyX': -486, 'Tmp': 20.53, 'AcZ': 13068, 'AcY': -380, 'AcX': -2548}
-{'GyZ': 166, 'GyY': 134, 'GyX': -493, 'Tmp': 20.57706, 'AcZ': 13028, 'AcY': -260, 'AcX': -2552}
-{'GyZ': 171, 'GyY': 130, 'GyX': -474, 'Tmp': 20.67117, 'AcZ': 12976, 'AcY': -296, 'AcX': -2600}
+AcX: -2588  AcY: -400  AcZ: 13012
+AcX: -2536  AcY: -432  AcZ: 12996
+AcX: -2548  AcY: -380  AcZ: 13068
+AcX: -2552  AcY: -260  AcZ: 13028
+AcX: -2600  AcY: -296  AcZ: 12976
 ```
+
+`get_values()` also returns `GyX`, `GyY`, `GyZ` and `Tmp`. Swap them into the print at the
+bottom of the script to watch the gyroscope or the on-chip temperature instead; three values
+of a similar size plot better together than seven of wildly different ones.
+
+## Plotter
+
+Open the **Plotter** tab beside the REPL to graph the three acceleration axes. Tilting the
+board trades gravity between them; tapping the desk shows up as a spike.
 
 ## Tested
 This example has been tested on the following microcontroller running MicroPython:

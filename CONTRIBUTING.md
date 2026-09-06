@@ -13,6 +13,17 @@ Run `python3 scripts/generate-manifest.py` before opening a pull request and com
   rejected; move the module to `drivers/` instead.
 - Put images and datasheets in `res/`, and keep README links relative to the example directory.
 - Say which boards you actually tested on, under `## Tested`.
+- Print readings in a shape the IDE plotter can graph, and add a `## Plotter` section saying
+  what there is to see. The rules are short:
+  - One line per sample, with every value on it. Two lines are two samples, so splitting
+    temperature and humidity across two prints plots them against each other in time.
+  - Name each value: `Temperature: 21.4`. A bare number still plots, as "Series 1".
+  - Separate pairs with **two** spaces. One space lets the unit run into the next name, so
+    `X: 1 uT Y: 2` gives a series called `uT Y`.
+  - Units after the value are ignored, so `Distance: 43 mm  Light: 214 lux` is two clean series.
+  - Four series is the maximum, and they share one scale: values of a similar size plot well
+    together, a pressure in pascal next to a temperature does not.
+  - Lines with no number are skipped, so error messages and headings do no harm.
 
 ## Drivers
 

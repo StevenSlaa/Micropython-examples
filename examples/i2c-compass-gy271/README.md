@@ -40,5 +40,12 @@ Paste the printed `offset` and `scale` back into the script and set `calibrating
 
 The heading also assumes the module is held flat. Tilt it and the reading swings.
 
+## Plotter
+
+Open the **Plotter** tab beside the REPL to graph the three axes and the heading. Turning the
+module through a full circle draws two sine waves a quarter cycle apart, which is what a
+compass is underneath. The heading runs 0 to 360 and so dominates the scale — delete it from
+the print to look at the field on its own.
+
 ## Tested
 This example has not been run on hardware yet. If you try it, add your board here.

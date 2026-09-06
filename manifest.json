@@ -19,14 +19,14 @@
         {
           "path": "Button.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/button/Button.py",
-          "sha256": "52704ad5b87a52fa64d815cfca514a86546a5ec14ceefd05eaef4c8d9d3fc076",
+          "sha256": "af15c58a24a5708be947ccb3f4286e0e253ef58bf50e39a23add4f7e94d5e350",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/button/README.md",
-        "sha256": "340de373bf9c79130083707710e11469f002dbe73cbf57744bc68c8e41018735",
+        "sha256": "a1ee2df23a3f01cd5fa1a2c40d91ddd15e12e865c3e72fe1d5845e64437733e9",
         "mime": "text/markdown"
       },
       "assets": [
@@ -52,14 +52,14 @@
         {
           "path": "DHT Sensor.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/dht-sensor/DHT%20Sensor.py",
-          "sha256": "b0eb50672df528039a30ba683450a229be63f0ae9b1138d8668f5ffd0bce1f3f",
+          "sha256": "3f27fceb154b17a0dcc8ba1567a247ca12cbfd2777d30c663d950e333c7b2b10",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/dht-sensor/README.md",
-        "sha256": "187323b3a2279c3eb2097fd479b7c36b3a9df84bb1aa86db7789b4597f8b8c19",
+        "sha256": "d063292a9a14b0661e445420c262986a5c5bff0b35f806fd75236d71c9996e95",
         "mime": "text/markdown"
       },
       "assets": [
@@ -93,14 +93,14 @@
         {
           "path": "I2C BMP280.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-bmp280/I2C%20BMP280.py",
-          "sha256": "3550b8dfb7936c1a0ce7928250f3d0059cfb1ea501f4d6d2881f9fba3bb6e650",
+          "sha256": "e3f26f2fc63e5f60560f5114179ce1f9ebe4b6d0e95b40c9c64e0ee78db68533",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-bmp280/README.md",
-        "sha256": "0a68deff57c404fded527ce16f7a7ca891212baa5f3e933e4024e8f7591b4502",
+        "sha256": "543cd674a039a94f03bcc84c59983605c1bae5f256d7d8b4685e240ccbb4afc0",
         "mime": "text/markdown"
       },
       "assets": [
@@ -135,7 +135,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-compass-gy271/README.md",
-        "sha256": "03d8a77250caaa99c2fd8e694e9396fbdce029ee79c8fa115fb414b332690a14",
+        "sha256": "c15fe49abfa634fc52928f652dc8d79f79730bf70957ef247b00b3fc65d9ca01",
         "mime": "text/markdown"
       },
       "assets": []
@@ -203,14 +203,14 @@
         {
           "path": "I2C MPU6050.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-mpu-6050/I2C%20MPU6050.py",
-          "sha256": "1ca5ae70c1e20afeb6faad238cd58ad74793da8f1292ac1b1c1250456dd065fe",
+          "sha256": "3afb56d0b305fdaff879aee074b488d9602adc02b56f10c95a76a2fca70aa303",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-mpu-6050/README.md",
-        "sha256": "ece80f989520f82199e4fdd28aa020577b3f0dbe92f87137fac14761f8839680",
+        "sha256": "63c1aec04f308d01debdbab6960d023d84cfe80a4658654512d1a038bc004c61",
         "mime": "text/markdown"
       },
       "assets": [
@@ -221,6 +221,34 @@
           "mime": "image/png"
         }
       ]
+    },
+    {
+      "id": "i2c-proximity-vcnl4040",
+      "title": "VCNL4040 Sensor Example",
+      "description": "In this example the microcontroller reads proximity and ambient light from a VCNL4040 sensor, printing the light level in lux and reporting when something comes near.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "requires": [
+        "vcnl4040"
+      ],
+      "files": [
+        {
+          "path": "VCNL4040 (I2C).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-proximity-vcnl4040/VCNL4040%20(I2C).py",
+          "sha256": "1fa7e08488bc297641d5735d800ad25237e23b8a523f4b1fce455ac55f14f423",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-proximity-vcnl4040/README.md",
+        "sha256": "5c17097d67cebb196e620a7f36165acf3a60ecabb5df26ea6ddc8272b355c147",
+        "mime": "text/markdown"
+      },
+      "assets": []
     },
     {
       "id": "i2c-scanner",
@@ -262,14 +290,14 @@
         {
           "path": "TOF10120 (I2C).py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-tof-tof10120/TOF10120%20(I2C).py",
-          "sha256": "427d953d311e2476cf0657f7c42d35a63561f9d77e9970dba4dc52389951034b",
+          "sha256": "a3800d977b63e4ced22e3bf6a099150a47441ae25e2acd3503774f8292e227ba",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-tof-tof10120/README.md",
-        "sha256": "66f5a73c9827a7d08ea89cb079a25a57e7b397b98517e90148faaef6c45621b7",
+        "sha256": "247ba4f49a01ecbc11aee9e98b73d8a2fe759cf6e4e4e6eb0a978d1e3f58440a",
         "mime": "text/markdown"
       },
       "assets": [
@@ -304,7 +332,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-tof-vl6180x/README.md",
-        "sha256": "226bc9af304f5b1f3be61bf52b337a72b13c1a363a975c911278d4f7a2cf3c52",
+        "sha256": "aad50b4a94f6dc02cf1824cce94b7b69e9c6585e4ebddab769070c668226a32a",
         "mime": "text/markdown"
       },
       "assets": []
@@ -322,14 +350,14 @@
         {
           "path": "PWM.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm/PWM.py",
-          "sha256": "e6bf25e83d07b240c4164e0a0e3194c839b6100f55082bdbd7a514c62ed744ff",
+          "sha256": "eeed5b56c7f55616e9d9438071be357e0d46674673a90fa74fdee85fd0096a76",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm/README.md",
-        "sha256": "4128bf30118120d6f523f49d85efca635ed9b9eddf35d3a41371330eceaf04c9",
+        "sha256": "57d5c1ee49205ceec15efa2c0b8942920195f9e6452a5fbb7af5ca3321695cdb",
         "mime": "text/markdown"
       },
       "assets": [
@@ -477,7 +505,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ultrasonic-distance-sensor-hc-sr04/README.md",
-        "sha256": "9243abe949fc143368a32e3ef59afe1f819caefab48794285d462a010dca36a7",
+        "sha256": "b5dbb2eede8ac59887dca27609455e1ee59e8c1635acb5db1430e37806b74cb8",
         "mime": "text/markdown"
       },
       "assets": [
@@ -766,6 +794,32 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/tc74/README.md",
         "sha256": "869df623d8a1021f547440df84bbb3d783866689b5f04f5a445495f50a6649ef",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "vcnl4040",
+      "name": "VCNL4040 proximity and light",
+      "version": "1.0.0",
+      "description": "Proximity and ambient light driver for the Vishay VCNL4040, reading lux and a near field proximity count over I2C.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "source": "https://www.vishay.com/docs/84274/vcnl4040.pdf",
+      "files": [
+        {
+          "path": "vcnl4040.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/vcnl4040/vcnl4040.py",
+          "sha256": "f8091f3045d2228a5420113f716e19ca3b988ffbd3099cba752280b843039c83",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/vcnl4040/README.md",
+        "sha256": "f55ada2307596c199bff43cbcb91911687c1051827549191a23cf2715c94b853",
         "mime": "text/markdown"
       }
     },

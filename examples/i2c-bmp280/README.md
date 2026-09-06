@@ -11,17 +11,20 @@ This example needs the [BMP280](../../drivers/bmp280) driver installed on the bo
 
 ## Output
 ```
-Temperature:  17.65 °C
-Pressure:  101492.5 Pa
-Temperature:  17.19 °C
-Pressure:  101474.5 Pa
-Temperature:  17.04 °C
-Pressure:  101463.4 Pa
-Temperature:  17.0 °C
-Pressure:  101453.6 Pa
-Temperature:  17.31 °C
-Pressure:  101453.5 Pa
+Temperature: 17.65 C  Pressure: 1014.9 hPa
+Temperature: 17.19 C  Pressure: 1014.7 hPa
+Temperature: 17.04 C  Pressure: 1014.6 hPa
+Temperature: 17.00 C  Pressure: 1014.5 hPa
+Temperature: 17.31 C  Pressure: 1014.5 hPa
 ```
+
+Pressure is printed in hectopascal, which is the same number weather forecasts use, and is
+100 pascal.
+
+## Plotter
+
+Open the **Plotter** tab beside the REPL to graph temperature and pressure together. Pressure
+barely moves indoors; carrying the board up a flight of stairs is enough to see it fall.
 
 ## Tested
 This example has been tested on the following microcontroller running Micropython:

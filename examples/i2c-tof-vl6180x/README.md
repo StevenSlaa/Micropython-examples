@@ -45,5 +45,10 @@ large number. The [driver README](../../drivers/vl6180x) has the rest of the lis
 Readings are a few millimetres out from one sensor to the next. Put something at a distance you
 have measured, and set `offset` at the top of the script to the difference.
 
+## Plotter
+
+Open the **Plotter** tab beside the REPL to graph distance and light level together. Lines
+reporting an error carry no numbers, so the plot simply has no sample for them.
+
 ## Tested
 This example has not been run on hardware yet. If you try it, add your board here.

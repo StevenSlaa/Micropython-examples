@@ -51,5 +51,9 @@ it names it in `requires`. The IDE installs those modules to `/lib` on the board
 
 `license` and `source` are optional; fill them in for anything you did not write yourself.
 
+Examples print one named value per reading, on a single line, so the IDE plotter can graph them
+without any extra work: `Temperature: 17.6 C  Pressure: 1014.9 hPa`. The rules are in
+[CONTRIBUTING.md](CONTRIBUTING.md).
+
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the review rules and [drivers/README.md](drivers/README.md)
 for the current driver list.

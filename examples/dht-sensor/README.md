@@ -12,10 +12,15 @@ This information is collected from a DHT11 or DHT22 sensor.
 
 ## Output
 ```
-Temperature: 14.0 C
-Temperature: 57.2 F
-Humidity: 91.0 %
+Temperature: 14.0 C  Fahrenheit: 57.2 F  Humidity: 91.0 %
+Temperature: 14.0 C  Fahrenheit: 57.2 F  Humidity: 91.1 %
+Temperature: 14.1 C  Fahrenheit: 57.4 F  Humidity: 90.8 %
 ```
+
+## Plotter
+
+Open the **Plotter** tab beside the REPL to graph temperature and humidity as they change.
+Breathe on the sensor and both climb.
 
 ## Tested
 This example has been tested on the following microcontroller running Micropython:

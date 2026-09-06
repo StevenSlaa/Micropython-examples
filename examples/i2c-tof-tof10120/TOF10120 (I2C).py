@@ -14,5 +14,5 @@ data = bytearray(2)
 while True:
     i2c.readfrom_mem_into(addr, 0, data)
     distance = data[0] << 8 | data[1]
-    print(distance)
+    print("Distance:", distance, "mm")
     sleep(.1)

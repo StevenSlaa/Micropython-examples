@@ -1,0 +1,14 @@
+{
+  "id": "i2c-proximity-vcnl4040",
+  "title": "VCNL4040 Sensor Example",
+  "description": "In this example the microcontroller reads proximity and ambient light from a VCNL4040 sensor, printing the light level in lux and reporting when something comes near.",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "entry": "VCNL4040 (I2C).py",
+  "requires": [
+    "vcnl4040"
+  ]
+}

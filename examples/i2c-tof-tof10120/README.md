@@ -19,6 +19,11 @@ Distance:  272 mm
 Distance:  7 mm
 ```
 
+## Plotter
+
+Open the **Plotter** tab beside the REPL to graph the distance as you move something in front
+of the sensor.
+
 ## Tested
 This example has been tested on the following microcontroller running Micropython:
 - ESP32 Devkit v1
