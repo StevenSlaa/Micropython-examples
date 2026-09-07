@@ -66,36 +66,28 @@ i2c = SoftI2C(scl=Pin(6), sda=Pin(5))
 display = SH1106_I2C(72, 40, i2c, setup=PANEL_72X40)
 ```
 
-`PANEL_72X40` matters as much as the size does. These panels power up with the defaults for a
-128x64 screen, and two of them are wrong:
+`PANEL_72X40` matters as much as the size does. It sets the **multiplex ratio**, which is the
+default a small panel always gets wrong: left at 64, a 40 row panel drives 24 rows that are not
+connected. That has two effects, and both look like faults elsewhere — the same brightness is
+spread over 64 row-times instead of 40, so **it is dim**, and its rows land on pages this driver
+never writes, so **the rest is noise**.
 
-| | Default | A 72x40 panel needs |
+Where those rows sit is the display offset, and the driver works that out from the height
+rather than taking it from the setup sequence, because **it has to change when the picture is
+flipped**. The offset is counted against the scan direction: a panel sitting 12 rows down from
+one end sits 64 − 12 down from the other. Flip one without the other and a short panel goes
+straight off the screen.
+
+| | 72x40 | 128x64 |
 | --- | --- | --- |
-| Multiplex ratio | 64 rows | **40 rows** |
-| Display offset | 0 | **52** |
+| Multiplex ratio | 40 rows | 64 rows |
+| Display offset, upright | 52 | 0 |
+| Display offset, flipped | 12 | 0 |
 
-**The multiplex ratio** explains two symptoms at once. Left at 64, the panel drives 24 rows that
-are not connected: the same brightness is spread over 64 row-times instead of 40, so it is dim,
-and its rows land on pages this driver never writes, so the rest of the glass shows whatever it
-powered up with.
+A full height panel is 0 both ways round, which is why upstream never needed any of this.
 
-**The display offset** is where the panel sits. A short panel is centred in the 64 rows the
-controller scans, exactly as a narrow one is centred in its 132 columns — 12 rows in, for a 40
-row panel. This driver leaves the scan direction at its default, where the offset counts the
-other way round, so those 12 rows are asked for as `64 - 12 = 52`. Both numbers come from the
-height, and both reduce to nothing on a full height panel.
-
-What `panel_setup` deliberately does **not** set is the segment remap and the scan direction.
-`flip()` runs after it and would undo them. If your picture is upside down or mirrored, use
-`rotate=180`, not a setup sequence.
-
-If a panel of yours is not centred, measure it rather than guessing: draw a border round the
-whole buffer, step `0xD3` through its 64 values, and use the one where the border lines up with
-the glass.
-
-```python
-display = SH1106_I2C(72, 40, i2c, setup=panel_setup(40, offset=48))
-```
+`rotate=180`, and `flip()` at runtime, both carry the offset with them. If a panel of yours is
+not centred, `y_offset=` says where it really sits, measured with the picture upright.
 
 If the picture is then correct but **dim**, the panel wants its charge pump or internal
 reference set, and those two commands differ between the controllers:
@@ -106,6 +98,29 @@ display.write_cmd(0x8D); display.write_cmd(0x14)   # SSD1306: charge pump on
 ```
 
 Send one, not both, and keep whichever brightens it.
+
+## The other way you will see this done
+
+Plenty of Arduino code for these panels does the opposite: it configures the controller as a
+full 128x64 and then adds the offsets to every drawing call.
+
+```cpp
+U8G2_SSD1306_128X64_NONAME_F_HW_I2C u8g2(...);
+int xOffset = 30;  // (132 - 72) / 2
+int yOffset = 12;  // (64 - 40) / 2
+```
+
+Those are the same two numbers this driver uses — the panel is a window at (30, 12) in the
+controller's raster whichever way you get there. The difference is where they are applied, and
+putting them in the hardware is worth it:
+
+- Drawing happens at 0, 0. Nothing has to remember to add 30 and 12, in every call, forever.
+- The buffer is 360 bytes rather than 1024, most of which would never be shown.
+- It is brighter. Leaving the multiplex ratio at 64 spreads 40 rows' worth of light over 64
+  row-times; setting it to 40 gets that back.
+
+If you would rather follow the Arduino approach, nothing stops you: build the display as
+128x64, skip the setup sequence, and add the offsets yourself.
 
 ## The column offset
 

@@ -92,34 +92,24 @@ _SET_SEG_REMAP       = const(0xa0)
 _LOW_COLUMN_ADDRESS  = const(0x00)
 _HIGH_COLUMN_ADDRESS = const(0x10)
 _SET_PAGE_ADDRESS    = const(0xB0)
+_SET_DISPLAY_OFFSET  = const(0xD3)
 
-def panel_setup(height, contrast=0xFF, offset=None):
+def panel_setup(height, contrast=0xFF):
     """Commands for a panel whose power-up defaults are for a different screen.
 
-    The defaults are those of a 128x64, and a smaller panel needs two things put right.
+    The defaults are those of a 128x64, and the one that always matters is the **multiplex
+    ratio**. Left at 64, a 40 row panel drives 24 rows that are not connected: the same
+    brightness spread over 64 row-times instead of 40, so it is dim, and its rows land on pages
+    this driver never writes, so the rest of the glass keeps whatever it powered up with.
 
-    **The multiplex ratio.** Left at 64, a 40 row panel drives 24 rows that are not connected.
-    It is dim, because the same brightness is spread over 64 row-times instead of 40, and its
-    rows land on pages this driver never writes, so the rest of the glass shows whatever it
-    powered up with.
+    Where those rows sit is not here. That is `y_offset`, which the driver owns, because it has
+    to be re-sent whenever the scan direction changes — see `flip()`.
 
-    **The display offset.** A short panel is centred in the 64 rows the controller scans, just
-    as a narrow one is centred in its 132 columns: a 40 row panel starts 12 rows in. This
-    driver leaves the scan direction at its default, where the offset counts the other way
-    round, so those 12 rows are asked for as `64 - 12`. That reduces to 0 for a full height
-    panel, which is what upstream assumed of all of them.
-
-    Measured on the 0.42 inch 72x40 panel of an ESP32-C3 SuperMini, where a border drawn around
-    the whole buffer lines up with the glass at exactly this value.
-
-    What is deliberately *not* here is the segment remap and the scan direction. `flip()` runs
-    after this and would undo them; orientation belongs to `rotate=`.
+    The segment remap and the scan direction are not here either. `flip()` sets those.
+    Orientation belongs to `rotate=`.
     """
-    if offset is None:
-        offset = (64 - (64 - height) // 2) % 64
     return (
         0xA8, height - 1,   # multiplex ratio: the rows this panel really has
-        0xD3, offset,       # display offset: where those rows sit in the 64 scanned
         0x40,               # display start line: 0
         0x81, contrast,
     )
@@ -131,7 +121,8 @@ PANEL_72X40 = panel_setup(40)
 
 class SH1106(framebuf.FrameBuffer):
 
-    def __init__(self, width, height, external_vcc, rotate=0, x_offset=None, setup=None):
+    def __init__(self, width, height, external_vcc, rotate=0, x_offset=None, setup=None,
+                 y_offset=None):
         self.width = width
         self.height = height
         self.external_vcc = external_vcc
@@ -139,8 +130,13 @@ class SH1106(framebuf.FrameBuffer):
         # window centred inside it. That is 2 for the usual 128 wide screen, and 30 for the
         # 72 wide 0.42 inch one. Pass x_offset only if your panel is not centred.
         self.x_offset = (132 - width) // 2 if x_offset is None else x_offset
-        # Commands sent once, before the first frame: see PANEL_72X40 above.
+        # Commands sent once, before the first frame: see panel_setup above.
         self.setup = setup
+        # Where the panel's rows sit in the 64 the controller scans. A short panel is centred
+        # in them, exactly as a narrow one is centred in its 132 columns, and this is that
+        # measured the way the un-flipped scan direction counts it. It works out to 0 for a
+        # full height panel, which is what upstream assumed of all of them.
+        self.y_offset = (64 - (64 - height) // 2) % 64 if y_offset is None else y_offset
         self.flip_en = rotate == 180 or rotate == 270
         self.rotate90 = rotate == 90 or rotate == 270
         self.pages = self.height // 8
@@ -204,6 +200,11 @@ class SH1106(framebuf.FrameBuffer):
         mir_h = flag
         self.write_cmd(_SET_SEG_REMAP | (0x01 if mir_v else 0x00))
         self.write_cmd(_SET_SCAN_DIR | (0x08 if mir_h else 0x00))
+        # The display offset is counted against the scan direction, so flipping one without the
+        # other throws a short panel off the screen. Reversing the scan mirrors the window:
+        # 12 rows down from one end is 64 - 12 from the other.
+        self.write_cmd(_SET_DISPLAY_OFFSET)
+        self.write_cmd((64 - self.y_offset) % 64 if mir_h else self.y_offset)
         self.flip_en = flag
         if update:
             self.show(True) # full update
@@ -313,7 +314,8 @@ class SH1106(framebuf.FrameBuffer):
 
 class SH1106_I2C(SH1106):
     def __init__(self, width, height, i2c, res=None, addr=0x3c,
-                 rotate=0, external_vcc=False, delay=0, x_offset=None, setup=None):
+                 rotate=0, external_vcc=False, delay=0, x_offset=None, setup=None,
+                 y_offset=None):
         self.i2c = i2c
         self.addr = addr
         self.res = res
@@ -321,7 +323,7 @@ class SH1106_I2C(SH1106):
         self.delay = delay
         if res is not None:
             res.init(res.OUT, value=1)
-        super().__init__(width, height, external_vcc, rotate, x_offset, setup)
+        super().__init__(width, height, external_vcc, rotate, x_offset, setup, y_offset)
 
     def write_cmd(self, cmd):
         self.temp[0] = 0x80  # Co=1, D/C#=0
@@ -337,7 +339,8 @@ class SH1106_I2C(SH1106):
 
 class SH1106_SPI(SH1106):
     def __init__(self, width, height, spi, dc, res=None, cs=None,
-                 rotate=0, external_vcc=False, delay=0, x_offset=None, setup=None):
+                 rotate=0, external_vcc=False, delay=0, x_offset=None, setup=None,
+                 y_offset=None):
         dc.init(dc.OUT, value=0)
         if res is not None:
             res.init(res.OUT, value=0)
@@ -348,7 +351,7 @@ class SH1106_SPI(SH1106):
         self.res = res
         self.cs = cs
         self.delay = delay
-        super().__init__(width, height, external_vcc, rotate, x_offset, setup)
+        super().__init__(width, height, external_vcc, rotate, x_offset, setup, y_offset)
 
     def write_cmd(self, cmd):
         if self.cs is not None:

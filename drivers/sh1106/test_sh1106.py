@@ -109,24 +109,69 @@ assert 0xC0 in sent and sent.index(0xC0) < at, (
     "against it"
 )
 assert 0xAF in sent and sent.index(0xAF) < at, "and so is powering the panel on"
-# The multiplex ratio is the point of it: a 40 row panel driving 64 rows is dim and mapped to
-# pages that are never written.
+# The multiplex ratio is the point of the setup sequence: a 40 row panel driving 64 rows is
+# dim and mapped to pages that are never written.
 setup = panel_setup(40)
 assert setup[0] == 0xA8 and setup[1] == 39, "40 rows, not the default 64"
-# Measured on a 72x40 panel: a border round the whole buffer lines up with the glass at 52,
-# which is the 12 rows it sits down the 64, counted the way this driver's scan direction needs.
-assert setup[2] == 0xD3 and setup[3] == 52, setup
-assert panel_setup(64)[3] == 0, "a full height panel needs none, as upstream assumed"
-assert panel_setup(48)[3] == 56, "and a 64x48 shield sits 8 rows in"
-assert panel_setup(40, offset=12)[3] == 12, "a measured value still wins"
-assert panel_setup(40, contrast=0x80)[6] == 0x80, "contrast is settable"
+assert panel_setup(40, contrast=0x80)[4] == 0x80, "contrast is settable"
 
-# Orientation is deliberately absent: flip() runs after this and would undo it.
-assert 0xA1 not in setup and 0xC8 not in setup and 0xA0 not in setup and 0xC0 not in setup, setup
+# Where the rows sit is not in there: the driver owns it, because it changes with the scan
+# direction, and a static list of commands cannot.
+assert 0xD3 not in setup, setup
+assert 0xA1 not in setup and 0xC8 not in setup, "orientation is flip()'s, not the setup's"
 
-# Without one, nothing is configured at all, which is what upstream does and what suits a
-# panel whose defaults are already right.
+
+def pairs_of(command, commands):
+    """Every value sent straight after `command`."""
+    return [commands[index + 1] for index, value in enumerate(commands[:-1]) if value == command]
+
+
+# Measured on a 72x40 panel: the picture lines up with the glass at 52, which is the 12 rows it
+# sits into the 64 the controller scans, counted the way the un-flipped scan direction wants.
+panel, bus = display(72, 40, setup=PANEL_72X40)
+assert panel.y_offset == 52, panel.y_offset
+assert pairs_of(0xD3, panel.startup) == [52], panel.startup
+assert 0xC0 in panel.startup, "the un-flipped scan direction"
+
+# Flipping mirrors the window as well as the scan, or a short panel falls off the screen: the
+# same 12 rows are 64 - 12 from the other end.
+bus.commands.clear()
+panel.flip(True)
+assert 0xC8 in bus.commands, "the scan direction reversed"
+assert pairs_of(0xD3, bus.commands) == [12], bus.commands
+bus.commands.clear()
+panel.flip(False)
+assert pairs_of(0xD3, bus.commands) == [52], "and back again"
+
+# A full height panel has no offset either way round, which is why upstream never had to.
 panel, bus = display(128, 64)
-assert not any(command in (0xA8, 0xD3) for command in panel.startup), panel.startup
+assert panel.y_offset == 0
+assert pairs_of(0xD3, panel.startup) == [0], panel.startup
+bus.commands.clear()
+panel.flip(True)
+assert pairs_of(0xD3, bus.commands) == [0], "0 mirrors to 0"
+
+# A panel that is not centred can say so.
+panel, bus = display(72, 40, y_offset=48)
+assert pairs_of(0xD3, panel.startup) == [48]
+
+# A setup sequence is sent once, and after flip(): the display offset is counted against the
+# scan direction, so a setup applied before it is applied to the wrong one.
+panel, bus = display(72, 40, setup=PANEL_72X40)
+sent = panel.startup
+
+
+def position_of(sequence, inside):
+    """Where a run of commands starts, or -1 if it was never sent as a run."""
+    for start in range(len(inside) - len(sequence) + 1):
+        if inside[start : start + len(sequence)] == list(sequence):
+            return start
+    return -1
+
+
+at = position_of(PANEL_72X40, sent)
+assert at >= 0, sent
+assert sent.index(0xC0) < at, "the scan direction is set first"
+assert sent.index(0xAF) < at, "and so is powering the panel on"
 
 print("sh1106: ok")
