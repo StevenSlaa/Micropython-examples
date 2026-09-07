@@ -2034,14 +2034,14 @@
         {
           "path": "sh1106.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/sh1106/sh1106.py",
-          "sha256": "9d95d54a01e674aa9ab0a61797887672d7b48d44eda0d571191c595183e5e324",
+          "sha256": "c55a743bbd8d507ac06faac56e45e472a946c183436674bbd05617bf23a0c773",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/sh1106/README.md",
-        "sha256": "411919d11821ca3c875bd663aa9e87324988d8f79732cceae741de5c970fefa9",
+        "sha256": "b46a40638e47a81cee9c493fb6d17532bdc5ce52272f8dcb6c1921b16bc9138a",
         "mime": "text/markdown"
       }
     },

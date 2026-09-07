@@ -94,7 +94,7 @@ _HIGH_COLUMN_ADDRESS = const(0x10)
 _SET_PAGE_ADDRESS    = const(0xB0)
 _SET_DISPLAY_OFFSET  = const(0xD3)
 
-def panel_setup(height, contrast=0xFF):
+def panel_setup(height, contrast=0xFF, dcdc=True):
     """Commands for a panel whose power-up defaults are for a different screen.
 
     The defaults are those of a 128x64, and the one that always matters is the **multiplex
@@ -107,12 +107,17 @@ def panel_setup(height, contrast=0xFF):
 
     The segment remap and the scan direction are not here either. `flip()` sets those.
     Orientation belongs to `rotate=`.
+
+    `dcdc` turns on the internal boost converter that makes the 7.5V or so an OLED panel needs.
+    A panel that is legible but dim, with the multiplex ratio already right, is usually running
+    without it. It is the one command here that means something different on an SSD1306, where
+    0xAD selects the internal reference instead: pass `dcdc=False` there and use `0x8D, 0x14`.
     """
     return (
         0xA8, height - 1,   # multiplex ratio: the rows this panel really has
         0x40,               # display start line: 0
         0x81, contrast,
-    )
+    ) + ((0xAD, 0x8B) if dcdc else ())
 
 
 # The 0.42 inch panel on an ESP32-C3 SuperMini, and anything else that is 72x40.

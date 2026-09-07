@@ -115,6 +115,11 @@ setup = panel_setup(40)
 assert setup[0] == 0xA8 and setup[1] == 39, "40 rows, not the default 64"
 assert panel_setup(40, contrast=0x80)[4] == 0x80, "contrast is settable"
 
+# The boost converter that makes the voltage an OLED panel needs. Legible but dim, with the
+# multiplex ratio already right, is what a panel without it looks like.
+assert setup[-2:] == (0xAD, 0x8B), setup
+assert panel_setup(40, dcdc=False)[-2:] != (0xAD, 0x8B), "and it can be left to an SSD1306"
+
 # Where the rows sit is not in there: the driver owns it, because it changes with the scan
 # direction, and a static list of commands cannot.
 assert 0xD3 not in setup, setup

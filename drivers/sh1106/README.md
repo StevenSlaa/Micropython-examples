@@ -89,15 +89,29 @@ A full height panel is 0 both ways round, which is why upstream never needed any
 `rotate=180`, and `flip()` at runtime, both carry the offset with them. If a panel of yours is
 not centred, `y_offset=` says where it really sits, measured with the picture upright.
 
-If the picture is then correct but **dim**, the panel wants its charge pump or internal
-reference set, and those two commands differ between the controllers:
+## If it is dim
+
+Two settings decide brightness, and they fail in different ways.
+
+**The multiplex ratio**, which `panel_setup` sets from the height. Left at 64, a 40 row panel
+spreads the same light over 64 row-times. This one also puts the picture in the wrong place, so
+if it is dim *and* noisy, this is why.
+
+**The DC-DC converter**, which makes the 7.5V or so the OLED panel itself needs. `panel_setup`
+turns it on with `0xAD, 0x8B`. A panel that is legible but dim, with everything else already
+right, is usually running without it.
+
+`0xAD` is the one command that means something else on an SSD1306, where it selects the
+internal reference. If yours turns out to be one, pass `dcdc=False` and use the SSD1306 spelling
+instead:
 
 ```python
-display.write_cmd(0xAD); display.write_cmd(0x8B)   # SH1106: DC-DC on
-display.write_cmd(0x8D); display.write_cmd(0x14)   # SSD1306: charge pump on
+display = SH1106_I2C(72, 40, i2c, setup=panel_setup(40, dcdc=False))
+display.write_cmd(0x8D); display.write_cmd(0x14)   # SSD1306 charge pump
 ```
 
-Send one, not both, and keep whichever brightens it.
+Contrast is already at maximum. `display.contrast(n)` lowers it, which is worth doing on a
+display meant to sit in a dark room.
 
 ## The other way you will see this done
 
