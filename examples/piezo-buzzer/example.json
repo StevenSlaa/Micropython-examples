@@ -1,0 +1,16 @@
+{
+  "id": "piezo-buzzer",
+  "title": "Piezo Buzzer",
+  "description": "In this example the microcontroller plays beeps, a melody and a siren on a passive or active piezo buzzer.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Sound",
+  "entry": "Piezo Buzzer.py",
+  "requires": [
+    "piezo"
+  ]
+}

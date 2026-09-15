@@ -1,0 +1,12 @@
+{
+  "id": "piezo",
+  "name": "Piezo buzzer",
+  "version": "1.0.0",
+  "description": "Beeps, tones and melodies from a passive or active piezo buzzer, with note names, a volume, and a buzzer that always goes quiet when it should.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ]
+}

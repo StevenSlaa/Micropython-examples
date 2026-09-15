@@ -17,6 +17,7 @@ GROUPS = (
     ("Sensors", "Reading the world: temperature, distance, movement, light and magnetic fields."),
     ("Displays and LEDs", "Showing something, from a character display to a matrix or a strip of colour."),
     ("Motion", "Making something move, with motors and servos."),
+    ("Sound", "Making noise: beeps, alarms and melodies."),
     ("Input", "Taking something in from a person: knobs, keypads and card readers."),
     ("Remote control", "Talking over infrared, in both directions."),
     ("Between boards", "Getting two boards to talk to each other, by radio or down a wire."),

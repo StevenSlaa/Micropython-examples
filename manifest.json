@@ -23,6 +23,10 @@
       "description": "Making something move, with motors and servos."
     },
     {
+      "name": "Sound",
+      "description": "Making noise: beeps, alarms and melodies."
+    },
+    {
       "name": "Input",
       "description": "Taking something in from a person: knobs, keypads and card readers."
     },
@@ -924,6 +928,36 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/stepper/README.md",
         "sha256": "da5d39cfbfe59c8f2d917b2f05c537a2e1a6caee5cfc90b15f5bee7208ded487",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "piezo-buzzer",
+      "title": "Piezo Buzzer",
+      "description": "In this example the microcontroller plays beeps, a melody and a siren on a passive or active piezo buzzer.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "author": "Steven Slaa",
+      "group": "Sound",
+      "requires": [
+        "piezo"
+      ],
+      "files": [
+        {
+          "path": "Piezo Buzzer.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/piezo-buzzer/Piezo%20Buzzer.py",
+          "sha256": "4c504b67635b6e692aadc4e3262fdda829824fbf466b3ac4b6c3a63963ba35ee",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/piezo-buzzer/README.md",
+        "sha256": "ae342c68ae5aebde71bae915631c138b28812cff872dab98a6b394b68d340438",
         "mime": "text/markdown"
       },
       "assets": []
@@ -2027,6 +2061,32 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/p9813/README.md",
         "sha256": "a56fd92a85398a90ef21917599e60488522b89b7d0b7ed24ac5c95d4a161a5f9",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "piezo",
+      "name": "Piezo buzzer",
+      "version": "1.0.0",
+      "description": "Beeps, tones and melodies from a passive or active piezo buzzer, with note names, a volume, and a buzzer that always goes quiet when it should.",
+      "author": "Steven Slaa",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "files": [
+        {
+          "path": "piezo.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/piezo/piezo.py",
+          "sha256": "8e3d777e02c7ca2786e18c5eb6062805778df29dc93beff22ac081fa2383223d",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/piezo/README.md",
+        "sha256": "1f8e32d69a5d9946fc6cd20c7af7a7b449524ef4c3cea6335e329f407632d931",
         "mime": "text/markdown"
       }
     },

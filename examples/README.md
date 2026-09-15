@@ -64,6 +64,14 @@ Making something move, with motors and servos.
 | [Servo](servo) | In this example the microcontroller drives a hobby servo: a positional one to an angle and back, or a 360 degree one at a speed in both directions. | [servo](../drivers/servo) |
 | [Stepper Motor](stepper) | In this example the microcontroller turns a stepper motor a quarter turn at a time, back to where it started, and then releases it. | [stepper](../drivers/stepper) |
 
+### Sound
+
+Making noise: beeps, alarms and melodies.
+
+| Example | What it does | Needs |
+| --- | --- | --- |
+| [Piezo Buzzer](piezo-buzzer) | In this example the microcontroller plays beeps, a melody and a siren on a passive or active piezo buzzer. | [piezo](../drivers/piezo) |
+
 ### Input
 
 Taking something in from a person: knobs, keypads and card readers.
