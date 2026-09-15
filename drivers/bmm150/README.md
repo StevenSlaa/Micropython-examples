@@ -48,6 +48,23 @@ print(sensor.heading())     # degrees clockwise from magnetic north
 If it says `No BMM150 at 0x10`, run `i2c.scan()` and pass the address it finds, for example
 `BMM150(i2c, address=0x13)`. Several breakouts ship at `0x13`.
 
+## Troubleshooting
+
+| Message | Means |
+| --- | --- |
+| `No BMM150 at 0x13` | nothing acknowledged that address. Check the address with `i2c.scan()` and the wiring |
+| `0x13 answered, but gave no chip id after power on` | the chip is there but would not answer a read. Try a slower bus (`freq=10000`), shorter wires, or pull-up resistors if the breakout has none |
+| `0x13 is not a BMM150 (chip id 0x00)` | the chip did not wake up, or another part shares the address |
+
+The same check by hand, in the REPL:
+
+```python
+from time import sleep_ms
+i2c.writeto_mem(0x13, 0x4B, b"\x01")               # wake it up
+sleep_ms(10)
+print(hex(i2c.readfrom_mem(0x13, 0x40, 1)[0]))     # a BMM150 prints 0x32
+```
+
 ## Settings
 
 ```python

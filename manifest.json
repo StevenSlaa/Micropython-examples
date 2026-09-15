@@ -1679,14 +1679,14 @@
         {
           "path": "bmm150.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/bmm150/bmm150.py",
-          "sha256": "d8ffe4511d32372978d50f32eb090810bbf0ec9f3563f6de6bb2d160169d5c55",
+          "sha256": "8dcb63ef76e62d55a90626efe07c8ce72c4cc86d6626c7b7b0e72eb064abe242",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/bmm150/README.md",
-        "sha256": "dce7b534caf785a74fabfe11fa222a49eb5572fd14136219192812c929d5f116",
+        "sha256": "cf1b32e1589ad667a19696840950282323c9a3e505266cdac6cfdf5237f3bf51",
         "mime": "text/markdown"
       }
     },

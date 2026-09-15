@@ -87,10 +87,26 @@ class BMM150:
         try:
             # Out of power on the chip is suspended and answers nothing but the power bit.
             i2c.writeto_mem(address, _POWER, b"\x01")
-            sleep_ms(3)
-            chip_id = i2c.readfrom_mem(address, _CHIP_ID, 1)[0]
-        except OSError:
-            raise OSError("No BMM150 at 0x%02x. Boards use 0x10 to 0x13: try i2c.scan()" % address)
+        except OSError as error:
+            raise OSError(
+                "No BMM150 at 0x%02x (%s). Boards use 0x10 to 0x13: try i2c.scan()" % (address, error)
+            )
+        # The datasheet gives it 3ms to wake, and until then it may not answer or may read as 0.
+        # ponytail: a fixed 50ms budget; raise the count if a board turns out slower still.
+        chip_id, problem = None, None
+        for _ in range(10):
+            sleep_ms(5)
+            try:
+                chip_id = i2c.readfrom_mem(address, _CHIP_ID, 1)[0]
+            except OSError as error:
+                problem = error
+                continue
+            if chip_id == _BMM150_ID:
+                break
+        if chip_id is None:
+            raise OSError(
+                "0x%02x answered, but gave no chip id after power on (%s)" % (address, problem)
+            )
         if chip_id != _BMM150_ID:
             raise OSError("0x%02x is not a BMM150 (chip id 0x%02x)" % (address, chip_id))
         self._read_trim()

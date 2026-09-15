@@ -22,10 +22,12 @@ from bmm150 import BMM150, HIGH_ACCURACY, RATE_20HZ, _correction  # noqa: E402
 
 
 class _I2C:
-    def __init__(self, address=0x10, chip_id=0x32, x1=0, x2=0, xy1=0):
+    def __init__(self, address=0x10, chip_id=0x32, x1=0, x2=0, xy1=0, asleep_reads=0):
         self.address = address
         self.registers = {0x40: chip_id}
         self.writes = []
+        # How many reads a slow chip fails while it wakes up.
+        self.asleep_reads = asleep_reads
         # With RHALL equal to xyz1 the X and Y temperature terms vanish, leaving
         # x = raw * (160 + x2) / 512 + x1 / 2, and z = (raw - z4) * 2048 / (z2 + z1 * rhall / 32768).
         self.load(0x5D, pack("<bb", x1, x1))
@@ -44,6 +46,9 @@ class _I2C:
     def readfrom_mem(self, address, register, length):
         if address != self.address:
             raise OSError(19)  # ENODEV, what MicroPython raises on a NACK
+        if self.asleep_reads:
+            self.asleep_reads -= 1
+            raise OSError(19)
         # Suspended, the chip reads as zeros until the power bit is set.
         powered = self.registers.get(0x4B, 0) & 0x01
         return bytes(self.registers.get(register + i, 0) if powered else 0 for i in range(length))
@@ -66,6 +71,17 @@ try:
     raise AssertionError("a wrong chip id must be reported")
 except OSError as error:
     assert "not a BMM150" in str(error), error
+
+# A chip slow to wake, failing the first reads after power on, is waited for.
+slow = BMM150(_I2C(asleep_reads=3))
+assert slow.i2c.writes[0] == (0x4B, 0x01)
+
+# One that answers its address but never its id says exactly that, not "No BMM150".
+try:
+    BMM150(_I2C(asleep_reads=100))
+    raise AssertionError("a chip that never wakes must be reported")
+except OSError as error:
+    assert "answered, but gave no chip id" in str(error) and "19" in str(error), error
 
 # Powered first, since a suspended chip hides its id; then the preset and normal mode at 10Hz.
 bus = _I2C()
