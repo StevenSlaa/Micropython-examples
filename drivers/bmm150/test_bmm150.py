@@ -22,12 +22,14 @@ from bmm150 import BMM150, HIGH_ACCURACY, RATE_20HZ, _correction  # noqa: E402
 
 
 class _I2C:
-    def __init__(self, address=0x10, chip_id=0x32, x1=0, x2=0, xy1=0, asleep_reads=0):
+    def __init__(self, address=0x10, chip_id=0x32, x1=0, x2=0, xy1=0, asleep_reads=0, refused_writes=0):
         self.address = address
         self.registers = {0x40: chip_id}
         self.writes = []
         # How many reads a slow chip fails while it wakes up.
         self.asleep_reads = asleep_reads
+        # How many writes fail first, like the first transaction on a new SoftI2C on a Pico.
+        self.refused_writes = refused_writes
         # With RHALL equal to xyz1 the X and Y temperature terms vanish, leaving
         # x = raw * (160 + x2) / 512 + x1 / 2, and z = (raw - z4) * 2048 / (z2 + z1 * rhall / 32768).
         self.load(0x5D, pack("<bb", x1, x1))
@@ -56,6 +58,9 @@ class _I2C:
     def writeto_mem(self, address, register, data):
         if address != self.address:
             raise OSError(19)
+        if self.refused_writes:
+            self.refused_writes -= 1
+            raise OSError(19)
         self.load(register, data)
         self.writes.append((register, data[0]))
 
@@ -71,6 +76,11 @@ try:
     raise AssertionError("a wrong chip id must be reported")
 except OSError as error:
     assert "not a BMM150" in str(error), error
+
+# A bus that refuses the first write, as a new SoftI2C on a Pico does, is retried, and the power
+# on still comes first.
+fresh = BMM150(_I2C(refused_writes=1))
+assert fresh.i2c.writes == [(0x4B, 0x01), (0x51, 0x04), (0x52, 0x0E), (0x4C, 0x00)], fresh.i2c.writes
 
 # A chip slow to wake, failing the first reads after power on, is waited for.
 slow = BMM150(_I2C(asleep_reads=3))

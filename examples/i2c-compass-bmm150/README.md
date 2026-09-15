@@ -35,9 +35,9 @@ and SDO are what set the address.
 
 ## Output
 ```
-X: 18.9 uT  Y: -10.2 uT  Z: -39.6 uT  Heading: 332 degrees
-X: 19.4 uT  Y: -9.1 uT  Z: -39.8 uT  Heading: 335 degrees
-X: 17.6 uT  Y: -12.8 uT  Z: -39.2 uT  Heading: 324 degrees
+X: 12.6 uT  Y: 20.4 uT  Z: 44.0 uT  Heading: 58 degrees
+X: 13.7 uT  Y: 20.4 uT  Z: 44.0 uT  Heading: 58 degrees
+X: 13.0 uT  Y: 20.4 uT  Z: 44.7 uT  Heading: 58 degrees
 Out of range  <- overflow, is there a magnet nearby?
 ```
 
@@ -61,4 +61,6 @@ compass is underneath. The heading runs 0 to 360 and so dominates the scale — 
 the print to look at the field on its own.
 
 ## Tested
-This example has not been run on hardware yet. If you try it, add your board here.
+- Raspberry Pi Pico (RP2040), MicroPython 1.28.0, `SoftI2C` on GP6 (SDA) and GP7 (SCL) at
+  100 kHz, breakout at address `0x13`. Uncalibrated, it read a total field of about 51µT, which
+  is right for the earth's field in the Netherlands.

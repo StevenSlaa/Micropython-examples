@@ -56,10 +56,16 @@ If it says `No BMM150 at 0x10`, run `i2c.scan()` and pass the address it finds, 
 | `0x13 answered, but gave no chip id after power on` | the chip is there but would not answer a read. Try a slower bus (`freq=10000`), shorter wires, or pull-up resistors if the breakout has none |
 | `0x13 is not a BMM150 (chip id 0x00)` | the chip did not wake up, or another part shares the address |
 
+On a Raspberry Pi Pico with `SoftI2C`, the very first transaction on a newly created bus is
+refused with `ENODEV`, every time, and the next one works. Hardware `I2C(0)` or `I2C(1)` does not
+do this. The driver retries, so it only matters when you talk to the chip yourself: start with an
+`i2c.scan()`, as below.
+
 The same check by hand, in the REPL:
 
 ```python
 from time import sleep_ms
+i2c.scan()                                         # absorbs the refused first transaction
 i2c.writeto_mem(0x13, 0x4B, b"\x01")               # wake it up
 sleep_ms(10)
 print(hex(i2c.readfrom_mem(0x13, 0x40, 1)[0]))     # a BMM150 prints 0x32

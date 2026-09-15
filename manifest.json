@@ -314,7 +314,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-compass-bmm150/README.md",
-        "sha256": "3c83f865a967b5c4b65310e05b41345dbfd712cf67629aada233f8be5fb82502",
+        "sha256": "6e8630f91e4509d88e09e3256cd0b8c805ad3f792868493dfd3d42101d29fc53",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1665,7 +1665,7 @@
     {
       "id": "bmm150",
       "name": "BMM150 magnetometer",
-      "version": "1.0.1",
+      "version": "1.0.2",
       "description": "Three axis geomagnetic sensor driver for the Bosch BMM150, applying the chip's factory trim to read the magnetic field in microtesla and a compass heading.",
       "author": "Steven Slaa",
       "boardTags": [
@@ -1679,14 +1679,14 @@
         {
           "path": "bmm150.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/bmm150/bmm150.py",
-          "sha256": "8dcb63ef76e62d55a90626efe07c8ce72c4cc86d6626c7b7b0e72eb064abe242",
+          "sha256": "e4e2640df34dc85077afb1b37f939adb8a24b5ce80bcc74ab5d4c72e51295121",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/bmm150/README.md",
-        "sha256": "cf1b32e1589ad667a19696840950282323c9a3e505266cdac6cfdf5237f3bf51",
+        "sha256": "197b0de92c2322d340b0568e9a45615ee85ac4997cb7e2c2832a30019ae4cbc9",
         "mime": "text/markdown"
       }
     },
