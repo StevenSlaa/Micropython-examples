@@ -860,6 +860,41 @@
       ]
     },
     {
+      "id": "t-display-s3-long",
+      "title": "LilyGO T-Display S3 Long (3.4 inch touch LCD)",
+      "description": "In this example the LilyGO T-Display-S3 Long draws an illustrative, animated Pulsar IoT dashboard on its built-in 640x180 touch display. Tap a card to chart that reading live.",
+      "boardTags": [
+        "esp32s3"
+      ],
+      "author": "Steven Slaa",
+      "group": "Displays and LEDs",
+      "requires": [
+        "axs15231b",
+        "rgb565-display"
+      ],
+      "files": [
+        {
+          "path": "T-Display S3 Long.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/t-display-s3-long/T-Display%20S3%20Long.py",
+          "sha256": "ebc444025c57112985bf84303569381f71dd670db83a1260494e713a866b8bcc",
+          "mime": "text/x-python"
+        },
+        {
+          "path": "pulsar_ui.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/t-display-s3-long/pulsar_ui.py",
+          "sha256": "6b5ad5b909ffb59fb37ad8a7b3039b18587c415389d55ca2472f4e7364be6334",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/t-display-s3-long/README.md",
+        "sha256": "1b0c57f09f99209dbe1270946ad81c54c71d9ae3803dd1c474ba100c3664a5e6",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "tm1637-7-segment-display",
       "title": "TM1637 7-Segment Display Example",
       "description": "In this example the microcontroller writes numbers and text to a TM1637 four digit 7-segment display, then counts minutes and seconds with a blinking colon.",
@@ -885,6 +920,41 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/tm1637-7-segment-display/README.md",
         "sha256": "5ae86f08550a8bbc15e989a5dba4e4726079cbade6375d84db9ae8c6135d5648",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "ttgo-t-display-s3",
+      "title": "TTGO T-Display S3 (1.9 inch 8-bit LCD)",
+      "description": "In this example the LilyGO/TTGO T-Display-S3 draws an illustrative dashboard with the Pulsar IoT logo, readings and a live chart on its built-in 1.9 inch colour LCD. The screen uses an 8-bit parallel bus, fast enough to animate the chart, bars and status light at about 25 frames a second.",
+      "boardTags": [
+        "esp32s3"
+      ],
+      "author": "Steven Slaa",
+      "group": "Displays and LEDs",
+      "requires": [
+        "st7789-parallel",
+        "rgb565-display"
+      ],
+      "files": [
+        {
+          "path": "TTGO T-Display S3.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-t-display-s3/TTGO%20T-Display%20S3.py",
+          "sha256": "3507d1fb990379b9b275cf1ece00353ac0c68ea64ab4e4a8de27beb6c2b5d3be",
+          "mime": "text/x-python"
+        },
+        {
+          "path": "pulsar_ui.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-t-display-s3/pulsar_ui.py",
+          "sha256": "6fd1d99e5fcda0177c99bc68bb3e1c691d46cfa6857f7f6fd818b6d44aa4f095",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-t-display-s3/README.md",
+        "sha256": "87c968b5350688954c4ee0cfdedfaf6c12ddb26ed43d52265ff580fbfc589bab",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1702,6 +1772,32 @@
       }
     },
     {
+      "id": "axs15231b",
+      "name": "AXS15231B QSPI display and touch",
+      "version": "1.0.0",
+      "description": "MicroPython driver for the AXS15231B 180x640 QSPI colour display and its built-in capacitive touch, as fitted to the LilyGO T-Display-S3 Long. Needs the rgb565-display driver.",
+      "author": "Steven Slaa",
+      "boardTags": [
+        "esp32s3"
+      ],
+      "license": "MIT",
+      "source": "https://github.com/Xinyuan-LilyGO/T-Display-S3-Long",
+      "files": [
+        {
+          "path": "axs15231b.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/axs15231b/axs15231b.py",
+          "sha256": "19cae867ba46bb551c554caf908be64ef30098e0501a522daaa4d306ca209908",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/axs15231b/README.md",
+        "sha256": "206d0905aa746673002230abf1891e2575831a352c6e734baa8ec4f37bbb88db",
+        "mime": "text/markdown"
+      }
+    },
+    {
       "id": "bh1750",
       "name": "BH1750 ambient light (GY-30)",
       "version": "1.0.0",
@@ -2294,6 +2390,31 @@
       }
     },
     {
+      "id": "rgb565-display",
+      "name": "RGB565 display drawing (shared)",
+      "version": "1.0.0",
+      "description": "Shared drawing methods for colour displays that draw straight to the panel: pixels, lines, rectangles, text, 1 bit bitmaps and RGB565 buffers. Used by the st7789-parallel and axs15231b drivers.",
+      "author": "Steven Slaa",
+      "boardTags": [
+        "esp32s3"
+      ],
+      "license": "MIT",
+      "files": [
+        {
+          "path": "rgb565_display.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/rgb565-display/rgb565_display.py",
+          "sha256": "43e2547aea2fe969bf2506b2d37e43ae9de18caded9f9a98f5156c54d79c78cc",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/rgb565-display/README.md",
+        "sha256": "bf3551fe602cc949d4b6579f136eb3a3f32c4473c2dc4a263ed430b9107c0939",
+        "mime": "text/markdown"
+      }
+    },
+    {
       "id": "rotary",
       "name": "Rotary encoder (KY-040)",
       "version": "1.0.0",
@@ -2477,6 +2598,32 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ssd1680/README.md",
         "sha256": "d42aebe57b4d36ec53108705210290caf355afc17bdceae6af4e41ee39f67f4b",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "st7789-parallel",
+      "name": "ST7789 8-bit parallel display",
+      "version": "1.2.0",
+      "description": "MicroPython driver for ST7789 LCD panels on an 8-bit Intel 8080 parallel bus, with an accelerated ESP32-S3 path for the 170x320 display in the LilyGO/TTGO T-Display-S3. Needs the rgb565-display driver.",
+      "author": "Steven Slaa",
+      "boardTags": [
+        "esp32s3"
+      ],
+      "license": "MIT",
+      "source": "https://github.com/Xinyuan-LilyGO/T-Display-S3",
+      "files": [
+        {
+          "path": "st7789_parallel.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/st7789-parallel/st7789_parallel.py",
+          "sha256": "23850a0fe69e7fc9929efa768837f4d66bb33a554d4a8959087ae9c4fdf610ce",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/st7789-parallel/README.md",
+        "sha256": "1e61864d9b49e5d5a6313f1c0ca80f212c28c1a904c5a034c02ac4e7011d7b99",
         "mime": "text/markdown"
       }
     },

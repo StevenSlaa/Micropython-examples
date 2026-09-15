@@ -1,0 +1,11 @@
+{
+  "id": "rgb565-display",
+  "name": "RGB565 display drawing (shared)",
+  "version": "1.0.0",
+  "description": "Shared drawing methods for colour displays that draw straight to the panel: pixels, lines, rectangles, text, 1 bit bitmaps and RGB565 buffers. Used by the st7789-parallel and axs15231b drivers.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32s3"
+  ],
+  "license": "MIT"
+}

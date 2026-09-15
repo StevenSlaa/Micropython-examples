@@ -1,0 +1,12 @@
+{
+  "id": "st7789-parallel",
+  "name": "ST7789 8-bit parallel display",
+  "version": "1.2.0",
+  "description": "MicroPython driver for ST7789 LCD panels on an 8-bit Intel 8080 parallel bus, with an accelerated ESP32-S3 path for the 170x320 display in the LilyGO/TTGO T-Display-S3. Needs the rgb565-display driver.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32s3"
+  ],
+  "license": "MIT",
+  "source": "https://github.com/Xinyuan-LilyGO/T-Display-S3"
+}

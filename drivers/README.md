@@ -7,6 +7,7 @@ name is the id examples put in their `requires` list.
 | Driver | Modules | Used by |
 | --- | --- | --- |
 | [aioble](aioble) | `aioble/__init__.py`, `aioble/central.py`, `aioble/client.py`, `aioble/core.py`, `aioble/device.py`, `aioble/l2cap.py`, `aioble/peripheral.py`, `aioble/security.py`, `aioble/server.py` | [ble-scan](../examples/ble-scan), [ble-peripheral](../examples/ble-peripheral), [ble-central](../examples/ble-central) |
+| [axs15231b](axs15231b) | `axs15231b.py` | [t-display-s3-long](../examples/t-display-s3-long) |
 | [bh1750](bh1750) | `bh1750.py` | [i2c-light-bh1750](../examples/i2c-light-bh1750) |
 | [bmm150](bmm150) | `bmm150.py` | [i2c-compass-bmm150](../examples/i2c-compass-bmm150) |
 | [bmp280](bmp280) | `bmp280.py` | [i2c-bmp280](../examples/i2c-bmp280) |
@@ -29,6 +30,7 @@ name is the id examples put in their `requires` list.
 | [piezo](piezo) | `piezo.py` | [piezo-buzzer](../examples/piezo-buzzer) |
 | [pixels](pixels) | `pixels.py` | — |
 | [qmc5883l](qmc5883l) | `qmc5883l.py` | [i2c-compass-qmc5883l](../examples/i2c-compass-qmc5883l) |
+| [rgb565-display](rgb565-display) | `rgb565_display.py` | [t-display-s3-long](../examples/t-display-s3-long), [ttgo-t-display-s3](../examples/ttgo-t-display-s3) |
 | [rotary](rotary) | `rotary.py` | [rotary-encoder](../examples/rotary-encoder) |
 | [rs485](rs485) | `rs485.py` | [rs485-link](../examples/rs485-link) |
 | [servo](servo) | `servo.py` | [servo](../examples/servo) |
@@ -36,6 +38,7 @@ name is the id examples put in their `requires` list.
 | [sr74hc595](sr74hc595) | `sr74hc595.py` | [seven-segment-74hc595](../examples/seven-segment-74hc595) |
 | [ssd1306](ssd1306) | `ssd1306.py` | — |
 | [ssd1680](ssd1680) | `ssd1680.py` | [spi-epaper-ssd1680](../examples/spi-epaper-ssd1680) |
+| [st7789-parallel](st7789-parallel) | `st7789_parallel.py` | [ttgo-t-display-s3](../examples/ttgo-t-display-s3) |
 | [st7789py](st7789py) | `st7789py.py`, `vga2_16x32.py` | [spi-st7789-display](../examples/spi-st7789-display) |
 | [stepper](stepper) | `stepper.py` | [stepper](../examples/stepper) |
 | [tc74](tc74) | `tc74.py` | — |

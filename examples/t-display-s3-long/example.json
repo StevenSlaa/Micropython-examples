@@ -1,0 +1,15 @@
+{
+  "id": "t-display-s3-long",
+  "title": "LilyGO T-Display S3 Long (3.4 inch touch LCD)",
+  "description": "In this example the LilyGO T-Display-S3 Long draws an illustrative, animated Pulsar IoT dashboard on its built-in 640x180 touch display. Tap a card to chart that reading live.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32s3"
+  ],
+  "group": "Displays and LEDs",
+  "entry": "T-Display S3 Long.py",
+  "requires": [
+    "axs15231b",
+    "rgb565-display"
+  ]
+}

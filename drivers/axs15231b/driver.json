@@ -1,0 +1,12 @@
+{
+  "id": "axs15231b",
+  "name": "AXS15231B QSPI display and touch",
+  "version": "1.0.0",
+  "description": "MicroPython driver for the AXS15231B 180x640 QSPI colour display and its built-in capacitive touch, as fitted to the LilyGO T-Display-S3 Long. Needs the rgb565-display driver.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32s3"
+  ],
+  "license": "MIT",
+  "source": "https://github.com/Xinyuan-LilyGO/T-Display-S3-Long"
+}

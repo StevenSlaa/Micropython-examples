@@ -1,0 +1,15 @@
+{
+  "id": "ttgo-t-display-s3",
+  "title": "TTGO T-Display S3 (1.9 inch 8-bit LCD)",
+  "description": "In this example the LilyGO/TTGO T-Display-S3 draws an illustrative dashboard with the Pulsar IoT logo, readings and a live chart on its built-in 1.9 inch colour LCD. The screen uses an 8-bit parallel bus, fast enough to animate the chart, bars and status light at about 25 frames a second.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32s3"
+  ],
+  "group": "Displays and LEDs",
+  "entry": "TTGO T-Display S3.py",
+  "requires": [
+    "st7789-parallel",
+    "rgb565-display"
+  ]
+}
