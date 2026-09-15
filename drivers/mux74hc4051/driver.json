@@ -1,0 +1,12 @@
+{
+  "id": "mux74hc4051",
+  "name": "74HC4051 analog multiplexer",
+  "version": "1.0.0",
+  "description": "Drives a 74HC4051 eight channel analog multiplexer from three select pins, turning one analog input into eight, with break before make switching.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ]
+}

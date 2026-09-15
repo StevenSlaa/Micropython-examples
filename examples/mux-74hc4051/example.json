@@ -1,0 +1,16 @@
+{
+  "id": "mux-74hc4051",
+  "title": "74HC4051 Multiplexer",
+  "description": "In this example the microcontroller reads eight analog inputs through one analog pin, using a 74HC4051 multiplexer, and prints the voltage on every channel.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Input",
+  "entry": "Multiplexer (74HC4051).py",
+  "requires": [
+    "mux74hc4051"
+  ]
+}

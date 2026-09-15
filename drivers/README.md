@@ -23,6 +23,7 @@ name is the id examples put in their `requires` list.
 | [mfrc522](mfrc522) | `mfrc522.py` | [spi-rfid-rc522](../examples/spi-rfid-rc522) |
 | [motor](motor) | `motor.py` | [dc-motor-l293d](../examples/dc-motor-l293d) |
 | [mpu6050](mpu6050) | `mpu6050.py` | [i2c-mpu-6050](../examples/i2c-mpu-6050) |
+| [mux74hc4051](mux74hc4051) | `mux74hc4051.py` | [mux-74hc4051](../examples/mux-74hc4051) |
 | [nrf24l01](nrf24l01) | `nrf24l01.py` | [nrf24-send](../examples/nrf24-send), [nrf24-receive](../examples/nrf24-receive) |
 | [p9813](p9813) | `p9813.py` | [p9813-rgb-led](../examples/p9813-rgb-led) |
 | [piezo](piezo) | `piezo.py` | [piezo-buzzer](../examples/piezo-buzzer) |
@@ -34,6 +35,7 @@ name is the id examples put in their `requires` list.
 | [sh1106](sh1106) | `sh1106.py` | [oled-042-esp32c3](../examples/oled-042-esp32c3) |
 | [sr74hc595](sr74hc595) | `sr74hc595.py` | [seven-segment-74hc595](../examples/seven-segment-74hc595) |
 | [ssd1306](ssd1306) | `ssd1306.py` | — |
+| [ssd1680](ssd1680) | `ssd1680.py` | [spi-epaper-ssd1680](../examples/spi-epaper-ssd1680) |
 | [st7789py](st7789py) | `st7789py.py`, `vga2_16x32.py` | [spi-st7789-display](../examples/spi-st7789-display) |
 | [stepper](stepper) | `stepper.py` | [stepper](../examples/stepper) |
 | [tc74](tc74) | `tc74.py` | — |

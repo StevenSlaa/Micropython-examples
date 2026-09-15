@@ -1,0 +1,16 @@
+{
+  "id": "spi-epaper-ssd1680",
+  "title": "2.9 inch E-paper (black/white/red) Example",
+  "description": "In this example the microcontroller draws an illustrative dashboard with the Pulsar IoT logo, readings and a chart in black, white and red on a 2.9 inch SSD1680 e-paper display, such as the WeAct Studio module.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Displays and LEDs",
+  "entry": "E-paper (SSD1680).py",
+  "requires": [
+    "ssd1680"
+  ]
+}

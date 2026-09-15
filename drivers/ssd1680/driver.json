@@ -1,0 +1,13 @@
+{
+  "id": "ssd1680",
+  "name": "SSD1680 e-paper (2.9 inch, black/white/red)",
+  "version": "1.0.0",
+  "description": "Driver for 2.9 inch 128x296 e-paper panels on the SSD1680 controller, such as the WeAct Studio module, drawing in black, white and red with rotation and scalable text.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "source": "https://github.com/ZinggJM/GxEPD2"
+}

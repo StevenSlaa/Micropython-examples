@@ -752,6 +752,42 @@
       "assets": []
     },
     {
+      "id": "spi-epaper-ssd1680",
+      "title": "2.9 inch E-paper (black/white/red) Example",
+      "description": "In this example the microcontroller draws an illustrative dashboard with the Pulsar IoT logo, readings and a chart in black, white and red on a 2.9 inch SSD1680 e-paper display, such as the WeAct Studio module.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "author": "Steven Slaa",
+      "group": "Displays and LEDs",
+      "requires": [
+        "ssd1680"
+      ],
+      "files": [
+        {
+          "path": "E-paper (SSD1680).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-epaper-ssd1680/E-paper%20(SSD1680).py",
+          "sha256": "c8cac2079bce30506dde5daf6a7f83004390ab8a6d656b4c305a16f09ebe8fa8",
+          "mime": "text/x-python"
+        },
+        {
+          "path": "pulsar_ui.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-epaper-ssd1680/pulsar_ui.py",
+          "sha256": "6fd1d99e5fcda0177c99bc68bb3e1c691d46cfa6857f7f6fd818b6d44aa4f095",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-epaper-ssd1680/README.md",
+        "sha256": "685d1f8d50d8d497db0f8a855a27ef1f1e6059cc70daf59296350b5ee65241e8",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "spi-led-matrix-max7219",
       "title": "SPI LED Matrix (MAX7219) Example",
       "description": "In this example the microcontroller shows text on a chain of MAX7219 8x8 LED matrix modules and scrolls a message across them.",
@@ -1018,6 +1054,36 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/keypad-4x4/README.md",
         "sha256": "d43741778519f64ce7dfc262636359688b61239e51204dd9597a9f9163d997c5",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "mux-74hc4051",
+      "title": "74HC4051 Multiplexer",
+      "description": "In this example the microcontroller reads eight analog inputs through one analog pin, using a 74HC4051 multiplexer, and prints the voltage on every channel.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "author": "Steven Slaa",
+      "group": "Input",
+      "requires": [
+        "mux74hc4051"
+      ],
+      "files": [
+        {
+          "path": "Multiplexer (74HC4051).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/mux-74hc4051/Multiplexer%20(74HC4051).py",
+          "sha256": "0422983082ba2f1f671a8d2ea43f88f9b78827a929cf296ebeeda6b5dc332dd0",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/mux-74hc4051/README.md",
+        "sha256": "70f0fc5108411e3490859c720beb14a75f6374f1b9d7c0199565aa6532c44cf5",
         "mime": "text/markdown"
       },
       "assets": []
@@ -2069,6 +2135,32 @@
       }
     },
     {
+      "id": "mux74hc4051",
+      "name": "74HC4051 analog multiplexer",
+      "version": "1.0.0",
+      "description": "Drives a 74HC4051 eight channel analog multiplexer from three select pins, turning one analog input into eight, with break before make switching.",
+      "author": "Steven Slaa",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "files": [
+        {
+          "path": "mux74hc4051.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/mux74hc4051/mux74hc4051.py",
+          "sha256": "487fbd37866fa801b29a27b957d1294492a5a5eb920f643e5c1c9fd0971e957d",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/mux74hc4051/README.md",
+        "sha256": "79d5a4d076ad3dd9247f6688bced5c400c04048274a293e796deaabbb02fbc7a",
+        "mime": "text/markdown"
+      }
+    },
+    {
       "id": "nrf24l01",
       "name": "nRF24L01+ radio",
       "version": "0.2.0",
@@ -2358,6 +2450,33 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ssd1306/README.md",
         "sha256": "66c9bed3e683196d81af1213b4df46c4df67576ef5bd333953fb5f7554df4343",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "ssd1680",
+      "name": "SSD1680 e-paper (2.9 inch, black/white/red)",
+      "version": "1.0.0",
+      "description": "Driver for 2.9 inch 128x296 e-paper panels on the SSD1680 controller, such as the WeAct Studio module, drawing in black, white and red with rotation and scalable text.",
+      "author": "Steven Slaa",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "source": "https://github.com/ZinggJM/GxEPD2",
+      "files": [
+        {
+          "path": "ssd1680.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ssd1680/ssd1680.py",
+          "sha256": "6359275d49f07d45278ba47bb0d83398ca1564b740474f327c49b47d11e4181c",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ssd1680/README.md",
+        "sha256": "d42aebe57b4d36ec53108705210290caf355afc17bdceae6af4e41ee39f67f4b",
         "mime": "text/markdown"
       }
     },

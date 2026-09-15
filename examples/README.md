@@ -51,6 +51,7 @@ Showing something, from a character display to a matrix or a strip of colour.
 | [0.42 inch OLED (ESP32-C3 SuperMini)](oled-042-esp32c3) | Drives the 72x40 OLED built into an ESP32-C3 SuperMini, which is an SH1106 rather than the SSD1306 these boards are usually sold as, and needs its multiplex ratio and display offset set to work at all. | [sh1106](../drivers/sh1106) |
 | [P9813 RGB LED Example](p9813-rgb-led) | In this example the microcontroller shows the plain colours on a chain of P9813 RGB LEDs and then cycles a rainbow along it. | [p9813](../drivers/p9813) |
 | [Seven Segment Display (74HC595) Example](seven-segment-74hc595) | In this example the microcontroller drives a single 7-segment display through a 74HC595 shift register, counting 0 to 9 and then through the hex letters, using three pins instead of eight. | [sr74hc595](../drivers/sr74hc595) |
+| [2.9 inch E-paper (black/white/red) Example](spi-epaper-ssd1680) | In this example the microcontroller draws an illustrative dashboard with the Pulsar IoT logo, readings and a chart in black, white and red on a 2.9 inch SSD1680 e-paper display, such as the WeAct Studio module. | [ssd1680](../drivers/ssd1680) |
 | [SPI LED Matrix (MAX7219) Example](spi-led-matrix-max7219) | In this example the microcontroller shows text on a chain of MAX7219 8x8 LED matrix modules and scrolls a message across them. | [max7219](../drivers/max7219) |
 | [SPI ST7789 Display Example](spi-st7789-display) | In this example the microcontroller should display some text on a ST7789 240x240 Display over SPI. | [st7789py](../drivers/st7789py) |
 | [TM1637 7-Segment Display Example](tm1637-7-segment-display) | In this example the microcontroller writes numbers and text to a TM1637 four digit 7-segment display, then counts minutes and seconds with a blinking colon. | [tm1637](../drivers/tm1637) |
@@ -80,6 +81,7 @@ Taking something in from a person: knobs, keypads and card readers.
 | Example | What it does | Needs |
 | --- | --- | --- |
 | [Matrix Keypad (4x4) Example](keypad-4x4) | In this example the microcontroller reads a membrane matrix keypad, collects the digits typed into a code, and checks it when the hash key is pressed. | [keypad](../drivers/keypad) |
+| [74HC4051 Multiplexer](mux-74hc4051) | In this example the microcontroller reads eight analog inputs through one analog pin, using a 74HC4051 multiplexer, and prints the voltage on every channel. | [mux74hc4051](../drivers/mux74hc4051) |
 | [Rotary Encoder](rotary-encoder) | In this example the microcontroller reads a rotary encoder, counting up and down within a range as the knob is turned, and resetting when it is pressed. | [rotary](../drivers/rotary) |
 | [SPI RFID RC522 Example](spi-rfid-rc522) | In this example the microcontroller reads the id of any MIFARE card or tag held against an RFID-RC522 reader, and prints the contents of one block from it. | [mfrc522](../drivers/mfrc522) |
 
