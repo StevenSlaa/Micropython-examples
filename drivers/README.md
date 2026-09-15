@@ -8,6 +8,7 @@ name is the id examples put in their `requires` list.
 | --- | --- | --- |
 | [aioble](aioble) | `aioble/__init__.py`, `aioble/central.py`, `aioble/client.py`, `aioble/core.py`, `aioble/device.py`, `aioble/l2cap.py`, `aioble/peripheral.py`, `aioble/security.py`, `aioble/server.py` | [ble-scan](../examples/ble-scan), [ble-peripheral](../examples/ble-peripheral), [ble-central](../examples/ble-central) |
 | [bh1750](bh1750) | `bh1750.py` | [i2c-light-bh1750](../examples/i2c-light-bh1750) |
+| [bmm150](bmm150) | `bmm150.py` | [i2c-compass-bmm150](../examples/i2c-compass-bmm150) |
 | [bmp280](bmp280) | `bmp280.py` | [i2c-bmp280](../examples/i2c-bmp280) |
 | [dht](dht) | `dht_sensor.py` | [dht-sensor](../examples/dht-sensor) |
 | [ds3231](ds3231) | `ds3231.py` | [i2c-rtc-ds3231](../examples/i2c-rtc-ds3231) |

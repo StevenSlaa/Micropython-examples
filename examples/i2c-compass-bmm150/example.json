@@ -1,0 +1,16 @@
+{
+  "id": "i2c-compass-bmm150",
+  "title": "BMM150 Compass Example",
+  "description": "In this example the microcontroller reads the magnetic field from a Bosch BMM150 magnetometer, printing the three axes in microtesla and a compass heading in degrees, and warning when the field is out of range.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Sensors",
+  "entry": "BMM150 (I2C).py",
+  "requires": [
+    "bmm150"
+  ]
+}

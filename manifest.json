@@ -290,6 +290,36 @@
       ]
     },
     {
+      "id": "i2c-compass-bmm150",
+      "title": "BMM150 Compass Example",
+      "description": "In this example the microcontroller reads the magnetic field from a Bosch BMM150 magnetometer, printing the three axes in microtesla and a compass heading in degrees, and warning when the field is out of range.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "author": "Steven Slaa",
+      "group": "Sensors",
+      "requires": [
+        "bmm150"
+      ],
+      "files": [
+        {
+          "path": "BMM150 (I2C).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-compass-bmm150/BMM150%20(I2C).py",
+          "sha256": "d0da8675bf16cc5b64a3326a6faacc2e790dc7b3fe4d7cb4394232a52db8c98a",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-compass-bmm150/README.md",
+        "sha256": "3c83f865a967b5c4b65310e05b41345dbfd712cf67629aada233f8be5fb82502",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "i2c-compass-gy271",
       "title": "I2C Compass (GY-271) Example",
       "description": "In this example the microcontroller reads the magnetic field from a GY-271 or HW-246 compass module and prints the three axes and a heading in degrees.",
@@ -1629,6 +1659,34 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/bh1750/README.md",
         "sha256": "9639e0ad579185c958a3257286506f16d6b618e2eafa615d8f0f8f2a50ad491c",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "bmm150",
+      "name": "BMM150 magnetometer",
+      "version": "1.0.0",
+      "description": "Three axis geomagnetic sensor driver for the Bosch BMM150, applying the chip's factory trim to read the magnetic field in microtesla and a compass heading.",
+      "author": "Steven Slaa",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "license": "BSD-3-Clause",
+      "source": "https://github.com/boschsensortec/BMM150_SensorAPI",
+      "files": [
+        {
+          "path": "bmm150.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/bmm150/bmm150.py",
+          "sha256": "d8ffe4511d32372978d50f32eb090810bbf0ec9f3563f6de6bb2d160169d5c55",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/bmm150/README.md",
+        "sha256": "dce7b534caf785a74fabfe11fa222a49eb5572fd14136219192812c929d5f116",
         "mime": "text/markdown"
       }
     },

@@ -30,6 +30,7 @@ Reading the world: temperature, distance, movement, light and magnetic fields.
 | --- | --- | --- |
 | [DHT Sensor Example](dht-sensor) | In this example the microcontroller should display the temperature and humidity in the console. | [dht](../drivers/dht) |
 | [I2C BMP280 Example](i2c-bmp280) | In this example the microcontroller reads the temperature and pressure from the connected BMP280 sensor and prints it on the terminal. | [bmp280](../drivers/bmp280) |
+| [BMM150 Compass Example](i2c-compass-bmm150) | In this example the microcontroller reads the magnetic field from a Bosch BMM150 magnetometer, printing the three axes in microtesla and a compass heading in degrees, and warning when the field is out of range. | [bmm150](../drivers/bmm150) |
 | [I2C Compass (GY-271) Example](i2c-compass-gy271) | In this example the microcontroller reads the magnetic field from a GY-271 or HW-246 compass module and prints the three axes and a heading in degrees. | [gy271](../drivers/gy271) |
 | [QMC5883L Compass Example](i2c-compass-qmc5883l) | In this example the microcontroller reads the magnetic field from a QMC5883L magnetometer, printing the three axes in microtesla and a compass heading in degrees, and warning when the field is out of range. | [qmc5883l](../drivers/qmc5883l) |
 | [BH1750 (GY-30) Light Sensor Example](i2c-light-bh1750) | In this example the microcontroller reads ambient light from a BH1750 sensor on a GY-30 module, printing the light level in lux and warning when the sensor is saturated. | [bh1750](../drivers/bh1750) |

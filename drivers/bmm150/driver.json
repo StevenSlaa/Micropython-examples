@@ -1,0 +1,14 @@
+{
+  "id": "bmm150",
+  "name": "BMM150 magnetometer",
+  "version": "1.0.0",
+  "description": "Three axis geomagnetic sensor driver for the Bosch BMM150, applying the chip's factory trim to read the magnetic field in microtesla and a compass heading.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "license": "BSD-3-Clause",
+  "source":"https://github.com/boschsensortec/BMM150_SensorAPI"
+}
