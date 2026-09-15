@@ -1,0 +1,16 @@
+{
+  "id": "i2c-compass-qmc5883l",
+  "title": "QMC5883L Compass Example",
+  "description": "In this example the microcontroller reads the magnetic field from a QMC5883L magnetometer, printing the three axes in microtesla and a compass heading in degrees, and warning when the field is out of range.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Sensors",
+  "entry": "QMC5883L (I2C).py",
+  "requires": [
+    "qmc5883l"
+  ]
+}

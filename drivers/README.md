@@ -24,6 +24,7 @@ name is the id examples put in their `requires` list.
 | [nrf24l01](nrf24l01) | `nrf24l01.py` | [nrf24-send](../examples/nrf24-send), [nrf24-receive](../examples/nrf24-receive) |
 | [p9813](p9813) | `p9813.py` | [p9813-rgb-led](../examples/p9813-rgb-led) |
 | [pixels](pixels) | `pixels.py` | — |
+| [qmc5883l](qmc5883l) | `qmc5883l.py` | [i2c-compass-qmc5883l](../examples/i2c-compass-qmc5883l) |
 | [rotary](rotary) | `rotary.py` | [rotary-encoder](../examples/rotary-encoder) |
 | [rs485](rs485) | `rs485.py` | [rs485-link](../examples/rs485-link) |
 | [servo](servo) | `servo.py` | [servo](../examples/servo) |

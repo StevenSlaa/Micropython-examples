@@ -316,6 +316,36 @@
       "assets": []
     },
     {
+      "id": "i2c-compass-qmc5883l",
+      "title": "QMC5883L Compass Example",
+      "description": "In this example the microcontroller reads the magnetic field from a QMC5883L magnetometer, printing the three axes in microtesla and a compass heading in degrees, and warning when the field is out of range.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "author": "Steven Slaa",
+      "group": "Sensors",
+      "requires": [
+        "qmc5883l"
+      ],
+      "files": [
+        {
+          "path": "QMC5883L (I2C).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-compass-qmc5883l/QMC5883L%20(I2C).py",
+          "sha256": "a7761a36a7a75905b31557f9ba027bd4435dee22c8d49843c7c79eb8b437819c",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-compass-qmc5883l/README.md",
+        "sha256": "39005cb410f045af4781f9826564414de67f94110b9b78c29b5e037b9728815f",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "i2c-light-veml7700",
       "title": "VEML7700 Light Sensor Example",
       "description": "In this example the microcontroller reads ambient light from a VEML7700 sensor, printing the light level in lux and the white channel, and warning when the sensor is saturated.",
@@ -1966,6 +1996,33 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/pixels/README.md",
         "sha256": "859c65bfe791adfa6220ca1573aa1949a578458f2063834abb74153a2e605f60",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "qmc5883l",
+      "name": "QMC5883L magnetometer",
+      "version": "1.0.0",
+      "description": "Three axis magnetometer driver for the QST QMC5883L, reading the magnetic field in microtesla and a compass heading, with selectable range, data rate and oversampling.",
+      "author": "Steven Slaa",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "source": "https://datasheet.lcsc.com/lcsc/QST-QMC5883L-TR_C192585.pdf",
+      "files": [
+        {
+          "path": "qmc5883l.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/qmc5883l/qmc5883l.py",
+          "sha256": "bba756241f135c87ed4be43891d5efebcf5ba618d5239635b9e4990b60234fe2",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/qmc5883l/README.md",
+        "sha256": "82e34941d5421e89d68a7c0a506b65ec426a588d1a8439948502369a92da4f7f",
         "mime": "text/markdown"
       }
     },

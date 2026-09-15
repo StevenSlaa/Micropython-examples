@@ -1,0 +1,13 @@
+{
+  "id": "qmc5883l",
+  "name": "QMC5883L magnetometer",
+  "version": "1.0.0",
+  "description": "Three axis magnetometer driver for the QST QMC5883L, reading the magnetic field in microtesla and a compass heading, with selectable range, data rate and oversampling.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "source": "https://datasheet.lcsc.com/lcsc/QST-QMC5883L-TR_C192585.pdf"
+}
