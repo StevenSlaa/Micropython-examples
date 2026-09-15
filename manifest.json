@@ -870,13 +870,14 @@
       "group": "Displays and LEDs",
       "requires": [
         "axs15231b",
-        "rgb565-display"
+        "rgb565-display",
+        "sy6970"
       ],
       "files": [
         {
           "path": "T-Display S3 Long.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/t-display-s3-long/T-Display%20S3%20Long.py",
-          "sha256": "ebc444025c57112985bf84303569381f71dd670db83a1260494e713a866b8bcc",
+          "sha256": "ef3b9592c56c98dc6b69eaf44fcebd1edfdfcb6dc90223ed82a7357a4a3ada35",
           "mime": "text/x-python"
         },
         {
@@ -889,7 +890,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/t-display-s3-long/README.md",
-        "sha256": "1b0c57f09f99209dbe1270946ad81c54c71d9ae3803dd1c474ba100c3664a5e6",
+        "sha256": "04e66339a645ea6e996461f385218fe7fccaa451ddad3cefa25d7f36b8e68328",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1793,7 +1794,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/axs15231b/README.md",
-        "sha256": "206d0905aa746673002230abf1891e2575831a352c6e734baa8ec4f37bbb88db",
+        "sha256": "76f55edc79a0c951634d8bd4f5809d5da537910ecaec1733f03ad8d9117174ba",
         "mime": "text/markdown"
       }
     },
@@ -2684,6 +2685,34 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/stepper/README.md",
         "sha256": "a6e8ea26456651689e922caa35398eb38fb3d75f0cfd84f02d18919c49d5e188",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "sy6970",
+      "name": "SY6970 battery charger",
+      "version": "1.0.0",
+      "description": "Driver for the Silergy SY6970 single-cell LiPo charger found on LilyGO boards such as the T-Display-S3 Long: switch charging on or off, set charge limits, and read battery, system and input voltage and charge current over I2C.",
+      "author": "Steven Slaa",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "license": "MIT",
+      "source": "https://github.com/lewisxhe/XPowersLib",
+      "files": [
+        {
+          "path": "sy6970.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/sy6970/sy6970.py",
+          "sha256": "8d2a74d467f79fa580957e41bac9063fb2a5101f45cfa94bde6cbef51dfa7758",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/sy6970/README.md",
+        "sha256": "5b4fbeb22f268050a35e81711ad19b69eef5e512e66b33fb434f690a26cd3e18",
         "mime": "text/markdown"
       }
     },

@@ -1,0 +1,14 @@
+{
+  "id": "sy6970",
+  "name": "SY6970 battery charger",
+  "version": "1.0.0",
+  "description": "Driver for the Silergy SY6970 single-cell LiPo charger found on LilyGO boards such as the T-Display-S3 Long: switch charging on or off, set charge limits, and read battery, system and input voltage and charge current over I2C.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "license": "MIT",
+  "source": "https://github.com/lewisxhe/XPowersLib"
+}

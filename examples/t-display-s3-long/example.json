@@ -10,6 +10,7 @@
   "entry": "T-Display S3 Long.py",
   "requires": [
     "axs15231b",
-    "rgb565-display"
+    "rgb565-display",
+    "sy6970"
   ]
 }

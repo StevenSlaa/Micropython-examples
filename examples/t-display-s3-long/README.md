@@ -15,13 +15,14 @@ frames a second. The [driver README](../../drivers/axs15231b) explains more.
 
 ## Requires
 
-This example needs two drivers installed on the board:
+This example needs three drivers installed on the board:
 
 - [AXS15231B QSPI display and touch](../../drivers/axs15231b), which talks to the display and touch
 - [RGB565 display drawing (shared)](../../drivers/rgb565-display), with the drawing methods
+- [SY6970 battery charger](../../drivers/sy6970), for the board's charger chip
 
-> Install them from the library panel in the Pulsar IoT IDE, or copy `axs15231b.py` and
-> `rgb565_display.py` into `/lib` on the microcontroller yourself.
+> Install them from the library panel in the Pulsar IoT IDE, or copy `axs15231b.py`,
+> `rgb565_display.py` and `sy6970.py` into `/lib` on the microcontroller yourself.
 
 ## Connections
 
@@ -42,8 +43,8 @@ boards with a separate CST3530 touch chip draw the dashboard, but do not react t
 
 The board has a battery charger chip, an SY6970, on the same I2C bus as the touch. Left alone, it
 resets its own settings every 40 seconds and keeps trying to charge, even when no battery is
-connected. So the script switches the charger's watchdog off, and with `battery = False` it switches
-charging off too. Plug in a LiPo? Set `battery = True`, so it charges.
+connected. The script sets it up with the [SY6970 driver](../../drivers/sy6970): the driver switches the
+watchdog off, and with `battery = False` the script switches charging off too. Plug in a LiPo? Set `battery = True`, so it charges.
 
 On the tested board, with no battery and charging left on, the dashboard froze after about two
 minutes; with charging off it ran for 8.3 minutes. The board did still stop answering over USB a

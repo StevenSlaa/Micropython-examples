@@ -3,6 +3,7 @@ from machine import I2C, Pin
 from math import sin
 from time import sleep_ms, ticks_diff, ticks_ms
 from axs15231b import AXS15231B, AXS15231BTouch, color565, WHITE
+from sy6970 import SY6970
 import pulsar_ui
 
 # Configuration
@@ -14,16 +15,13 @@ frame_ms = 60
 # set this to True if a LiPo battery is plugged into the board
 battery = False
 
-# The board's battery charger, an SY6970 at I2C address 0x6A, starts with a watchdog that resets its
-# settings every 40 seconds, and it keeps trying to charge even when no battery is connected. On the
-# tested board that froze everything after a few minutes, so switch the watchdog off, and charging too
-# when there is no battery. The touch controller shares this I2C bus.
+# The board's battery charger, an SY6970, shares this I2C bus with the touch. Its driver switches off
+# the chip's watchdog, which otherwise resets its settings every 40 seconds. The chip also keeps trying
+# to charge when no battery is connected, which froze the tested board after a few minutes, so charging
+# is only on with a battery.
 i2c = I2C(0, scl=Pin(10), sda=Pin(15), freq=400000)
-charger_timer = i2c.readfrom_mem(0x6A, 0x07, 1)[0]
-i2c.writeto_mem(0x6A, 0x07, bytes((charger_timer & 0xCF,)))  # bits 5 and 4 clear: watchdog off
-if not battery:
-    charger_setup = i2c.readfrom_mem(0x6A, 0x03, 1)[0]
-    i2c.writeto_mem(0x6A, 0x03, bytes((charger_setup & 0xEF,)))  # bit 4 clear: charging off
+charger = SY6970(i2c)
+charger.charge_enabled = battery
 
 display = AXS15231B(rotation=rotation)
 touch = AXS15231BTouch(i2c, rotation=rotation)

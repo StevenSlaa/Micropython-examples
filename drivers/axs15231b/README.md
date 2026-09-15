@@ -112,7 +112,7 @@ with its chart.
 | Backlight on, no picture | the drivers are missing from `/lib`, or another program left the panel in a bad state: press RST |
 | `ValueError: this driver writes ESP32-S3 GPIO registers` | this is not an ESP32-S3 |
 | Touches land a little inside the edges | normal for a fingertip; see Touch above |
-| The board freezes while running, with no battery connected | the board's SY6970 battery charger keeps trying to charge: switch its watchdog and charging off, as the [example](../../examples/t-display-s3-long) does |
+| The board freezes while running, with no battery connected | the board's SY6970 battery charger keeps trying to charge: switch charging off with the [sy6970](../sy6970) driver, as the [example](../../examples/t-display-s3-long) does |
 | The board stops answering over USB after sitting unused, while the picture stays | press RST; seen during testing, cause not found |
 
 ## Credits
