@@ -316,6 +316,36 @@
       "assets": []
     },
     {
+      "id": "i2c-light-veml7700",
+      "title": "VEML7700 Light Sensor Example",
+      "description": "In this example the microcontroller reads ambient light from a VEML7700 sensor, printing the light level in lux and the white channel, and warning when the sensor is saturated.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "author": "Steven Slaa",
+      "group": "Sensors",
+      "requires": [
+        "veml7700"
+      ],
+      "files": [
+        {
+          "path": "VEML7700 (I2C).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-light-veml7700/VEML7700%20(I2C).py",
+          "sha256": "418615da32fd05a865b3da152e3e3909efa453c57df3e67adbd46b7c0621d4a8",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-light-veml7700/README.md",
+        "sha256": "0218e5b56c17e446eb338f48963c0c5c29e37a8da69689c15b4c8689dbd6283d",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "i2c-mpu-6050",
       "title": "I2C MPU-6050",
       "description": "In this example the microcontrollers reads values from the MPU-6050 accelerometer and gyroscope. It also reads the onboard temperature sensor of the module.",
@@ -2265,6 +2295,33 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/vcnl4040/README.md",
         "sha256": "f9fc5af9350dc9bb8d18ce6fce809f5640175e1396c0e67496f252935cbd8c4c",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "veml7700",
+      "name": "VEML7700 ambient light",
+      "version": "1.0.0",
+      "description": "Ambient light driver for the Vishay VEML7700, reading lux and a white channel over I2C, from a dark room to full sun.",
+      "author": "Steven Slaa",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "source": "https://www.vishay.com/docs/84286/veml7700.pdf",
+      "files": [
+        {
+          "path": "veml7700.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/veml7700/veml7700.py",
+          "sha256": "89fcfd18308aa4030eb50692aae94ab975019207e533504ff2fa67353b7f4937",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/veml7700/README.md",
+        "sha256": "7ea9414d0bfba1739511b0e9eeffb7229244e67e903717ea60da8d9504f2a5b6",
         "mime": "text/markdown"
       }
     },

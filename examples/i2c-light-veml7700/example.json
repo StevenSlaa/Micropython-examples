@@ -1,0 +1,16 @@
+{
+  "id": "i2c-light-veml7700",
+  "title": "VEML7700 Light Sensor Example",
+  "description": "In this example the microcontroller reads ambient light from a VEML7700 sensor, printing the light level in lux and the white channel, and warning when the sensor is saturated.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Sensors",
+  "entry": "VEML7700 (I2C).py",
+  "requires": [
+    "veml7700"
+  ]
+}

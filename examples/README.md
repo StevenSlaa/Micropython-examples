@@ -31,6 +31,7 @@ Reading the world: temperature, distance, movement, light and magnetic fields.
 | [DHT Sensor Example](dht-sensor) | In this example the microcontroller should display the temperature and humidity in the console. | [dht](../drivers/dht) |
 | [I2C BMP280 Example](i2c-bmp280) | In this example the microcontroller reads the temperature and pressure from the connected BMP280 sensor and prints it on the terminal. | [bmp280](../drivers/bmp280) |
 | [I2C Compass (GY-271) Example](i2c-compass-gy271) | In this example the microcontroller reads the magnetic field from a GY-271 or HW-246 compass module and prints the three axes and a heading in degrees. | [gy271](../drivers/gy271) |
+| [VEML7700 Light Sensor Example](i2c-light-veml7700) | In this example the microcontroller reads ambient light from a VEML7700 sensor, printing the light level in lux and the white channel, and warning when the sensor is saturated. | [veml7700](../drivers/veml7700) |
 | [I2C MPU-6050](i2c-mpu-6050) | In this example the microcontrollers reads values from the MPU-6050 accelerometer and gyroscope. | [mpu6050](../drivers/mpu6050) |
 | [VCNL4040 Sensor Example](i2c-proximity-vcnl4040) | In this example the microcontroller reads proximity and ambient light from a VCNL4040 sensor, printing the light level in lux and reporting when something comes near. | [vcnl4040](../drivers/vcnl4040) |
 | [TOF10120 Sensor Example](i2c-tof-tof10120) | In this example the microcontroller should display the distance that the sensor has measured. | — |

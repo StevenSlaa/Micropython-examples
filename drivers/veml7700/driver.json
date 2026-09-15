@@ -1,0 +1,13 @@
+{
+  "id": "veml7700",
+  "name": "VEML7700 ambient light",
+  "version": "1.0.0",
+  "description": "Ambient light driver for the Vishay VEML7700, reading lux and a white channel over I2C, from a dark room to full sun.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "source": "https://www.vishay.com/docs/84286/veml7700.pdf"
+}
