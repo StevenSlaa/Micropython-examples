@@ -1,0 +1,16 @@
+{
+  "id": "i2c-light-bh1750",
+  "title": "BH1750 (GY-30) Light Sensor Example",
+  "description": "In this example the microcontroller reads ambient light from a BH1750 sensor on a GY-30 module, printing the light level in lux and warning when the sensor is saturated.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Sensors",
+  "entry": "BH1750 (I2C).py",
+  "requires": [
+    "bh1750"
+  ]
+}

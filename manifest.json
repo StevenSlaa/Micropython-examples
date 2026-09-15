@@ -346,6 +346,36 @@
       "assets": []
     },
     {
+      "id": "i2c-light-bh1750",
+      "title": "BH1750 (GY-30) Light Sensor Example",
+      "description": "In this example the microcontroller reads ambient light from a BH1750 sensor on a GY-30 module, printing the light level in lux and warning when the sensor is saturated.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "author": "Steven Slaa",
+      "group": "Sensors",
+      "requires": [
+        "bh1750"
+      ],
+      "files": [
+        {
+          "path": "BH1750 (I2C).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-light-bh1750/BH1750%20(I2C).py",
+          "sha256": "3efe921e468a3c83a8d7ef94f577c2e729b08521ab896a9baabd2fe4fc5e27c2",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-light-bh1750/README.md",
+        "sha256": "88bd1e5a4628cab6ab2d1881a5867c808af72426cc7b13d650b09adc39a27116",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "i2c-light-veml7700",
       "title": "VEML7700 Light Sensor Example",
       "description": "In this example the microcontroller reads ambient light from a VEML7700 sensor, printing the light level in lux and the white channel, and warning when the sensor is saturated.",
@@ -1538,6 +1568,33 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/aioble/README.md",
         "sha256": "908992e8aa5018b6e78ba7b059ca8f1b8211332ca1f80ca6339f2a1dcb9b5675",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "bh1750",
+      "name": "BH1750 ambient light (GY-30)",
+      "version": "1.0.0",
+      "description": "Ambient light driver for the ROHM BH1750 on GY-30 and GY-302 modules, reading light in lux over I2C with selectable resolution and measurement time.",
+      "author": "Steven Slaa",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "source": "https://www.mouser.com/datasheet/2/348/bh1750fvi-e-186247.pdf",
+      "files": [
+        {
+          "path": "bh1750.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/bh1750/bh1750.py",
+          "sha256": "899fd57b7ff397b5dbde811bd6b055023d83b54d92bdbf5e6db2544f2d7e07e7",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/bh1750/README.md",
+        "sha256": "9639e0ad579185c958a3257286506f16d6b618e2eafa615d8f0f8f2a50ad491c",
         "mime": "text/markdown"
       }
     },

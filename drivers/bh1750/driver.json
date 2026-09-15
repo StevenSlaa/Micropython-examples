@@ -1,0 +1,13 @@
+{
+  "id": "bh1750",
+  "name": "BH1750 ambient light (GY-30)",
+  "version": "1.0.0",
+  "description": "Ambient light driver for the ROHM BH1750 on GY-30 and GY-302 modules, reading light in lux over I2C with selectable resolution and measurement time.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "source": "https://www.mouser.com/datasheet/2/348/bh1750fvi-e-186247.pdf"
+}
