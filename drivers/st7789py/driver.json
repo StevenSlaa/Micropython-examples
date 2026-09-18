@@ -1,7 +1,7 @@
 {
   "id": "st7789py",
   "name": "ST7789 display",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pure MicroPython driver for ST7789 SPI colour displays, with an 8x16 VGA font.",
   "author": "Russ Hughes",
   "boardTags": [

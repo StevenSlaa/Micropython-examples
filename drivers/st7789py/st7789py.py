@@ -229,8 +229,10 @@ class ST7789():
         if data is not None:
             self.dc.on()
             self.spi.write(data)
-            if self.cs:
-                self.cs.on()
+        # Always end the transaction: a command without data (SWRESET, SLPOUT)
+        # left CS low, and the display then ignored the init over hardware SPI.
+        if self.cs:
+            self.cs.on()
 
     def hard_reset(self):
         """
