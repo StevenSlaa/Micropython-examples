@@ -1,0 +1,14 @@
+{
+  "id": "espnow-receive",
+  "title": "ESP-NOW: Receiving",
+  "description": "In this example the ESP32 prints its own address, then listens for ESP-NOW messages from another ESP32 and reports any that went missing.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3"
+  ],
+  "group": "Between boards",
+  "order": 5,
+  "entry": "ESPNow Receive.py",
+  "requires": []
+}

@@ -1398,6 +1398,60 @@
       "assets": []
     },
     {
+      "id": "espnow-send",
+      "title": "ESP-NOW: Sending",
+      "description": "In this example the ESP32 sends a counter to another ESP32 over ESP-NOW once a second, without a router, and reports whether each message was acknowledged.",
+      "boardTags": [
+        "esp32",
+        "esp32s3"
+      ],
+      "author": "Steven Slaa",
+      "group": "Between boards",
+      "requires": [],
+      "files": [
+        {
+          "path": "ESPNow Send.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/espnow-send/ESPNow%20Send.py",
+          "sha256": "3be5b0ed4a97626b6930a4f0609baeee8e552f39e375bb9a81cf394db17baefa",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/espnow-send/README.md",
+        "sha256": "f81e2748e91fa488a56f6d120a7991620b4dd5c6e06f948956279d6f7252ee20",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "espnow-receive",
+      "title": "ESP-NOW: Receiving",
+      "description": "In this example the ESP32 prints its own address, then listens for ESP-NOW messages from another ESP32 and reports any that went missing.",
+      "boardTags": [
+        "esp32",
+        "esp32s3"
+      ],
+      "author": "Steven Slaa",
+      "group": "Between boards",
+      "requires": [],
+      "files": [
+        {
+          "path": "ESPNow Receive.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/espnow-receive/ESPNow%20Receive.py",
+          "sha256": "f100d9b2aec61836a65f7d45826ab8a9129e6f588e4cb0d62fc99e7085443563",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/espnow-receive/README.md",
+        "sha256": "3d4e5cf0abf8ecb4c83227beeaec7cb5f3e538aac970ea4b71efdfa1c9a9fe77",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "wifi-connect",
       "title": "1. Joining a Wifi Network",
       "description": "Connects to a wifi network using the network module directly, showing the status codes as it goes and printing the address, gateway and DNS server it was given.",

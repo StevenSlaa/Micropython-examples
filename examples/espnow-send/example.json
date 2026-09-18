@@ -1,0 +1,14 @@
+{
+  "id": "espnow-send",
+  "title": "ESP-NOW: Sending",
+  "description": "In this example the ESP32 sends a counter to another ESP32 over ESP-NOW once a second, without a router, and reports whether each message was acknowledged.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3"
+  ],
+  "group": "Between boards",
+  "order": 4,
+  "entry": "ESPNow Send.py",
+  "requires": []
+}
