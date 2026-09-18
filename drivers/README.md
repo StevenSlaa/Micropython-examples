@@ -39,7 +39,7 @@ name is the id examples put in their `requires` list.
 | [ssd1306](ssd1306) | `ssd1306.py` | — |
 | [ssd1680](ssd1680) | `ssd1680.py` | [spi-epaper-ssd1680](../examples/spi-epaper-ssd1680) |
 | [st7789-parallel](st7789-parallel) | `st7789_parallel.py` | [ttgo-t-display-s3](../examples/ttgo-t-display-s3) |
-| [st7789py](st7789py) | `st7789py.py`, `vga2_16x32.py` | [spi-st7789-display](../examples/spi-st7789-display) |
+| [st7789py](st7789py) | `st7789py.py`, `vga2_16x32.py` | [spi-st7789-display](../examples/spi-st7789-display), [ttgo-t-display](../examples/ttgo-t-display) |
 | [stepper](stepper) | `stepper.py` | [stepper](../examples/stepper) |
 | [sy6970](sy6970) | `sy6970.py` | [t-display-s3-long](../examples/t-display-s3-long) |
 | [tc74](tc74) | `tc74.py` | — |

@@ -1,0 +1,14 @@
+{
+  "id": "ttgo-t-display",
+  "title": "TTGO T-Display v1.1 (1.14 inch SPI LCD)",
+  "description": "In this example the LilyGO/TTGO T-Display v1.1 shows text on its built-in 1.14 inch 135x240 ST7789V colour LCD, and counts presses of its two buttons.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32"
+  ],
+  "group": "Displays and LEDs",
+  "entry": "TTGO T-Display.py",
+  "requires": [
+    "st7789py"
+  ]
+}

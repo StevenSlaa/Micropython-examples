@@ -926,6 +926,34 @@
       "assets": []
     },
     {
+      "id": "ttgo-t-display",
+      "title": "TTGO T-Display v1.1 (1.14 inch SPI LCD)",
+      "description": "In this example the LilyGO/TTGO T-Display v1.1 shows text on its built-in 1.14 inch 135x240 ST7789V colour LCD, and counts presses of its two buttons.",
+      "boardTags": [
+        "esp32"
+      ],
+      "author": "Steven Slaa",
+      "group": "Displays and LEDs",
+      "requires": [
+        "st7789py"
+      ],
+      "files": [
+        {
+          "path": "TTGO T-Display.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-t-display/TTGO%20T-Display.py",
+          "sha256": "8c4a7d4ce69a29b62c01c7ecdc6d3c705704ebef3889b9b870184273c01d933b",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-t-display/README.md",
+        "sha256": "59a20cb6b8165e99cc3219b1ee3b946bb9c4ee627f578d2d34095398cf008f6d",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "ttgo-t-display-s3",
       "title": "TTGO T-Display S3 (1.9 inch 8-bit LCD)",
       "description": "In this example the LilyGO/TTGO T-Display-S3 draws an illustrative dashboard with the Pulsar IoT logo, readings and a live chart on its built-in 1.9 inch colour LCD. The screen uses an 8-bit parallel bus, fast enough to animate the chart, bars and status light at about 25 frames a second.",
