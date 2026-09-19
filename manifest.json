@@ -929,7 +929,7 @@
     {
       "id": "ttgo-t-display",
       "title": "TTGO T-Display v1.1 (1.14 inch SPI LCD)",
-      "description": "In this example the LilyGO/TTGO T-Display v1.1 shows text on its built-in 1.14 inch 135x240 ST7789V colour LCD, and counts presses of its two buttons.",
+      "description": "In this example the LilyGO/TTGO T-Display v1.1 draws an illustrative dashboard with the Pulsar IoT logo on its built-in 1.14 inch colour LCD, and the board's two buttons page through a reading, a live chart and a press counter.",
       "boardTags": [
         "esp32"
       ],
@@ -942,14 +942,20 @@
         {
           "path": "TTGO T-Display.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-t-display/TTGO%20T-Display.py",
-          "sha256": "8c4a7d4ce69a29b62c01c7ecdc6d3c705704ebef3889b9b870184273c01d933b",
+          "sha256": "6511680fe4e5b08bbbccac9f1a6aeae708c37685f8c2743f1bda4300ee0ae8a1",
+          "mime": "text/x-python"
+        },
+        {
+          "path": "pulsar_ui.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-t-display/pulsar_ui.py",
+          "sha256": "6fd1d99e5fcda0177c99bc68bb3e1c691d46cfa6857f7f6fd818b6d44aa4f095",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-t-display/README.md",
-        "sha256": "59a20cb6b8165e99cc3219b1ee3b946bb9c4ee627f578d2d34095398cf008f6d",
+        "sha256": "a35f3f7e863e5766f6b415d9188839553f323f45f898d161cfe8f77a770e81e2",
         "mime": "text/markdown"
       },
       "assets": []
@@ -2714,7 +2720,7 @@
     {
       "id": "st7789py",
       "name": "ST7789 display",
-      "version": "1.0.1",
+      "version": "1.1.0",
       "description": "Pure MicroPython driver for ST7789 SPI colour displays, with an 8x16 VGA font.",
       "author": "Russ Hughes",
       "boardTags": [
@@ -2728,7 +2734,7 @@
         {
           "path": "st7789py.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/st7789py/st7789py.py",
-          "sha256": "8f001a5b8f591148d35f7379339fccf46dd3a5cc808b04b266311e3e7dd46a1d",
+          "sha256": "16c8b86531fd4fc804e3cd9e8d0fbcd19a0d071120b9908d150eb565b0bbd6c2",
           "mime": "text/x-python"
         },
         {
@@ -2741,7 +2747,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/st7789py/README.md",
-        "sha256": "138d14c74ff0c212edd9b6981389fc3f64dfdb06a9cea65cdd1989fcba37c081",
+        "sha256": "45d271172d702ebdce01132a768a51248424bac0bf95489218539c53b6847fbc",
         "mime": "text/markdown"
       }
     },

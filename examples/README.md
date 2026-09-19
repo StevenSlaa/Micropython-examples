@@ -56,7 +56,7 @@ Showing something, from a character display to a matrix or a strip of colour.
 | [SPI ST7789 Display Example](spi-st7789-display) | In this example the microcontroller should display some text on a ST7789 240x240 Display over SPI. | [st7789py](../drivers/st7789py) |
 | [LilyGO T-Display S3 Long (3.4 inch touch LCD)](t-display-s3-long) | In this example the LilyGO T-Display-S3 Long draws an illustrative, animated Pulsar IoT dashboard on its built-in 640x180 touch display. | [axs15231b](../drivers/axs15231b), [rgb565-display](../drivers/rgb565-display), [sy6970](../drivers/sy6970) |
 | [TM1637 7-Segment Display Example](tm1637-7-segment-display) | In this example the microcontroller writes numbers and text to a TM1637 four digit 7-segment display, then counts minutes and seconds with a blinking colon. | [tm1637](../drivers/tm1637) |
-| [TTGO T-Display v1.1 (1.14 inch SPI LCD)](ttgo-t-display) | In this example the LilyGO/TTGO T-Display v1.1 shows text on its built-in 1.14 inch 135x240 ST7789V colour LCD, and counts presses of its two buttons. | [st7789py](../drivers/st7789py) |
+| [TTGO T-Display v1.1 (1.14 inch SPI LCD)](ttgo-t-display) | In this example the LilyGO/TTGO T-Display v1.1 draws an illustrative dashboard with the Pulsar IoT logo on its built-in 1.14 inch colour LCD, and the board's two buttons page through a reading, a live chart and a press counter. | [st7789py](../drivers/st7789py) |
 | [TTGO T-Display S3 (1.9 inch 8-bit LCD)](ttgo-t-display-s3) | In this example the LilyGO/TTGO T-Display-S3 draws an illustrative dashboard with the Pulsar IoT logo, readings and a live chart on its built-in 1.9 inch colour LCD. | [st7789-parallel](../drivers/st7789-parallel), [rgb565-display](../drivers/rgb565-display) |
 
 ### Motion

@@ -1,7 +1,7 @@
 {
   "id": "ttgo-t-display",
   "title": "TTGO T-Display v1.1 (1.14 inch SPI LCD)",
-  "description": "In this example the LilyGO/TTGO T-Display v1.1 shows text on its built-in 1.14 inch 135x240 ST7789V colour LCD, and counts presses of its two buttons.",
+  "description": "In this example the LilyGO/TTGO T-Display v1.1 draws an illustrative dashboard with the Pulsar IoT logo on its built-in 1.14 inch colour LCD, and the board's two buttons page through a reading, a live chart and a press counter.",
   "author": "Steven Slaa",
   "boardTags": [
     "esp32"
