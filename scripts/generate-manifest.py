@@ -8,6 +8,7 @@ EXAMPLES = ROOT / "examples"
 DRIVERS = ROOT / "drivers"
 VERSION = os.environ.get("CATALOG_VERSION", "1.0.0")
 BASE = "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main"
+REPOSITORY = "https://github.com/StevenSlaa/Micropython-examples"
 
 # Examples are listed in this order, in the manifest and so in the IDE's library panel, where
 # each group is a heading with this line under it. A group that is not on this list still works:
@@ -154,6 +155,7 @@ groups = [{"name": name, **({"description": GROUP_DESCRIPTIONS[name]} if name in
 
 manifest = {"schema": "pulsar.micropython.library/v1",
             "catalog": {"id": "micropython-examples", "name": "MicroPython Examples", "version": VERSION},
+            "repository": REPOSITORY,
             "groups": groups, "examples": examples, "drivers": drivers}
 (ROOT / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
 print(f"Generated {len(examples)} examples and {len(drivers)} drivers")

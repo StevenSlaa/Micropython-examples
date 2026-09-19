@@ -5,6 +5,7 @@
     "name": "MicroPython Examples",
     "version": "1.0.0"
   },
+  "repository": "https://github.com/StevenSlaa/Micropython-examples",
   "groups": [
     {
       "name": "Basics",
@@ -72,14 +73,14 @@
         {
           "path": "Blink.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/blink/Blink.py",
-          "sha256": "906f527e40e01df16ca3979d4a67ce6c4852f095bd7ef2fb9834a6bebe98c1b9",
+          "sha256": "bf9a65cadd7465386d4fcb4143eb476975cdf6b5a6e52790f7b7b624835c1b5d",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/blink/README.md",
-        "sha256": "0f34ceca97dd40174fdbb65279a7de75e13206fe3890ac7cd9140eb4393ba15e",
+        "sha256": "3b327f0632044efcdeabae03223c3ca7269c22e5e3022ba679bf0d50311f3ac2",
         "mime": "text/markdown"
       },
       "assets": []
@@ -99,14 +100,14 @@
         {
           "path": "Button.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/button/Button.py",
-          "sha256": "646a0a751732ad9200f76f72d05a4ec3cee35ded0b5128c1c0e32ea1aa5fd7c2",
+          "sha256": "18e8e3f6c340c9ff093197551276145d1496d47ea561baa57454cb9cd28cd0f0",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/button/README.md",
-        "sha256": "c8af3a4fc299ab72d7d90de1c75ef9860d7464f9f3491f1ebb58636f353ec1cf",
+        "sha256": "5c0b21fdcf44228f59ddeef9aa82324811851abb1bd5e3b8b1a6f8b3adeaa952",
         "mime": "text/markdown"
       },
       "assets": [
@@ -134,14 +135,14 @@
         {
           "path": "Analog Read.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/analog-read/Analog%20Read.py",
-          "sha256": "f815fe92b338111b460ce880e72383e4af80483494c2201d83bae7ca62a91a00",
+          "sha256": "eefa56c1343ef0b6229ba7eb0dbbe297133cfc4b92c0d711d658f807e88e5c2b",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/analog-read/README.md",
-        "sha256": "fe16194e5f2dc928aa54bc69ed918cfb2bef54eef6f9c0034ec2cd5e0261a2fd",
+        "sha256": "bbc42625749b4962479ca4ca087aa3af1ffb806e28ebd3c77c6d39bd33ec662d",
         "mime": "text/markdown"
       },
       "assets": []
@@ -162,14 +163,14 @@
         {
           "path": "PWM.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm/PWM.py",
-          "sha256": "7768d043c092f977094f43e1399beb3cf7d586b0da0c77aa12638609e019465e",
+          "sha256": "92c1cb02d4fc1b34886c0bc1831aa4e0e6157267244f3ec08c980cd9da6e5db9",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/pwm/README.md",
-        "sha256": "b289d87c4e91e6158a52465a89a4924731a70f68e078ec4fb8d675aedf6b51b9",
+        "sha256": "ddcb2140c03f36f2f1e30ef24d798bb82b940478d9920900b2e7d8ec8feeac6a",
         "mime": "text/markdown"
       },
       "assets": [
@@ -197,14 +198,14 @@
         {
           "path": "Dimmer.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/dimmer/Dimmer.py",
-          "sha256": "85e834fd596ab53a97780c0cf5c3f10e675abd329bf4c0b95f3bdeb0fc6690f6",
+          "sha256": "ac6e8721e7a87e9102f9349fc97826ba79ede7e021200839ddafb50a51a32bb8",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/dimmer/README.md",
-        "sha256": "60d1b2e8c72a0e6ff3eb7b8e6dc6dadf7eda3ad750ad54b584372777d9ae5bb5",
+        "sha256": "abb230610e5066162cc4cc2f9572b6397f199e1356276a97db8a4cb0275466cb",
         "mime": "text/markdown"
       },
       "assets": []
@@ -227,14 +228,14 @@
         {
           "path": "DHT Sensor.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/dht-sensor/DHT%20Sensor.py",
-          "sha256": "cb23a65f60b712adb562367f0a83825a89c555aa46365a7f11e81d84fa97c75e",
+          "sha256": "b2a19e9ed211ef867f328daf4943f867e2cfab6939c866ab4f848edac6d0c8d5",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/dht-sensor/README.md",
-        "sha256": "22637951fa59f3b0f2d8cb5584c6d2f8f29813c36de11e34a5e4b02d4165e3da",
+        "sha256": "0ff976c85115cd34de62639937d3ca349bfb61dedad9592ea86bee8666d7afe0",
         "mime": "text/markdown"
       },
       "assets": [
@@ -270,14 +271,14 @@
         {
           "path": "I2C BMP280.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-bmp280/I2C%20BMP280.py",
-          "sha256": "e3f26f2fc63e5f60560f5114179ce1f9ebe4b6d0e95b40c9c64e0ee78db68533",
+          "sha256": "23cbb014a66375370b4c253370f9c27f53c01dd4a93cf5e10975da781efcceed",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-bmp280/README.md",
-        "sha256": "01c216ae403c00b562fe560436d4300f885f355631c3931417bf560e11bc6a86",
+        "sha256": "a8e7b18d505a1faef6f12301e06f7cbbab31be40fed8c9254e78195e863747a5",
         "mime": "text/markdown"
       },
       "assets": [
@@ -307,14 +308,14 @@
         {
           "path": "BMM150 (I2C).py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-compass-bmm150/BMM150%20(I2C).py",
-          "sha256": "d0da8675bf16cc5b64a3326a6faacc2e790dc7b3fe4d7cb4394232a52db8c98a",
+          "sha256": "339c692f750e310bbf32ae7f7183986e8e280f3e646b600b6240c052f319730e",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-compass-bmm150/README.md",
-        "sha256": "6e8630f91e4509d88e09e3256cd0b8c805ad3f792868493dfd3d42101d29fc53",
+        "sha256": "7b55f7a7252ae86f430ba96b2a96d6a5e7f899a9e2ca4b0951f4bf8f1dafa119",
         "mime": "text/markdown"
       },
       "assets": []
@@ -337,14 +338,14 @@
         {
           "path": "I2C Compass (GY-271).py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-compass-gy271/I2C%20Compass%20(GY-271).py",
-          "sha256": "07178c5409f8ccff09b5b0fdff8cce0813a99e79c3927b68fb3c573bf7dd7816",
+          "sha256": "f18d1109d9550a4f7d6a3c7150f5f61d49d521cae0c4781a720308654a932741",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-compass-gy271/README.md",
-        "sha256": "b01a9db28cf0d7a210acce874c6f5f1a605f2bfa11840fc8b71236121a264c1e",
+        "sha256": "083688660897f81fb08ac67ac9ae8afa50f932b3b18981d9bbd31e9e93b46cb6",
         "mime": "text/markdown"
       },
       "assets": []
@@ -367,14 +368,14 @@
         {
           "path": "QMC5883L (I2C).py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-compass-qmc5883l/QMC5883L%20(I2C).py",
-          "sha256": "a7761a36a7a75905b31557f9ba027bd4435dee22c8d49843c7c79eb8b437819c",
+          "sha256": "8a1a7abe4fe36b9e044b0ab99e204973b9716d688cf78e56d03ab78f84d6a1ae",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-compass-qmc5883l/README.md",
-        "sha256": "39005cb410f045af4781f9826564414de67f94110b9b78c29b5e037b9728815f",
+        "sha256": "e823fca75ad1521fd42efb64e1b6c0b553ea5bb5e15be522167d4d424bb6dee4",
         "mime": "text/markdown"
       },
       "assets": []
@@ -397,14 +398,14 @@
         {
           "path": "BH1750 (I2C).py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-light-bh1750/BH1750%20(I2C).py",
-          "sha256": "3efe921e468a3c83a8d7ef94f577c2e729b08521ab896a9baabd2fe4fc5e27c2",
+          "sha256": "a6733cb972ac72d5d1bab36e26830a67ad42322ad48474546d612c6bd9b4507c",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-light-bh1750/README.md",
-        "sha256": "88bd1e5a4628cab6ab2d1881a5867c808af72426cc7b13d650b09adc39a27116",
+        "sha256": "31c97a53c9f566865405fb41058ff6d3a882dac8c9a6fa4e2d64fb147342d118",
         "mime": "text/markdown"
       },
       "assets": []
@@ -427,14 +428,14 @@
         {
           "path": "VEML7700 (I2C).py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-light-veml7700/VEML7700%20(I2C).py",
-          "sha256": "418615da32fd05a865b3da152e3e3909efa453c57df3e67adbd46b7c0621d4a8",
+          "sha256": "f246e77946e11bb10e2ac28080163004eed4d8de57d820138f455ff0cf96d1a2",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-light-veml7700/README.md",
-        "sha256": "0218e5b56c17e446eb338f48963c0c5c29e37a8da69689c15b4c8689dbd6283d",
+        "sha256": "7dae4690ac39c337f101b50bb957cc718644a3a459e1f46c422647497b9508b0",
         "mime": "text/markdown"
       },
       "assets": []
@@ -457,14 +458,14 @@
         {
           "path": "I2C MPU6050.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-mpu-6050/I2C%20MPU6050.py",
-          "sha256": "3afb56d0b305fdaff879aee074b488d9602adc02b56f10c95a76a2fca70aa303",
+          "sha256": "1f41e8457fb76073aa4f4623533caab712f4281baa8cacca8e4ec9610e545964",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-mpu-6050/README.md",
-        "sha256": "7ee0f43af7d0efdd86ca2a37361519cd33741a9aa0eee550e6adb24ae39ac8ab",
+        "sha256": "8b4a4173154bd13690223908c2cb9e1da0eb5b99e33475498439a7c4256fca98",
         "mime": "text/markdown"
       },
       "assets": [
@@ -494,14 +495,14 @@
         {
           "path": "VCNL4040 (I2C).py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-proximity-vcnl4040/VCNL4040%20(I2C).py",
-          "sha256": "1fa7e08488bc297641d5735d800ad25237e23b8a523f4b1fce455ac55f14f423",
+          "sha256": "f84d2cb389f21ad5bd9f6f6f4a785991e8645294970c0a9c9a1eace5f73db2a0",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-proximity-vcnl4040/README.md",
-        "sha256": "3cee259052af2223430bc25eb97eb5145e49697da5132c9229e2ae42d9ba5331",
+        "sha256": "6124a63c6acbd7e0f8ae8c432bd2e3101fedd2970ba12e18b2f8997aff18e7f4",
         "mime": "text/markdown"
       },
       "assets": []
@@ -522,14 +523,14 @@
         {
           "path": "TOF10120 (I2C).py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-tof-tof10120/TOF10120%20(I2C).py",
-          "sha256": "a3800d977b63e4ced22e3bf6a099150a47441ae25e2acd3503774f8292e227ba",
+          "sha256": "1082dddba4ade3606e1a27f26d6f99d9b81289f7e1f4f9fac7a7aaef5612cc41",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-tof-tof10120/README.md",
-        "sha256": "48390d59593ebb795ba77420dca52ed83d34b4a99e58c8591be0470b8ecf96f6",
+        "sha256": "9e9ff1f5525d17ab3cb72f7e9cbde3e9b79f6d824d7f610664a098962302f944",
         "mime": "text/markdown"
       },
       "assets": [
@@ -559,14 +560,14 @@
         {
           "path": "VL6180X (I2C).py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-tof-vl6180x/VL6180X%20(I2C).py",
-          "sha256": "360a21b4460285fd8d6a4a04c8c4595921a56be0105545089e1ff96cb664770e",
+          "sha256": "f31c8a378215d385e282c2bbce95c253e1a4008dd2364eb68c3db5e086b47a86",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-tof-vl6180x/README.md",
-        "sha256": "fce6f65bcd9b2daa86c2b883d6243b0ec151c341be24aa3a5ab67e1b69ec6a99",
+        "sha256": "662913dc36eb22cf787e4607e6685a7ca6741781151c86c83a59294c703bcfa8",
         "mime": "text/markdown"
       },
       "assets": []
@@ -589,14 +590,14 @@
         {
           "path": "Ultrasonic Distance Sensor (HC-SR04).py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ultrasonic-distance-sensor-hc-sr04/Ultrasonic%20Distance%20Sensor%20(HC-SR04).py",
-          "sha256": "1448e449244314dcd933438d543879c0f8471112fe6499d6f631f2d2216b799a",
+          "sha256": "af34e24f4336bd2e71ac960d352e020a82902001b40b902c0bb7d995c9c375c7",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ultrasonic-distance-sensor-hc-sr04/README.md",
-        "sha256": "6be6964490bf1faa228f5a5b530c110162effac3a1eab23d7df974fbe1ffadd4",
+        "sha256": "4c968379560da619369d01e0c0e72e55e30b5ce5f80ff798e5fc2df07fe22f91",
         "mime": "text/markdown"
       },
       "assets": [
@@ -632,14 +633,14 @@
         {
           "path": "I2C Liquid Crystal Display.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-liquid-crystal-display/I2C%20Liquid%20Crystal%20Display.py",
-          "sha256": "054704938ca081778c2c9d63998fb90ed441f9070fdbc05e524e9cb984e2c211",
+          "sha256": "513562710eb457e3743c44e568ea0c9aaf5f816f3bc2e1dd1f5082336b3fc60e",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-liquid-crystal-display/README.md",
-        "sha256": "d6023258044326f08a6bedd8b64f51eb379abd500ea98db93d987f0b3c68f7a7",
+        "sha256": "92f57b2d65eec4c593332bd40e5a98b3f3a51176225ecce5c16564b7f3e7f489",
         "mime": "text/markdown"
       },
       "assets": [
@@ -679,14 +680,14 @@
         {
           "path": "OLED 0.42 inch.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/oled-042-esp32c3/OLED%200.42%20inch.py",
-          "sha256": "94a3c7dadd1714f15ba284d5e90c9050ae6ff86970a566e68f6cf3d0b250c02d",
+          "sha256": "e5af2ece782f85890cb7a4497c12a68af4247440af3ba8776ed34636b0dff1af",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/oled-042-esp32c3/README.md",
-        "sha256": "40ad8c8e081fdeb25eeb83bc6fe9db37c7e1101fdfe4d19eb46d0860ba28d6b5",
+        "sha256": "9d401d8478ed37cbc8f52930d2ff098cdcf8288cc33b2337687a515d3ebd7c24",
         "mime": "text/markdown"
       },
       "assets": []
@@ -709,14 +710,14 @@
         {
           "path": "P9813 RGB LED.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/p9813-rgb-led/P9813%20RGB%20LED.py",
-          "sha256": "860a24f7cafd7371e90ebb8366b8f58871d285c28032f44b9d2e348c22c5b755",
+          "sha256": "bc029903a5d9e33680f75f993feb0df3ee54f2316f098856b74dd23fbd5dccfd",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/p9813-rgb-led/README.md",
-        "sha256": "48e0eb97770da2c5141d50b80e4d3a98cf6f7b0844be794582cc2e34c6b3aaad",
+        "sha256": "b4c5f34f3d46924150dc87f2bc75763a518b1acc903b7f4c341ae14c99d5d576",
         "mime": "text/markdown"
       },
       "assets": []
@@ -739,14 +740,14 @@
         {
           "path": "Seven Segment (74HC595).py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/seven-segment-74hc595/Seven%20Segment%20(74HC595).py",
-          "sha256": "30ba8089fec4140c2e8335fd9939ce0932545031f36a615d7c1065ee8824f86a",
+          "sha256": "5d14a05632143bd18177548043fe809d036d7b76f1fcb0a41732778a1daf7ca6",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/seven-segment-74hc595/README.md",
-        "sha256": "141abedd3735b7df298f0cdd6fcda6d5e984bc054d788f71b96296521087e68a",
+        "sha256": "1c00af1c6303dc2c81ef2e63531a08c78be8c9d3ce4374b5062b5e7873237757",
         "mime": "text/markdown"
       },
       "assets": []
@@ -769,20 +770,20 @@
         {
           "path": "E-paper (SSD1680).py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-epaper-ssd1680/E-paper%20(SSD1680).py",
-          "sha256": "c8cac2079bce30506dde5daf6a7f83004390ab8a6d656b4c305a16f09ebe8fa8",
+          "sha256": "1db9e3582228b6cb8a866c38161018dbe0afa2f88e85b2ae0470dc1d19f0b930",
           "mime": "text/x-python"
         },
         {
           "path": "pulsar_ui.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-epaper-ssd1680/pulsar_ui.py",
-          "sha256": "6fd1d99e5fcda0177c99bc68bb3e1c691d46cfa6857f7f6fd818b6d44aa4f095",
+          "sha256": "88575b31c21546aaf859aff714210523ba10c8505bc6d2a9da0bda2ce9944b28",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-epaper-ssd1680/README.md",
-        "sha256": "685d1f8d50d8d497db0f8a855a27ef1f1e6059cc70daf59296350b5ee65241e8",
+        "sha256": "aede2d6d5d6ef852bde029d947961fdc0e54f584c60ddc8caa9d52fe1dcd05c3",
         "mime": "text/markdown"
       },
       "assets": []
@@ -805,14 +806,14 @@
         {
           "path": "SPI LED Matrix (MAX7219).py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-led-matrix-max7219/SPI%20LED%20Matrix%20(MAX7219).py",
-          "sha256": "fa6097e69c2c190106ac6a3f1d87eb975c52218822c7f1c0df4833efac0ecc86",
+          "sha256": "2afabf3c2f88086dfc4172106701535b1719d273497f6e3eea3e5ff33f585d3a",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-led-matrix-max7219/README.md",
-        "sha256": "0002805dbf742b01831da72e964b7606dd51dd1dea0d9cf67a696fe69536b6f0",
+        "sha256": "e3f9587133dcb602a70885f2546cf77bf2b4f656308c561c1788270fb7ca2ae9",
         "mime": "text/markdown"
       },
       "assets": []
@@ -834,14 +835,14 @@
         {
           "path": "SPI ST7789 Display.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-st7789-display/SPI%20ST7789%20Display.py",
-          "sha256": "151c4bb48a6a5df0b41d97eab0c62e478184a364793cad480ff6f782fca16017",
+          "sha256": "b7f6935c145d3a539ccb6d6b59adf68f0e0512110ec0ea9339fc66ae78e43132",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-st7789-display/README.md",
-        "sha256": "2f68d678af6368a142381c0b3fe0e05f4921860e2fb4dbc9aea4f24769e5a209",
+        "sha256": "c9bf7b52d1795095166dd2bcc24d0592246a634d71d0ebfcd0c511ee4ce8a762",
         "mime": "text/markdown"
       },
       "assets": [
@@ -877,20 +878,20 @@
         {
           "path": "T-Display S3 Long.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/t-display-s3-long/T-Display%20S3%20Long.py",
-          "sha256": "ef3b9592c56c98dc6b69eaf44fcebd1edfdfcb6dc90223ed82a7357a4a3ada35",
+          "sha256": "e5bb1da2560b8e92dcd1eb5ea754c7461bfebc90ae0e6bbdc925915587f6ebe2",
           "mime": "text/x-python"
         },
         {
           "path": "pulsar_ui.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/t-display-s3-long/pulsar_ui.py",
-          "sha256": "6b5ad5b909ffb59fb37ad8a7b3039b18587c415389d55ca2472f4e7364be6334",
+          "sha256": "8ca8078bd6b2f00c6c8361e7a8cbd1a1f10124d406b1f41dfe949fa332e7f943",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/t-display-s3-long/README.md",
-        "sha256": "04e66339a645ea6e996461f385218fe7fccaa451ddad3cefa25d7f36b8e68328",
+        "sha256": "c79406b19236d8584a94eea638bb8debb8a6ced02dbad25ddad9b8d9609eb481",
         "mime": "text/markdown"
       },
       "assets": []
@@ -913,14 +914,14 @@
         {
           "path": "TM1637 7-Segment Display.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/tm1637-7-segment-display/TM1637%207-Segment%20Display.py",
-          "sha256": "b1dd6c7f046bf724fa499c427cef0a206234021b2e4c6ac398ff8a611ede1534",
+          "sha256": "42eeac069efab6987e28bac2703acc9adf203e07fb6cddf77835f3f60ee620ed",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/tm1637-7-segment-display/README.md",
-        "sha256": "5ae86f08550a8bbc15e989a5dba4e4726079cbade6375d84db9ae8c6135d5648",
+        "sha256": "662931b8e945b150dd2a802654b0465a522dbd8e0c0a2af88b9118b93178c603",
         "mime": "text/markdown"
       },
       "assets": []
@@ -941,14 +942,14 @@
         {
           "path": "TTGO T-Display.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-t-display/TTGO%20T-Display.py",
-          "sha256": "8c4a7d4ce69a29b62c01c7ecdc6d3c705704ebef3889b9b870184273c01d933b",
+          "sha256": "ca9e643651df73420a917b1ab70da8006fef41a762f08b535461f2daecb7c0de",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-t-display/README.md",
-        "sha256": "59a20cb6b8165e99cc3219b1ee3b946bb9c4ee627f578d2d34095398cf008f6d",
+        "sha256": "325ce15142c553c0374de6b1a4501f57dc1f4f6251794c7e5e02c03b8871e22c",
         "mime": "text/markdown"
       },
       "assets": []
@@ -970,20 +971,20 @@
         {
           "path": "TTGO T-Display S3.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-t-display-s3/TTGO%20T-Display%20S3.py",
-          "sha256": "3507d1fb990379b9b275cf1ece00353ac0c68ea64ab4e4a8de27beb6c2b5d3be",
+          "sha256": "d78a1f98cd243d7b430c7f0646cb9bb4ca901dccd1346e3db2a3bd8c53871440",
           "mime": "text/x-python"
         },
         {
           "path": "pulsar_ui.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-t-display-s3/pulsar_ui.py",
-          "sha256": "6fd1d99e5fcda0177c99bc68bb3e1c691d46cfa6857f7f6fd818b6d44aa4f095",
+          "sha256": "88575b31c21546aaf859aff714210523ba10c8505bc6d2a9da0bda2ce9944b28",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-t-display-s3/README.md",
-        "sha256": "87c968b5350688954c4ee0cfdedfaf6c12ddb26ed43d52265ff580fbfc589bab",
+        "sha256": "16c747b68818ccac2fe4715b9bda6e7889bbcba5e234c8ed1c7c47aaf6652a0f",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1006,14 +1007,14 @@
         {
           "path": "DC Motor (L293D).py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/dc-motor-l293d/DC%20Motor%20(L293D).py",
-          "sha256": "8aea6a595fa0d9b9488d581d7db523f5c8d019662747562fadb143b2f2925347",
+          "sha256": "7c2f8818e1e5735e50aa9bc251970c6a7b32f4ddae92dfa9b273c2b8ba4783f5",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/dc-motor-l293d/README.md",
-        "sha256": "a66ab694e153fa75dd42eca98b8adbc32e8a8a1213754fc7c7f95c9d6133f9b4",
+        "sha256": "1bbdf28e39218a4f04b381ac75ea483168d5385b4c7359f0f22c2ec3cdc875b1",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1036,14 +1037,14 @@
         {
           "path": "Servo.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/servo/Servo.py",
-          "sha256": "f9dbe32b5f260bf4b95e43c2dbd55d325765518fd3b4a3ac5ee65767d0728317",
+          "sha256": "9d2dd023e279fbef33ac5b3c280d1a1b8ce31033599b470c6c5ca0f1a6b52e51",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/servo/README.md",
-        "sha256": "f3fdf81f289e7de75911725b6d5edcceaf8445f17835a5d6c5aa90b99820dc5c",
+        "sha256": "ff54c4727ba2f3287633803f9cc1e329e13e1494ee700a65a8427f8dfa38cd9b",
         "mime": "text/markdown"
       },
       "assets": [
@@ -1085,14 +1086,14 @@
         {
           "path": "Stepper.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/stepper/Stepper.py",
-          "sha256": "b196b846d6f9be70ef85c7d433cdca29c7e84fe37c491c19973dd64256eb30c4",
+          "sha256": "2cd9ba6954b2d1f23f395aa729c538035d5b963a0c3fb6f76219f4945bd374b5",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/stepper/README.md",
-        "sha256": "da5d39cfbfe59c8f2d917b2f05c537a2e1a6caee5cfc90b15f5bee7208ded487",
+        "sha256": "9b34ad421aa5aafa04a14d3ca2f7a0794eeb0e25d254b4589ffea91c09fc4540",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1115,14 +1116,14 @@
         {
           "path": "Piezo Buzzer.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/piezo-buzzer/Piezo%20Buzzer.py",
-          "sha256": "4c504b67635b6e692aadc4e3262fdda829824fbf466b3ac4b6c3a63963ba35ee",
+          "sha256": "d9f5ca2de6d6f8cdb5653805ae6c4b1b944353c75a427b6da6806dcc7e4bf2e5",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/piezo-buzzer/README.md",
-        "sha256": "ae342c68ae5aebde71bae915631c138b28812cff872dab98a6b394b68d340438",
+        "sha256": "9e7b40b87876622b1fe6acba3c83f14b2697e3327441da22ae10601c87052035",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1145,14 +1146,14 @@
         {
           "path": "Keypad (4x4).py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/keypad-4x4/Keypad%20(4x4).py",
-          "sha256": "0ee5282ef99a513f6eac892ad63eb5edc4d0510c78b5cc230c28847a3e58c019",
+          "sha256": "12b9cc3708adce25f9c03747858339235b83a7b5637543ab8c8ccf269b29b969",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/keypad-4x4/README.md",
-        "sha256": "d43741778519f64ce7dfc262636359688b61239e51204dd9597a9f9163d997c5",
+        "sha256": "2b25ea6ce183b065a3532411f6bdede4c96060e5edfb912232b0d14234521f0f",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1175,14 +1176,14 @@
         {
           "path": "Multiplexer (74HC4051).py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/mux-74hc4051/Multiplexer%20(74HC4051).py",
-          "sha256": "0422983082ba2f1f671a8d2ea43f88f9b78827a929cf296ebeeda6b5dc332dd0",
+          "sha256": "47c70a62e9667e2766977b5fee8d5b130fd1499aff45767bf4a91fdfffba9c6a",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/mux-74hc4051/README.md",
-        "sha256": "70f0fc5108411e3490859c720beb14a75f6374f1b9d7c0199565aa6532c44cf5",
+        "sha256": "4f37c3ebba21e28cc8ca8df5fab9a0467b37a641906f8d6a4bbdc120a38b2173",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1205,14 +1206,14 @@
         {
           "path": "Rotary Encoder.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/rotary-encoder/Rotary%20Encoder.py",
-          "sha256": "8895b2fb9821ca0379e18d30da43c2784e77348798a9ab6cc7475cbefefcbfb9",
+          "sha256": "c2e4cbcb5aaff760329ae36a2db065238b5cff362689d8194534c0e8889138a1",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/rotary-encoder/README.md",
-        "sha256": "64d325ccf1dfea27337ef098b3bb456512b15d188ae32d2c7780afeee791fd77",
+        "sha256": "927d8649080c272828d71630b999cadbc0f8ac81843be37db2f1b8784b5a3294",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1235,14 +1236,14 @@
         {
           "path": "SPI RFID RC522.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-rfid-rc522/SPI%20RFID%20RC522.py",
-          "sha256": "9d582cefc3ff3380df9f957ef7a84fd2160879cb513c953ad5d3759f476a7b29",
+          "sha256": "6cb4cb04e95ae76fdeb3b51df60da37deb39568b18fe037c24dfc63e74deb305",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/spi-rfid-rc522/README.md",
-        "sha256": "a7b78d9206d1279e499df86c613215f147757cb2dd38b6e28a87e6c54c84c3d9",
+        "sha256": "e0a508e7ac67235c96d902842cc99dad009e1ed268e253b9529f3397a15c3d9b",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1265,14 +1266,14 @@
         {
           "path": "IR Remote (NEC).py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ir-remote-nec/IR%20Remote%20(NEC).py",
-          "sha256": "ebf14104579c2fcfcaa2acbb9e3f2dc04537b6ca531f11804bc067e349351161",
+          "sha256": "145456c48b1680362dc9475e5b78bdee06b87b206d3e6fa09a18cc67c7573aa1",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ir-remote-nec/README.md",
-        "sha256": "98f1d196c894bb0c9d395c1b6a94e6f40df9456df54bbb980e11d09f1f59d491",
+        "sha256": "12e61b26544a324a7d855cd7a5da6623a24d69471368ac53ef247de94a70ddb7",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1295,14 +1296,14 @@
         {
           "path": "IR Remote Send (NEC).py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ir-remote-send/IR%20Remote%20Send%20(NEC).py",
-          "sha256": "0f044510c6a2bbb8aa41a79c9f7ba21d18efee243731e884fe28b31edfd3f129",
+          "sha256": "a1baf21d981015e9901d39bd7610dcc3621de6f2cf08f8d41cee231c63d04169",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ir-remote-send/README.md",
-        "sha256": "1b0c6b923eb151a4e12d8fa0fd2017ea5ab46d6365a3365418eb6507cdf95786",
+        "sha256": "a3bd27c4db605a59ad0dda50bb9c0077d1bf6ba3ad5218deecc46c4a6ad8f789",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1325,14 +1326,14 @@
         {
           "path": "NRF24 Send.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/nrf24-send/NRF24%20Send.py",
-          "sha256": "dd0e6701553525944872a1e417dbb20d9b2bfba803945d80674352a76ada0602",
+          "sha256": "f1f4aeb7ae905b93cfd051810343c8f8af9877e65ec3ea52872eec25d8ceca08",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/nrf24-send/README.md",
-        "sha256": "e4e95f58b3372048867a003d24a19f2651cbe271bf935ef62331dead9bc695f3",
+        "sha256": "c8a248d76b4f4bc21400892c9b0419feb5cff8165a44ca82138080cfda270350",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1355,14 +1356,14 @@
         {
           "path": "NRF24 Receive.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/nrf24-receive/NRF24%20Receive.py",
-          "sha256": "9fe093e36488b176d1d85b9a6c76f0f082a1af7ec9eaba9f1a1ea9c5c7bddcf6",
+          "sha256": "7f8061b3d8da79365c157e57c60ce7cb97e3cb9ff3999b0195327c34e9a0f541",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/nrf24-receive/README.md",
-        "sha256": "8750541be5a4cf65d6ecfa8f68a822d3d38dc8938b2110e24f98a3ad3078a3bd",
+        "sha256": "702abd308ba5936c3016ad3c44eb4bee41a55a54be7bff02ea4133ce830bbf47",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1385,14 +1386,14 @@
         {
           "path": "RS485 Link.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/rs485-link/RS485%20Link.py",
-          "sha256": "86dfe7c538aeb9ea90a19d751f361bf518afa3262431bc4a1f0d7aaa263e14c4",
+          "sha256": "5cf136d11819891600c4bb7ead5e7d5391b63c2dc924c8248d8964d546bd4a29",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/rs485-link/README.md",
-        "sha256": "400bb582b124bab1df4894096a6ff12720e829af38cd8ba3b43eebcdec416cbc",
+        "sha256": "b626f175e221038dc9b01ad659c6991b44bc90532a1fd0987ce76421cf80c28b",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1412,14 +1413,14 @@
         {
           "path": "ESPNow Send.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/espnow-send/ESPNow%20Send.py",
-          "sha256": "3be5b0ed4a97626b6930a4f0609baeee8e552f39e375bb9a81cf394db17baefa",
+          "sha256": "6af37bf8e5083f61e887441a5bee141cfaf39ba4e1fc62b31e345a5571da8fb8",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/espnow-send/README.md",
-        "sha256": "f81e2748e91fa488a56f6d120a7991620b4dd5c6e06f948956279d6f7252ee20",
+        "sha256": "38ffe5d878cf023b238ebac0140db4e347c62cdf90b563d5c9b844a53d04d16b",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1439,14 +1440,14 @@
         {
           "path": "ESPNow Receive.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/espnow-receive/ESPNow%20Receive.py",
-          "sha256": "f100d9b2aec61836a65f7d45826ab8a9129e6f588e4cb0d62fc99e7085443563",
+          "sha256": "2aadae9ac5c141f21c460813893ab97b0e482d68541a682413309e6454cec360",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/espnow-receive/README.md",
-        "sha256": "3d4e5cf0abf8ecb4c83227beeaec7cb5f3e538aac970ea4b71efdfa1c9a9fe77",
+        "sha256": "eb0cf74f3bffeec9ea91684e38d7315e54d7be2556fecf09bbae3b175b5f6fa9",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1467,14 +1468,14 @@
         {
           "path": "Wifi Connect.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/wifi-connect/Wifi%20Connect.py",
-          "sha256": "ce7d555d116b205816068b34f54e4df815b364cd209c77c0a68504b1c2bbb183",
+          "sha256": "2e1e642ea978c2e79b338a3809734871836a0d33c31c527aa363b23e5c467e79",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/wifi-connect/README.md",
-        "sha256": "a879bd693a7bc4d58c1205aa8d19d8a36a5a84cec4ec30175f57211fc33ac28a",
+        "sha256": "354af2139b2336a0e3cabf7c2420cb58d3fe6065cd9692e1a7af028db7d29e7b",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1495,14 +1496,14 @@
         {
           "path": "Wifi Scan.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/wifi-scan/Wifi%20Scan.py",
-          "sha256": "549258419deed442b031276afc9c7a92b6b091141c1d7c6345c0448264a10c84",
+          "sha256": "dc1f740eb607dfad77fc76e723979a841d650e5ec47f06ec2817442820f1fb8d",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/wifi-scan/README.md",
-        "sha256": "0d6c92043ac56c07526f56ddb6b47b1e6071383b570d385807a2e2b74067ac42",
+        "sha256": "72da17c94d77b4f680fa36221441364d48ff8455a0f1b55306ec1651112c606e",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1525,14 +1526,14 @@
         {
           "path": "Wifi Access Point.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/wifi-access-point/Wifi%20Access%20Point.py",
-          "sha256": "55250a9ff6ec140387379fbc9f296d8a3c4fa1564241d612d8b35972bdb7c2a9",
+          "sha256": "2a646370efb8232ff03aac31c40173b3e0eb88cd9d998ee8f28767a3c0841dc9",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/wifi-access-point/README.md",
-        "sha256": "9d22ff4d694181c23b373fe03a145a17df99acb7deb2f0bed873c151b9dba11e",
+        "sha256": "255d57d5f1f227094c0a6772b4e221b700570977e9a5f215d1be0b0ea6e70a22",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1555,14 +1556,14 @@
         {
           "path": "Wifi DNS.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/wifi-dns/Wifi%20DNS.py",
-          "sha256": "5205fa00904210df261d91a77c6adfd0b1493c768372dbfeb6005723243402d5",
+          "sha256": "cee2ad312ce4fba487c0d5eb749c0eda3dcd889b4e753e4b2321f0b4b8895e0d",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/wifi-dns/README.md",
-        "sha256": "eb6dba958cc631db27cd91dba63c377dd67a3e9b273adab10de502d4fddfb189",
+        "sha256": "0f7203e16726020a91df702c998858bbbc0f1710ed99ed076ba67124d3f0f994",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1586,14 +1587,14 @@
         {
           "path": "MQTT.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/mqtt/MQTT.py",
-          "sha256": "bf40b8cb3a4ccb3dba07457db91c8f7c870dd8f5cdfc8188c1aeb1aa5c5a0354",
+          "sha256": "21816aaf58c496d2e408cd3dde6017dfec1fde9c0e1960c1c5175a069d109668",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/mqtt/README.md",
-        "sha256": "3686d9b0ad8ee5000904850447656a5cad34d466e97d18666d3c8f7209c83d9a",
+        "sha256": "b0aa8f9e96384afed423d479aec61486f725fda0b574abe64c9ef34cb7fd7493",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1616,14 +1617,14 @@
         {
           "path": "BLE Scan.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ble-scan/BLE%20Scan.py",
-          "sha256": "7965f7092cb9088f16d03b0e93d49cec72d93231001201ad435232a6e5909864",
+          "sha256": "d37bd95d0207582aadf4524fd44526e85ee715e28a71d8371b241721d35678f6",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ble-scan/README.md",
-        "sha256": "4ddabfbb6481e2d787237c5fa33be38e813f017d05d32f97301237035f71c8d5",
+        "sha256": "b0efdbb3cc6c5ee99a32cc86473d64212ffead38dd7620ec6128e405e4db6e71",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1646,14 +1647,14 @@
         {
           "path": "BLE Peripheral.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ble-peripheral/BLE%20Peripheral.py",
-          "sha256": "f0ab1f8caf35560bad0688714720886ad823597fbdc0e9c4fb04298e2520f5d4",
+          "sha256": "e53556cefaa9ada6329efe3af4e6a1340baadc021a6600141dd8ea9f9693f072",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ble-peripheral/README.md",
-        "sha256": "84ed58bcd16ee7c843730e9208af26f505f9f0cf6e7025110d6fa49dfa99e24d",
+        "sha256": "72ac2b0d89333a3b1d3800418c2958004161703237ddec16762e1881c5032019",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1676,14 +1677,14 @@
         {
           "path": "BLE Central.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ble-central/BLE%20Central.py",
-          "sha256": "ae896b28ee32ace20f52732c2fab61ce3bd6b50ad14b1748a2fb01ad0615aeda",
+          "sha256": "82a3276bf077c286b39486132c1632e94d519d881f7ff013721d44bfa9780504",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ble-central/README.md",
-        "sha256": "d6f54cb50f645a768df99f747e37ef6ae9c255c220c4e11f7964a008abaf1ee6",
+        "sha256": "86c8def2b31c47edb43d8815d5497be7617f326b81ce5f4f8859022fcb36438c",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1706,14 +1707,14 @@
         {
           "path": "I2C EEPROM.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-eeprom/I2C%20EEPROM.py",
-          "sha256": "a3c180be7d39666bf1bdad4ae4849ab34fe54c24d9c621ce411c15d0b503cd06",
+          "sha256": "4d7e219e243d31aeb9443920d88fc9dce8cef57b27059c9b1f59738b850ef14b",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-eeprom/README.md",
-        "sha256": "3722e00a3c70722895efd896f3b40f4715bf101bcdfdc46a1110a7e61dc7e622",
+        "sha256": "0dd01bf1fd547ca343143f75d127e0019f4560150ce7f362eed803d6c861decd",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1736,14 +1737,14 @@
         {
           "path": "I2C RTC (DS3231).py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-rtc-ds3231/I2C%20RTC%20(DS3231).py",
-          "sha256": "0a736a0062a28c0241b1f1a2f8fb7cd2823684592fa3e685f0b1396342debcbe",
+          "sha256": "d68fcdb98aee6bd0c235cf333bbbe10304eb89ad4e7b2a9b335b095953d9d6f4",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-rtc-ds3231/README.md",
-        "sha256": "843a695237f0d10a873ce7628e47182175798d793589b86edeb6b4a7a1198e57",
+        "sha256": "046ae39e8600a07a24e9fbc1ff8fad9a6d515e1532c48cc264074be0dab4d57e",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1764,14 +1765,14 @@
         {
           "path": "I2C Scanner.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-scanner/I2C%20Scanner.py",
-          "sha256": "0e2c4faaf835df7978086fe6b3a0a338798becc81adc39824a52127f37a55f22",
+          "sha256": "beabb302d333ce24c279c6b07d6027e129cb810d3db6517ea10b7579ad6ace75",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-scanner/README.md",
-        "sha256": "9cf332243d7a2404731460f8f8ba6754cc14507346f7a75264ddceb7766cf0bb",
+        "sha256": "95600aaf33295b711781f03b63e8e2e89c6135e3dda48de61dc377188cdf5113",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1795,62 +1796,62 @@
         {
           "path": "aioble/__init__.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/aioble/aioble/__init__.py",
-          "sha256": "735eb2f71c857b5f13db3b7f7179e49bfe8438bed42b8e6c89ac796121fe193c",
+          "sha256": "c571364282d16e48660c8e3ac12d3151cf1b9200f23e3d8d9691ade3607d502e",
           "mime": "text/x-python"
         },
         {
           "path": "aioble/central.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/aioble/aioble/central.py",
-          "sha256": "3ffca35829b2ba978b5f72ab785514d2da2d11c7ada2395a021cf76d5dbe8502",
+          "sha256": "785553149a0a3728e2ba2ce9c66b5c11fc12d2972c1969cd96b3292e6ae9def0",
           "mime": "text/x-python"
         },
         {
           "path": "aioble/client.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/aioble/aioble/client.py",
-          "sha256": "b117e9070d19eed1ffb4728b3c50515b4a7377b9b4d5b116cf9989849b81852c",
+          "sha256": "de809e6ffcc297ccadda12f887d6e6116e0773edc1acafd5f8669bbc21f1bb7d",
           "mime": "text/x-python"
         },
         {
           "path": "aioble/core.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/aioble/aioble/core.py",
-          "sha256": "966d147542de50b8d4cbe06671a2a6d0633c0e426083b0ad2d6a888a03569414",
+          "sha256": "2e673e47b951d5ca520ab0ca1da894b2933c242d32b02d83e1e4f129ed45af86",
           "mime": "text/x-python"
         },
         {
           "path": "aioble/device.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/aioble/aioble/device.py",
-          "sha256": "056708daee94d94d1fbba22566b9cd3591ed002e1325a2baa8d8c922282108a7",
+          "sha256": "0b06a38a583f2e23f2b6ca99f0bd1c059e3d3ab14cf72f48d8c0a81577bc0f5a",
           "mime": "text/x-python"
         },
         {
           "path": "aioble/l2cap.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/aioble/aioble/l2cap.py",
-          "sha256": "ca504df10240621f44854321a05e2b0354c36740cf83a8102669bd97c52edd88",
+          "sha256": "0c7ae904f9789c9e110b98698d36a23c1ac0538717c43f6cade81cfccd88929a",
           "mime": "text/x-python"
         },
         {
           "path": "aioble/peripheral.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/aioble/aioble/peripheral.py",
-          "sha256": "4aea6302bc0cc703a9f0b1fa44db0c0089daac736460ccd64dc33b9725e73b6c",
+          "sha256": "1b3634c90461b8b0c24ffc0b65fa7fd4a52d11d0abb6c7fe8c04615785db8d13",
           "mime": "text/x-python"
         },
         {
           "path": "aioble/security.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/aioble/aioble/security.py",
-          "sha256": "bf550386331b9c35459ab626acce3e8d84f8799e2911ef420507a73f42d5fe9f",
+          "sha256": "99a5845ef90557f8cb32175b5229b7911e08ab7e00795f8d94a30eb109b67eac",
           "mime": "text/x-python"
         },
         {
           "path": "aioble/server.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/aioble/aioble/server.py",
-          "sha256": "6253b57dd3d4fcdad4cc0226c3501fbcc63f7780e48b610f83b0de80f1d5bec4",
+          "sha256": "c707d94a6723657c535a194899ecc1f1b5a86578c15b4f9bf403723483e24213",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/aioble/README.md",
-        "sha256": "908992e8aa5018b6e78ba7b059ca8f1b8211332ca1f80ca6339f2a1dcb9b5675",
+        "sha256": "496643c36f597be9274d478f28e853be0e32a195109a205905f4e6af815eb7c7",
         "mime": "text/markdown"
       }
     },
@@ -1869,14 +1870,14 @@
         {
           "path": "axs15231b.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/axs15231b/axs15231b.py",
-          "sha256": "19cae867ba46bb551c554caf908be64ef30098e0501a522daaa4d306ca209908",
+          "sha256": "c3f984ce4dc3427a8c930099ad280a8ce6d4465ce67f58d99fea6bbf4563d6f0",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/axs15231b/README.md",
-        "sha256": "76f55edc79a0c951634d8bd4f5809d5da537910ecaec1733f03ad8d9117174ba",
+        "sha256": "1f0f64bd7b825a8fe3220f848637fc8581ed68d72a73058e0e5608203d954fe5",
         "mime": "text/markdown"
       }
     },
@@ -1896,14 +1897,14 @@
         {
           "path": "bh1750.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/bh1750/bh1750.py",
-          "sha256": "899fd57b7ff397b5dbde811bd6b055023d83b54d92bdbf5e6db2544f2d7e07e7",
+          "sha256": "34212087e3b01d4c305b4d7c8ac3d9f37f99dc83939e3fa1a6d263a5ff8cd76d",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/bh1750/README.md",
-        "sha256": "9639e0ad579185c958a3257286506f16d6b618e2eafa615d8f0f8f2a50ad491c",
+        "sha256": "e32c9c6cd0032b574c0093821a999054288c155ec78ee69589d296d90bb58ffb",
         "mime": "text/markdown"
       }
     },
@@ -1924,14 +1925,14 @@
         {
           "path": "bmm150.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/bmm150/bmm150.py",
-          "sha256": "e4e2640df34dc85077afb1b37f939adb8a24b5ce80bcc74ab5d4c72e51295121",
+          "sha256": "7daa8339482f2c7bdd7fae9bab32babb1c08a8f04cd34b1847bcb6e43ae3b2fe",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/bmm150/README.md",
-        "sha256": "197b0de92c2322d340b0568e9a45615ee85ac4997cb7e2c2832a30019ae4cbc9",
+        "sha256": "bfe72a9f8ba2fbd3123ea011ca3499ba213d7f1b2a97443c30a9290502dab3d4",
         "mime": "text/markdown"
       }
     },
@@ -1951,14 +1952,14 @@
         {
           "path": "bmp280.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/bmp280/bmp280.py",
-          "sha256": "905e089799732552d15ca60154b3b95c585159282855a36ec950f4d5f16ceda8",
+          "sha256": "a836d66a224ffdf706c4455e03ccc47117434d94916538f16978005ed5cc4f52",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/bmp280/README.md",
-        "sha256": "545190c5b4adc94507f4d5c40ef0102dafb60161fc3ab032e5b210584c9ec86c",
+        "sha256": "885b33569573d8e53871cf783c5bdd31130f82331179deaa6d214c79ec02ff03",
         "mime": "text/markdown"
       }
     },
@@ -1977,14 +1978,14 @@
         {
           "path": "dht_sensor.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/dht/dht_sensor.py",
-          "sha256": "2c6f8f73590a7e7fab42830c15a8887720c52deb95541ba6260711f93174e6dd",
+          "sha256": "66d34955bf47accaa8a336d64c3ce511db2ff7cd1da554db59f2edcdb7552685",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/dht/README.md",
-        "sha256": "a716a82b0a103aca2fe347051f7eda2ddb8747acd9f89ce922399fe503c139fc",
+        "sha256": "a355601e34eb2222c3d44f1da6f25f437415007a49f2ac0488386c642b5b7576",
         "mime": "text/markdown"
       }
     },
@@ -2004,14 +2005,14 @@
         {
           "path": "ds3231.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ds3231/ds3231.py",
-          "sha256": "2ab00866225ed25fcaabe5d3ebae836b11fad9f42ae71bc68016d061cba025c9",
+          "sha256": "d7b82f7049ff49f8aaa0d5ce5cdaf8ac3f7aa9fe46a2a3eb39f0f9d5ba0bb683",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ds3231/README.md",
-        "sha256": "4d561ba86970c680bbc11479f2e58f9dc487f4af2c97e83f1b8689122b0fed96",
+        "sha256": "d699282ecb31cdb3ac7b7177d40ecdfe4ba94b965e50aac5ca9d7d0a205f59df",
         "mime": "text/markdown"
       }
     },
@@ -2030,14 +2031,14 @@
         {
           "path": "eeprom.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/eeprom/eeprom.py",
-          "sha256": "70584190af983005af07b357e05763c6c0ae22c8bffa4e0e1a96a2f5bb023c0c",
+          "sha256": "c63c1255ea42820a407d147b32962ecdb81a9274baa7c3ebe738d3390bc13a8d",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/eeprom/README.md",
-        "sha256": "e5548029700ba00bb47b1c5e3fbda712e85b9c57c12d64c40a67c54b6c4e10cf",
+        "sha256": "ca2573d62331ce50cd21abe35d6ac02b2deff222eac77bfbca047509ade969c9",
         "mime": "text/markdown"
       }
     },
@@ -2056,14 +2057,14 @@
         {
           "path": "gy271.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/gy271/gy271.py",
-          "sha256": "1b25e4c301b317403d89af9a4a74040ebea6387e8b76d4f6403d7fbaab20994b",
+          "sha256": "383d7af3eb049e8001c5f56c88d79fae29816e62e31bc3af567f3d14e05785ce",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/gy271/README.md",
-        "sha256": "ff997e09a52c3134a884f77bf7e856c6f42171d2a7d204347f258f440abe0ce9",
+        "sha256": "2da019fcc2c6b6a8fb546113f6361ab92eb6e29606ce9749d528322a59dbd6d2",
         "mime": "text/markdown"
       }
     },
@@ -2084,14 +2085,14 @@
         {
           "path": "hcsr04.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/hcsr04/hcsr04.py",
-          "sha256": "4214d4fbee9aaacd591e7df963c6f011dd76ddd6e5b9339543972cf77f47c117",
+          "sha256": "774d237b0d5099e523ff52bfed96cc0095c0821d3055c5156936359b12ec830a",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/hcsr04/README.md",
-        "sha256": "21f902e7e382328cc16eb9fe62550f2b6bf9a563f0239b4ce1ca1e39e65e49e7",
+        "sha256": "1b27c8582be265112f7707b43f3051ee6d58ad970cdcd0c7fc6ec68c6cbff494",
         "mime": "text/markdown"
       }
     },
@@ -2111,20 +2112,20 @@
         {
           "path": "i2c_lcd.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/i2c-lcd/i2c_lcd.py",
-          "sha256": "876944f1125d7613a672a982721e228567eac2a9b25fc3ede720f77980891949",
+          "sha256": "acfcdbf644e267afc55f83946b9b1e8ead3d04859b1dd40f8e9c911685fe9c5c",
           "mime": "text/x-python"
         },
         {
           "path": "lcd_api.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/i2c-lcd/lcd_api.py",
-          "sha256": "8c742a1b6b0188a24855415a5057bf2ec9383c233599bc7f41a49c358c5e0510",
+          "sha256": "16391f98006c5bcaa8888b5d96764395323eab56421a390bec6b573abd8de8fc",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/i2c-lcd/README.md",
-        "sha256": "0ab9d7ecdf948169ab8f267f8d0cb0d74a341a04b41267927200e54e8a001607",
+        "sha256": "adf43b56ad6b79557dd95e08b1eb61a9f71406a37272212786599181f049f9c1",
         "mime": "text/markdown"
       }
     },
@@ -2143,14 +2144,14 @@
         {
           "path": "ir_receiver.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ir-receiver/ir_receiver.py",
-          "sha256": "583636da91f8465caa1ccd1f4b6cbcd0039801bbda3368c451cc560fc04915a3",
+          "sha256": "1a93d00a1fe8db3c4c7bbcae339fece50ba33f0825b5f694b2b2f211ece23181",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ir-receiver/README.md",
-        "sha256": "f664e4fc55af8ade29e985759a716bc218365c03ef1875a2eb1845ac2151e3d0",
+        "sha256": "9693c5f7d1298f6875cea493935c8a74462dfb7e178fa84655f596a67ec7e099",
         "mime": "text/markdown"
       }
     },
@@ -2169,14 +2170,14 @@
         {
           "path": "ir_transmitter.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ir-transmitter/ir_transmitter.py",
-          "sha256": "c76656bdb42a5be2cb32f5162e8d8262a99fd944312b86ff3e19a95e6f3cec63",
+          "sha256": "28feb443e5284c41a1f0d0536986bf6d84becad8217b364152acec3c01d0ad96",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ir-transmitter/README.md",
-        "sha256": "e701c3818f78999bee966ad8998ed537c1219a9e854b6953de4871fdaedb66e3",
+        "sha256": "d67372c12f878cd87e1e94f549715c20366d60cc6bd797af8e9bda07ae355b96",
         "mime": "text/markdown"
       }
     },
@@ -2195,14 +2196,14 @@
         {
           "path": "keypad.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/keypad/keypad.py",
-          "sha256": "f0281b2c410bb85ff5f00029ba923b756e258d2d9c6b12974439e86a438104b0",
+          "sha256": "59751de991c05bbec73e26972ca70ee87cefd107c6be30951c40f30ca28d22fb",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/keypad/README.md",
-        "sha256": "915b36c4f9cf8ff94dd815a6630df74788dcb59aeaae67b46436f0a8d447b27b",
+        "sha256": "1bffb61bf347bd2ba08435c6dd1ab2dc2b04f0e0d801f9b005d0b9c2872b192c",
         "mime": "text/markdown"
       }
     },
@@ -2223,14 +2224,14 @@
         {
           "path": "max7219.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/max7219/max7219.py",
-          "sha256": "f46c6506a54329eecfc6045e7c28e18cf28d5d38647284c2ebb5eae56abd698e",
+          "sha256": "6041c180e51b4a8b8477f85a75c4db0ff0efc89427986cea9f3664216694a3b5",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/max7219/README.md",
-        "sha256": "4aeeaed4c22129bd379f7dd7a8374ca4178cd2b805b5b28873cf22e7f616a0a9",
+        "sha256": "2c2b709bbe61dabf3fb1f04c498c9b31d99980471a76dfa1de28ffc0690aa583",
         "mime": "text/markdown"
       }
     },
@@ -2251,14 +2252,14 @@
         {
           "path": "mfrc522.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/mfrc522/mfrc522.py",
-          "sha256": "c726181bb2bbf2175bc44ebe333bce0031c69517a24c3dd39db001d3a5d76ad0",
+          "sha256": "b274b91707d59c25eed3c17838fb73b285844e1a883924b46cda64f93b0ded40",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/mfrc522/README.md",
-        "sha256": "bd4c8d6713d6852240cdc0fbd00a59f61980ef6b509690a982357be24fb68289",
+        "sha256": "077d476e407b96a34a220e64601863bbd1a0fe299759e20bb435b39697544b71",
         "mime": "text/markdown"
       }
     },
@@ -2277,14 +2278,14 @@
         {
           "path": "motor.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/motor/motor.py",
-          "sha256": "2db339fc2acf7a8e46705ed94d14c06af29d63b7032197668cf70631235d000c",
+          "sha256": "cdd7dcca492b083e234e283e96f7cde1ccca5906f779b9980fea8dfdec73d93f",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/motor/README.md",
-        "sha256": "e9ec2e57e127355bbb1ac046ef8896cd285b842d295589d928dc59ecd734cb29",
+        "sha256": "0b8070d64b1055e5be28bdee75daf9df3aa0ffb8e13ae1e2d111975846c45291",
         "mime": "text/markdown"
       }
     },
@@ -2302,14 +2303,14 @@
         {
           "path": "mpu6050.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/mpu6050/mpu6050.py",
-          "sha256": "91a576007f9564426a25b7d761886669800e433045ff90b67f9f1d8baf4ac51e",
+          "sha256": "2dfe0366cb1beeb299fd8b0064c6fc6761ebf69a53e785e27fc3a67e6d9d7fd0",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/mpu6050/README.md",
-        "sha256": "adfda00ba371815b93c298e4ff119679a574f1043415f51f4e4518f871ed7752",
+        "sha256": "f0539b3289b2d55f51c9cbde018b57d0d7aa4343d8c1a0ba9f00cb57363d5282",
         "mime": "text/markdown"
       }
     },
@@ -2328,14 +2329,14 @@
         {
           "path": "mux74hc4051.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/mux74hc4051/mux74hc4051.py",
-          "sha256": "487fbd37866fa801b29a27b957d1294492a5a5eb920f643e5c1c9fd0971e957d",
+          "sha256": "835dfe273532b070ff68a79fb8455b4a1718846ae7287aeab35528d9e2a71e6d",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/mux74hc4051/README.md",
-        "sha256": "79d5a4d076ad3dd9247f6688bced5c400c04048274a293e796deaabbb02fbc7a",
+        "sha256": "91ff08c5dad6e1af909fa655e4fa6a2258fc973bfbcbe3861d5f206caa02020e",
         "mime": "text/markdown"
       }
     },
@@ -2356,14 +2357,14 @@
         {
           "path": "nrf24l01.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/nrf24l01/nrf24l01.py",
-          "sha256": "16897e81f9160006f2a0b104b11c6b8353cefac15aefe91607fb34da3ea2d2c8",
+          "sha256": "9e3156e5bf26e806a741d6cee0f69a6bc2fbbe1416e2c4360555eee5e2623ec5",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/nrf24l01/README.md",
-        "sha256": "efc5ef17e7ae51752a5efca8d5568ac537cfbd614df8746c552c9662fe0fc7ec",
+        "sha256": "68542c9e814f76cee7b2f3aa4c7f6f3b85a1195387aff74fe861274d97b52db9",
         "mime": "text/markdown"
       }
     },
@@ -2382,14 +2383,14 @@
         {
           "path": "p9813.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/p9813/p9813.py",
-          "sha256": "edc7bb8b86d5c84a93575763f9eb7f7328f47a6dbed710a88e80eac80aa51427",
+          "sha256": "a114262ea7333f80eae32a271c5bc0027f7363516bcb8f715ec573186d80a5e5",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/p9813/README.md",
-        "sha256": "a56fd92a85398a90ef21917599e60488522b89b7d0b7ed24ac5c95d4a161a5f9",
+        "sha256": "49c88a813c527540c35316bf9246f0b218ac23e2364eaeff43a0d8df57065a66",
         "mime": "text/markdown"
       }
     },
@@ -2408,14 +2409,14 @@
         {
           "path": "piezo.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/piezo/piezo.py",
-          "sha256": "8e3d777e02c7ca2786e18c5eb6062805778df29dc93beff22ac081fa2383223d",
+          "sha256": "2ea29bd41233ab6cda601220296af3eab0acedf2feeeaa07bfe3ebbe4ed6beed",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/piezo/README.md",
-        "sha256": "1f8e32d69a5d9946fc6cd20c7af7a7b449524ef4c3cea6335e329f407632d931",
+        "sha256": "8ac1c92d3cd44b0f46ab0bd6997afb719d2d25b27de29a2f47cdf624dd003764",
         "mime": "text/markdown"
       }
     },
@@ -2434,14 +2435,14 @@
         {
           "path": "pixels.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/pixels/pixels.py",
-          "sha256": "026d69a9db1e9ae5c552aecc58419450b202be37b9cc8e884abc6abb1de0641d",
+          "sha256": "b3cda6fc85d52a6b9ec4878cb145d85c0b7ba64d399ea64ec075ec9429c77de9",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/pixels/README.md",
-        "sha256": "859c65bfe791adfa6220ca1573aa1949a578458f2063834abb74153a2e605f60",
+        "sha256": "8c3587155c373608aedc2d31af7f0f30f09f47fa368a574e81643a8ef3c0e0c8",
         "mime": "text/markdown"
       }
     },
@@ -2461,14 +2462,14 @@
         {
           "path": "qmc5883l.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/qmc5883l/qmc5883l.py",
-          "sha256": "bba756241f135c87ed4be43891d5efebcf5ba618d5239635b9e4990b60234fe2",
+          "sha256": "c1c8e466ba8937a5f5022972e38e95f104ac1915cbf70bfb92e985776bf43876",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/qmc5883l/README.md",
-        "sha256": "82e34941d5421e89d68a7c0a506b65ec426a588d1a8439948502369a92da4f7f",
+        "sha256": "e817aa396c31c733f5d51a8b0639bfa9023fd8b529061373b8bb27f729de2ee5",
         "mime": "text/markdown"
       }
     },
@@ -2486,14 +2487,14 @@
         {
           "path": "rgb565_display.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/rgb565-display/rgb565_display.py",
-          "sha256": "43e2547aea2fe969bf2506b2d37e43ae9de18caded9f9a98f5156c54d79c78cc",
+          "sha256": "0c60caee1e543252ad27b70c02c888804276b860a4a8cb633d7ea6cb425441f9",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/rgb565-display/README.md",
-        "sha256": "bf3551fe602cc949d4b6579f136eb3a3f32c4473c2dc4a263ed430b9107c0939",
+        "sha256": "a4f69548f301b2ed096b7051319bebef3c52f1b2d5da389ce90aefd1f4336148",
         "mime": "text/markdown"
       }
     },
@@ -2512,14 +2513,14 @@
         {
           "path": "rotary.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/rotary/rotary.py",
-          "sha256": "070b187b52069de777cdefa3bd2bba216937a8924471c8cf5e26a38d7c8f1c76",
+          "sha256": "5f4ff56ac51656214f9777dbcaa67d8feede4d481b3312fcb001416eecac07c6",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/rotary/README.md",
-        "sha256": "79a8c50d4129adf5c27a55a3945fff51d4b21742709852e25bc6efec515840fe",
+        "sha256": "29fcff86ca1ac59671184402e0c69bb0dde872166599caba223429ec9f89439d",
         "mime": "text/markdown"
       }
     },
@@ -2538,14 +2539,14 @@
         {
           "path": "rs485.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/rs485/rs485.py",
-          "sha256": "ffeec1397dc0f33368084b9173c064f660fb0acb2e4eabbb005e9f5287c370c7",
+          "sha256": "a72ad2e8ec685d00263cc0045f732b97981b2adfb841d3c7922fcce4b0557377",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/rs485/README.md",
-        "sha256": "5ea235eeafa6051859dfca753daf28f706fe9686672d6463ffa289092b58f42e",
+        "sha256": "50aaa672644afbc4932001c93ba8ba1549f2446a06acf41be0fae8407c8c93a0",
         "mime": "text/markdown"
       }
     },
@@ -2564,14 +2565,14 @@
         {
           "path": "servo.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/servo/servo.py",
-          "sha256": "60e542fa2606074294904806db9bc23426d7f93d803fec4b1d9c21089af73450",
+          "sha256": "1b2804c83f4ff7b6984b3672f5079eb0e99d8a91ec80f88642d75b05e9426bfe",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/servo/README.md",
-        "sha256": "4f45e6237584f1101abcdd161eac7f755545f99759c455501eb9f72a79875198",
+        "sha256": "57fa1323e066c3b542ab447331b8c094648657babd479384402c3172e3c91f0c",
         "mime": "text/markdown"
       }
     },
@@ -2592,14 +2593,14 @@
         {
           "path": "sh1106.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/sh1106/sh1106.py",
-          "sha256": "c55a743bbd8d507ac06faac56e45e472a946c183436674bbd05617bf23a0c773",
+          "sha256": "b61098c7295627149fb07f8d5b8d99832df7a3113d72c5db0aaf90c0ec0ef14a",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/sh1106/README.md",
-        "sha256": "b46a40638e47a81cee9c493fb6d17532bdc5ce52272f8dcb6c1921b16bc9138a",
+        "sha256": "d742860a21f1f3221c8582cb763dbc144470a4f2b10a83feb12cce949edb552b",
         "mime": "text/markdown"
       }
     },
@@ -2618,14 +2619,14 @@
         {
           "path": "sr74hc595.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/sr74hc595/sr74hc595.py",
-          "sha256": "9b22596227a8a84cdc1f85f6528f08642011eb07bbe0727ead3e1f1f76e06b9f",
+          "sha256": "6e25521609f3f4003c6d8f0906bacc57a78062f56bfbc79e49fb2b0683c73a36",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/sr74hc595/README.md",
-        "sha256": "d5df0c459c03dbee84ba0e8b5451e69d74dc34cc97def7e4ca33b403d02e28a6",
+        "sha256": "5478396c63076ec212f6536177fd750893765a6f5b4f826972300998507164fc",
         "mime": "text/markdown"
       }
     },
@@ -2646,14 +2647,14 @@
         {
           "path": "ssd1306.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ssd1306/ssd1306.py",
-          "sha256": "f48daf6e518e3c0b13b6fe3dcb1413622a22a8a963758d31a5beaea0623a42e1",
+          "sha256": "757a8712ac4f9925a4cea0f494c3e41d596bad80f1ffb302147177088bbc87bd",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ssd1306/README.md",
-        "sha256": "66c9bed3e683196d81af1213b4df46c4df67576ef5bd333953fb5f7554df4343",
+        "sha256": "9a8e1c1260e1f5cca57618e57c1f5c48c44db8c9fad4e13bc7c3ff74afa27682",
         "mime": "text/markdown"
       }
     },
@@ -2673,14 +2674,14 @@
         {
           "path": "ssd1680.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ssd1680/ssd1680.py",
-          "sha256": "6359275d49f07d45278ba47bb0d83398ca1564b740474f327c49b47d11e4181c",
+          "sha256": "22128d30316c6b65f2ec0e6e952fb7d932133cafe24effa1ea28b96e96b53eab",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ssd1680/README.md",
-        "sha256": "d42aebe57b4d36ec53108705210290caf355afc17bdceae6af4e41ee39f67f4b",
+        "sha256": "9778f7f6d2ad4124d0cf2d57a0dbdd756211d0589313ce136f5e5932d98eb990",
         "mime": "text/markdown"
       }
     },
@@ -2699,14 +2700,14 @@
         {
           "path": "st7789_parallel.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/st7789-parallel/st7789_parallel.py",
-          "sha256": "23850a0fe69e7fc9929efa768837f4d66bb33a554d4a8959087ae9c4fdf610ce",
+          "sha256": "9f1f49f6640cbf5626da4cb2e187a0e7c64c1164b1e30ff52fdd1396f0c16845",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/st7789-parallel/README.md",
-        "sha256": "1e61864d9b49e5d5a6313f1c0ca80f212c28c1a904c5a034c02ac4e7011d7b99",
+        "sha256": "df2f730a206fb39ad06ec2a7a1f19c71bb6a1b800ed71ad949ce60fff3704644",
         "mime": "text/markdown"
       }
     },
@@ -2727,20 +2728,20 @@
         {
           "path": "st7789py.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/st7789py/st7789py.py",
-          "sha256": "8f001a5b8f591148d35f7379339fccf46dd3a5cc808b04b266311e3e7dd46a1d",
+          "sha256": "92f2e90cfaba85cdeaff040cc70d7280ef441c6f4aa590ab81c1fce7623242d3",
           "mime": "text/x-python"
         },
         {
           "path": "vga2_16x32.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/st7789py/vga2_16x32.py",
-          "sha256": "a14ab76be1e24415205ed7aae199f5d18885c760d81443f151ebb9c254cc9346",
+          "sha256": "ce0440aa67f534ddd5ef2b0827e06a23e489107a2857785bfdb19662b309e47d",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/st7789py/README.md",
-        "sha256": "138d14c74ff0c212edd9b6981389fc3f64dfdb06a9cea65cdd1989fcba37c081",
+        "sha256": "44acb3ed08eae5e973f7ecebada833c3920c6041ccfddf57c84097020962a8d9",
         "mime": "text/markdown"
       }
     },
@@ -2759,14 +2760,14 @@
         {
           "path": "stepper.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/stepper/stepper.py",
-          "sha256": "69d1457345b5ab87daa71497a49c60fe9d850f20ecd73734dc1e3528fd692e27",
+          "sha256": "c9550bbd2b5c82ca8be196f03a4e56df5ce6e9fee6f300f86c90b07d91b0c55c",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/stepper/README.md",
-        "sha256": "a6e8ea26456651689e922caa35398eb38fb3d75f0cfd84f02d18919c49d5e188",
+        "sha256": "7548ad2b1a2031058476346800c8d31f45aa5a017c6e606061f0be127e76d968",
         "mime": "text/markdown"
       }
     },
@@ -2787,14 +2788,14 @@
         {
           "path": "sy6970.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/sy6970/sy6970.py",
-          "sha256": "8d2a74d467f79fa580957e41bac9063fb2a5101f45cfa94bde6cbef51dfa7758",
+          "sha256": "c373ba886e2ad94b31068786abf194b2d47a5164d432391d440c1145a438450c",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/sy6970/README.md",
-        "sha256": "5b4fbeb22f268050a35e81711ad19b69eef5e512e66b33fb434f690a26cd3e18",
+        "sha256": "710ac7e830045ad775615449c492cd52ad73e096fae6b9db14373923ac692adb",
         "mime": "text/markdown"
       }
     },
@@ -2813,14 +2814,14 @@
         {
           "path": "tc74.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/tc74/tc74.py",
-          "sha256": "6ab37859f240ee4caa3393cfb17462ae409f548ba6541a4bd157514e6b14eacc",
+          "sha256": "a2c4d3e1a0d4cf4f8428e0962b8d0e0af7a9a04a03da67759dc8c59f17850743",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/tc74/README.md",
-        "sha256": "d218741dbf0b5dac4bf06bb1a06dfc8b0f3294824ddfb90b584851f701584b42",
+        "sha256": "72ff8a73a2a4f7843c21833c8b390e85e364b1c7ae80bd05b232349aa29c9542",
         "mime": "text/markdown"
       }
     },
@@ -2841,14 +2842,14 @@
         {
           "path": "tm1637.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/tm1637/tm1637.py",
-          "sha256": "c02419e86e7ba301ac62947ab0b6e8ad1460c267a49ba4215300538a5f233e8c",
+          "sha256": "4932c6b21cee769cc5368341c4f563b3f88776158a2e9075f6ae74f0037958b0",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/tm1637/README.md",
-        "sha256": "a3e48cbbf57da5cb68593cdfaed668d2f4fc7b6eb3aaf8d75958ada74f38f4fe",
+        "sha256": "cf642c16ed4da9809b1d973ebbf4d5bcac6a6a15a76a696c81102815d218edc6",
         "mime": "text/markdown"
       }
     },
@@ -2869,14 +2870,14 @@
         {
           "path": "umqtt/simple.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/umqtt/umqtt/simple.py",
-          "sha256": "01c25251994e4d7d7baaccc2e6e11a31d7162b038ee2060667df853558451d95",
+          "sha256": "0af19403f3fcc93e8252743fe6caaf44701c09bd8a618bbf8a536ec3cf3215fb",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/umqtt/README.md",
-        "sha256": "63836846814ef130aa667af501250334483c869fface0259c504ee63f0a49d7c",
+        "sha256": "25766310adf0a8b34ca83ab8103ce485565496a416c769060e39e5c53d1a1272",
         "mime": "text/markdown"
       }
     },
@@ -2896,14 +2897,14 @@
         {
           "path": "vcnl4040.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/vcnl4040/vcnl4040.py",
-          "sha256": "f8091f3045d2228a5420113f716e19ca3b988ffbd3099cba752280b843039c83",
+          "sha256": "9f901f05ac899f993e5c986f975e1a02c8b558459f1ddb6be0c4ead062b0e08b",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/vcnl4040/README.md",
-        "sha256": "f9fc5af9350dc9bb8d18ce6fce809f5640175e1396c0e67496f252935cbd8c4c",
+        "sha256": "1aa4de9c30d19900be55b9e4084786fc532fa7c13610cd7cb24a77ff57b451e2",
         "mime": "text/markdown"
       }
     },
@@ -2923,14 +2924,14 @@
         {
           "path": "veml7700.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/veml7700/veml7700.py",
-          "sha256": "89fcfd18308aa4030eb50692aae94ab975019207e533504ff2fa67353b7f4937",
+          "sha256": "833fd7a2aa89bd0613f2324eeb3d4696d75114944e3ed5f8ad36774438ac2beb",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/veml7700/README.md",
-        "sha256": "7ea9414d0bfba1739511b0e9eeffb7229244e67e903717ea60da8d9504f2a5b6",
+        "sha256": "936b012c009c65a2790cd36070a8f112c51c3a6544a60c12fd028b3e0143109b",
         "mime": "text/markdown"
       }
     },
@@ -2950,14 +2951,14 @@
         {
           "path": "vl6180x.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/vl6180x/vl6180x.py",
-          "sha256": "c5a42980fafb62c60fa0779de6b80f73cafa624d2e645804a1af1f2e9cd81383",
+          "sha256": "7db4ad856054be8c1d0318f8d480ceeed4d23aa241097939ca006f03041822a4",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/vl6180x/README.md",
-        "sha256": "63c1c628f35da67c4373404f14b9dd3ceddcbaa0dc971edab35601a8b974235e",
+        "sha256": "927b557e6d8dd953dac5fb3f1eda949ebd7572f64acb4a7c751766b429ac26ca",
         "mime": "text/markdown"
       }
     },
@@ -2976,14 +2977,14 @@
         {
           "path": "wifi.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/wifi/wifi.py",
-          "sha256": "15ed97fa27c66313373b4799e124b3a44ffe682a12fbf7ec95b825eaf1133c05",
+          "sha256": "a78991f516626e49eead7330a1b2c79b35fb927d0cf1e573677f25425a3b7993",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/wifi/README.md",
-        "sha256": "0e207c234c1a375ebe3d88625dc7e8fbcb5209733208a871bd10887f692ba443",
+        "sha256": "c95c98675f35d9541ba4489aab7854e00e3db521c107cc729551cc866f4b4ad0",
         "mime": "text/markdown"
       }
     }
