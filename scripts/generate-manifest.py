@@ -30,8 +30,16 @@ GROUPS = (
 GROUP_ORDER = [name for name, _ in GROUPS]
 GROUP_DESCRIPTIONS = dict(GROUPS)
 
+def read_text(path: Path):
+    return path.read_text(encoding="utf-8")
+
+def write_text(path: Path, text: str):
+    path.write_text(text, encoding="utf-8")
+
 def entry(path: Path, relative_to: Path):
     data = path.read_bytes()
+    if path.suffix.lower() in {".json", ".md", ".py"}:
+        data = data.replace(b"\r\n", b"\n")
     relative = path.relative_to(ROOT).as_posix().replace(" ", "%20")
     return {"path": path.relative_to(relative_to).as_posix(), "url": f"{BASE}/{relative}",
             "sha256": hashlib.sha256(data).hexdigest(),
@@ -43,12 +51,12 @@ def write_front_matter(readme: Path, fields: dict):
     Written from example.json and driver.json rather than by hand, so the two always agree.
     GitHub renders it as a table; the IDE hides it and shows the author on the card instead.
     """
-    text = readme.read_text()
+    text = read_text(readme)
     if text.startswith("---\n"):
         _, _, text = text[4:].partition("---\n")
         text = text.lstrip("\n")
     lines = "\n".join(f"{key}: {value}" for key, value in fields.items() if value)
-    readme.write_text(f"---\n{lines}\n---\n\n{text}")
+    write_text(readme, f"---\n{lines}\n---\n\n{text}")
 
 
 def fail(folder, message):
@@ -58,7 +66,7 @@ def read_metadata(folder: Path, name: str, required: tuple[str, ...]):
     path = folder / name
     if not path.exists(): fail(folder, f"missing {name}")
     if not (folder / "README.md").exists(): fail(folder, "missing README.md")
-    metadata = json.loads(path.read_text())
+    metadata = json.loads(read_text(path))
     if any(not metadata.get(key) for key in required): fail(folder, f"{name} must contain {required}")
     return metadata
 
@@ -123,7 +131,7 @@ for example in examples:
     summary = example["description"].split(". ")[0].rstrip(".")
     rows[-1][1].append(f"| [{example['title']}]({example['id']}) | {summary}. | {needs} |")
 index = EXAMPLES / "README.md"
-head, _, rest = index.read_text().partition("<!-- generated:start -->")
+head, _, rest = read_text(index).partition("<!-- generated:start -->")
 _, _, tail = rest.partition("<!-- generated:end -->")
 sections = "\n\n".join(
     f"### {group}\n\n"
@@ -132,7 +140,7 @@ sections = "\n\n".join(
     + "\n".join(lines)
     for group, lines in rows
 )
-index.write_text(f"{head}<!-- generated:start -->\n{sections}\n<!-- generated:end -->{tail}")
+write_text(index, f"{head}<!-- generated:start -->\n{sections}\n<!-- generated:end -->{tail}")
 
 # The driver table in drivers/README.md is generated so it cannot drift from driver.json.
 rows = ["| Driver | Modules | Used by |", "| --- | --- | --- |"]
@@ -141,9 +149,9 @@ for driver in drivers:
     used_by = ", ".join(f"[{e['id']}](../examples/{e['id']})" for e in examples if driver["id"] in e["requires"])
     rows.append(f"| [{driver['id']}]({driver['id']}) | {modules} | {used_by or '—'} |")
 index = DRIVERS / "README.md"
-head, _, rest = index.read_text().partition("<!-- generated:start -->")
+head, _, rest = read_text(index).partition("<!-- generated:start -->")
 _, _, tail = rest.partition("<!-- generated:end -->")
-index.write_text(f"{head}<!-- generated:start -->\n" + "\n".join(rows) + f"\n<!-- generated:end -->{tail}")
+write_text(index, f"{head}<!-- generated:start -->\n" + "\n".join(rows) + f"\n<!-- generated:end -->{tail}")
 
 # Only the groups that have something in them, in the order the examples are already in.
 group_names = []
@@ -157,5 +165,5 @@ manifest = {"schema": "pulsar.micropython.library/v1",
             "catalog": {"id": "micropython-examples", "name": "MicroPython Examples", "version": VERSION},
             "repository": REPOSITORY,
             "groups": groups, "examples": examples, "drivers": drivers}
-(ROOT / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
+write_text(ROOT / "manifest.json", json.dumps(manifest, indent=2) + "\n")
 print(f"Generated {len(examples)} examples and {len(drivers)} drivers")
