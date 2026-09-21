@@ -1,25 +1,29 @@
 ---
-example: i2c-compass-gy271
+example: i2c-compass-hmc5883l
 author: Steven Slaa
 ---
 
-# I2C Compass (GY-271) Example
+# HMC5883L Compass Example
 
-In this example the microcontroller reads the magnetic field from a GY-271 or HW-246 compass
-module and prints the three axes in microtesla along with a heading in degrees.
+In this example the microcontroller reads an HMC5883L twice a second and prints the magnetic
+field on three axes in microtesla, along with a compass heading in degrees.
+
+The HMC5883L is a three axis magnetometer: a sensor that measures magnetic fields. The earth's
+field points north, so with the sensor held flat it works as a digital compass. It is the chip on
+older GY-271 modules. The [driver README](../../drivers/hmc5883l) explains more.
 
 ## Requires
-This example needs the [GY-271 compass (QMC5883L / HMC5883L)](../../drivers/gy271) driver
-installed on the board.
+This example needs the [HMC5883L magnetometer](../../drivers/hmc5883l) driver installed on the
+board.
 > Install it from the library panel in the Pulsar IoT IDE, or copy the driver's `.py`
 > files into `/lib` on the microcontroller yourself.
 
 ## Connections
 
-The module runs on 3.3V. Boards sold as GY-271 carry either a QMC5883L at address `0x0d` or an
-HMC5883L at `0x1e`; the example detects which and prints it, so you do not have to know.
+The sensor sits at I2C address `0x1E`. If `i2c.scan()` finds `0x0D` instead, your module carries
+the newer QMC5883L; use the [QMC5883L compass example](../i2c-compass-qmc5883l) for that one.
 
-| GY-271 | ESP32 | Pico |
+| HMC5883L module | ESP32 | Pico |
 | --- | --- | --- |
 | VCC | 3V3 | 3V3 |
 | GND | GND | GND |
@@ -30,10 +34,10 @@ DRDY is not used.
 
 ## Output
 ```
-Found a QMC5883L at 0x0d
 X: 21.4 uT  Y: -8.3 uT  Z: -42.1 uT  Heading: 339 degrees
 X: 22.0 uT  Y: -6.9 uT  Z: -42.4 uT  Heading: 343 degrees
 X: 19.8 uT  Y: -11.5 uT  Z: -41.8 uT  Heading: 330 degrees
+X: 21.1 uT  Y: -375.8 uT  Z: -41.9 uT  Heading: 273 degrees  <- overflow
 ```
 
 ## Calibration

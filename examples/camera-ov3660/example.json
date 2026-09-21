@@ -1,0 +1,14 @@
+{
+  "id": "camera-ov3660",
+  "title": "OV3660 Camera Example",
+  "description": "In this example the microcontroller takes a photo with the OV3660 camera on a XIAO ESP32-S3 Sense and saves it to the board as a JPEG.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32s3"
+  ],
+  "group": "Sensors",
+  "entry": "Camera OV3660.py",
+  "requires": [
+    "ov3660"
+  ]
+}

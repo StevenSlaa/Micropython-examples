@@ -1,0 +1,13 @@
+{
+  "id": "hmc5883l",
+  "name": "HMC5883L magnetometer",
+  "version": "1.0.0",
+  "description": "Three axis magnetometer driver for the Honeywell HMC5883L, reading the magnetic field in microtesla and a compass heading, with selectable range, data rate and averaging.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "source": "https://cdn-shop.adafruit.com/datasheets/HMC5883L_3-Axis_Digital_Compass_IC.pdf"
+}

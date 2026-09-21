@@ -27,8 +27,7 @@ from a QMC5883L.
 | Data rate | 10, 50, 100 or 200 Hz |
 
 Not sure which chip your module has? Run `i2c.scan()`: `0x0D` (13) is a QMC5883L, `0x1E` (30) an
-HMC5883L. For a module that could be either, use the [gy271](../gy271) driver, which detects it.
-This driver is for when you know it is a QMC5883L and want control over its settings.
+HMC5883L, which has its own [hmc5883l](../hmc5883l) driver.
 
 ## Install
 

@@ -14,8 +14,8 @@ name is the id examples put in their `requires` list.
 | [dht](dht) | `dht_sensor.py` | [dht-sensor](../examples/dht-sensor) |
 | [ds3231](ds3231) | `ds3231.py` | [i2c-rtc-ds3231](../examples/i2c-rtc-ds3231) |
 | [eeprom](eeprom) | `eeprom.py` | [i2c-eeprom](../examples/i2c-eeprom) |
-| [gy271](gy271) | `gy271.py` | [i2c-compass-gy271](../examples/i2c-compass-gy271) |
 | [hcsr04](hcsr04) | `hcsr04.py` | [ultrasonic-distance-sensor-hc-sr04](../examples/ultrasonic-distance-sensor-hc-sr04) |
+| [hmc5883l](hmc5883l) | `hmc5883l.py` | [i2c-compass-hmc5883l](../examples/i2c-compass-hmc5883l) |
 | [i2c-lcd](i2c-lcd) | `i2c_lcd.py`, `lcd_api.py` | [i2c-liquid-crystal-display](../examples/i2c-liquid-crystal-display) |
 | [ir-receiver](ir-receiver) | `ir_receiver.py` | [ir-remote-nec](../examples/ir-remote-nec) |
 | [ir-transmitter](ir-transmitter) | `ir_transmitter.py` | [ir-remote-send](../examples/ir-remote-send) |
@@ -26,6 +26,7 @@ name is the id examples put in their `requires` list.
 | [mpu6050](mpu6050) | `mpu6050.py` | [i2c-mpu-6050](../examples/i2c-mpu-6050) |
 | [mux74hc4051](mux74hc4051) | `mux74hc4051.py` | [mux-74hc4051](../examples/mux-74hc4051) |
 | [nrf24l01](nrf24l01) | `nrf24l01.py` | [nrf24-send](../examples/nrf24-send), [nrf24-receive](../examples/nrf24-receive) |
+| [ov3660](ov3660) | `ov3660.py` | [camera-ov3660](../examples/camera-ov3660) |
 | [p9813](p9813) | `p9813.py` | [p9813-rgb-led](../examples/p9813-rgb-led) |
 | [piezo](piezo) | `piezo.py` | [piezo-buzzer](../examples/piezo-buzzer) |
 | [pixels](pixels) | `pixels.py` | — |

@@ -211,6 +211,34 @@
       "assets": []
     },
     {
+      "id": "camera-ov3660",
+      "title": "OV3660 Camera Example",
+      "description": "In this example the microcontroller takes a photo with the OV3660 camera on a XIAO ESP32-S3 Sense and saves it to the board as a JPEG.",
+      "boardTags": [
+        "esp32s3"
+      ],
+      "author": "Steven Slaa",
+      "group": "Sensors",
+      "requires": [
+        "ov3660"
+      ],
+      "files": [
+        {
+          "path": "Camera OV3660.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/camera-ov3660/Camera%20OV3660.py",
+          "sha256": "e67e44a2a2d6b7dd3a17836638fb968ee3e94f0579066bbd9dee80fbec5753e7",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/camera-ov3660/README.md",
+        "sha256": "71774b48fad756bc6362842aabad8bcf34dd8e336c752a4b34a4a639f3af403e",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "dht-sensor",
       "title": "DHT Sensor Example",
       "description": "In this example the microcontroller should display the temperature and humidity in the console. This information is collected from a DHT11 or DHT22 sensor.",
@@ -321,9 +349,9 @@
       "assets": []
     },
     {
-      "id": "i2c-compass-gy271",
-      "title": "I2C Compass (GY-271) Example",
-      "description": "In this example the microcontroller reads the magnetic field from a GY-271 or HW-246 compass module and prints the three axes and a heading in degrees.",
+      "id": "i2c-compass-hmc5883l",
+      "title": "HMC5883L Compass Example",
+      "description": "In this example the microcontroller reads the magnetic field from an HMC5883L magnetometer, printing the three axes in microtesla and a compass heading in degrees, and warning when the field is out of range.",
       "boardTags": [
         "esp32",
         "esp32s3",
@@ -332,20 +360,20 @@
       "author": "Steven Slaa",
       "group": "Sensors",
       "requires": [
-        "gy271"
+        "hmc5883l"
       ],
       "files": [
         {
-          "path": "I2C Compass (GY-271).py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-compass-gy271/I2C%20Compass%20(GY-271).py",
-          "sha256": "07178c5409f8ccff09b5b0fdff8cce0813a99e79c3927b68fb3c573bf7dd7816",
+          "path": "HMC5883L (I2C).py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-compass-hmc5883l/HMC5883L%20(I2C).py",
+          "sha256": "c0dd71a23e635292bf27915ae779aec846282a686e1fa7a6805f4ac57316d87c",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-compass-gy271/README.md",
-        "sha256": "b01a9db28cf0d7a210acce874c6f5f1a605f2bfa11840fc8b71236121a264c1e",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-compass-hmc5883l/README.md",
+        "sha256": "72178cf8b54634bbe07be3ac257ed85bff268ef149b8aad7e7d52d927c8f08d0",
         "mime": "text/markdown"
       },
       "assets": []
@@ -375,7 +403,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-compass-qmc5883l/README.md",
-        "sha256": "39005cb410f045af4781f9826564414de67f94110b9b78c29b5e037b9728815f",
+        "sha256": "a0e445b720c538bb4900b1231cf80e525008e637c4c581856cb002b724c92c77",
         "mime": "text/markdown"
       },
       "assets": []
@@ -2049,32 +2077,6 @@
       }
     },
     {
-      "id": "gy271",
-      "name": "GY-271 compass (QMC5883L / HMC5883L)",
-      "version": "1.0.0",
-      "description": "Three axis magnetometer driver for the GY-271 and HW-246 compass modules, detecting whether the board carries a QMC5883L or an HMC5883L.",
-      "author": "Steven Slaa",
-      "boardTags": [
-        "esp32",
-        "esp32s3",
-        "pico"
-      ],
-      "files": [
-        {
-          "path": "gy271.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/gy271/gy271.py",
-          "sha256": "1b25e4c301b317403d89af9a4a74040ebea6387e8b76d4f6403d7fbaab20994b",
-          "mime": "text/x-python"
-        }
-      ],
-      "readme": {
-        "path": "README.md",
-        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/gy271/README.md",
-        "sha256": "ff997e09a52c3134a884f77bf7e856c6f42171d2a7d204347f258f440abe0ce9",
-        "mime": "text/markdown"
-      }
-    },
-    {
       "id": "hcsr04",
       "name": "HC-SR04",
       "version": "0.2.1",
@@ -2099,6 +2101,33 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/hcsr04/README.md",
         "sha256": "21f902e7e382328cc16eb9fe62550f2b6bf9a563f0239b4ce1ca1e39e65e49e7",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "hmc5883l",
+      "name": "HMC5883L magnetometer",
+      "version": "1.0.0",
+      "description": "Three axis magnetometer driver for the Honeywell HMC5883L, reading the magnetic field in microtesla and a compass heading, with selectable range, data rate and averaging.",
+      "author": "Steven Slaa",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "source": "https://cdn-shop.adafruit.com/datasheets/HMC5883L_3-Axis_Digital_Compass_IC.pdf",
+      "files": [
+        {
+          "path": "hmc5883l.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/hmc5883l/hmc5883l.py",
+          "sha256": "619547600346b5b9fb99ce3b3e2a6564a3a0a109ed865adcc3fd1df1dc6bd31e",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/hmc5883l/README.md",
+        "sha256": "b82f1bcc757b05c267a7eec32d0d98599009f1309c2a1de8f40ca7c1796d2ffc",
         "mime": "text/markdown"
       }
     },
@@ -2375,6 +2404,30 @@
       }
     },
     {
+      "id": "ov3660",
+      "name": "OV3660 camera",
+      "version": "1.0.0",
+      "description": "Starts the OV3660 camera on a Seeed XIAO ESP32-S3 Sense: the board's pin map and the sensor's own orientation and colour corrections, over a firmware built with camera support.",
+      "author": "Steven Slaa",
+      "boardTags": [
+        "esp32s3"
+      ],
+      "files": [
+        {
+          "path": "ov3660.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ov3660/ov3660.py",
+          "sha256": "3e92c7dec4f5bf343743e5eb1942ece49ba6851982cc0911bc88546d1f5e153b",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ov3660/README.md",
+        "sha256": "3eb8a61f9a5e6f109f232b176af6a56e814b2c83de04090b6842c9a147f27587",
+        "mime": "text/markdown"
+      }
+    },
+    {
       "id": "p9813",
       "name": "P9813 RGB LED driver",
       "version": "1.0.0",
@@ -2475,7 +2528,7 @@
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/qmc5883l/README.md",
-        "sha256": "82e34941d5421e89d68a7c0a506b65ec426a588d1a8439948502369a92da4f7f",
+        "sha256": "57c16c99ea83c6a6c82a52b888c12142f419e6dbcd942d5086c7e0018ab69a54",
         "mime": "text/markdown"
       }
     },

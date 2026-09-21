@@ -1,0 +1,10 @@
+{
+  "id": "ov3660",
+  "name": "OV3660 camera",
+  "version": "1.0.0",
+  "description": "Starts the OV3660 camera on a Seeed XIAO ESP32-S3 Sense: the board's pin map and the sensor's own orientation and colour corrections, over a firmware built with camera support.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32s3"
+  ]
+}

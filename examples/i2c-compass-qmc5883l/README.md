@@ -21,7 +21,7 @@ board.
 ## Connections
 
 The sensor sits at I2C address `0x0D`. If `i2c.scan()` finds `0x1E` instead, your module carries
-the older HMC5883L; use the [GY-271 compass example](../i2c-compass-gy271) for that one.
+the older HMC5883L; use the [HMC5883L compass example](../i2c-compass-hmc5883l) for that one.
 
 | QMC5883L module | ESP32 | Pico |
 | --- | --- | --- |
