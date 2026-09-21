@@ -1814,6 +1814,34 @@
   ],
   "drivers": [
     {
+      "id": "ahrs",
+      "name": "AHRS orientation filters",
+      "version": "1.0.0",
+      "description": "Mahony and Madgwick sensor fusion, turning gyroscope, accelerometer and magnetometer readings into roll, pitch, yaw and a quaternion. Ported from Adafruit_AHRS.",
+      "author": "Steven Slaa",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "license": "BSD-3-Clause",
+      "source": "https://github.com/adafruit/Adafruit_AHRS",
+      "files": [
+        {
+          "path": "ahrs.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ahrs/ahrs.py",
+          "sha256": "67b68717a4ab1a253b54d37414b4e072c26e62a182e6fea9066fef288949bd78",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/ahrs/README.md",
+        "sha256": "f78c8c70a09b4341f52b4693f82437050943a6b6a58922e3b3426264309930ef",
+        "mime": "text/markdown"
+      }
+    },
+    {
       "id": "aioble",
       "name": "Bluetooth LE (aioble)",
       "version": "0.6.0",

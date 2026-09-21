@@ -1,0 +1,14 @@
+{
+  "id": "ahrs",
+  "name": "AHRS orientation filters",
+  "version": "1.0.0",
+  "description": "Mahony and Madgwick sensor fusion, turning gyroscope, accelerometer and magnetometer readings into roll, pitch, yaw and a quaternion. Ported from Adafruit_AHRS.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "license": "BSD-3-Clause",
+  "source": "https://github.com/adafruit/Adafruit_AHRS"
+}

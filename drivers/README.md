@@ -6,6 +6,7 @@ name is the id examples put in their `requires` list.
 <!-- generated:start -->
 | Driver | Modules | Used by |
 | --- | --- | --- |
+| [ahrs](ahrs) | `ahrs.py` | — |
 | [aioble](aioble) | `aioble/__init__.py`, `aioble/central.py`, `aioble/client.py`, `aioble/core.py`, `aioble/device.py`, `aioble/l2cap.py`, `aioble/peripheral.py`, `aioble/security.py`, `aioble/server.py` | [ble-scan](../examples/ble-scan), [ble-peripheral](../examples/ble-peripheral), [ble-central](../examples/ble-central) |
 | [axs15231b](axs15231b) | `axs15231b.py` | [t-display-s3-long](../examples/t-display-s3-long) |
 | [bh1750](bh1750) | `bh1750.py` | [i2c-light-bh1750](../examples/i2c-light-bh1750) |
