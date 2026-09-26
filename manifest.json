@@ -1754,6 +1754,96 @@
       "assets": []
     },
     {
+      "id": "ble-iphone-notifications",
+      "title": "4. iPhone Notifications",
+      "description": "Receives an iPhone's notifications over Bluetooth, the way a smartwatch does, and prints the app, title and message of each one. A button dismisses the latest.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "author": "Steven Slaa",
+      "group": "Bluetooth",
+      "requires": [
+        "aioble"
+      ],
+      "files": [
+        {
+          "path": "BLE iPhone Notifications.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ble-iphone-notifications/BLE%20iPhone%20Notifications.py",
+          "sha256": "645a80a522400ee0a9ca46864cf508d13eeb46051b0f6ee948df35ca3692c63d",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ble-iphone-notifications/README.md",
+        "sha256": "c1c1e862c8b50f3b6c5bc9582ef564275d147fd87df2b4e1cac1f71c58196f3e",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "ble-uart",
+      "title": "5. Bluetooth UART",
+      "description": "A serial port over Bluetooth: type commands in a phone terminal app to switch an LED, and read the board's replies, using the Nordic UART Service every BLE terminal speaks.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "author": "Steven Slaa",
+      "group": "Bluetooth",
+      "requires": [
+        "aioble"
+      ],
+      "files": [
+        {
+          "path": "BLE UART.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ble-uart/BLE%20UART.py",
+          "sha256": "8ad130ad68ee2d59ad2c8d0eae88caf184778c995dadc531310ef62c00ce35af",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ble-uart/README.md",
+        "sha256": "28feb67c5758e4f962eb644d0472b77a736aa8dbdbf40b7b6025df9afa7be2a2",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "ble-hid-media-remote",
+      "title": "6. Bluetooth Media Remote (HID)",
+      "description": "Turns the board into a Bluetooth media remote: buttons play, pause, skip and change the volume on any phone or computer, with no app, because it is a standard HID device.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "author": "Steven Slaa",
+      "group": "Bluetooth",
+      "requires": [
+        "aioble"
+      ],
+      "files": [
+        {
+          "path": "BLE HID Media Remote.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ble-hid-media-remote/BLE%20HID%20Media%20Remote.py",
+          "sha256": "aa8acf925dab4a9a37efa78247c484e88e1025c0f6da232deeae6ee7c970d25e",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ble-hid-media-remote/README.md",
+        "sha256": "b1ab4f1288dbe90bcee9ffec3efb3a24ffb95f71e7f44443ab9e3b874c70f5a9",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "i2c-eeprom",
       "title": "I2C EEPROM Example",
       "description": "In this example the microcontroller stores a boot counter and a message in an I2C EEPROM, so they survive the power being cut, and reads them back.",

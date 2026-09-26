@@ -132,6 +132,9 @@ Finding devices, being one, and connecting to one over Bluetooth Low Energy.
 | [1. Scanning for BLE Devices](ble-scan) | Lists the Bluetooth Low Energy devices advertising nearby, with their signal strength, whether they can be connected to and which services they offer. | [aioble](../drivers/aioble) |
 | [2. A BLE Peripheral](ble-peripheral) | Turns the board into a Bluetooth device that advertises a temperature service, which a phone or another board can connect to, read from and subscribe to. | [aioble](../drivers/aioble) |
 | [3. A BLE Central](ble-central) | Finds the peripheral from the previous example, connects to it, reads its temperature and then subscribes so new readings arrive on their own. | [aioble](../drivers/aioble) |
+| [4. iPhone Notifications](ble-iphone-notifications) | Receives an iPhone's notifications over Bluetooth, the way a smartwatch does, and prints the app, title and message of each one. | [aioble](../drivers/aioble) |
+| [5. Bluetooth UART](ble-uart) | A serial port over Bluetooth: type commands in a phone terminal app to switch an LED, and read the board's replies, using the Nordic UART Service every BLE terminal speaks. | [aioble](../drivers/aioble) |
+| [6. Bluetooth Media Remote (HID)](ble-hid-media-remote) | Turns the board into a Bluetooth media remote: buttons play, pause, skip and change the volume on any phone or computer, with no app, because it is a standard HID device. | [aioble](../drivers/aioble) |
 
 ### Storage and time
 

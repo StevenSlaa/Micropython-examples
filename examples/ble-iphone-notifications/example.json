@@ -1,0 +1,17 @@
+{
+  "id": "ble-iphone-notifications",
+  "title": "4. iPhone Notifications",
+  "description": "Receives an iPhone's notifications over Bluetooth, the way a smartwatch does, and prints the app, title and message of each one. A button dismisses the latest.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Bluetooth",
+  "order": 4,
+  "entry": "BLE iPhone Notifications.py",
+  "requires": [
+    "aioble"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "ble-uart",
+  "title": "5. Bluetooth UART",
+  "description": "A serial port over Bluetooth: type commands in a phone terminal app to switch an LED, and read the board's replies, using the Nordic UART Service every BLE terminal speaks.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Bluetooth",
+  "order": 5,
+  "entry": "BLE UART.py",
+  "requires": [
+    "aioble"
+  ]
+}

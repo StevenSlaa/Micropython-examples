@@ -1,0 +1,17 @@
+{
+  "id": "ble-hid-media-remote",
+  "title": "6. Bluetooth Media Remote (HID)",
+  "description": "Turns the board into a Bluetooth media remote: buttons play, pause, skip and change the volume on any phone or computer, with no app, because it is a standard HID device.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Bluetooth",
+  "order": 6,
+  "entry": "BLE HID Media Remote.py",
+  "requires": [
+    "aioble"
+  ]
+}
