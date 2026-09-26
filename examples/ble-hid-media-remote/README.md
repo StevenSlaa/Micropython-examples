@@ -108,6 +108,7 @@ just asks *Pair?*.
 | What you see | What it usually means |
 | --- | --- |
 | Not in the Bluetooth settings | It is already paired with another device. A keyboard pairs with one host at a time |
+| `Sent key` is printed, but the phone never asked to pair | The phone remembers an older version of the board. *Forget* `pulsar-remote` and connect again |
 | Pairs, then nothing happens on a press | Something else is playing media, or no media app is open to receive the key |
 | Worked before a reset, now does not reconnect | `ble_secrets.json` was lost. On the host, *forget* `pulsar-remote` and pair again |
 | Volume keeps going up | The release report was not sent. Keep the `b"\x00"` write |

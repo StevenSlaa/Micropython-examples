@@ -68,6 +68,11 @@ report = aioble.Characteristic(hid, bluetooth.UUID(0x2A4D), read=True, notify=Tr
                                initial=b"\x00")
 # which report this is: id 1, as in the report map, and 1 for input (board to host)
 aioble.Descriptor(report, bluetooth.UUID(0x2908), read=True, initial=b"\x01\x01")
+# Only readable over an encrypted connection. This is what makes the host pair: without it the
+# phone connects, but never uses the board as a keyboard and the key presses go nowhere.
+# ponytail: aioble has no option for this, so the flag (0x0200, read encrypted) is set by hand
+report_map.flags |= 0x0200
+report.flags |= 0x0200
 
 device_info = aioble.Service(bluetooth.UUID(0x180A))
 # PnP ID: who made it. Zeros is "nobody in particular", which hosts accept.
@@ -133,4 +138,10 @@ async def main():
     await asyncio.gather(advertise_task(), button_task())
 
 
-asyncio.run(main())
+
+try:
+    asyncio.run(main())
+finally:
+    # Ctrl-C leaves the radio on and the phone connected, and the next run then fails
+    # straight away. Switching Bluetooth off drops the connection.
+    aioble.stop()

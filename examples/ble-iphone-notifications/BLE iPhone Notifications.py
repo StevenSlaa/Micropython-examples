@@ -192,4 +192,10 @@ async def main():
         print("Disconnected")
 
 
-asyncio.run(main())
+
+try:
+    asyncio.run(main())
+finally:
+    # Ctrl-C leaves the radio on and the phone connected, and the next run then fails
+    # straight away. Switching Bluetooth off drops the connection.
+    aioble.stop()
