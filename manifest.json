@@ -1487,6 +1487,75 @@
       "assets": []
     },
     {
+      "id": "ttgo-t-display-espnow-send",
+      "title": "ESP-NOW: Sending from the T-Display v1.1",
+      "description": "In this example the LilyGO/TTGO T-Display v1.1 sends a counter to another ESP32 over ESP-NOW and shows the link on its 1.14 inch LCD: messages sent, delivery rate and a strip of the last 38 messages. The buttons pause sending and change the rate.",
+      "boardTags": [
+        "esp32"
+      ],
+      "author": "Steven Slaa",
+      "group": "Between boards",
+      "requires": [
+        "st7789py"
+      ],
+      "files": [
+        {
+          "path": "T-Display ESP-NOW Sender.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-t-display-espnow-send/T-Display%20ESP-NOW%20Sender.py",
+          "sha256": "78112a1a5c632f4746660670f60737bbbb5f140b10f85f4efc44313548cf1344",
+          "mime": "text/x-python"
+        },
+        {
+          "path": "pulsar_ui.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-t-display-espnow-send/pulsar_ui.py",
+          "sha256": "6fd1d99e5fcda0177c99bc68bb3e1c691d46cfa6857f7f6fd818b6d44aa4f095",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-t-display-espnow-send/README.md",
+        "sha256": "1b1aa9682736d74239da795bf8dbf3a5ccd35bbe6ebe51cc63f9d8ff23774fde",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "ttgo-t-display-s3-espnow-receive",
+      "title": "ESP-NOW: Receiving on the T-Display S3",
+      "description": "In this example the LilyGO/TTGO T-Display-S3 receives ESP-NOW messages from another ESP32 and shows the link live on its 1.9 inch LCD: messages received, delivery rate, signal strength and a scrolling signal chart that marks every lost message.",
+      "boardTags": [
+        "esp32s3"
+      ],
+      "author": "Steven Slaa",
+      "group": "Between boards",
+      "requires": [
+        "st7789-parallel",
+        "rgb565-display"
+      ],
+      "files": [
+        {
+          "path": "T-Display S3 ESP-NOW Receiver.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-t-display-s3-espnow-receive/T-Display%20S3%20ESP-NOW%20Receiver.py",
+          "sha256": "a66a40f1c61a76ca221aea715145e2a761c33fd70685d8c10c2acd801de66ee1",
+          "mime": "text/x-python"
+        },
+        {
+          "path": "pulsar_ui.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-t-display-s3-espnow-receive/pulsar_ui.py",
+          "sha256": "6fd1d99e5fcda0177c99bc68bb3e1c691d46cfa6857f7f6fd818b6d44aa4f095",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-t-display-s3-espnow-receive/README.md",
+        "sha256": "a5084b22f31f940052d3db4dc1e1f9a3bff51233504ab4bde69f17a443e73c8e",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "wifi-connect",
       "title": "1. Joining a Wifi Network",
       "description": "Connects to a wifi network using the network module directly, showing the status codes as it goes and printing the address, gateway and DNS server it was given.",
@@ -1771,7 +1840,7 @@
         {
           "path": "BLE iPhone Notifications.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ble-iphone-notifications/BLE%20iPhone%20Notifications.py",
-          "sha256": "645a80a522400ee0a9ca46864cf508d13eeb46051b0f6ee948df35ca3692c63d",
+          "sha256": "f0d781f7fe87b6dcf77032b75c61dd11914f63b58b3f77ba993a9f59163382b6",
           "mime": "text/x-python"
         }
       ],
@@ -1801,7 +1870,7 @@
         {
           "path": "BLE UART.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ble-uart/BLE%20UART.py",
-          "sha256": "8ad130ad68ee2d59ad2c8d0eae88caf184778c995dadc531310ef62c00ce35af",
+          "sha256": "14887ece145e229a65574e69ac287815914e8d9e35d63268c0078e2bc55f792b",
           "mime": "text/x-python"
         }
       ],
@@ -1831,14 +1900,14 @@
         {
           "path": "BLE HID Media Remote.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ble-hid-media-remote/BLE%20HID%20Media%20Remote.py",
-          "sha256": "aa8acf925dab4a9a37efa78247c484e88e1025c0f6da232deeae6ee7c970d25e",
+          "sha256": "a5ba4bcd853c4efe41315ee06cdec54b7c9cbc0ff16f05e1af2ea2e4b1e78101",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ble-hid-media-remote/README.md",
-        "sha256": "b1ab4f1288dbe90bcee9ffec3efb3a24ffb95f71e7f44443ab9e3b874c70f5a9",
+        "sha256": "b5f13bd009ac02be4450f75db333950f31281053da026d7528f2cb09fb5aba18",
         "mime": "text/markdown"
       },
       "assets": []

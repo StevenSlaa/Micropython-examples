@@ -109,6 +109,8 @@ Getting two boards to talk to each other, by radio or down a wire.
 | [RS-485 Link (MAX485)](rs485-link) | In this example two boards talk to each other over RS-485: one asks a question every second and the other answers, over a pair of wires that works across a building. | [rs485](../drivers/rs485) |
 | [ESP-NOW: Sending](espnow-send) | In this example the ESP32 sends a counter to another ESP32 over ESP-NOW once a second, without a router, and reports whether each message was acknowledged. | — |
 | [ESP-NOW: Receiving](espnow-receive) | In this example the ESP32 prints its own address, then listens for ESP-NOW messages from another ESP32 and reports any that went missing. | — |
+| [ESP-NOW: Sending from the T-Display v1.1](ttgo-t-display-espnow-send) | In this example the LilyGO/TTGO T-Display v1.1 sends a counter to another ESP32 over ESP-NOW and shows the link on its 1.14 inch LCD: messages sent, delivery rate and a strip of the last 38 messages. | [st7789py](../drivers/st7789py) |
+| [ESP-NOW: Receiving on the T-Display S3](ttgo-t-display-s3-espnow-receive) | In this example the LilyGO/TTGO T-Display-S3 receives ESP-NOW messages from another ESP32 and shows the link live on its 1.9 inch LCD: messages received, delivery rate, signal strength and a scrolling signal chart that marks every lost message. | [st7789-parallel](../drivers/st7789-parallel), [rgb565-display](../drivers/rgb565-display) |
 
 ### Networking
 

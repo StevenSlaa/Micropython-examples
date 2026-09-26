@@ -1,0 +1,16 @@
+{
+  "id": "ttgo-t-display-s3-espnow-receive",
+  "title": "ESP-NOW: Receiving on the T-Display S3",
+  "description": "In this example the LilyGO/TTGO T-Display-S3 receives ESP-NOW messages from another ESP32 and shows the link live on its 1.9 inch LCD: messages received, delivery rate, signal strength and a scrolling signal chart that marks every lost message.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32s3"
+  ],
+  "group": "Between boards",
+  "order": 7,
+  "entry": "T-Display S3 ESP-NOW Receiver.py",
+  "requires": [
+    "st7789-parallel",
+    "rgb565-display"
+  ]
+}
