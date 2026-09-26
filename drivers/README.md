@@ -50,7 +50,7 @@ name is the id examples put in their `requires` list.
 | [vcnl4040](vcnl4040) | `vcnl4040.py` | [i2c-proximity-vcnl4040](../examples/i2c-proximity-vcnl4040) |
 | [veml7700](veml7700) | `veml7700.py` | [i2c-light-veml7700](../examples/i2c-light-veml7700) |
 | [vl6180x](vl6180x) | `vl6180x.py` | [i2c-tof-vl6180x](../examples/i2c-tof-vl6180x) |
-| [wifi](wifi) | `wifi.py` | [wifi-access-point](../examples/wifi-access-point), [wifi-dns](../examples/wifi-dns), [mqtt](../examples/mqtt) |
+| [wifi](wifi) | `wifi.py` | [wifi-access-point](../examples/wifi-access-point), [wifi-dns](../examples/wifi-dns), [mqtt](../examples/mqtt), [wifi-captive-portal](../examples/wifi-captive-portal) |
 <!-- generated:end -->
 
 Adding one is a directory with `driver.json`, `README.md`, and the modules — see

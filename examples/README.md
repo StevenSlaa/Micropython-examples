@@ -121,6 +121,7 @@ Wifi, access points, name lookups and MQTT. Needs a board with a radio: an ESP32
 | [3. Running an Access Point](wifi-access-point) | Turns the board into a wifi network of its own and serves a small web page to any phone or laptop that joins it, which is how a device with no screen gets set up. | [wifi](../drivers/wifi) |
 | [4. DNS and Fetching a Page](wifi-dns) | Looks up several hostnames to see which DNS server the router handed out and how long each lookup takes, then fetches a page over a plain socket. | [wifi](../drivers/wifi) |
 | [5. MQTT](mqtt) | Publishes readings to an MQTT broker and listens for commands coming back, which is how most small devices send their data somewhere useful. | [wifi](../drivers/wifi), [umqtt](../drivers/umqtt) |
+| [6. Captive Portal](wifi-captive-portal) | Runs an access point with its own DNS and web server, so a setup page opens by itself on any phone that joins, the way hotel wifi and smart plugs do it. | [wifi](../drivers/wifi) |
 
 ### Bluetooth
 

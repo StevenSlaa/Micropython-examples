@@ -1634,6 +1634,36 @@
       "assets": []
     },
     {
+      "id": "wifi-captive-portal",
+      "title": "6. Captive Portal",
+      "description": "Runs an access point with its own DNS and web server, so a setup page opens by itself on any phone that joins, the way hotel wifi and smart plugs do it.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "author": "Steven Slaa",
+      "group": "Networking",
+      "requires": [
+        "wifi"
+      ],
+      "files": [
+        {
+          "path": "Wifi Captive Portal.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/wifi-captive-portal/Wifi%20Captive%20Portal.py",
+          "sha256": "2c66e4ab33861b6ced1b4b906c60867bbf3f2b570bc0d2538799f6a146eb5f0e",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/wifi-captive-portal/README.md",
+        "sha256": "dae3e3f74a2262bb96c6c0c429eeed609fdbedaeb3e2cc598e17ac35dfe72afe",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "ble-scan",
       "title": "1. Scanning for BLE Devices",
       "description": "Lists the Bluetooth Low Energy devices advertising nearby, with their signal strength, whether they can be connected to and which services they offer.",

@@ -1,0 +1,17 @@
+{
+  "id": "wifi-captive-portal",
+  "title": "6. Captive Portal",
+  "description": "Runs an access point with its own DNS and web server, so a setup page opens by itself on any phone that joins, the way hotel wifi and smart plugs do it.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Networking",
+  "order": 6,
+  "entry": "Wifi Captive Portal.py",
+  "requires": [
+    "wifi"
+  ]
+}
