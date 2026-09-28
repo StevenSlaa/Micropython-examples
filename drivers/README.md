@@ -39,12 +39,12 @@ name is the id examples put in their `requires` list.
 | [servo](servo) | `servo.py` | [servo](../examples/servo) |
 | [sh1106](sh1106) | `sh1106.py` | [oled-042-esp32c3](../examples/oled-042-esp32c3) |
 | [sr74hc595](sr74hc595) | `sr74hc595.py` | [seven-segment-74hc595](../examples/seven-segment-74hc595) |
-| [ssd1306](ssd1306) | `ssd1306.py` | — |
+| [ssd1306](ssd1306) | `ssd1306.py` | [ttgo-lora32-link](../examples/ttgo-lora32-link) |
 | [ssd1680](ssd1680) | `ssd1680.py` | [spi-epaper-ssd1680](../examples/spi-epaper-ssd1680) |
 | [st7789-parallel](st7789-parallel) | `st7789_parallel.py` | [ttgo-t-display-s3](../examples/ttgo-t-display-s3), [ttgo-t-display-s3-espnow-receive](../examples/ttgo-t-display-s3-espnow-receive) |
 | [st7789py](st7789py) | `st7789py.py`, `vga2_16x32.py` | [spi-st7789-display](../examples/spi-st7789-display), [ttgo-t-display](../examples/ttgo-t-display), [ttgo-t-display-espnow-send](../examples/ttgo-t-display-espnow-send) |
 | [stepper](stepper) | `stepper.py` | [stepper](../examples/stepper) |
-| [sx127x](sx127x) | `sx127x.py` | [lora-send](../examples/lora-send), [lora-receive](../examples/lora-receive), [lorawan-ttn](../examples/lorawan-ttn) |
+| [sx127x](sx127x) | `sx127x.py` | [lora-send](../examples/lora-send), [lora-receive](../examples/lora-receive), [ttgo-lora32-link](../examples/ttgo-lora32-link), [lorawan-ttn](../examples/lorawan-ttn) |
 | [sy6970](sy6970) | `sy6970.py` | [t-display-s3-long](../examples/t-display-s3-long) |
 | [tc74](tc74) | `tc74.py` | — |
 | [tm1637](tm1637) | `tm1637.py` | [tm1637-7-segment-display](../examples/tm1637-7-segment-display) |

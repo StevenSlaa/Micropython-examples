@@ -1616,6 +1616,35 @@
       "assets": []
     },
     {
+      "id": "ttgo-lora32-link",
+      "title": "TTGO LoRa32: Radio Link",
+      "description": "In this example two LilyGO/TTGO T3 LoRa32 boards find each other over LoRa and show the link live on their OLEDs: signal strength, a signal graph, lost packets and how well the other board hears them, logged to an SD card when one is inserted.",
+      "boardTags": [
+        "esp32"
+      ],
+      "author": "Steven Slaa",
+      "group": "Between boards",
+      "requires": [
+        "sx127x",
+        "ssd1306"
+      ],
+      "files": [
+        {
+          "path": "TTGO LoRa32 Link.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-lora32-link/TTGO%20LoRa32%20Link.py",
+          "sha256": "d2acd1b225ec6817dc58f4d7cf7529724c0ae3f52b1520f1141ef32eae9d7943",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-lora32-link/README.md",
+        "sha256": "5c81a294d43f0953592eefc123c6641a5ac7f7d9f723fbea5539752c3a878eab",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "wifi-connect",
       "title": "1. Joining a Wifi Network",
       "description": "Connects to a wifi network using the network module directly, showing the status codes as it goes and printing the address, gateway and DNS server it was given.",

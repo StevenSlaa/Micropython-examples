@@ -113,6 +113,7 @@ Getting two boards to talk to each other, by radio or down a wire.
 | [ESP-NOW: Receiving on the T-Display S3](ttgo-t-display-s3-espnow-receive) | In this example the LilyGO/TTGO T-Display-S3 receives ESP-NOW messages from another ESP32 and shows the link live on its 1.9 inch LCD: messages received, delivery rate, signal strength and a scrolling signal chart that marks every lost message. | [st7789-parallel](../drivers/st7789-parallel), [rgb565-display](../drivers/rgb565-display) |
 | [LoRa Radio: Sending](lora-send) | In this example the microcontroller sends a counter over a long range LoRa link and reports how long each packet takes to send. | [sx127x](../drivers/sx127x) |
 | [LoRa Radio: Receiving](lora-receive) | In this example the microcontroller listens for packets over a long range LoRa link and reports the signal strength and any lost packets. | [sx127x](../drivers/sx127x) |
+| [TTGO LoRa32: Radio Link](ttgo-lora32-link) | In this example two LilyGO/TTGO T3 LoRa32 boards find each other over LoRa and show the link live on their OLEDs: signal strength, a signal graph, lost packets and how well the other board hears them, logged to an SD card when one is inserted. | [sx127x](../drivers/sx127x), [ssd1306](../drivers/ssd1306) |
 
 ### Networking
 

@@ -1,0 +1,16 @@
+{
+  "id": "ttgo-lora32-link",
+  "title": "TTGO LoRa32: Radio Link",
+  "description": "In this example two LilyGO/TTGO T3 LoRa32 boards find each other over LoRa and show the link live on their OLEDs: signal strength, a signal graph, lost packets and how well the other board hears them, logged to an SD card when one is inserted.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32"
+  ],
+  "group": "Between boards",
+  "order": 10,
+  "entry": "TTGO LoRa32 Link.py",
+  "requires": [
+    "sx127x",
+    "ssd1306"
+  ]
+}
