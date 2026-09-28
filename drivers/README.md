@@ -21,6 +21,7 @@ name is the id examples put in their `requires` list.
 | [ir-receiver](ir-receiver) | `ir_receiver.py` | [ir-remote-nec](../examples/ir-remote-nec) |
 | [ir-transmitter](ir-transmitter) | `ir_transmitter.py` | [ir-remote-send](../examples/ir-remote-send) |
 | [keypad](keypad) | `keypad.py` | [keypad-4x4](../examples/keypad-4x4) |
+| [lorawan](lorawan) | `lorawan.py` | [lorawan-ttn](../examples/lorawan-ttn) |
 | [max7219](max7219) | `max7219.py` | [spi-led-matrix-max7219](../examples/spi-led-matrix-max7219) |
 | [mfrc522](mfrc522) | `mfrc522.py` | [spi-rfid-rc522](../examples/spi-rfid-rc522) |
 | [motor](motor) | `motor.py` | [dc-motor-l293d](../examples/dc-motor-l293d) |
@@ -43,6 +44,7 @@ name is the id examples put in their `requires` list.
 | [st7789-parallel](st7789-parallel) | `st7789_parallel.py` | [ttgo-t-display-s3](../examples/ttgo-t-display-s3), [ttgo-t-display-s3-espnow-receive](../examples/ttgo-t-display-s3-espnow-receive) |
 | [st7789py](st7789py) | `st7789py.py`, `vga2_16x32.py` | [spi-st7789-display](../examples/spi-st7789-display), [ttgo-t-display](../examples/ttgo-t-display), [ttgo-t-display-espnow-send](../examples/ttgo-t-display-espnow-send) |
 | [stepper](stepper) | `stepper.py` | [stepper](../examples/stepper) |
+| [sx127x](sx127x) | `sx127x.py` | [lora-send](../examples/lora-send), [lora-receive](../examples/lora-receive), [lorawan-ttn](../examples/lorawan-ttn) |
 | [sy6970](sy6970) | `sy6970.py` | [t-display-s3-long](../examples/t-display-s3-long) |
 | [tc74](tc74) | `tc74.py` | — |
 | [tm1637](tm1637) | `tm1637.py` | [tm1637-7-segment-display](../examples/tm1637-7-segment-display) |

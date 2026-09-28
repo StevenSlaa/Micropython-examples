@@ -1,0 +1,14 @@
+{
+  "id": "sd-card",
+  "title": "SD Card",
+  "description": "In this example the microcontroller mounts a microSD card, adds a line to a log file on it and reads the file back.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Storage and time",
+  "entry": "SD Card.py",
+  "requires": []
+}

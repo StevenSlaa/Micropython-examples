@@ -1,0 +1,12 @@
+{
+  "id": "sx127x",
+  "name": "SX1276/SX1278 LoRa radio",
+  "version": "1.0.0",
+  "description": "Long range point to point radio with Semtech SX127x LoRa chips, as on the LilyGO T3 LoRa32 and most ESP32 LoRa boards, with signal strength for each packet.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ]
+}

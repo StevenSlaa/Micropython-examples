@@ -1,0 +1,17 @@
+{
+  "id": "lora-send",
+  "title": "LoRa Radio: Sending",
+  "description": "In this example the microcontroller sends a counter over a long range LoRa link and reports how long each packet takes to send.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Between boards",
+  "order": 8,
+  "entry": "LoRa Send.py",
+  "requires": [
+    "sx127x"
+  ]
+}

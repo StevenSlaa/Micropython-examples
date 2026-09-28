@@ -1556,6 +1556,66 @@
       "assets": []
     },
     {
+      "id": "lora-send",
+      "title": "LoRa Radio: Sending",
+      "description": "In this example the microcontroller sends a counter over a long range LoRa link and reports how long each packet takes to send.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "author": "Steven Slaa",
+      "group": "Between boards",
+      "requires": [
+        "sx127x"
+      ],
+      "files": [
+        {
+          "path": "LoRa Send.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/lora-send/LoRa%20Send.py",
+          "sha256": "c2dca92f440cdf30bbbad99f9883c8b40c6adef2de249b955a4ab427a4ab24bf",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/lora-send/README.md",
+        "sha256": "0241d6d2035296e30518700f4222e36161b9a8fdef8504d498c4a8d83ae72635",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "lora-receive",
+      "title": "LoRa Radio: Receiving",
+      "description": "In this example the microcontroller listens for packets over a long range LoRa link and reports the signal strength and any lost packets.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "author": "Steven Slaa",
+      "group": "Between boards",
+      "requires": [
+        "sx127x"
+      ],
+      "files": [
+        {
+          "path": "LoRa Receive.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/lora-receive/LoRa%20Receive.py",
+          "sha256": "610e74a6a2efc6fa50a18983b4170766ccb3f25e879981e08d8be4ceae375b8e",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/lora-receive/README.md",
+        "sha256": "55298db1421e13f6ad3912d784c209b5064a575149fcb74d1237e03958357c7c",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "wifi-connect",
       "title": "1. Joining a Wifi Network",
       "description": "Connects to a wifi network using the network module directly, showing the status codes as it goes and printing the address, gateway and DNS server it was given.",
@@ -1728,6 +1788,37 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/wifi-captive-portal/README.md",
         "sha256": "dae3e3f74a2262bb96c6c0c429eeed609fdbedaeb3e2cc598e17ac35dfe72afe",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "lorawan-ttn",
+      "title": "LoRaWAN: The Things Network",
+      "description": "In this example the microcontroller joins The Things Network over LoRaWAN, sends a counter to the console every ten minutes and prints any downlink that comes back.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "author": "Steven Slaa",
+      "group": "Networking",
+      "requires": [
+        "sx127x",
+        "lorawan"
+      ],
+      "files": [
+        {
+          "path": "LoRaWAN TTN.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/lorawan-ttn/LoRaWAN%20TTN.py",
+          "sha256": "ff7accf5d82ffac65e7f7d71f10611bbce25a5b7a80d56dd92a244d4f0972f04",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/lorawan-ttn/README.md",
+        "sha256": "8a33e5b94a986664151183884b2f1db2c73963af293ef0019d8bdad1f592f7ec",
         "mime": "text/markdown"
       },
       "assets": []
@@ -1968,6 +2059,34 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-rtc-ds3231/README.md",
         "sha256": "843a695237f0d10a873ce7628e47182175798d793589b86edeb6b4a7a1198e57",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "sd-card",
+      "title": "SD Card",
+      "description": "In this example the microcontroller mounts a microSD card, adds a line to a log file on it and reads the file back.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "author": "Steven Slaa",
+      "group": "Storage and time",
+      "requires": [],
+      "files": [
+        {
+          "path": "SD Card.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/sd-card/SD%20Card.py",
+          "sha256": "12cb236e58cd3cb4b5c707006d79413fb002a9c695d94e44f85ba536c54fd569",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/sd-card/README.md",
+        "sha256": "f02eda429b3da15e34f56932ec3c1c3fb89c73094ef9c0c42fdd183ab99a9201",
         "mime": "text/markdown"
       },
       "assets": []
@@ -2456,6 +2575,32 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/keypad/README.md",
         "sha256": "915b36c4f9cf8ff94dd815a6630df74788dcb59aeaae67b46436f0a8d447b27b",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "lorawan",
+      "name": "LoRaWAN (The Things Network)",
+      "version": "1.0.0",
+      "description": "A small LoRaWAN 1.0 class A device for SX127x radios: joins The Things Network over the air, sends uplinks, receives downlinks and keeps its session across resets.",
+      "author": "Steven Slaa",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "files": [
+        {
+          "path": "lorawan.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/lorawan/lorawan.py",
+          "sha256": "f1b7e39cafcd0b2fe029bd6966853806238c2725ebec2d38837d458c42999f79",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/lorawan/README.md",
+        "sha256": "e357337150bc133d569039dfadf90e384f5d0a71bef8e2eac9dc6b0e688fc714",
         "mime": "text/markdown"
       }
     },
@@ -3044,6 +3189,32 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/stepper/README.md",
         "sha256": "a6e8ea26456651689e922caa35398eb38fb3d75f0cfd84f02d18919c49d5e188",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "sx127x",
+      "name": "SX1276/SX1278 LoRa radio",
+      "version": "1.0.0",
+      "description": "Long range point to point radio with Semtech SX127x LoRa chips, as on the LilyGO T3 LoRa32 and most ESP32 LoRa boards, with signal strength for each packet.",
+      "author": "Steven Slaa",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "files": [
+        {
+          "path": "sx127x.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/sx127x/sx127x.py",
+          "sha256": "dfb1c565a2f6abdfbdbc145823544b4fb3d088d7376c11797b571852432b705c",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/sx127x/README.md",
+        "sha256": "bd49ce2c1d180b0c17e753a6937b58e9ea555d68927edc3a535845e8a3ad8bcc",
         "mime": "text/markdown"
       }
     },

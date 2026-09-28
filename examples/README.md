@@ -111,6 +111,8 @@ Getting two boards to talk to each other, by radio or down a wire.
 | [ESP-NOW: Receiving](espnow-receive) | In this example the ESP32 prints its own address, then listens for ESP-NOW messages from another ESP32 and reports any that went missing. | — |
 | [ESP-NOW: Sending from the T-Display v1.1](ttgo-t-display-espnow-send) | In this example the LilyGO/TTGO T-Display v1.1 sends a counter to another ESP32 over ESP-NOW and shows the link on its 1.14 inch LCD: messages sent, delivery rate and a strip of the last 38 messages. | [st7789py](../drivers/st7789py) |
 | [ESP-NOW: Receiving on the T-Display S3](ttgo-t-display-s3-espnow-receive) | In this example the LilyGO/TTGO T-Display-S3 receives ESP-NOW messages from another ESP32 and shows the link live on its 1.9 inch LCD: messages received, delivery rate, signal strength and a scrolling signal chart that marks every lost message. | [st7789-parallel](../drivers/st7789-parallel), [rgb565-display](../drivers/rgb565-display) |
+| [LoRa Radio: Sending](lora-send) | In this example the microcontroller sends a counter over a long range LoRa link and reports how long each packet takes to send. | [sx127x](../drivers/sx127x) |
+| [LoRa Radio: Receiving](lora-receive) | In this example the microcontroller listens for packets over a long range LoRa link and reports the signal strength and any lost packets. | [sx127x](../drivers/sx127x) |
 
 ### Networking
 
@@ -124,6 +126,7 @@ Wifi, access points, name lookups and MQTT. Needs a board with a radio: an ESP32
 | [4. DNS and Fetching a Page](wifi-dns) | Looks up several hostnames to see which DNS server the router handed out and how long each lookup takes, then fetches a page over a plain socket. | [wifi](../drivers/wifi) |
 | [5. MQTT](mqtt) | Publishes readings to an MQTT broker and listens for commands coming back, which is how most small devices send their data somewhere useful. | [wifi](../drivers/wifi), [umqtt](../drivers/umqtt) |
 | [6. Captive Portal](wifi-captive-portal) | Runs an access point with its own DNS and web server, so a setup page opens by itself on any phone that joins, the way hotel wifi and smart plugs do it. | [wifi](../drivers/wifi) |
+| [LoRaWAN: The Things Network](lorawan-ttn) | In this example the microcontroller joins The Things Network over LoRaWAN, sends a counter to the console every ten minutes and prints any downlink that comes back. | [sx127x](../drivers/sx127x), [lorawan](../drivers/lorawan) |
 
 ### Bluetooth
 
@@ -146,6 +149,7 @@ Remembering things after the power goes, and knowing what time it is.
 | --- | --- | --- |
 | [I2C EEPROM Example](i2c-eeprom) | In this example the microcontroller stores a boot counter and a message in an I2C EEPROM, so they survive the power being cut, and reads them back. | [eeprom](../drivers/eeprom) |
 | [I2C RTC (DS3231) Example](i2c-rtc-ds3231) | In this example the microcontroller reads the date, time and temperature from a DS3231 real time clock module, and copies the time into the board's own clock so it survives a reset. | [ds3231](../drivers/ds3231) |
+| [SD Card](sd-card) | In this example the microcontroller mounts a microSD card, adds a line to a log file on it and reads the file back. | — |
 
 ### Tools
 
