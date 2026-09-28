@@ -282,6 +282,36 @@
       ]
     },
     {
+      "id": "hx711-scale",
+      "title": "HX711 Load Cell Scale Example",
+      "description": "In this example the microcontroller turns a load cell and an HX711 amplifier into a kitchen scale: it tares on start, calibrates against a known weight, and prints the weight in grams.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "author": "Steven Slaa",
+      "group": "Sensors",
+      "requires": [
+        "hx711"
+      ],
+      "files": [
+        {
+          "path": "HX711 Scale.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/hx711-scale/HX711%20Scale.py",
+          "sha256": "917bba86a5f00bc9b84af5f5cd0fe43d9b40f942b88dd9484936c1ac2589d1b1",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/hx711-scale/README.md",
+        "sha256": "860035d3b91ff45041574bec674dfd2298b271b9b6d4a227aaf1387ec05ed3fc",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "i2c-bmp280",
       "title": "I2C BMP280 Example",
       "description": "In this example the microcontroller reads the temperature and pressure from the connected BMP280 sensor and prints it on the terminal.",
@@ -2524,6 +2554,33 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/hmc5883l/README.md",
         "sha256": "b82f1bcc757b05c267a7eec32d0d98599009f1309c2a1de8f40ca7c1796d2ffc",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "hx711",
+      "name": "HX711 load cell amplifier",
+      "version": "1.0.0",
+      "description": "Driver for the HX711 24 bit load cell amplifier, reading raw values or weight with tare, one-point calibration, glitch-resistant averaging, selectable channel and gain, and power down.",
+      "author": "Steven Slaa",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "source": "https://cdn.sparkfun.com/datasheets/Sensors/ForceFlex/hx711_english.pdf",
+      "files": [
+        {
+          "path": "hx711.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/hx711/hx711.py",
+          "sha256": "5f01a8bb567932d657164ade292f8b991fbd36944aa6c2e02b7466f4505a5c5d",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/hx711/README.md",
+        "sha256": "6086eaf1289e005414a591b46de793b17d5fe6f2d490d49d6febe0a390a37a88",
         "mime": "text/markdown"
       }
     },

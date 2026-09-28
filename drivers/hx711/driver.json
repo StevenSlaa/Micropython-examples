@@ -1,0 +1,13 @@
+{
+  "id": "hx711",
+  "name": "HX711 load cell amplifier",
+  "version": "1.0.0",
+  "description": "Driver for the HX711 24 bit load cell amplifier, reading raw values or weight with tare, one-point calibration, glitch-resistant averaging, selectable channel and gain, and power down.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "source": "https://cdn.sparkfun.com/datasheets/Sensors/ForceFlex/hx711_english.pdf"
+}

@@ -30,6 +30,7 @@ Reading the world: temperature, distance, movement, light and magnetic fields.
 | --- | --- | --- |
 | [OV3660 Camera Example](camera-ov3660) | In this example the microcontroller takes a photo with the OV3660 camera on a XIAO ESP32-S3 Sense and saves it to the board as a JPEG. | [ov3660](../drivers/ov3660) |
 | [DHT Sensor Example](dht-sensor) | In this example the microcontroller should display the temperature and humidity in the console. | [dht](../drivers/dht) |
+| [HX711 Load Cell Scale Example](hx711-scale) | In this example the microcontroller turns a load cell and an HX711 amplifier into a kitchen scale: it tares on start, calibrates against a known weight, and prints the weight in grams. | [hx711](../drivers/hx711) |
 | [I2C BMP280 Example](i2c-bmp280) | In this example the microcontroller reads the temperature and pressure from the connected BMP280 sensor and prints it on the terminal. | [bmp280](../drivers/bmp280) |
 | [BMM150 Compass Example](i2c-compass-bmm150) | In this example the microcontroller reads the magnetic field from a Bosch BMM150 magnetometer, printing the three axes in microtesla and a compass heading in degrees, and warning when the field is out of range. | [bmm150](../drivers/bmm150) |
 | [HMC5883L Compass Example](i2c-compass-hmc5883l) | In this example the microcontroller reads the magnetic field from an HMC5883L magnetometer, printing the three axes in microtesla and a compass heading in degrees, and warning when the field is out of range. | [hmc5883l](../drivers/hmc5883l) |

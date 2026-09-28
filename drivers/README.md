@@ -17,6 +17,7 @@ name is the id examples put in their `requires` list.
 | [eeprom](eeprom) | `eeprom.py` | [i2c-eeprom](../examples/i2c-eeprom) |
 | [hcsr04](hcsr04) | `hcsr04.py` | [ultrasonic-distance-sensor-hc-sr04](../examples/ultrasonic-distance-sensor-hc-sr04) |
 | [hmc5883l](hmc5883l) | `hmc5883l.py` | [i2c-compass-hmc5883l](../examples/i2c-compass-hmc5883l) |
+| [hx711](hx711) | `hx711.py` | [hx711-scale](../examples/hx711-scale) |
 | [i2c-lcd](i2c-lcd) | `i2c_lcd.py`, `lcd_api.py` | [i2c-liquid-crystal-display](../examples/i2c-liquid-crystal-display) |
 | [ir-receiver](ir-receiver) | `ir_receiver.py` | [ir-remote-nec](../examples/ir-remote-nec) |
 | [ir-transmitter](ir-transmitter) | `ir_transmitter.py` | [ir-remote-send](../examples/ir-remote-send) |
