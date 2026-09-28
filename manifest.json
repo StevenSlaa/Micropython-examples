@@ -1645,6 +1645,37 @@
       "assets": []
     },
     {
+      "id": "ttgo-lora32-meshtastic-chat",
+      "title": "TTGO LoRa32: Meshtastic Chat",
+      "description": "In this example a LilyGO/TTGO T3 LoRa32 opens its own wifi network with a chat page, and every message typed there goes out over LoRa to Meshtastic devices and other boards running this example.",
+      "boardTags": [
+        "esp32"
+      ],
+      "author": "Steven Slaa",
+      "group": "Between boards",
+      "requires": [
+        "sx127x",
+        "meshtastic",
+        "ssd1306",
+        "wifi"
+      ],
+      "files": [
+        {
+          "path": "TTGO LoRa32 Meshtastic Chat.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-lora32-meshtastic-chat/TTGO%20LoRa32%20Meshtastic%20Chat.py",
+          "sha256": "ada3c5d5d488b738dc1babdf11e12e871a9dda20973f4e8940d77208a232f455",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-lora32-meshtastic-chat/README.md",
+        "sha256": "4fb2ab335b95ac6ef2c0a3231c2ff6488c08bd2514d744930f54d013d718b31a",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "wifi-connect",
       "title": "1. Joining a Wifi Network",
       "description": "Connects to a wifi network using the network module directly, showing the status codes as it goes and printing the address, gateway and DNS server it was given.",
@@ -2662,6 +2693,32 @@
       }
     },
     {
+      "id": "meshtastic",
+      "name": "Meshtastic (text chat)",
+      "version": "1.0.0",
+      "description": "Sends and receives Meshtastic text messages and node names through an SX127x LoRa radio, so a MicroPython board chats with Meshtastic devices and apps on the default channel.",
+      "author": "Steven Slaa",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "files": [
+        {
+          "path": "meshtastic.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/meshtastic/meshtastic.py",
+          "sha256": "28ddef5b9fbc6f467cab0c811158dafbcd3b85a21d043772164244a83eede23a",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/meshtastic/README.md",
+        "sha256": "f4deb8ff9b490a39bd3b22b0e3b18ad6797adfcb62052a9728418a88226b5c43",
+        "mime": "text/markdown"
+      }
+    },
+    {
       "id": "mfrc522",
       "name": "MFRC522 RFID (RC522)",
       "version": "1.0.0",
@@ -3224,7 +3281,7 @@
     {
       "id": "sx127x",
       "name": "SX1276/SX1278 LoRa radio",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "description": "Long range point to point radio with Semtech SX127x LoRa chips, as on the LilyGO T3 LoRa32 and most ESP32 LoRa boards, with signal strength for each packet.",
       "author": "Steven Slaa",
       "boardTags": [
@@ -3236,14 +3293,14 @@
         {
           "path": "sx127x.py",
           "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/sx127x/sx127x.py",
-          "sha256": "dfb1c565a2f6abdfbdbc145823544b4fb3d088d7376c11797b571852432b705c",
+          "sha256": "55391d857e8357256ce9b80273e76ad09f78277e219bd1a7d01a4f53faba31f8",
           "mime": "text/x-python"
         }
       ],
       "readme": {
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/sx127x/README.md",
-        "sha256": "bd49ce2c1d180b0c17e753a6937b58e9ea555d68927edc3a535845e8a3ad8bcc",
+        "sha256": "7143765702c9c20414c4ef3ce4907aefdb13defe7fbaa4d59fd09e5dc1f7bb8d",
         "mime": "text/markdown"
       }
     },

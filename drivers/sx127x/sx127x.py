@@ -43,7 +43,7 @@ _TX_DONE = const(0x08)
 
 _BANDWIDTHS = (7800, 10400, 15600, 20800, 31250, 41700, 62500, 125000, 250000, 500000)
 _SETTINGS = ("frequency", "bandwidth", "spreading_factor", "coding_rate", "crc", "sync_word",
-             "invert_iq")
+             "preamble_length", "invert_iq")
 
 
 class SX127x:
@@ -79,10 +79,10 @@ class SX127x:
         self._write(_FIFO_TX_BASE, 0)
         self._write(_FIFO_RX_BASE, 0)
         self._write(_LNA, 0x23)  # maximum gain, boosted
-        self._write(_PREAMBLE_MSB, bytes((preamble_length >> 8, preamble_length & 0xFF)))
         self._set_power(tx_power)
         self.configure(frequency=frequency, bandwidth=bandwidth, spreading_factor=spreading_factor,
-                       coding_rate=coding_rate, crc=crc, sync_word=sync_word, invert_iq=False)
+                       coding_rate=coding_rate, crc=crc, sync_word=sync_word,
+                       preamble_length=preamble_length, invert_iq=False)
 
     def configure(self, **settings):
         """Changes radio settings between packets; anything left out keeps its value.
@@ -111,6 +111,7 @@ class SX127x:
         slow = (1 << self.spreading_factor) * 1000 > 16 * self.bandwidth
         self._write(_MODEM_CONFIG_3, (0x08 if slow else 0) | 0x04)
         self._write(_SYNC_WORD, self.sync_word)
+        self._write(_PREAMBLE_MSB, bytes((self.preamble_length >> 8, self.preamble_length & 0xFF)))
         self._write(_INVERT_IQ, 0x66 if self.invert_iq else 0x27)
         self._write(_INVERT_IQ_2, 0x19 if self.invert_iq else 0x1D)
         if self._listening:

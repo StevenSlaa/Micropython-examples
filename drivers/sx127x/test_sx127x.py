@@ -111,10 +111,12 @@ assert lora.recv() is None and lora.crc_errors == 1, "a corrupt packet is counte
 assert lora.recv(timeout_ms=5) is None, "gives up when nothing arrives"
 
 assert r[0x33] == 0x27 and r[0x3B] == 0x1D, "IQ normal by default"
-lora.configure(frequency=869_525_000, spreading_factor=12, invert_iq=True, sync_word=0x34)
+lora.configure(frequency=869_525_000, spreading_factor=12, invert_iq=True, sync_word=0x34,
+               preamble_length=16)
 assert r[0x06:0x09] == b"\xd9\x61\x99", "869.525MHz"
 assert r[0x1E] == 0xC4 and r[0x26] == 0x0C, "SF12, still with CRC, now slow"
 assert r[0x33] == 0x66 and r[0x3B] == 0x19 and r[0x39] == 0x34, "IQ inverted, LoRaWAN sync word"
+assert r[0x20:0x22] == b"\x00\x10", "a longer preamble"
 assert r[0x01] == 0x85, "still listening after a change"
 try:
     lora.configure(power=3)

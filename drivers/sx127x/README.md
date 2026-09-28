@@ -101,7 +101,7 @@ factor 9 a short packet takes about 125ms, so one every 12 seconds or so is the 
 lora.configure(frequency=869_525_000, spreading_factor=12)
 ```
 
-Any constructor setting except `tx_power`, `preamble_length` and `xtal` can change between
+Any constructor setting except `tx_power` and `xtal` can change between
 packets; the rest stay as they are. `invert_iq=True` is there for LoRaWAN, whose gateways
 transmit with it inverted — the [lorawan](../lorawan) driver uses both.
 

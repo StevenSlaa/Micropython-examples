@@ -114,6 +114,7 @@ Getting two boards to talk to each other, by radio or down a wire.
 | [LoRa Radio: Sending](lora-send) | In this example the microcontroller sends a counter over a long range LoRa link and reports how long each packet takes to send. | [sx127x](../drivers/sx127x) |
 | [LoRa Radio: Receiving](lora-receive) | In this example the microcontroller listens for packets over a long range LoRa link and reports the signal strength and any lost packets. | [sx127x](../drivers/sx127x) |
 | [TTGO LoRa32: Radio Link](ttgo-lora32-link) | In this example two LilyGO/TTGO T3 LoRa32 boards find each other over LoRa and show the link live on their OLEDs: signal strength, a signal graph, lost packets and how well the other board hears them, logged to an SD card when one is inserted. | [sx127x](../drivers/sx127x), [ssd1306](../drivers/ssd1306) |
+| [TTGO LoRa32: Meshtastic Chat](ttgo-lora32-meshtastic-chat) | In this example a LilyGO/TTGO T3 LoRa32 opens its own wifi network with a chat page, and every message typed there goes out over LoRa to Meshtastic devices and other boards running this example. | [sx127x](../drivers/sx127x), [meshtastic](../drivers/meshtastic), [ssd1306](../drivers/ssd1306), [wifi](../drivers/wifi) |
 
 ### Networking
 

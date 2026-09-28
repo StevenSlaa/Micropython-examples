@@ -23,6 +23,7 @@ name is the id examples put in their `requires` list.
 | [keypad](keypad) | `keypad.py` | [keypad-4x4](../examples/keypad-4x4) |
 | [lorawan](lorawan) | `lorawan.py` | [lorawan-ttn](../examples/lorawan-ttn) |
 | [max7219](max7219) | `max7219.py` | [spi-led-matrix-max7219](../examples/spi-led-matrix-max7219) |
+| [meshtastic](meshtastic) | `meshtastic.py` | [ttgo-lora32-meshtastic-chat](../examples/ttgo-lora32-meshtastic-chat) |
 | [mfrc522](mfrc522) | `mfrc522.py` | [spi-rfid-rc522](../examples/spi-rfid-rc522) |
 | [motor](motor) | `motor.py` | [dc-motor-l293d](../examples/dc-motor-l293d) |
 | [mpu6050](mpu6050) | `mpu6050.py` | [i2c-mpu-6050](../examples/i2c-mpu-6050) |
@@ -39,12 +40,12 @@ name is the id examples put in their `requires` list.
 | [servo](servo) | `servo.py` | [servo](../examples/servo) |
 | [sh1106](sh1106) | `sh1106.py` | [oled-042-esp32c3](../examples/oled-042-esp32c3) |
 | [sr74hc595](sr74hc595) | `sr74hc595.py` | [seven-segment-74hc595](../examples/seven-segment-74hc595) |
-| [ssd1306](ssd1306) | `ssd1306.py` | [ttgo-lora32-link](../examples/ttgo-lora32-link) |
+| [ssd1306](ssd1306) | `ssd1306.py` | [ttgo-lora32-link](../examples/ttgo-lora32-link), [ttgo-lora32-meshtastic-chat](../examples/ttgo-lora32-meshtastic-chat) |
 | [ssd1680](ssd1680) | `ssd1680.py` | [spi-epaper-ssd1680](../examples/spi-epaper-ssd1680) |
 | [st7789-parallel](st7789-parallel) | `st7789_parallel.py` | [ttgo-t-display-s3](../examples/ttgo-t-display-s3), [ttgo-t-display-s3-espnow-receive](../examples/ttgo-t-display-s3-espnow-receive) |
 | [st7789py](st7789py) | `st7789py.py`, `vga2_16x32.py` | [spi-st7789-display](../examples/spi-st7789-display), [ttgo-t-display](../examples/ttgo-t-display), [ttgo-t-display-espnow-send](../examples/ttgo-t-display-espnow-send) |
 | [stepper](stepper) | `stepper.py` | [stepper](../examples/stepper) |
-| [sx127x](sx127x) | `sx127x.py` | [lora-send](../examples/lora-send), [lora-receive](../examples/lora-receive), [ttgo-lora32-link](../examples/ttgo-lora32-link), [lorawan-ttn](../examples/lorawan-ttn) |
+| [sx127x](sx127x) | `sx127x.py` | [lora-send](../examples/lora-send), [lora-receive](../examples/lora-receive), [ttgo-lora32-link](../examples/ttgo-lora32-link), [ttgo-lora32-meshtastic-chat](../examples/ttgo-lora32-meshtastic-chat), [lorawan-ttn](../examples/lorawan-ttn) |
 | [sy6970](sy6970) | `sy6970.py` | [t-display-s3-long](../examples/t-display-s3-long) |
 | [tc74](tc74) | `tc74.py` | — |
 | [tm1637](tm1637) | `tm1637.py` | [tm1637-7-segment-display](../examples/tm1637-7-segment-display) |
@@ -52,7 +53,7 @@ name is the id examples put in their `requires` list.
 | [vcnl4040](vcnl4040) | `vcnl4040.py` | [i2c-proximity-vcnl4040](../examples/i2c-proximity-vcnl4040) |
 | [veml7700](veml7700) | `veml7700.py` | [i2c-light-veml7700](../examples/i2c-light-veml7700) |
 | [vl6180x](vl6180x) | `vl6180x.py` | [i2c-tof-vl6180x](../examples/i2c-tof-vl6180x) |
-| [wifi](wifi) | `wifi.py` | [wifi-access-point](../examples/wifi-access-point), [wifi-dns](../examples/wifi-dns), [mqtt](../examples/mqtt), [wifi-captive-portal](../examples/wifi-captive-portal) |
+| [wifi](wifi) | `wifi.py` | [ttgo-lora32-meshtastic-chat](../examples/ttgo-lora32-meshtastic-chat), [wifi-access-point](../examples/wifi-access-point), [wifi-dns](../examples/wifi-dns), [mqtt](../examples/mqtt), [wifi-captive-portal](../examples/wifi-captive-portal) |
 <!-- generated:end -->
 
 Adding one is a directory with `driver.json`, `README.md`, and the modules — see
