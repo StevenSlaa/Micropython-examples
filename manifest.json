@@ -282,6 +282,36 @@
       ]
     },
     {
+      "id": "hx711-scale",
+      "title": "HX711 Load Cell Scale Example",
+      "description": "In this example the microcontroller turns a load cell and an HX711 amplifier into a kitchen scale: it tares on start, calibrates against a known weight, and prints the weight in grams.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "author": "Steven Slaa",
+      "group": "Sensors",
+      "requires": [
+        "hx711"
+      ],
+      "files": [
+        {
+          "path": "HX711 Scale.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/hx711-scale/HX711%20Scale.py",
+          "sha256": "917bba86a5f00bc9b84af5f5cd0fe43d9b40f942b88dd9484936c1ac2589d1b1",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/hx711-scale/README.md",
+        "sha256": "860035d3b91ff45041574bec674dfd2298b271b9b6d4a227aaf1387ec05ed3fc",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "i2c-bmp280",
       "title": "I2C BMP280 Example",
       "description": "In this example the microcontroller reads the temperature and pressure from the connected BMP280 sensor and prints it on the terminal.",
@@ -1619,6 +1649,126 @@
       "assets": []
     },
     {
+      "id": "lora-send",
+      "title": "LoRa Radio: Sending",
+      "description": "In this example the microcontroller sends a counter over a long range LoRa link and reports how long each packet takes to send.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "author": "Steven Slaa",
+      "group": "Between boards",
+      "requires": [
+        "sx127x"
+      ],
+      "files": [
+        {
+          "path": "LoRa Send.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/lora-send/LoRa%20Send.py",
+          "sha256": "c2dca92f440cdf30bbbad99f9883c8b40c6adef2de249b955a4ab427a4ab24bf",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/lora-send/README.md",
+        "sha256": "0241d6d2035296e30518700f4222e36161b9a8fdef8504d498c4a8d83ae72635",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "lora-receive",
+      "title": "LoRa Radio: Receiving",
+      "description": "In this example the microcontroller listens for packets over a long range LoRa link and reports the signal strength and any lost packets.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "author": "Steven Slaa",
+      "group": "Between boards",
+      "requires": [
+        "sx127x"
+      ],
+      "files": [
+        {
+          "path": "LoRa Receive.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/lora-receive/LoRa%20Receive.py",
+          "sha256": "610e74a6a2efc6fa50a18983b4170766ccb3f25e879981e08d8be4ceae375b8e",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/lora-receive/README.md",
+        "sha256": "55298db1421e13f6ad3912d784c209b5064a575149fcb74d1237e03958357c7c",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "ttgo-lora32-link",
+      "title": "TTGO LoRa32: Radio Link",
+      "description": "In this example two LilyGO/TTGO T3 LoRa32 boards find each other over LoRa and show the link live on their OLEDs: signal strength, a signal graph, lost packets and how well the other board hears them, logged to an SD card when one is inserted.",
+      "boardTags": [
+        "esp32"
+      ],
+      "author": "Steven Slaa",
+      "group": "Between boards",
+      "requires": [
+        "sx127x",
+        "ssd1306"
+      ],
+      "files": [
+        {
+          "path": "TTGO LoRa32 Link.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-lora32-link/TTGO%20LoRa32%20Link.py",
+          "sha256": "d2acd1b225ec6817dc58f4d7cf7529724c0ae3f52b1520f1141ef32eae9d7943",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-lora32-link/README.md",
+        "sha256": "5c81a294d43f0953592eefc123c6641a5ac7f7d9f723fbea5539752c3a878eab",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "ttgo-lora32-meshtastic-chat",
+      "title": "TTGO LoRa32: Meshtastic Chat",
+      "description": "In this example a LilyGO/TTGO T3 LoRa32 opens its own wifi network with a chat page, and every message typed there goes out over LoRa to Meshtastic devices and other boards running this example.",
+      "boardTags": [
+        "esp32"
+      ],
+      "author": "Steven Slaa",
+      "group": "Between boards",
+      "requires": [
+        "sx127x",
+        "meshtastic",
+        "ssd1306",
+        "wifi"
+      ],
+      "files": [
+        {
+          "path": "TTGO LoRa32 Meshtastic Chat.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-lora32-meshtastic-chat/TTGO%20LoRa32%20Meshtastic%20Chat.py",
+          "sha256": "ada3c5d5d488b738dc1babdf11e12e871a9dda20973f4e8940d77208a232f455",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-lora32-meshtastic-chat/README.md",
+        "sha256": "4fb2ab335b95ac6ef2c0a3231c2ff6488c08bd2514d744930f54d013d718b31a",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "wifi-connect",
       "title": "1. Joining a Wifi Network",
       "description": "Connects to a wifi network using the network module directly, showing the status codes as it goes and printing the address, gateway and DNS server it was given.",
@@ -1791,6 +1941,37 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/wifi-captive-portal/README.md",
         "sha256": "dae3e3f74a2262bb96c6c0c429eeed609fdbedaeb3e2cc598e17ac35dfe72afe",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "lorawan-ttn",
+      "title": "LoRaWAN: The Things Network",
+      "description": "In this example the microcontroller joins The Things Network over LoRaWAN, sends a counter to the console every ten minutes and prints any downlink that comes back.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "author": "Steven Slaa",
+      "group": "Networking",
+      "requires": [
+        "sx127x",
+        "lorawan"
+      ],
+      "files": [
+        {
+          "path": "LoRaWAN TTN.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/lorawan-ttn/LoRaWAN%20TTN.py",
+          "sha256": "ff7accf5d82ffac65e7f7d71f10611bbce25a5b7a80d56dd92a244d4f0972f04",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/lorawan-ttn/README.md",
+        "sha256": "8a33e5b94a986664151183884b2f1db2c73963af293ef0019d8bdad1f592f7ec",
         "mime": "text/markdown"
       },
       "assets": []
@@ -2031,6 +2212,34 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/i2c-rtc-ds3231/README.md",
         "sha256": "843a695237f0d10a873ce7628e47182175798d793589b86edeb6b4a7a1198e57",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "sd-card",
+      "title": "SD Card",
+      "description": "In this example the microcontroller mounts a microSD card, adds a line to a log file on it and reads the file back.",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "author": "Steven Slaa",
+      "group": "Storage and time",
+      "requires": [],
+      "files": [
+        {
+          "path": "SD Card.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/sd-card/SD%20Card.py",
+          "sha256": "12cb236e58cd3cb4b5c707006d79413fb002a9c695d94e44f85ba536c54fd569",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/sd-card/README.md",
+        "sha256": "f02eda429b3da15e34f56932ec3c1c3fb89c73094ef9c0c42fdd183ab99a9201",
         "mime": "text/markdown"
       },
       "assets": []
@@ -2412,6 +2621,33 @@
       }
     },
     {
+      "id": "hx711",
+      "name": "HX711 load cell amplifier",
+      "version": "1.0.0",
+      "description": "Driver for the HX711 24 bit load cell amplifier, reading raw values or weight with tare, one-point calibration, glitch-resistant averaging, selectable channel and gain, and power down.",
+      "author": "Steven Slaa",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "source": "https://cdn.sparkfun.com/datasheets/Sensors/ForceFlex/hx711_english.pdf",
+      "files": [
+        {
+          "path": "hx711.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/hx711/hx711.py",
+          "sha256": "5f01a8bb567932d657164ade292f8b991fbd36944aa6c2e02b7466f4505a5c5d",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/hx711/README.md",
+        "sha256": "6086eaf1289e005414a591b46de793b17d5fe6f2d490d49d6febe0a390a37a88",
+        "mime": "text/markdown"
+      }
+    },
+    {
       "id": "i2c-lcd",
       "name": "I2C character LCD",
       "version": "1.0.0",
@@ -2523,6 +2759,32 @@
       }
     },
     {
+      "id": "lorawan",
+      "name": "LoRaWAN (The Things Network)",
+      "version": "1.0.0",
+      "description": "A small LoRaWAN 1.0 class A device for SX127x radios: joins The Things Network over the air, sends uplinks, receives downlinks and keeps its session across resets.",
+      "author": "Steven Slaa",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "files": [
+        {
+          "path": "lorawan.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/lorawan/lorawan.py",
+          "sha256": "f1b7e39cafcd0b2fe029bd6966853806238c2725ebec2d38837d458c42999f79",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/lorawan/README.md",
+        "sha256": "e357337150bc133d569039dfadf90e384f5d0a71bef8e2eac9dc6b0e688fc714",
+        "mime": "text/markdown"
+      }
+    },
+    {
       "id": "max7219",
       "name": "MAX7219 LED matrix",
       "version": "1.0.0",
@@ -2547,6 +2809,32 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/max7219/README.md",
         "sha256": "4aeeaed4c22129bd379f7dd7a8374ca4178cd2b805b5b28873cf22e7f616a0a9",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "meshtastic",
+      "name": "Meshtastic (text chat)",
+      "version": "1.0.0",
+      "description": "Sends and receives Meshtastic text messages and node names through an SX127x LoRa radio, so a MicroPython board chats with Meshtastic devices and apps on the default channel.",
+      "author": "Steven Slaa",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "files": [
+        {
+          "path": "meshtastic.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/meshtastic/meshtastic.py",
+          "sha256": "28ddef5b9fbc6f467cab0c811158dafbcd3b85a21d043772164244a83eede23a",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/meshtastic/README.md",
+        "sha256": "f4deb8ff9b490a39bd3b22b0e3b18ad6797adfcb62052a9728418a88226b5c43",
         "mime": "text/markdown"
       }
     },
@@ -3107,6 +3395,32 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/stepper/README.md",
         "sha256": "a6e8ea26456651689e922caa35398eb38fb3d75f0cfd84f02d18919c49d5e188",
+        "mime": "text/markdown"
+      }
+    },
+    {
+      "id": "sx127x",
+      "name": "SX1276/SX1278 LoRa radio",
+      "version": "1.1.0",
+      "description": "Long range point to point radio with Semtech SX127x LoRa chips, as on the LilyGO T3 LoRa32 and most ESP32 LoRa boards, with signal strength for each packet.",
+      "author": "Steven Slaa",
+      "boardTags": [
+        "esp32",
+        "esp32s3",
+        "pico"
+      ],
+      "files": [
+        {
+          "path": "sx127x.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/sx127x/sx127x.py",
+          "sha256": "55391d857e8357256ce9b80273e76ad09f78277e219bd1a7d01a4f53faba31f8",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/drivers/sx127x/README.md",
+        "sha256": "7143765702c9c20414c4ef3ce4907aefdb13defe7fbaa4d59fd09e5dc1f7bb8d",
         "mime": "text/markdown"
       }
     },

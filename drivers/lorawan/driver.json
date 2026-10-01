@@ -1,0 +1,12 @@
+{
+  "id": "lorawan",
+  "name": "LoRaWAN (The Things Network)",
+  "version": "1.0.0",
+  "description": "A small LoRaWAN 1.0 class A device for SX127x radios: joins The Things Network over the air, sends uplinks, receives downlinks and keeps its session across resets.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ]
+}

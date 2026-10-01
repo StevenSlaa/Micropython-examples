@@ -1,0 +1,12 @@
+{
+  "id": "meshtastic",
+  "name": "Meshtastic (text chat)",
+  "version": "1.0.0",
+  "description": "Sends and receives Meshtastic text messages and node names through an SX127x LoRa radio, so a MicroPython board chats with Meshtastic devices and apps on the default channel.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ]
+}

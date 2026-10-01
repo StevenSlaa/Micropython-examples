@@ -1,0 +1,18 @@
+{
+  "id": "lorawan-ttn",
+  "title": "LoRaWAN: The Things Network",
+  "description": "In this example the microcontroller joins The Things Network over LoRaWAN, sends a counter to the console every ten minutes and prints any downlink that comes back.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Networking",
+  "order": 7,
+  "entry": "LoRaWAN TTN.py",
+  "requires": [
+    "sx127x",
+    "lorawan"
+  ]
+}

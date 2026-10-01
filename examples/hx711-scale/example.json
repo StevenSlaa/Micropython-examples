@@ -1,0 +1,16 @@
+{
+  "id": "hx711-scale",
+  "title": "HX711 Load Cell Scale Example",
+  "description": "In this example the microcontroller turns a load cell and an HX711 amplifier into a kitchen scale: it tares on start, calibrates against a known weight, and prints the weight in grams.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Sensors",
+  "entry": "HX711 Scale.py",
+  "requires": [
+    "hx711"
+  ]
+}

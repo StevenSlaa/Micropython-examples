@@ -1,0 +1,17 @@
+{
+  "id": "lora-receive",
+  "title": "LoRa Radio: Receiving",
+  "description": "In this example the microcontroller listens for packets over a long range LoRa link and reports the signal strength and any lost packets.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32",
+    "esp32s3",
+    "pico"
+  ],
+  "group": "Between boards",
+  "order": 9,
+  "entry": "LoRa Receive.py",
+  "requires": [
+    "sx127x"
+  ]
+}

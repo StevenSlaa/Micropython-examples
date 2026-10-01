@@ -1,0 +1,18 @@
+{
+  "id": "ttgo-lora32-meshtastic-chat",
+  "title": "TTGO LoRa32: Meshtastic Chat",
+  "description": "In this example a LilyGO/TTGO T3 LoRa32 opens its own wifi network with a chat page, and every message typed there goes out over LoRa to Meshtastic devices and other boards running this example.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "esp32"
+  ],
+  "group": "Between boards",
+  "order": 11,
+  "entry": "TTGO LoRa32 Meshtastic Chat.py",
+  "requires": [
+    "sx127x",
+    "meshtastic",
+    "ssd1306",
+    "wifi"
+  ]
+}
