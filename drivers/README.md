@@ -36,12 +36,12 @@ name is the id examples put in their `requires` list.
 | [rotary](rotary) | `rotary.py` | [rotary-encoder](../examples/rotary-encoder) |
 | [rs485](rs485) | `rs485.py` | [rs485-link](../examples/rs485-link) |
 | [servo](servo) | `servo.py` | [servo](../examples/servo) |
-| [sh1106](sh1106) | `sh1106.py` | [oled-042-esp32c3](../examples/oled-042-esp32c3) |
+| [sh1106](sh1106) | `sh1106.py` | [oled-042-esp32c3](../examples/oled-042-esp32c3), [oled-13-sh1106](../examples/oled-13-sh1106) |
 | [sr74hc595](sr74hc595) | `sr74hc595.py` | [seven-segment-74hc595](../examples/seven-segment-74hc595) |
 | [ssd1306](ssd1306) | `ssd1306.py` | — |
 | [ssd1680](ssd1680) | `ssd1680.py` | [spi-epaper-ssd1680](../examples/spi-epaper-ssd1680) |
 | [st7789-parallel](st7789-parallel) | `st7789_parallel.py` | [ttgo-t-display-s3](../examples/ttgo-t-display-s3), [ttgo-t-display-s3-espnow-receive](../examples/ttgo-t-display-s3-espnow-receive) |
-| [st7789py](st7789py) | `st7789py.py`, `vga2_16x32.py` | [spi-st7789-display](../examples/spi-st7789-display), [ttgo-t-display](../examples/ttgo-t-display), [ttgo-t-display-espnow-send](../examples/ttgo-t-display-espnow-send) |
+| [st7789py](st7789py) | `st7789py.py`, `vga2_16x32.py` | [spi-st7789-display](../examples/spi-st7789-display), [ttgo-t-display](../examples/ttgo-t-display), [xiao-rp2040-st7789](../examples/xiao-rp2040-st7789), [ttgo-t-display-espnow-send](../examples/ttgo-t-display-espnow-send) |
 | [stepper](stepper) | `stepper.py` | [stepper](../examples/stepper) |
 | [sy6970](sy6970) | `sy6970.py` | [t-display-s3-long](../examples/t-display-s3-long) |
 | [tc74](tc74) | `tc74.py` | — |
@@ -50,7 +50,7 @@ name is the id examples put in their `requires` list.
 | [vcnl4040](vcnl4040) | `vcnl4040.py` | [i2c-proximity-vcnl4040](../examples/i2c-proximity-vcnl4040) |
 | [veml7700](veml7700) | `veml7700.py` | [i2c-light-veml7700](../examples/i2c-light-veml7700) |
 | [vl6180x](vl6180x) | `vl6180x.py` | [i2c-tof-vl6180x](../examples/i2c-tof-vl6180x) |
-| [wifi](wifi) | `wifi.py` | [wifi-access-point](../examples/wifi-access-point), [wifi-dns](../examples/wifi-dns), [mqtt](../examples/mqtt), [wifi-captive-portal](../examples/wifi-captive-portal) |
+| [wifi](wifi) | `wifi.py` | [t-display-s3-long](../examples/t-display-s3-long), [wifi-access-point](../examples/wifi-access-point), [wifi-dns](../examples/wifi-dns), [mqtt](../examples/mqtt), [wifi-captive-portal](../examples/wifi-captive-portal) |
 <!-- generated:end -->
 
 Adding one is a directory with `driver.json`, `README.md`, and the modules — see

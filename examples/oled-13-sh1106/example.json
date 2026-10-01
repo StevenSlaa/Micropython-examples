@@ -1,0 +1,14 @@
+{
+  "id": "oled-13-sh1106",
+  "title": "1.3 inch OLED (SH1106, 128x64)",
+  "description": "In this example a Raspberry Pi Pico drives a 1.3 inch 128x64 SH1106 OLED over I2C, cycling through a geometry check, bouncing balls, a scrolling sine wave and a live temperature graph.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "pico"
+  ],
+  "group": "Displays and LEDs",
+  "entry": "OLED 1.3 inch.py",
+  "requires": [
+    "sh1106"
+  ]
+}

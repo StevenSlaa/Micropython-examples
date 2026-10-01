@@ -1,0 +1,14 @@
+{
+  "id": "xiao-rp2040-st7789",
+  "title": "XIAO RP2040 + ST7789 (240x240 colour display)",
+  "description": "In this example a Seeed XIAO RP2040 drives a 240x240 ST7789 colour display over SPI, with a title card, a spinning 3D cube, a warp-speed starfield and a Mandelbrot set drawn line by line.",
+  "author": "Steven Slaa",
+  "boardTags": [
+    "pico"
+  ],
+  "group": "Displays and LEDs",
+  "entry": "XIAO ST7789.py",
+  "requires": [
+    "st7789py"
+  ]
+}

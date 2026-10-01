@@ -721,6 +721,34 @@
       "assets": []
     },
     {
+      "id": "oled-13-sh1106",
+      "title": "1.3 inch OLED (SH1106, 128x64)",
+      "description": "In this example a Raspberry Pi Pico drives a 1.3 inch 128x64 SH1106 OLED over I2C, cycling through a geometry check, bouncing balls, a scrolling sine wave and a live temperature graph.",
+      "boardTags": [
+        "pico"
+      ],
+      "author": "Steven Slaa",
+      "group": "Displays and LEDs",
+      "requires": [
+        "sh1106"
+      ],
+      "files": [
+        {
+          "path": "OLED 1.3 inch.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/oled-13-sh1106/OLED%201.3%20inch.py",
+          "sha256": "ea0fa1dbb7d1a1d613d304072b480a5885263f99e576d643bbaa3eaee8ef88a3",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/oled-13-sh1106/README.md",
+        "sha256": "6c3bb2c438462347b5eccd2cff3767e7d76ee070ae506c13283cc933bad8778f",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
       "id": "p9813-rgb-led",
       "title": "P9813 RGB LED Example",
       "description": "In this example the microcontroller shows the plain colours on a chain of P9813 RGB LEDs and then cycles a rainbow along it.",
@@ -900,12 +928,19 @@
       "requires": [
         "axs15231b",
         "rgb565-display",
-        "sy6970"
+        "sy6970",
+        "wifi"
       ],
       "files": [
         {
-          "path": "T-Display S3 Long.py",
-          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/t-display-s3-long/T-Display%20S3%20Long.py",
+          "path": "main.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/t-display-s3-long/main.py",
+          "sha256": "09c62ca1d530fba624f7f4a7aca2e541ad76eff4d0c2495488be18a2dcc83033",
+          "mime": "text/x-python"
+        },
+        {
+          "path": "demo.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/t-display-s3-long/demo.py",
           "sha256": "ef3b9592c56c98dc6b69eaf44fcebd1edfdfcb6dc90223ed82a7357a4a3ada35",
           "mime": "text/x-python"
         },
@@ -1019,6 +1054,34 @@
         "path": "README.md",
         "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/ttgo-t-display-s3/README.md",
         "sha256": "87c968b5350688954c4ee0cfdedfaf6c12ddb26ed43d52265ff580fbfc589bab",
+        "mime": "text/markdown"
+      },
+      "assets": []
+    },
+    {
+      "id": "xiao-rp2040-st7789",
+      "title": "XIAO RP2040 + ST7789 (240x240 colour display)",
+      "description": "In this example a Seeed XIAO RP2040 drives a 240x240 ST7789 colour display over SPI, with a title card, a spinning 3D cube, a warp-speed starfield and a Mandelbrot set drawn line by line.",
+      "boardTags": [
+        "pico"
+      ],
+      "author": "Steven Slaa",
+      "group": "Displays and LEDs",
+      "requires": [
+        "st7789py"
+      ],
+      "files": [
+        {
+          "path": "XIAO ST7789.py",
+          "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/xiao-rp2040-st7789/XIAO%20ST7789.py",
+          "sha256": "c3aa2e2b2ec51751305a4c0d025dd937d124ac346e6de2369a1bdc21c400af0b",
+          "mime": "text/x-python"
+        }
+      ],
+      "readme": {
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/StevenSlaa/Micropython-examples/refs/heads/main/examples/xiao-rp2040-st7789/README.md",
+        "sha256": "7f721fe968a78518174e944ba90fcf56201a30f31461f29a74e3474e58604042",
         "mime": "text/markdown"
       },
       "assets": []

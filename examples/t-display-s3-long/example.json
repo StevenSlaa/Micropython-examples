@@ -7,10 +7,11 @@
     "esp32s3"
   ],
   "group": "Displays and LEDs",
-  "entry": "T-Display S3 Long.py",
+  "entry": "main.py",
   "requires": [
     "axs15231b",
     "rgb565-display",
-    "sy6970"
+    "sy6970",
+    "wifi"
   ]
 }
